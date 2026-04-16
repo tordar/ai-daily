@@ -14,6 +14,9 @@
   --color-border-section: #1a1a2e;
   --color-story-title: #fff;
   --color-story-hover: rgba(255, 255, 255, 0.02);
+  --color-accent-muted: rgba(0, 255, 136, 0.4);
+  --color-accent-subtle: rgba(0, 255, 136, 0.05);
+  --color-index: rgba(0, 255, 136, 0.3);
 
   --color-tag-models-bg: color-mix(in srgb, #00ff88 6%, transparent);
   --color-tag-models: #00ff88;
@@ -47,6 +50,9 @@ html.light {
   --color-border-section: #d4d4d4;
   --color-story-title: #111;
   --color-story-hover: rgba(0, 0, 0, 0.02);
+  --color-accent-muted: #0d7c5f;
+  --color-accent-subtle: rgba(13, 124, 95, 0.1);
+  --color-index: #6bb8a0;
 
   --color-tag-models-bg: color-mix(in srgb, #0d7c5f 12%, transparent);
   --color-tag-models: #0d7c5f;
