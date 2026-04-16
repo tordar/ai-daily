@@ -31,7 +31,7 @@ const tagStyle = tagStyles[tag] ?? { bg: "transparent", text: "var(--color-text-
 ---
 
 <div
-  class="flex gap-4 border-b border-[var(--color-border)]/50 py-5 px-5 cursor-pointer transition-all hover:bg-white/[0.02] group"
+  class="flex gap-4 border-b border-[var(--color-border)]/50 py-5 px-5 cursor-pointer transition-all hover:bg-[var(--color-story-hover)] group"
   data-story-index={index}
 >
   <div class="hidden md:block shrink-0 w-6 text-right">
@@ -39,7 +39,7 @@ const tagStyle = tagStyles[tag] ?? { bg: "transparent", text: "var(--color-text-
   </div>
   <div class="flex-1 min-w-0">
     <a href={url} target="_blank" rel="noopener noreferrer" class="no-underline group-hover:underline">
-      <h2 class="text-lg font-semibold text-white tracking-tight leading-snug mb-1.5">{title}</h2>
+      <h2 class="text-lg font-semibold text-[var(--color-story-title)] tracking-tight leading-snug mb-1.5">{title}</h2>
     </a>
     <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-2.5">{summary}</p>
     <div class="flex items-center gap-2">

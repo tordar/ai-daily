@@ -12,6 +12,8 @@
   --color-accent: #00ff88;
   --color-border: #111;
   --color-border-section: #1a1a2e;
+  --color-story-title: #fff;
+  --color-story-hover: rgba(255, 255, 255, 0.02);
 
   --color-tag-models-bg: color-mix(in srgb, #00ff88 6%, transparent);
   --color-tag-models: #00ff88;
@@ -31,4 +33,31 @@ body {
   font-family: "Geist Sans", -apple-system, "SF Pro Display", system-ui, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Light theme overrides */
+html.light {
+  --color-bg: #fafafa;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #555;
+  --color-text-muted: #999;
+  --color-accent: #059669;
+  --color-border: #e5e5e5;
+  --color-border-section: #d4d4d4;
+  --color-story-title: #111;
+  --color-story-hover: rgba(0, 0, 0, 0.02);
+
+  --color-tag-models-bg: color-mix(in srgb, #059669 10%, transparent);
+  --color-tag-models: #059669;
+  --color-tag-tools-bg: color-mix(in srgb, #2563eb 10%, transparent);
+  --color-tag-tools: #2563eb;
+  --color-tag-research-bg: color-mix(in srgb, #d97706 10%, transparent);
+  --color-tag-research: #d97706;
+  --color-tag-industry-bg: color-mix(in srgb, #dc2626 10%, transparent);
+  --color-tag-industry: #dc2626;
+  --color-tag-open-source-bg: color-mix(in srgb, #7c3aed 10%, transparent);
+  --color-tag-open-source: #7c3aed;
+  --color-tag-frameworks-bg: color-mix(in srgb, #9333ea 10%, transparent);
+  --color-tag-frameworks: #9333ea;
 }

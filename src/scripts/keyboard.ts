@@ -139,6 +139,7 @@
       ['w', 'Go to this week\'s rollup'],
       ['m', 'Go to this month\'s rollup'],
       ['a', 'Go to archive'],
+      ['t', 'Toggle dark / light theme'],
       ['?', 'Toggle this help overlay'],
     ];
 
@@ -287,6 +288,12 @@
       case 'a':
         e.preventDefault();
         window.location.href = '/archive';
+        break;
+
+      case 't':
+        e.preventDefault();
+        const btn = document.getElementById('theme-toggle') as HTMLElement | null;
+        if (btn) btn.click();
         break;
 
       case '?':

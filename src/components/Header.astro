@@ -18,5 +18,41 @@ const latestMonth = latestDate ? latestDate.slice(0, 7) : "";
     <a href="/archive" class="uppercase text-xs tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">archive</a>
     <a href={`/weekly/${latestWeek}`} class="uppercase text-xs tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">weekly</a>
     <a href={`/monthly/${latestMonth}`} class="uppercase text-xs tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">monthly</a>
+    <button
+      id="theme-toggle"
+      class="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors text-sm cursor-pointer"
+      aria-label="Toggle theme"
+      title="Toggle theme (t)"
+    >
+      <span id="theme-icon-dark" class="hidden">☀</span>
+      <span id="theme-icon-light">☾</span>
+    </button>
   </nav>
 </header>
+
+<script>
+  function initTheme() {
+    const toggle = document.getElementById('theme-toggle');
+    const iconDark = document.getElementById('theme-icon-dark');
+    const iconLight = document.getElementById('theme-icon-light');
+    if (!toggle || !iconDark || !iconLight) return;
+
+    function applyTheme(light: boolean) {
+      document.documentElement.classList.toggle('light', light);
+      iconDark.classList.toggle('hidden', !light);
+      iconLight.classList.toggle('hidden', light);
+      localStorage.setItem('theme', light ? 'light' : 'dark');
+    }
+
+    // Load saved preference
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light') applyTheme(true);
+
+    toggle.addEventListener('click', () => {
+      applyTheme(!document.documentElement.classList.contains('light'));
+    });
+  }
+
+  initTheme();
+  document.addEventListener('astro:page-load', initTheme);
+</script>
