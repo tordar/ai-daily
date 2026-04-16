@@ -50,7 +50,7 @@ function formatDayLabel(dateStr: string): string {
               <a
                 href={`/digest/${entry.data.date}`}
                 data-archive-row={entry.data.date}
-                class="flex items-baseline gap-4 py-2.5 border-b border-[var(--color-border)] no-underline hover:bg-[#0f0f0f] group transition-colors"
+                class="flex items-baseline gap-4 py-2.5 border-b border-[var(--color-border)] no-underline hover:bg-[var(--color-story-hover)] group transition-colors"
               >
                 <span class="shrink-0 w-14 text-[var(--color-accent)] opacity-50 text-[11px] font-mono uppercase tracking-wide">
                   {dayLabel}

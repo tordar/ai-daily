@@ -151,6 +151,7 @@
       ['w', 'Go to this week\'s rollup'],
       ['m', 'Go to this month\'s rollup'],
       ['a', 'Go to archive'],
+      ['s', 'Go to subscribe'],
       ['t', 'Toggle dark / light theme'],
       ['?', 'Toggle this help overlay'],
     ];
@@ -297,6 +298,11 @@
       case 'a':
         e.preventDefault();
         softNavigate('/archive');
+        break;
+
+      case 's':
+        e.preventDefault();
+        softNavigate('/subscribe');
         break;
 
       case 't':

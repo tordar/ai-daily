@@ -52,7 +52,7 @@ html.light {
   --color-border-section: #d4d4d4;
   --color-story-title: #111;
   --color-story-hover: rgba(0, 0, 0, 0.02);
-  --color-accent-muted: #0d7c5f;
+  --color-accent-muted: rgba(13, 124, 95, 0.4);
   --color-accent-subtle: rgba(13, 124, 95, 0.1);
   --color-index: #6bb8a0;
 

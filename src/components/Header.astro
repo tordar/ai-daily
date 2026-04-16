@@ -7,6 +7,17 @@ const sorted = digests.sort((a, b) => b.data.date.localeCompare(a.data.date));
 const latestDate = sorted[0]?.data.date ?? "";
 const latestWeek = latestDate ? getISOWeek(latestDate) : "";
 const latestMonth = latestDate ? latestDate.slice(0, 7) : "";
+
+const path = Astro.url.pathname;
+const isDaily = path === "/" || path.startsWith("/digest/");
+const isWeekly = path.startsWith("/weekly/");
+const isMonthly = path.startsWith("/monthly/");
+const isArchive = path.startsWith("/archive");
+const isSubscribe = path.startsWith("/subscribe");
+
+const base = "uppercase text-[11px] tracking-widest transition-colors no-underline";
+const active = `${base} text-[var(--color-accent)] border-b border-[var(--color-accent)] pb-0.5`;
+const inactive = `${base} text-[var(--color-text-muted)] hover:text-[var(--color-accent)]`;
 ---
 
 <header class="flex flex-wrap items-center gap-x-6 gap-y-3 border-b border-[var(--color-border-section)] py-4 px-5">
@@ -15,11 +26,11 @@ const latestMonth = latestDate ? latestDate.slice(0, 7) : "";
     <span class="text-[var(--color-text-muted)] font-light text-lg"> / DEV</span>
   </a>
   <nav class="flex items-center justify-center gap-4 md:gap-6 order-last md:order-none w-full md:w-auto">
-    <a href="/" class="uppercase text-[11px] tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">daily</a>
-    <a href={`/weekly/${latestWeek}`} class="uppercase text-[11px] tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">weekly</a>
-    <a href={`/monthly/${latestMonth}`} class="uppercase text-[11px] tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">monthly</a>
-    <a href="/archive" class="uppercase text-[11px] tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">archive</a>
-    <a href="/subscribe" class="uppercase text-[11px] tracking-widest text-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors no-underline">subscribe</a>
+    <a href="/" class={isDaily ? active : inactive}>daily</a>
+    <a href={`/weekly/${latestWeek}`} class={isWeekly ? active : inactive}>weekly</a>
+    <a href={`/monthly/${latestMonth}`} class={isMonthly ? active : inactive}>monthly</a>
+    <a href="/archive" class={isArchive ? active : inactive}>archive</a>
+    <a href="/subscribe" class={isSubscribe ? active : inactive}>subscribe</a>
   </nav>
   <button
     id="theme-toggle"
