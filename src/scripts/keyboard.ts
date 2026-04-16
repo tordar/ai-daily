@@ -76,20 +76,32 @@
     return `${d.getUTCFullYear()}-W${String(weekNum).padStart(2, '0')}`;
   }
 
+  function softNavigate(href: string) {
+    // Click a matching <a> tag so ClientRouter intercepts it for smooth transitions
+    const existing = document.querySelector(`a[href="${href}"]`) as HTMLAnchorElement | null;
+    if (existing) { existing.click(); return; }
+    // Fallback: create a temporary link and click it
+    const a = document.createElement('a');
+    a.href = href;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  }
+
   function navigateWeek() {
     const link = document.querySelector('a[href*="/weekly/"]') as HTMLAnchorElement | null;
-    if (link) { window.location.href = link.href; return; }
+    if (link) { link.click(); return; }
     const dateStr = getDateFromUrl();
     if (!dateStr) return;
-    window.location.href = `/weekly/${getISOWeek(dateStr)}`;
+    softNavigate(`/weekly/${getISOWeek(dateStr)}`);
   }
 
   function navigateMonth() {
     const link = document.querySelector('a[href*="/monthly/"]') as HTMLAnchorElement | null;
-    if (link) { window.location.href = link.href; return; }
+    if (link) { link.click(); return; }
     const dateStr = getDateFromUrl();
     if (!dateStr) return;
-    window.location.href = `/monthly/${dateStr.slice(0, 7)}`;
+    softNavigate(`/monthly/${dateStr.slice(0, 7)}`);
   }
 
   function createHelpOverlay(): HTMLElement {
@@ -288,12 +300,12 @@
 
       case 'd':
         e.preventDefault();
-        window.location.href = '/';
+        softNavigate('/');
         break;
 
       case 'a':
         e.preventDefault();
-        window.location.href = '/archive';
+        softNavigate('/archive');
         break;
 
       case 't':
