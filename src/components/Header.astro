@@ -15,10 +15,10 @@ const latestMonth = latestDate ? latestDate.slice(0, 7) : "";
     <span class="text-[var(--color-text-muted)] font-light text-lg"> / DEV</span>
   </a>
   <nav class="flex items-center justify-center gap-4 md:gap-6 order-last md:order-none w-full md:w-auto">
-    <a href="/archive" class="uppercase text-[11px] tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">archive</a>
     <a href="/" class="uppercase text-[11px] tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">daily</a>
     <a href={`/weekly/${latestWeek}`} class="uppercase text-[11px] tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">weekly</a>
     <a href={`/monthly/${latestMonth}`} class="uppercase text-[11px] tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">monthly</a>
+    <a href="/archive" class="uppercase text-[11px] tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors no-underline">archive</a>
     <a href="/subscribe" class="uppercase text-[11px] tracking-widest text-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors no-underline">subscribe</a>
   </nav>
   <button
