@@ -50,9 +50,10 @@ stories:
   # ... 4 more stories
 ```
 
-Then commit and push:
+Then generate the OG image and commit:
 ```bash
-git add src/content/digests/
+npm run build:og
+git add src/content/digests/ public/og/
 git commit -m "digest: YYYY-MM-DD"
 git push
 ```

@@ -2,14 +2,45 @@
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 
+interface Story {
+  title: string;
+  summary: string;
+  url: string;
+  source: string;
+  tag: string;
+  significance: number;
+}
+
 interface Props {
   title: string;
   description?: string;
   digestDate?: string;
+  stories?: Story[];
 }
 
-const { title, description = "Top 5 developer-centric AI stories, curated daily.", digestDate } = Astro.props;
+const { title, description = "Top 5 developer-centric AI stories, curated daily.", digestDate, stories } = Astro.props;
 const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.url;
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AI Daily Dev",
+  "url": Astro.site?.toString() ?? "",
+  "description": "Top developer-centric AI stories, curated daily by Claude.",
+  "inLanguage": "en",
+};
+
+const itemListSchema = stories?.length ? {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": title,
+  "itemListElement": stories.map((s, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": s.title,
+    "url": s.url,
+  })),
+} : null;
 ---
 
 <!doctype html>
@@ -27,8 +58,18 @@ const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astr
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
+    {digestDate && <meta property="og:image" content={`https://ai-daily.dev/og/${digestDate}.png`} />}
+    {digestDate && <meta property="og:image:width" content="1200" />}
+    {digestDate && <meta property="og:image:height" content="630" />}
+    <meta name="twitter:card" content={digestDate ? "summary_large_image" : "summary"} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {digestDate && <meta name="twitter:image" content={`https://ai-daily.dev/og/${digestDate}.png`} />}
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="AI Daily Dev" href="/feed.xml" />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    {itemListSchema && <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />}
     <ClientRouter />
     <script is:inline>
       if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light');

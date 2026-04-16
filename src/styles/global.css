@@ -30,6 +30,8 @@
   --color-tag-open-source: #8b5cf6;
   --color-tag-frameworks-bg: color-mix(in srgb, #a855f7 6%, transparent);
   --color-tag-frameworks: #a855f7;
+  --color-tag-community-bg: color-mix(in srgb, #06b6d4 6%, transparent);
+  --color-tag-community: #06b6d4;
 }
 
 body {
@@ -66,4 +68,6 @@ html.light {
   --color-tag-open-source: #6d28d9;
   --color-tag-frameworks-bg: color-mix(in srgb, #7e22ce 12%, transparent);
   --color-tag-frameworks: #7e22ce;
+  --color-tag-community-bg: color-mix(in srgb, #0891b2 12%, transparent);
+  --color-tag-community: #0891b2;
 }

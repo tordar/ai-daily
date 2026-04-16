@@ -24,12 +24,13 @@ const title = `AI Daily Dev — ${formattedDate}`;
 const description = `Today: ${stories[0].title}, ${stories[1].title}, and more.`;
 ---
 
-<Base title={title} description={description} digestDate={date}>
+<Base title={title} description={description} digestDate={date} stories={stories}>
   <Header />
   <ShortcutBar />
   <DateNav date={date} prevDate={prevDate} />
 
   <main class="px-5 py-6">
+    <h1 class="sr-only">AI Daily Dev — {formattedDate}</h1>
     {stories.map((story, idx) => (
       <StoryCard story={story} index={idx + 1} />
     ))}

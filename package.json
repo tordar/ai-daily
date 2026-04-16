@@ -7,14 +7,23 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node --import tsx scripts/generate-og.ts && astro build",
+    "build:og": "node --import tsx scripts/generate-og.ts",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
     "@fontsource/geist-sans": "^5.2.5",
+    "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.7",
+    "satori": "^0.26.0",
     "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "yaml": "^2.8.3"
   }
 }
