@@ -73,7 +73,13 @@ const itemListSchema = stories?.length ? {
     {itemListSchema && <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />}
     <ClientRouter />
     <script is:inline>
-      if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light');
+      function applyTheme() {
+        var stored = localStorage.getItem('theme');
+        var isLight = stored ? stored === 'light' : window.matchMedia('(prefers-color-scheme: light)').matches;
+        document.documentElement.classList.toggle('light', isLight);
+      }
+      applyTheme();
+      document.addEventListener('astro:after-swap', applyTheme);
     </script>
   </head>
   <body data-digest-date={digestDate}>
