@@ -29,10 +29,27 @@ You are generating today's digest for ai-daily.dev, a developer-focused AI news 
 4. Collect all candidate stories (aim for 15-20 candidates)
 5. Deduplicate — the same story often appears on multiple sources
 6. Rank by: How many people are talking about it? Is it a new capability developers can use today? Is it genuinely surprising or significant?
-7. Select the top 5
+7. Select the top 5-7
 8. Write a 2-3 sentence summary for each — factual, specific, no hype. Include concrete details (model name, benchmark scores, pricing, availability)
-9. Assign a tag: models, tools, research, industry, open-source, frameworks
+9. Assign a tag: models, tools, research, industry, open-source, frameworks, community
 10. Assign significance 1-5 (5 = everyone in AI is talking about this)
+
+## Superseded stories — CRITICAL
+
+After writing today's digest, scan this week's earlier digests (in `src/content/digests/`) for stories that today's news makes obsolete. Examples:
+- "X expected to launch this week" → X actually launched today → the earlier rumor is now stale
+- "Company valued at $Y" → new valuation announced → old number is outdated
+- "Model scores Z on benchmark" → newer model beats it → old story is less significant
+
+For any superseded story, **edit the earlier digest file** and reduce its `significance` to 1. This ensures the weekly/monthly rollups show the actual event, not the rumor that preceded it.
+
+```bash
+# Example: if 2026-04-15.yaml had "Opus 4.7 expected to launch" at significance 5,
+# and today Opus 4.7 actually launched, edit 2026-04-15.yaml to set that story to significance 1.
+# Then today's "Opus 4.7 launches" story at significance 5 will rank higher in the weekly rollup.
+```
+
+Always commit the edited earlier files along with today's new digest.
 
 ## Output
 

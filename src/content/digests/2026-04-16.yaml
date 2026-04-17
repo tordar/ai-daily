@@ -5,7 +5,7 @@ stories:
     url: "https://dataconomy.com/2026/04/15/anthropic-to-launch-claude-opus-4-7-this-week/"
     source: "dataconomy.com"
     tag: "models"
-    significance: 5
+    significance: 1
   - title: "Claude Mythos: 93.9% SWE-bench, Found Zero-Days in Every Major OS"
     summary: "Anthropic confirmed Claude Mythos, scoring 93.9% on SWE-bench Verified and 97.6% on USAMO. The model autonomously discovered zero-day vulnerabilities in every major OS and browser during testing, including a 27-year-old OpenBSD bug. Access restricted to 50 organizations under Project Glasswing."
     url: "https://www.infoq.com/news/2026/04/anthropic-claude-mythos/"

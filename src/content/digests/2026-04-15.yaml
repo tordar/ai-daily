@@ -5,7 +5,7 @@ stories:
     url: "https://dataconomy.com/2026/04/15/anthropic-to-launch-claude-opus-4-7-this-week/"
     source: "dataconomy.com"
     tag: "models"
-    significance: 5
+    significance: 1
   - title: "Gemma 4 Goes Viral — Developers Test Google's Best Open Model on Claude Code"
     summary: "Gemma 4's Apache 2.0 release sparked a wave of testing across the developer community. Medium posts and Reddit threads show it scoring competitively on code tasks when used with Claude Code. The 31B model's 256K context and zero licensing cost are driving rapid adoption."
     url: "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
