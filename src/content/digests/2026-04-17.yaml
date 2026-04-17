@@ -13,6 +13,13 @@ stories:
     source: "openai.com"
     tag: "frameworks"
     significance: 4
+  - title: "Cal.com Goes Closed Source, Citing AI-Powered Attack Surface"
+    summary: "Cal.com announced on April 15 that it's relicensing its main scheduling codebase from open source to a proprietary license, arguing that AI coding tools now let attackers scan public repositories for vulnerabilities 100x faster. The company simultaneously launched Cal.diy, a stripped-down MIT-licensed fork for hobbyists. The announcement sparked a 500+ comment debate across two Hacker News threads about open-source sustainability in the AI era."
+    url: "https://cal.com/blog/cal-com-goes-closed-source-why"
+    image: "https://framerusercontent.com/images/kbv1qXf6TM85jTRqb8m0ToBSh8.png"
+    source: "cal.com"
+    tag: "industry"
+    significance: 3
   - title: "Google AI Mode in Chrome Gets Split-Screen and Reusable Skills"
     summary: "Google rolled out a major AI Mode update in Chrome on April 16, adding split-screen browsing (linked pages open side-by-side with the AI panel), cross-tab search (use any open tab or PDF as context), and AI Skills (save and replay custom prompts one-click across any page). The update is live now for English US users on Chrome desktop, Android, and iOS."
     url: "https://blog.google/products-and-platforms/products/search/ai-mode-chrome/"
@@ -21,16 +28,9 @@ stories:
     tag: "tools"
     significance: 3
   - title: "NVIDIA Launches Ising: First Open AI Models for Quantum Processor Calibration"
-    summary: "NVIDIA released Ising, the first open model family purpose-built for quantum processor calibration and error correction. The 35B-parameter vision-language Ising Calibration model compresses multi-day manual calibration workflows to hours, while Ising Decoding achieves 3x higher accuracy and 2.5x faster throughput on real-time quantum error correction. Both models and training code are available on Hugging Face under an open license."
+    summary: "NVIDIA released Ising on April 15, the first open model family purpose-built for quantum processor calibration and error correction. The 35B-parameter Ising Calibration model compresses multi-day manual calibration workflows to hours, and Ising Decoding achieves 3x higher accuracy and 2.5x faster throughput on real-time quantum error correction versus existing tools. Both models and training code are on Hugging Face under an open license; adopters include IonQ, IQM, Fermi National Lab, and Harvard."
     url: "https://nvidianews.nvidia.com/news/nvidia-launches-ising-the-worlds-first-open-ai-models-to-accelerate-1y3iunkxjabi"
     image: "http://nvidianews.nvidia.com/media/sites/219/images/social-image.jpg"
     source: "nvidianews.nvidia.com"
     tag: "research"
-    significance: 3
-  - title: "Cal.com Goes Closed Source, Citing AI-Powered Attack Surface"
-    summary: "Cal.com announced on April 15 that it's relicensing its main scheduling codebase from open source to a proprietary license, arguing that AI coding tools now let attackers scan public repositories for vulnerabilities 100x faster. The company simultaneously launched Cal.diy, a stripped-down MIT-licensed fork for hobbyists. The announcement sparked a 500+ comment debate across two Hacker News threads about open-source sustainability in the AI era."
-    url: "https://cal.com/blog/cal-com-goes-closed-source-why"
-    image: "https://framerusercontent.com/images/kbv1qXf6TM85jTRqb8m0ToBSh8.png"
-    source: "cal.com"
-    tag: "industry"
     significance: 3
