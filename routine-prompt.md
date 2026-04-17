@@ -2,54 +2,67 @@
 
 You are generating today's digest for ai-daily.dev, a developer-focused AI news site.
 
-## What to look for (in priority order)
+## Philosophy
 
-1. **New features and products** from Anthropic, OpenAI, Google, Meta, Mistral, xAI, and other major AI companies
-2. **New model releases** — launches, benchmarks, availability, pricing changes
-3. **Breaking and viral news** — anything the AI community is actively talking about right now
-4. **Community buzz** — what's trending on Hacker News, Reddit (r/LocalLLaMA, r/MachineLearning), X/Twitter
-5. **GitHub trending repos** — new AI/ML repos blowing up in stars, breakout developer tools
-6. **YouTube AI creators** — noteworthy videos from AI Explained, Fireship, Two Minute Papers, Matthew Berman, ThePrimeagen that are getting views/discussion
+The best digest reflects what developers are ACTUALLY talking about, not just what companies announce. A press release is only interesting if people are reacting to it. Lead with community signal, not corporate comms.
+
+The ideal mix for each daily digest:
+- 2-3 stories where the community is genuinely excited (HN front page, Reddit hot, viral tweet, YouTube videos getting views)
+- 1-2 major releases or announcements (only if they're significant enough that people are actually discussing them)
+- 1 trending GitHub repo or tool
+- 1 interesting take, thread, or video that reframes how developers think about AI
+
+## How to rank stories
+
+**Signal strength matters more than source prestige.** Use this hierarchy:
+
+1. **Multiple communities talking about it** (HN + Reddit + Twitter + YouTube = top story)
+2. **YouTube creator made a dedicated video** (Fireship, AI Explained, Matthew Berman covering it = clearly significant)
+3. **HN front page or Reddit top post** with 100+ comments (genuine developer interest)
+4. **Trending GitHub repo** with high star velocity this week
+5. **Major release** that developers can use today (not "coming soon", not "in beta for 50 orgs")
+6. **Official blog post** with no visible community reaction (lowest priority — include only if genuinely impactful)
+
+## What to look for
+
+1. **What the community is buzzing about** — check HN, Reddit, X/Twitter FIRST
+2. **YouTube AI creators** — if Fireship, AI Explained, Matthew Berman, ThePrimeagen, or Wes Roth posted a video about something, it's news. Include the YouTube link as the source URL when the video IS the story.
+3. **Trending repos and tools** — GitHub trending, Trendshift, HuggingFace trending models
+4. **New releases developers can actually use** — shipped products, not announcements
+5. **Viral demos, threads, or takes** — sometimes a tweet or demo is the story
 
 ## What to skip
 
-- **Anything older than 48 hours** — if you can't confirm it happened yesterday or today, don't include it. Blog posts summarizing weeks/months of growth are NOT breaking news.
-- Funding rounds and business deals (unless massive/industry-shifting)
-- Opinion pieces and think-pieces
-- AI policy/regulation (unless it directly affects developers)
-- Rehashes of old news
-- Minor version bumps or patch releases
-- GitHub repos that have been popular for weeks/months — only include repos that are NEW or just hit a milestone TODAY
+- **Anything older than 48 hours** — blog posts summarizing weeks/months of growth are NOT news
+- **Press releases with no community signal** — if nobody's talking about it, it's not a top story
+- "Coming soon" announcements — wait until it ships
+- Funding rounds (unless they change the competitive landscape)
+- Opinion pieces without substance
+- Minor version bumps
 
 ## Process
 
-1. Read `sources.yaml` in this repo for the list of sources to check
-2. Use web_search broadly: "AI news today", "AI announcements today", check each priority 1 source
-3. Use web_fetch on specific source URLs to find what's new in the last 24 hours
-4. Collect all candidate stories (aim for 15-20 candidates)
-5. Deduplicate — the same story often appears on multiple sources
-6. Rank by: How many people are talking about it? Is it a new capability developers can use today? Is it genuinely surprising or significant?
-7. Select the top 5-7
-8. Write a 2-3 sentence summary for each — factual, specific, no hype. Include concrete details (model name, benchmark scores, pricing, availability)
-9. Assign a tag: models, tools, research, industry, open-source, frameworks, community
-10. Assign significance 1-5 (5 = everyone in AI is talking about this)
+1. Read `sources.yaml` in this repo for the full source list
+2. **Start with community sources**: search HN, Reddit, X/Twitter for today's AI buzz
+3. **Check YouTube creators**: search for new videos from the creators in sources.yaml
+4. **Check GitHub trending**: look for AI/ML repos with high star velocity
+5. **Then check official sources**: company blogs, changelogs — but only to add context to stories you've already found via community signal
+6. Collect 20+ candidates from across all categories
+7. Rank using the hierarchy above — community signal first
+8. Select top 5-7 stories with a good mix (don't let it be all press releases)
+9. Write 2-3 sentence factual summaries with specific details (benchmark scores, star counts, view counts, comment counts — concrete numbers)
+10. For YouTube stories, link to the video. For Reddit/HN stories, link to the discussion. For repos, link to GitHub. Only link to official blog posts when they're the primary source.
+11. Assign tags: models, tools, research, industry, open-source, frameworks, community
+12. Assign significance 1-5 (5 = multiple communities buzzing about this)
 
 ## Superseded stories — CRITICAL
 
-After writing today's digest, scan this week's earlier digests (in `src/content/digests/`) for stories that today's news makes obsolete. Examples:
-- "X expected to launch this week" → X actually launched today → the earlier rumor is now stale
-- "Company valued at $Y" → new valuation announced → old number is outdated
-- "Model scores Z on benchmark" → newer model beats it → old story is less significant
+After writing today's digest, scan this week's earlier digests (in `src/content/digests/`) for stories that today's news makes obsolete:
+- Rumor → actual launch (downgrade the rumor to significance 1)
+- Old benchmark → beaten by new model (downgrade the old story)
+- "Expected to ship" → actually shipped (downgrade the expectation)
 
-For any superseded story, **edit the earlier digest file** and reduce its `significance` to 1. This ensures the weekly/monthly rollups show the actual event, not the rumor that preceded it.
-
-```bash
-# Example: if 2026-04-15.yaml had "Opus 4.7 expected to launch" at significance 5,
-# and today Opus 4.7 actually launched, edit 2026-04-15.yaml to set that story to significance 1.
-# Then today's "Opus 4.7 launches" story at significance 5 will rank higher in the weekly rollup.
-```
-
-Always commit the edited earlier files along with today's new digest.
+Edit the earlier digest file to reduce significance to 1 for any superseded story.
 
 ## Output
 
@@ -64,7 +77,7 @@ stories:
     source: "domain.com"
     tag: "models"
     significance: 5
-  # ... 4 more stories
+  # ... more stories (5-7 total)
 ```
 
 Then generate the OG image and commit:

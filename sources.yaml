@@ -1,133 +1,180 @@
 # ai-daily.dev — News Sources Configuration
 #
-# Edit this file to change where the daily routine looks for news.
-# Priority 1 sources are always checked. Priority 2 fill gaps.
+# The routine should check ALL sources, not stop after finding 5 stories.
+# Collect 20+ candidates from across all categories, then rank holistically.
+#
+# The best digest has a MIX: 2-3 big announcements + 2-3 community/creator picks + 1 trending repo or tool.
 
-# ── What we're looking for ──────────────────────────────────────
-# 1. New features/products from major AI companies
-# 2. New model releases and benchmarks
-# 3. Breaking and viral AI news
-# 4. What the community is buzzing about
+# ── What makes a good story ────────────────────────────────────
+# - Something developers can USE today (new tool, model, API)
+# - Something the community is genuinely excited about (HN front page, Reddit top, viral tweet)
+# - A YouTube video that's getting massive engagement on a new development
+# - A GitHub repo that just exploded in stars
+# - A take or thread that reframes how people think about AI dev
+#
+# Official blog posts are SUPPORTING EVIDENCE, not stories by themselves.
+# "Anthropic shipped X" is less interesting than "developers are using X to do Y"
 
 sources:
-  # ── Major AI Companies (Priority 1) ───────────────────────────
-  - name: Anthropic
-    url: https://www.anthropic.com/news
-    type: fetch
-    priority: 1
+  # ── Community & Social (check FIRST) ──────────────────────────
+  # These tell you what people actually care about RIGHT NOW
 
-  - name: OpenAI
-    url: https://openai.com/news
-    type: fetch
-    priority: 1
-
-  - name: Google DeepMind
-    url: https://deepmind.google/discover/blog/
-    type: fetch
-    priority: 1
-
-  - name: Google AI for Developers
-    url: https://ai.google.dev/gemini-api/docs/changelog
-    type: fetch
-    priority: 1
-
-  - name: Meta AI
-    url: https://ai.meta.com/blog/
-    type: fetch
-    priority: 1
-
-  - name: Mistral
-    url: https://mistral.ai/news
-    type: fetch
-    priority: 1
-
-  - name: xAI
-    url: https://x.ai/blog
-    type: fetch
-    priority: 1
-
-  # ── Developer Platforms (Priority 1) ──────────────────────────
-  - name: HuggingFace
-    url: https://huggingface.co/blog
-    type: fetch
-    priority: 1
-
-  - name: GitHub Blog
-    url: https://github.blog/ai-and-ml/
-    type: fetch
-    priority: 1
-
-  # ── Community Buzz (Priority 1) ───────────────────────────────
   - name: Hacker News
     url: https://news.ycombinator.com
     type: search
     priority: 1
-    note: Top AI stories on HN front page — proxy for developer buzz
+    query: "site:news.ycombinator.com AI OR LLM OR Claude OR GPT OR model"
+    note: Top AI stories on HN — the best signal for developer interest. Check front page and top/recent.
 
   - name: Reddit r/LocalLLaMA
     url: https://www.reddit.com/r/LocalLLaMA/
     type: search
     priority: 1
-    note: Open-source model community — first to notice new releases
+    query: "site:reddit.com/r/LocalLLaMA top this week"
+    note: Open-source model community. First to benchmark new models, find tricks, spot issues.
 
   - name: Reddit r/MachineLearning
     url: https://www.reddit.com/r/MachineLearning/
     type: search
     priority: 1
-    note: Research and industry ML community
+    query: "site:reddit.com/r/MachineLearning top this week"
+    note: Research + industry ML. Paper discussions, industry moves.
+
+  - name: Reddit r/ClaudeAI
+    url: https://www.reddit.com/r/ClaudeAI/
+    type: search
+    priority: 1
+    query: "site:reddit.com/r/ClaudeAI top this week"
+    note: Claude-specific community — catches features, bugs, workflows.
+
+  - name: Reddit r/ChatGPT
+    url: https://www.reddit.com/r/ChatGPT/
+    type: search
+    priority: 2
+    query: "site:reddit.com/r/ChatGPT top this week"
 
   - name: X/Twitter AI
     type: search
     priority: 1
-    query: "AI viral OR trending OR announcement"
-    note: Breaking news and viral takes
+    query: "AI viral announcement today from:@AnthropicAI OR from:@OpenAI OR from:@GoogleAI OR trending"
+    note: Breaking news, viral demos, hot takes
 
-  # ── GitHub Trending (Priority 1) ──────────────────────────────
-  - name: GitHub Trending
-    url: https://github.com/trending
+  # ── YouTube Creators (check FIRST) ────────────────────────────
+  # These are how most developers actually learn about new AI stuff
+
+  - name: Fireship
+    url: https://www.youtube.com/@Fireship
     type: search
     priority: 1
-    query: "GitHub trending AI ML repository this week"
-    note: New repos blowing up — often the first signal of a breakout tool
+    query: "Fireship AI new video this week"
+    note: If Fireship covered it, it matters. 100 seconds format = signal of mainstream relevance.
 
-  - name: Trendshift
-    url: https://trendshift.io
-    type: search
-    priority: 2
-    note: GitHub trending analytics with star velocity
-
-  # ── YouTube AI Creators (Priority 2) ──────────────────────────
   - name: AI Explained
     url: https://www.youtube.com/@aiexplained-official
     type: search
-    priority: 2
-    note: Deep dives on new models and capabilities
+    priority: 1
+    query: "AI Explained new video this week"
+    note: Deep technical breakdowns. If he made a video, it's significant.
+
+  - name: Matthew Berman
+    url: https://www.youtube.com/@matthew_berman
+    type: search
+    priority: 1
+    query: "Matthew Berman AI new video this week"
+    note: First to review new models. Practical developer perspective.
+
+  - name: ThePrimeagen
+    url: https://www.youtube.com/@ThePrimeagen
+    type: search
+    priority: 1
+    query: "ThePrimeagen AI new video this week"
+    note: Developer reactions to AI tools and news.
 
   - name: Two Minute Papers
     url: https://www.youtube.com/@TwoMinutePapers
     type: search
     priority: 2
-    note: Research paper breakdowns
+    query: "Two Minute Papers new video this week"
+    note: Research paper breakdowns with demos.
 
-  - name: Matthew Berman
-    url: https://www.youtube.com/@matthew_berman
+  - name: Wes Roth
+    url: https://www.youtube.com/@WesRoth
     type: search
     priority: 2
-    note: Model reviews and comparisons
+    query: "Wes Roth AI new video this week"
+    note: AI news commentary and analysis.
 
-  - name: Fireship
-    url: https://www.youtube.com/@Fireship
+  - name: Dave's Garage
+    url: https://www.youtube.com/@DavesGarage
     type: search
     priority: 2
-    note: Fast-paced dev news, often covers AI tooling
+    query: "Dave's Garage AI new video this week"
+    note: Practical AI coding and tool comparisons.
 
-  - name: ThePrimeagen
-    url: https://www.youtube.com/@ThePrimeagen
+  # ── GitHub Trending ───────────────────────────────────────────
+
+  - name: GitHub Trending
+    url: https://github.com/trending
     type: search
-    priority: 2
-    note: Developer perspective on AI tools
+    priority: 1
+    query: "GitHub trending AI ML repository today this week new stars"
+    note: New repos blowing up. Star velocity > total stars.
 
-  # ── Tech Press (Priority 2) ───────────────────────────────────
+  - name: Trendshift
+    url: https://trendshift.io
+    type: search
+    priority: 1
+    query: "trendshift.io AI trending repositories"
+    note: Star velocity analytics — catches breakout tools early.
+
+  - name: HuggingFace Trending
+    url: https://huggingface.co/models
+    type: search
+    priority: 1
+    query: "HuggingFace trending models this week most downloaded"
+    note: Which models are developers actually downloading and using.
+
+  # ── Official Sources (check for CONTEXT) ──────────────────────
+  # Don't lead with these — use them to fill in details on stories
+  # found via community/social sources above
+
+  - name: Anthropic
+    url: https://www.anthropic.com/news
+    type: fetch
+    priority: 2
+
+  - name: OpenAI
+    url: https://openai.com/news
+    type: fetch
+    priority: 2
+
+  - name: Google DeepMind
+    url: https://deepmind.google/discover/blog/
+    type: fetch
+    priority: 2
+
+  - name: Google AI Developers
+    url: https://ai.google.dev/gemini-api/docs/changelog
+    type: fetch
+    priority: 2
+
+  - name: Meta AI
+    url: https://ai.meta.com/blog/
+    type: fetch
+    priority: 2
+
+  - name: Mistral
+    url: https://mistral.ai/news
+    type: fetch
+    priority: 2
+
+  - name: xAI
+    url: https://x.ai/blog
+    type: fetch
+    priority: 2
+
+  # ── Tech Press (for stories that cross into mainstream) ───────
+
   - name: TechCrunch AI
     url: https://techcrunch.com/category/artificial-intelligence/
     type: fetch
@@ -143,9 +190,10 @@ sources:
     type: fetch
     priority: 2
 
-  # ── Aggregators (Priority 2) ──────────────────────────────────
+  # ── Catch-All ─────────────────────────────────────────────────
+
   - name: AI News Search
     type: search
     priority: 1
-    query: "AI news today breaking new release model launch"
-    note: Catch-all for stories missed by specific sources
+    query: "AI developer news today what's new this week biggest stories"
+    note: Broad search to catch anything missed above
