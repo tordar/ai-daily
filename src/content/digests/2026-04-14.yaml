@@ -9,18 +9,21 @@ stories:
   - title: "Microsoft's markitdown Converts Any Doc to LLM-Ready Markdown"
     summary: "Microsoft open-sourced markitdown, converting PDFs, DOCX, PPTX, HTML and other formats into clean Markdown suitable for LLM context windows. Gained 3,600+ stars in its first week. Solves a pain point every RAG pipeline developer has hit."
     url: "https://github.com/microsoft/markitdown"
+    image: "https://opengraph.githubassets.com/bdd8a38bd7e6d06ef82ab373e4eab8bc898e18f29a39a49dca39b8068fd86c02/microsoft/markitdown"
     source: "github.com"
     tag: "open-source"
     significance: 4
   - title: "Google ADK Becomes the Most Complete Multi-Agent Framework"
     summary: "Google's Agent Development Kit (adk-python) hit 8,200+ stars and emerged as the most fully-featured multi-agent framework this month. Meanwhile Block's Goose takes a different approach: local-first with native MCP support for tool integration."
     url: "https://github.com/google/adk-python"
+    image: "https://repository-images.githubusercontent.com/958830659/9d57973c-4761-4c31-b073-c8dbeb9728d5"
     source: "github.com"
     tag: "frameworks"
     significance: 4
   - title: "Harvey Launches End-to-End Autonomous Legal Agents"
     summary: "Harvey shipped legal agents that autonomously draft memos, diligence reports, and presentations. The agents reason through complex legal problems end-to-end and produce review-ready documents, marking a shift from AI-assisted to AI-led legal work."
     url: "https://www.harvey.ai"
+    image: "https://cdn.sanity.io/images/07s0r5r6/production/9a4b2e0eec438fb56057db128a11ade2c04c01cf-2400x1260.png"
     source: "harvey.ai"
     tag: "tools"
     significance: 3

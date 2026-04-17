@@ -27,12 +27,14 @@ stories:
   - title: "Google Adds Tab Tab Tab Prompt Autocomplete to AI Studio"
     summary: "Google added a Gemini-powered prompt autocomplete feature called Tab Tab Tab to AI Studio's vibe coding mode. It automatically fills in vague or incomplete prompts, lowering the bar for generating precise code generation instructions."
     url: "https://ai.google.dev/gemini-api/docs/changelog"
+    image: "https://ai.google.dev/static/site-assets/images/release-notes.png"
     source: "ai.google.dev"
     tag: "tools"
     significance: 3
   - title: "C3 AI Launches C3 Code — Enterprise Apps from Natural Language"
     summary: "C3 AI released C3 Code, combining autonomous agentic coding with the C3 Agentic AI Platform. Business analysts describe requirements in natural language and agents handle designing, configuring, testing, and deploying production-grade enterprise AI apps."
     url: "https://c3.ai/c3-ai-announces-c3-code/"
+    image: "https://c3.ai/wp-content/uploads/2026/04/C3-Code-Social-Ad-1080x1080-1.png"
     source: "c3.ai"
     tag: "tools"
     significance: 3

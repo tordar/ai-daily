@@ -3,6 +3,7 @@ stories:
   - title: "MiniMax Ships M2.7 — Open-Source Self-Evolving Agent Model"
     summary: "MiniMax released M2.7, hitting 56.22% on SWE-Pro and 57.0% on Terminal Bench 2. The model's three-component system (short-term memory, self-feedback, self-optimization) lets it improve over 24-hour windows. Medal rate of 66.6% matches Gemini-3.1, trailing only Claude Opus-4.6 (75.7%) and GPT-5.4 (71.2%)."
     url: "https://www.minimax.io"
+    image: "https://filecdn.minimax.chat/public/58eca777-e31f-448a-9823-e2220e49b426.png"
     source: "minimax.io"
     tag: "open-source"
     significance: 5
@@ -27,6 +28,7 @@ stories:
   - title: "Notion Ships 'Computer' Feature for AI Agents"
     summary: "Notion's AI agents can now run in custom VM environments with the new Computer feature. Includes model selection, trusted URL whitelisting, and custom scripts. Effectively turns Notion into an agent orchestration platform, not just a docs tool."
     url: "https://www.notion.so"
+    image: "https://www.notion.com/front-static/meta/custom-agents-og.png"
     source: "notion.so"
     tag: "tools"
     significance: 3

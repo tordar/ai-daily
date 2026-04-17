@@ -9,12 +9,14 @@ stories:
   - title: "Google Releases Gemma 4 Under Apache 2.0 — Most Capable Open Model Family"
     summary: "Google shipped Gemma 4 in four sizes with native vision, audio, function calling, 256K context, and 140+ language support. The flagship 31B model scores 80% on LiveCodeBench and 89.2% on AIME 2026. Apache 2.0 license means zero restrictions for commercial use."
     url: "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"
+    image: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemma-4_blog_keyword_meta-dark.width-1300.png"
     source: "blog.google"
     tag: "models"
     significance: 5
   - title: "Anthropic Expands Google/Broadcom Partnership — 3.5 GW of TPU Capacity"
     summary: "Anthropic signed its largest compute deal yet with Google and Broadcom, securing approximately 3.5 gigawatts of next-gen TPU capacity starting 2027. This adds to roughly 1 GW of Google compute already committed for 2026. CFO Krishna Rao called it their most significant compute commitment to date."
     url: "https://www.anthropic.com/news/google-broadcom-partnership-compute"
+    image: "https://www.anthropic.com/api/opengraph-illustration?name=Object%20Growth&backgroundColor=fig"
     source: "anthropic.com"
     tag: "industry"
     significance: 4
@@ -39,6 +41,7 @@ stories:
   - title: "Stanford AI Index 2026 Report Published"
     summary: "Stanford's annual AI Index report dropped, showing AI-related publications now represent 6-9% of all natural sciences papers. The report provides the most comprehensive data-driven snapshot of AI's current state across industry, research, and policy."
     url: "https://spectrum.ieee.org/state-of-ai-index-2026"
+    image: "https://spectrum.ieee.org/media-library/image.jpg?id=65506010&width=1200&height=600&coordinates=0%2C250%2C0%2C250"
     source: "spectrum.ieee.org"
     tag: "research"
     significance: 3

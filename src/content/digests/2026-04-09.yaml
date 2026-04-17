@@ -21,6 +21,7 @@ stories:
   - title: "Hermes Agent v0.8.0 Ships with Self-Optimizing Benchmarks"
     summary: "Nous Research released Hermes Agent v0.8.0, merging 209 PRs and resolving 82 issues. New features include self-optimizing benchmarking, live model switching, and background task notifications. The release pushed Hermes to 35K+ GitHub stars."
     url: "https://github.com/NousResearch/hermes-agent"
+    image: "https://opengraph.githubassets.com/1/NousResearch/hermes-agent"
     source: "github.com"
     tag: "open-source"
     significance: 4

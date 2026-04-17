@@ -3,6 +3,7 @@ interface Story {
   title: string;
   summary: string;
   url: string;
+  image?: string;
   source: string;
   tag: string;
   significance: number;
@@ -14,7 +15,7 @@ interface Props {
 }
 
 const { index, story } = Astro.props;
-const { title, summary, url, source, tag } = story;
+const { title, summary, url, image, source, tag } = story;
 
 const indexFormatted = String(index).padStart(2, "0");
 
@@ -29,6 +30,8 @@ const tagStyles: Record<string, { bg: string; text: string }> = {
 };
 
 const tagStyle = tagStyles[tag] ?? { bg: "transparent", text: "var(--color-text-muted)" };
+
+const isYouTube = source.includes("youtube.com") || source.includes("youtu.be");
 ---
 
 <div
@@ -53,4 +56,24 @@ const tagStyle = tagStyles[tag] ?? { bg: "transparent", text: "var(--color-text-
       <span class="text-[11px] text-[var(--color-text-muted)]">{source}</span>
     </div>
   </div>
+  {image && (
+    <a href={url} target="_blank" rel="noopener noreferrer" class="hidden sm:block shrink-0">
+      <div class="relative w-[130px] h-[85px] rounded overflow-hidden bg-[var(--color-border-section)]">
+        <img
+          src={image}
+          alt=""
+          loading="lazy"
+          class="w-full h-full object-cover"
+          onerror="this.parentElement.style.display='none'"
+        />
+        {isYouTube && (
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+            <div class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center">
+              <span class="text-white text-xs ml-0.5">▶</span>
+            </div>
+          </div>
+        )}
+      </div>
+    </a>
+  )}
 </div>
