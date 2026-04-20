@@ -4,24 +4,37 @@ You are generating today's digest for ai-daily.dev, a developer-focused AI news 
 
 ## Philosophy
 
-The best digest reflects what developers are ACTUALLY talking about, not just what companies announce. A press release is only interesting if people are reacting to it. Lead with community signal, not corporate comms.
+The best digest reflects what developers are ACTUALLY talking about, not just what companies announce. Community reaction matters more than press release prestige — but a frontier lab shipping a new product or model is inherently news even before HN catches fire. Balance both.
 
 The ideal mix for each daily digest:
 - 2-3 stories where the community is genuinely excited (HN front page, Reddit hot, viral tweet, YouTube videos getting views)
-- 1-2 major releases or announcements (only if they're significant enough that people are actually discussing them)
+- 1-2 major releases or announcements (always include frontier lab launches; see "Mandatory coverage" below)
 - 1 trending GitHub repo or tool
 - 1 interesting take, thread, or video that reframes how developers think about AI
+
+## Mandatory coverage
+
+Before publishing, you MUST have reviewed every post since the last digest date on:
+- `anthropic.com/news` (Anthropic)
+- `openai.com/news` (OpenAI)
+- `deepmind.google/discover/blog/` (Google DeepMind)
+- `blog.google` (Google — AI-related posts only)
+- `x.ai/news` (xAI)
+- `ai.meta.com/blog/` (Meta AI)
+
+Any **new product launch, new model, new API, or major capability release** from these labs is mandatory inclusion regardless of community signal. Community buzz may lag an announcement by a day or two — don't penalize a story for being fresh. Minor version bumps, hiring posts, and policy/safety essays are NOT mandatory.
 
 ## How to rank stories
 
 **Signal strength matters more than source prestige.** Use this hierarchy:
 
 1. **Multiple communities talking about it** (HN + Reddit + Twitter + YouTube = top story)
-2. **YouTube creator made a dedicated video** (Fireship, AI Explained, Matthew Berman covering it = clearly significant)
-3. **HN front page or Reddit top post** with 100+ comments (genuine developer interest)
-4. **Trending GitHub repo** with high star velocity this week
-5. **Major release** that developers can use today (not "coming soon", not "in beta for 50 orgs")
-6. **Official blog post** with no visible community reaction (lowest priority — include only if genuinely impactful)
+2. **Frontier lab product/model launch** from Anthropic, OpenAI, Google DeepMind, xAI, or Meta AI — inherently top-tier, even if community reaction is still forming
+3. **YouTube creator made a dedicated video** (Fireship, AI Explained, Matthew Berman covering it = clearly significant)
+4. **HN front page or Reddit top post** with 100+ comments (genuine developer interest)
+5. **Trending GitHub repo** with high star velocity this week
+6. **Major release** from any other company that developers can use today (not "coming soon", not "in beta for 50 orgs")
+7. **Official blog post** with no visible community reaction (lowest priority — include only if genuinely impactful)
 
 ## What to look for
 
@@ -34,7 +47,7 @@ The ideal mix for each daily digest:
 ## What to skip
 
 - **Anything older than 48 hours** — blog posts summarizing weeks/months of growth are NOT news
-- **Press releases with no community signal** — if nobody's talking about it, it's not a top story
+- **Press releases with no community signal** — if nobody's talking about it, it's not a top story (EXCEPT frontier lab launches — see "Mandatory coverage")
 - "Coming soon" announcements — wait until it ships
 - Funding rounds (unless they change the competitive landscape)
 - Opinion pieces without substance
@@ -43,17 +56,18 @@ The ideal mix for each daily digest:
 ## Process
 
 1. Read `sources.yaml` in this repo for the full source list
-2. **Start with community sources**: search HN, Reddit, X/Twitter for today's AI buzz
-3. **Check YouTube creators**: search for new videos from the creators in sources.yaml
-4. **Check GitHub trending**: look for AI/ML repos with high star velocity
-5. **Then check official sources**: company blogs, changelogs — but only to add context to stories you've already found via community signal
-6. Collect 20+ candidates from across all categories
-7. Rank using the hierarchy above — community signal first
-8. Select top 5-7 stories with a good mix (don't let it be all press releases)
-9. Write 2-3 sentence factual summaries with specific details (benchmark scores, star counts, view counts, comment counts — concrete numbers)
-10. For YouTube stories, link to the video. For Reddit/HN stories, link to the discussion. For repos, link to GitHub. Only link to official blog posts when they're the primary source.
-11. Assign tags: models, tools, research, industry, open-source, frameworks, community
-12. Assign significance 1-5 (5 = multiple communities buzzing about this)
+2. **Check frontier lab blogs first** (Anthropic, OpenAI, DeepMind, xAI, Meta AI — see "Mandatory coverage"). Identify every new post since the previous digest's date and flag any product/model/API launch for inclusion.
+3. **Then community sources**: search HN, Reddit, X/Twitter for today's AI buzz
+4. **Check YouTube creators**: search for new videos from the creators in sources.yaml
+5. **Check GitHub trending**: look for AI/ML repos with high star velocity
+6. **Other official sources**: other company blogs and changelogs — use to add context or surface mid-tier releases
+7. Collect 20+ candidates from across all categories
+8. Rank using the hierarchy above
+9. Select top 5-7 stories with a good mix. Before finalizing, verify every mandatory-coverage lab has been checked and that any qualifying launch is present.
+10. Write titles and summaries per the craft rules below. Keep summaries to 2-3 sentences (4 only if the extra sentence adds irreplaceable signal), with 2-3 concrete numbers — not every number you found.
+11. For YouTube stories, link to the video. For Reddit/HN stories, link to the discussion. For repos, link to GitHub. Only link to official blog posts when they're the primary source.
+12. Assign tags: models, tools, research, industry, open-source, frameworks, community
+13. Assign significance 1-5 (5 = multiple communities buzzing about this, OR a frontier lab shipping a headline product/model)
 
 ## Superseded stories — CRITICAL
 
@@ -63,6 +77,16 @@ After writing today's digest, scan this week's earlier digests (in `src/content/
 - "Expected to ship" → actually shipped (downgrade the expectation)
 
 Edit the earlier digest file to reduce significance to 1 for any superseded story.
+
+## Title and summary craft
+
+**Titles must be readable at a glance.** Read each title aloud before accepting it.
+- Avoid 3+ comma-separated items, especially when items share a noun ("Grok 4.3 Beta, Grok Computer Private Beta, Grok STT/TTS APIs" is unreadable).
+- One colon or em-dash maximum. Not both.
+- Lead with the subject and the verb — "Anthropic Launches Claude Design" beats "Introducing Claude Design: Anthropic's New Design Product."
+- When a story bundles several sub-releases, pick the headline item and mention the rest in the summary.
+
+**Summaries must be tight.** 2-3 sentences is the default, 4 only when a fourth sentence adds signal nothing else provides. Pick the 2-3 most concrete numbers and cut the rest — every extra stat dilutes the ones that matter.
 
 ## Output
 
