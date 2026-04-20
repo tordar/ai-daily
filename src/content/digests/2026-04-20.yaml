@@ -1,0 +1,43 @@
+date: "2026-04-20"
+stories:
+  - title: "Claude Opus 4.7's 'Stealth Price Hike': New Tokenizer Burns 35–47% More Tokens"
+    summary: "The HN thread on Opus 4.7's tokenizer change hit 674 points and 470 comments — the top developer story of the weekend. The per-token price is officially unchanged at $5/$25 per million, but independent measurements show the new tokenizer produces 35–47% more tokens on the same input, meaning production API costs silently jumped 35–47% with no changelog entry. The community frustration compounds a separate complaint: MRCR (long-document recall) collapsed from 78.3% on Opus 4.6 to 32.2% on 4.7, making the model worse for the routine deep-context tasks developers actually use it for even as SWE-bench scores improved."
+    url: "https://news.ycombinator.com/item?id=47793493"
+    source: "news.ycombinator.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Cloudflare Agents Week Wrapped: Dynamic Workers, Agent Memory, AI Gateway Across 14 Providers"
+    summary: "Cloudflare's week-long developer event (April 13–17) shipped a full agent infrastructure stack. The headline is Dynamic Workers — isolate-based sandboxes that spin up in milliseconds, 100× faster and up to 100× more memory-efficient than containers, priced at $0.002 per unique Worker loaded per day (waived during beta). The rest of the bundle: Agent Memory (managed persistent memory that doesn't bloat the context window), Cloudflare Mesh (private network access scoped for agents), AI Gateway as a unified inference layer across 14+ providers, and the 'Project Think' Agents SDK with durable execution, sub-agents, and self-authored extensions."
+    url: "https://www.cloudflare.com/agents-week/updates/"
+    source: "cloudflare.com"
+    tag: "frameworks"
+    significance: 4
+
+  - title: "xAI Multi-Product Blitz: Grok 4.3 Beta, Grok Computer Private Beta Live, Grok Build Coming 'Next Week'"
+    summary: "xAI dropped Grok 4.3 beta on April 17 with no press release — it just appeared in the model selector, locked to $300/month SuperGrok Heavy subscribers. New capabilities include native PDF, PowerPoint, and spreadsheet generation plus video input, and xAI also quietly shipped standalone STT/TTS APIs covering 25+ languages. In parallel, Grok Computer's private beta went live — an agent that controls your entire desktop by continuously processing the last 5 seconds of screen video. Elon Musk publicly set a 'next week' timeline for Grok Build and Grok CLI, xAI's entry into the agentic coding space currently dominated by Claude Code and Codex."
+    url: "https://www.testingcatalog.com/exclusive-early-look-at-grok-computer-and-grok-build/"
+    source: "testingcatalog.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Stanford 2026 AI Index: SWE-bench Went 60% → Human Baseline in One Year; China Narrows Gap to 2.7%"
+    summary: "Stanford HAI's 423-page 2026 AI Index (released April 14) documents the fastest single-year capability jump on record: SWE-bench Verified performance went from 60% of human baseline to nearly 100% in twelve months. Top models now exceed 50% on Humanity's Last Exam, up from 8.8% a year ago. Two geopolitical findings are generating the most press coverage: China has nearly erased the US AI lead, now trailing by just 2.7 points on the AI Index composite score, and the report contains the first concrete evidence of AI displacing entry-level knowledge workers, even as public trust in AI continues to fall while developer optimism holds steady."
+    url: "https://hai.stanford.edu/ai-index/2026-ai-index-report"
+    source: "hai.stanford.edu"
+    tag: "research"
+    significance: 4
+
+  - title: "Claude Code Game Studios: 49-Agent Studio Hierarchy Trending with 12.4k Stars"
+    summary: "Donchitos/Claude-Code-Game-Studios is GitHub's breakout AI repo this weekend, accumulating 12.4k stars and 1.8k forks. The project organizes 49 specialized Claude Code agents into a real game studio hierarchy — directors who guard creative vision, department leads who own their domains, and hands-on specialists — backed by 72 workflow skills and slash commands for every phase (/start, /design-system, /create-epics, /dev-story, /story-done). Automated hooks validate commits, pushes, asset changes, and session lifecycle, with review intensity configurable from solo mode to full director-gated review."
+    url: "https://github.com/Donchitos/Claude-Code-Game-Studios"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Nature: Human Scientists Still Trounce the Best AI Agents on Complex Research Tasks"
+    summary: "A Nature state-of-the-field report published this month found that AI agents consistently fail to match human scientists on genuinely complex, multi-step research workflows, even as 80,000+ papers mentioned AI in 2025 — 26% more than the year before. Princeton computer scientist Arvind Narayanan warned the growth may not be productive: 'It is happening too fast, without giving scientific norms time to adjust.' The finding is a direct counterpoint to lab claims of imminent autonomous AI-driven science, and it's being widely shared in academic communities as a grounding corrective."
+    url: "https://www.nature.com/articles/d41586-026-01199-z"
+    source: "nature.com"
+    tag: "research"
+    significance: 3
