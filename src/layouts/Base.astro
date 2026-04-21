@@ -143,7 +143,8 @@ const ogType = isArticle ? "article" : "website";
     {digestDate && <meta name="twitter:image" content={`https://www.ai-daily.dev/og/${digestDate}.png`} />}
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="alternate" type="application/rss+xml" title="AI Daily Dev" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="AI Daily Dev (RSS)" href="/feed.xml" />
+    <link rel="alternate" type="application/feed+json" title="AI Daily Dev (JSON Feed)" href="/feed.json" />
     <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
     {itemListSchema && <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />}

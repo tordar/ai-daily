@@ -5,48 +5,105 @@ import ShortcutBar from "../components/ShortcutBar.astro";
 import Footer from "../components/Footer.astro";
 
 const title = "AI Daily Dev — Subscribe";
-const description = "Get the weekly AI developer news roundup in your inbox every Friday.";
+const description = "Follow AI Daily Dev by email, RSS, JSON Feed, or llms.txt.";
+
+const feeds = [
+  {
+    name: "RSS",
+    url: "https://www.ai-daily.dev/feed.xml",
+    note: "Works with Feedly, NetNewsWire, Reeder, Inoreader, Slack's /feed, Discord webhooks, and every other feed reader.",
+  },
+  {
+    name: "JSON Feed",
+    url: "https://www.ai-daily.dev/feed.json",
+    note: "JSON Feed 1.1 — easier to parse than RSS. Supported by NetNewsWire, Feedbin, and most modern readers.",
+  },
+  {
+    name: "llms.txt",
+    url: "https://www.ai-daily.dev/llms.txt",
+    note: "Signals to AI tools what this site is and where the methodology lives. Paste the URL into Claude, ChatGPT, or Perplexity for context.",
+  },
+];
 ---
 
 <Base title={title} description={description}>
   <Header />
   <ShortcutBar />
 
-  <main class="px-6 py-12 max-w-md mx-auto">
-    <h1 class="text-2xl font-bold text-[var(--color-story-title)] tracking-tight mb-3">Weekly Roundup</h1>
-    <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-8">
-      The top AI developer stories of the week, delivered to your inbox every Friday morning. No spam, unsubscribe anytime.
-    </p>
+  <main class="px-6 py-10 max-w-xl mx-auto">
+    <h1 class="text-2xl font-bold text-[var(--color-story-title)] tracking-tight mb-6">Subscribe</h1>
 
-    <div id="subscribe-form">
-      <iframe hidden name="buttondown-frame"></iframe>
-      <form
-        action="https://buttondown.com/api/emails/embed-subscribe/tordar"
-        method="post"
-        target="buttondown-frame"
-        class="flex flex-col gap-3"
-        id="bd-form"
-      >
-        <input
-          type="email"
-          name="email"
-          placeholder="you@example.com"
-          required
-          class="bg-[var(--color-bg)] border border-[var(--color-border-section)] text-[var(--color-text)] px-4 py-3 rounded-sm text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors placeholder:text-[var(--color-text-muted)]"
-        />
-        <button
-          type="submit"
-          id="subscribe-btn"
-          class="bg-[var(--color-accent)] text-[var(--color-bg)] font-semibold text-sm px-4 py-3 rounded-sm hover:opacity-90 transition-opacity cursor-pointer tracking-wide"
+    <section class="mb-12">
+      <h2 class="text-sm font-semibold text-[var(--color-story-title)] uppercase tracking-wider mb-3">Weekly roundup by email</h2>
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-5">
+        The top AI developer stories of the week, delivered to your inbox every Friday morning. No spam, unsubscribe anytime.
+      </p>
+
+      <div id="subscribe-form">
+        <iframe hidden name="buttondown-frame"></iframe>
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/tordar"
+          method="post"
+          target="buttondown-frame"
+          class="flex flex-col sm:flex-row gap-3"
+          id="bd-form"
         >
-          Subscribe
-        </button>
-      </form>
-    </div>
+          <input
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+            class="flex-1 bg-[var(--color-bg)] border border-[var(--color-border-section)] text-[var(--color-text)] px-4 py-3 rounded-sm text-sm focus:outline-none focus:border-[var(--color-accent)] transition-colors placeholder:text-[var(--color-text-muted)]"
+          />
+          <button
+            type="submit"
+            id="subscribe-btn"
+            class="bg-[var(--color-accent)] text-[var(--color-bg)] font-semibold text-sm px-4 py-3 rounded-sm hover:opacity-90 transition-opacity cursor-pointer tracking-wide"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
 
-    <p id="subscribe-success" class="hidden text-sm text-[var(--color-accent)] mt-4 font-medium">
-      Thanks! Check your inbox to confirm your subscription.
-    </p>
+      <p id="subscribe-success" class="hidden text-sm text-[var(--color-accent)] mt-4 font-medium">
+        Thanks! Check your inbox to confirm your subscription.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-sm font-semibold text-[var(--color-story-title)] uppercase tracking-wider mb-3">Feeds</h2>
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-5">
+        Every digest publishes to these feeds the moment it goes live. Point your reader — or your agent — at the URL.
+      </p>
+
+      <ul class="space-y-4">
+        {feeds.map((f) => (
+          <li class="border border-[var(--color-border-section)] rounded-sm p-4">
+            <div class="flex items-center justify-between gap-3 mb-2">
+              <span class="font-semibold text-sm text-[var(--color-story-title)]">{f.name}</span>
+              <button
+                type="button"
+                class="copy-btn text-[11px] font-mono uppercase tracking-wide text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors cursor-pointer"
+                data-copy={f.url}
+              >
+                Copy URL
+              </button>
+            </div>
+            <code class="block text-xs font-mono text-[var(--color-accent)] break-all mb-2">{f.url}</code>
+            <p class="text-xs text-[var(--color-text-secondary)] leading-relaxed">{f.note}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-sm font-semibold text-[var(--color-story-title)] uppercase tracking-wider mb-3">For developers</h2>
+      <ul class="text-sm text-[var(--color-text-secondary)] leading-relaxed list-disc pl-5 space-y-1.5">
+        <li>Quick check from the terminal: <code class="text-xs font-mono bg-[var(--color-border-section)] px-1.5 py-0.5 rounded">curl -s https://www.ai-daily.dev/feed.json | jq '.items[0]'</code></li>
+        <li>Every digest's raw YAML lives at <a href="https://github.com/tordar/ai-daily/tree/main/src/content/digests" class="text-[var(--color-accent)] hover:underline">github.com/tordar/ai-daily</a> — stable, parseable, open source.</li>
+        <li>See the <a href="/about" class="text-[var(--color-accent)] hover:underline">editorial methodology</a> for how stories are selected.</li>
+      </ul>
+    </section>
   </main>
 
   <Footer />
@@ -64,5 +121,17 @@ const description = "Get the weekly AI developer news roundup in your inbox ever
       if (formDiv) formDiv.classList.add('hidden');
       if (success) success.classList.remove('hidden');
     }, 1000);
+  });
+
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.copy-btn');
+    if (!btn) return;
+    var url = btn.getAttribute('data-copy');
+    if (!url || !navigator.clipboard) return;
+    navigator.clipboard.writeText(url).then(function() {
+      var original = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(function() { btn.textContent = original; }, 1200);
+    });
   });
 </script>

@@ -17,7 +17,7 @@
         { "key": "X-Frame-Options", "value": "DENY" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
         { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
-        { "key": "Link", "value": "</feed.xml>; rel=\"alternate\"; type=\"application/rss+xml\"; title=\"AI Daily Dev\", </llms.txt>; rel=\"describedby\"; type=\"text/markdown\", </sitemap-index.xml>; rel=\"sitemap\"; type=\"application/xml\", </about>; rel=\"author\"" }
+        { "key": "Link", "value": "</feed.xml>; rel=\"alternate\"; type=\"application/rss+xml\"; title=\"AI Daily Dev (RSS)\", </feed.json>; rel=\"alternate\"; type=\"application/feed+json\"; title=\"AI Daily Dev (JSON Feed)\", </llms.txt>; rel=\"describedby\"; type=\"text/markdown\", </sitemap-index.xml>; rel=\"sitemap\"; type=\"application/xml\", </about>; rel=\"author\"" }
       ]
     }
   ]
