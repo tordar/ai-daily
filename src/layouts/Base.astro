@@ -23,8 +23,11 @@ interface Props {
 const { title, description = "Top 5 developer-centric AI stories, curated daily.", digestDate, stories, extraSchema } = Astro.props;
 const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.url;
 
-const isArticle = Boolean(digestDate && stories?.length);
-const digestUrl = digestDate ? new URL(`/digest/${digestDate}`, Astro.site ?? "https://www.ai-daily.dev").toString() : undefined;
+// NewsArticle only on the permanent /digest/YYYY-MM-DD route — never on the homepage,
+// which would create a URL-vs-canonical mismatch (canonical is "/", schema would point to /digest/).
+const isDigestRoute = Astro.url.pathname.startsWith("/digest/");
+const isArticle = Boolean(isDigestRoute && digestDate && stories?.length);
+const digestUrl = digestDate ? new URL(`/digest/${digestDate}/`, Astro.site ?? "https://www.ai-daily.dev").toString() : undefined;
 const publishedAt = digestDate ? `${digestDate}T08:00:00+01:00` : undefined;
 
 const organizationSchema = {
@@ -36,14 +39,19 @@ const organizationSchema = {
   "logo": {
     "@type": "ImageObject",
     "url": "https://www.ai-daily.dev/favicon.svg",
+    "width": 512,
+    "height": 512,
   },
   "sameAs": ["https://github.com/tordar/ai-daily"],
   "founder": {
     "@type": "Person",
     "name": "Tordar Tømmervik",
-    "url": "https://github.com/tordar",
+    "url": "https://www.ai-daily.dev/about",
+    "sameAs": ["https://github.com/tordar"],
   },
   "publishingPrinciples": "https://www.ai-daily.dev/about",
+  "diversityPolicy": "https://www.ai-daily.dev/about",
+  "ethicsPolicy": "https://www.ai-daily.dev/about",
 };
 
 const websiteSchema = {
@@ -78,22 +86,25 @@ const newsArticleSchema = isArticle && digestUrl && publishedAt ? {
   "mainEntityOfPage": { "@type": "WebPage", "@id": digestUrl },
   "datePublished": publishedAt,
   "dateModified": publishedAt,
-  "image": [`https://www.ai-daily.dev/og/${digestDate}.png`],
+  "image": [{
+    "@type": "ImageObject",
+    "url": `https://www.ai-daily.dev/og/${digestDate}.png`,
+    "width": 1200,
+    "height": 630,
+  }],
   "publisher": { "@id": "https://www.ai-daily.dev/#organization" },
-  "author": {
-    "@type": "Person",
-    "name": "Tordar Tømmervik",
-    "url": "https://github.com/tordar",
+  "author": { "@id": "https://www.ai-daily.dev/#organization" },
+  "contributor": {
+    "@type": "SoftwareApplication",
+    "name": "Claude",
+    "applicationCategory": "AI",
+    "url": "https://www.anthropic.com/claude",
   },
   "editor": {
     "@type": "Person",
     "name": "Tordar Tømmervik",
-    "url": "https://github.com/tordar",
-  },
-  "creator": {
-    "@type": "Organization",
-    "name": "AI Daily Dev",
-    "url": "https://www.ai-daily.dev/",
+    "url": "https://www.ai-daily.dev/about",
+    "sameAs": ["https://github.com/tordar"],
   },
   "articleSection": "AI",
   "isAccessibleForFree": true,
