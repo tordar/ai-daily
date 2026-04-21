@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "build": "node --import tsx scripts/generate-og.ts && astro build",
     "build:og": "node --import tsx scripts/generate-og.ts",
+    "build:logo": "node --import tsx scripts/generate-logo.ts",
     "preview": "astro preview",
     "astro": "astro",
     "slack:weekly": "node --import tsx scripts/slack-weekly.ts"
