@@ -1,4 +1,4 @@
-# ai-daily.dev
+# [ai-daily.dev](http://ai-daily.dev)
 
 A daily AI news digest for developers. Top stories curated automatically by Claude, published every weekday at 08:00 CET.
 

@@ -7,7 +7,7 @@ const digests = defineCollection({
     date: z.string(),
     stories: z.array(z.object({
       title: z.string(),
-      summary: z.string(),
+      summary: z.union([z.string(), z.array(z.string())]),
       url: z.string().url(),
       image: z.string().url().optional(),
       source: z.string(),

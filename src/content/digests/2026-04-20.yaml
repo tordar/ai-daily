@@ -1,42 +1,67 @@
 date: "2026-04-20"
 stories:
   - title: "Anthropic Launches Claude Design"
-    summary: "Anthropic shipped Claude Design on April 17 — a new Labs product that turns Claude into a collaborator for prototypes, slides, one-pagers, and mockups. During onboarding it reads your codebase and design files to build a team design system, so every subsequent project auto-applies your colors, typography, and components. Powered by Opus 4.7 and in research preview for Pro/Max/Team/Enterprise; the HN reaction thread hit 375 points and 243 comments."
+    summary:
+      - "New Anthropic Labs product for prototypes, slides, one-pagers, and mockups."
+      - "Onboarding reads your codebase and design files to auto-build a team design system."
+      - "Powered by Opus 4.7; research preview for Pro/Max/Team/Enterprise."
+      - "Exports to Canva, PDF, PPTX, or standalone HTML."
+      - "HN reaction thread: 375 points, 243 comments."
     url: "https://www.anthropic.com/news/claude-design-anthropic-labs"
     source: "anthropic.com"
     tag: "tools"
     significance: 5
 
   - title: "Opus 4.7's 'Stealth Price Hike': New Tokenizer Burns 35–47% More Tokens"
-    summary: "Opus 4.7's tokenizer change dominated developer conversation this weekend — one HN thread hit 674 points, a follow-up anonymous-comparison thread hit 606. Per-token pricing is unchanged at $5/$25 per million, but independent measurements (tokens.billchambers.me, 483 submissions) show 37.4% more tokens per request, and Anthropic's own migration guide cites 1.33–1.47× multipliers for Claude Code content, CLAUDE.md files, and technical docs. MRCR long-document recall also collapsed from 78.3% to 32.2% — 4.7 got worse at deep-context work even as SWE-bench improved."
+    summary:
+      - "Per-token price unchanged ($5/$25 per million) but the new tokenizer produces ~37.4% more tokens per request (483-submission sample at tokens.billchambers.me)."
+      - "Anthropic's migration guide cites 1.33× for Claude Code content, 1.45× for CLAUDE.md, 1.47× for technical docs."
+      - "MRCR long-document recall collapsed from 78.3% on 4.6 to 32.2% on 4.7."
+      - "HN: 674 points Apr 17, 606 points follow-up Apr 18."
     url: "https://news.ycombinator.com/item?id=47793493"
     source: "news.ycombinator.com"
     tag: "models"
     significance: 5
 
   - title: "Cloudflare Ships Dynamic Workers — 100× Faster Than Containers"
-    summary: "Cloudflare's week-long agents event (April 13–17) shipped a full stack headlined by Dynamic Workers: isolate-based sandboxes that spin up in milliseconds, 100× faster and up to 100× more memory-efficient than containers, priced at $0.002 per unique Worker loaded per day (waived in beta). The rest of the bundle includes Agent Memory, Cloudflare Mesh for private network access, AI Gateway across 14+ providers, and the 'Project Think' Agents SDK with durable execution and sub-agents."
+    summary:
+      - "Dynamic Workers: isolate-based sandboxes that spin up in milliseconds, 100× faster and 100× more memory-efficient than containers."
+      - "Priced at $0.002 per unique Worker loaded per day — waived during beta."
+      - "Week also shipped Agent Memory, Cloudflare Mesh (private network for agents), and AI Gateway across 14+ providers."
+      - "'Project Think' Agents SDK adds durable execution, sub-agents, and self-authored extensions."
     url: "https://www.cloudflare.com/agents-week/updates/"
     source: "cloudflare.com"
     tag: "frameworks"
     significance: 4
 
   - title: "xAI's Weekend Drop: Grok 4.3, Desktop Agent, and Voice APIs"
-    summary: "Grok 4.3 beta appeared in the model selector on April 17 — $300/month SuperGrok Heavy only, adding native PDF/PowerPoint/spreadsheet generation and video input. A day later, standalone Grok STT ($0.10/hr batch) and TTS ($4.20 per 1M chars) APIs hit GA across 25+ languages, with Grok STT claiming a 5.0% phone-call entity error rate vs. 12–21% for ElevenLabs, Deepgram, and AssemblyAI. Grok Computer's private beta also went live — a desktop agent that continuously processes the last 5 seconds of screen video."
+    summary:
+      - "Grok 4.3 beta appeared in the model selector Apr 17 — $300/mo SuperGrok Heavy only, adds native PDF/PowerPoint/spreadsheet generation and video input."
+      - "Grok STT/TTS APIs went GA Apr 18 across 25+ languages ($0.10/hr batch STT, $4.20 per 1M chars TTS)."
+      - "Grok STT claims a 5.0% phone-call entity error rate vs. 12–21% for ElevenLabs, Deepgram, and AssemblyAI."
+      - "Grok Computer private beta also live — desktop agent processing the last 5 seconds of screen video."
     url: "https://www.marktechpost.com/2026/04/18/xai-launches-standalone-grok-speech-to-text-and-text-to-speech-apis-targeting-enterprise-voice-developers/"
     source: "marktechpost.com"
     tag: "tools"
     significance: 4
 
   - title: "Simon Willison Diffs Claude's System Prompt from 4.6 to 4.7"
-    summary: "Simon Willison's line-by-line comparison of Claude.ai's system prompt across versions hit 310 points on Hacker News on April 19. The 'Donald Trump is the current president' block is gone (4.7's knowledge cutoff is January 2026), Claude is explicitly told not to beg users to continue once they're done, and ambiguity handling was rewritten so Claude makes a reasonable attempt — or calls a tool — before asking the human."
+    summary:
+      - "'Donald Trump is the current president' block removed — 4.7's knowledge cutoff is January 2026."
+      - "Claude is explicitly told not to ask users to continue the conversation once they're done."
+      - "Ambiguity handling rewritten: make a reasonable attempt, or call a tool, before asking the human."
+      - "HN: 310 points, 177 comments (Apr 19)."
     url: "https://simonwillison.net/2026/Apr/18/opus-system-prompt/"
     source: "simonwillison.net"
     tag: "research"
     significance: 3
 
   - title: "Claude Code Game Studios Hits 12.4k Stars"
-    summary: "Donchitos/Claude-Code-Game-Studios is GitHub's breakout AI repo of the weekend, with 12.4k stars and 1.8k forks. The project organizes 49 specialized Claude Code agents into a game-studio hierarchy — directors, department leads, hands-on specialists — backed by 72 workflow skills, slash commands for every phase, and hooks that validate commits, pushes, and asset changes."
+    summary:
+      - "Donchitos/Claude-Code-Game-Studios: 12.4k stars, 1.8k forks — GitHub's breakout AI repo of the weekend."
+      - "49 specialized Claude Code agents organized as a studio (directors, department leads, hands-on specialists)."
+      - "72 workflow skills and slash commands for every phase of game development."
+      - "Hooks validate commits, pushes, and asset changes automatically."
     url: "https://github.com/Donchitos/Claude-Code-Game-Studios"
     source: "github.com"
     tag: "open-source"

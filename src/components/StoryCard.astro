@@ -1,7 +1,7 @@
 ---
 interface Story {
   title: string;
-  summary: string;
+  summary: string | string[];
   url: string;
   image?: string;
   source: string;
@@ -45,7 +45,13 @@ const isYouTube = source.includes("youtube.com") || source.includes("youtu.be");
     <a href={url} target="_blank" rel="noopener noreferrer" class="no-underline group-hover:underline">
       <h2 class="text-lg font-semibold text-[var(--color-story-title)] tracking-tight leading-snug mb-1.5">{title}</h2>
     </a>
-    <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-2.5">{summary}</p>
+    {Array.isArray(summary) ? (
+      <ul class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-2.5 list-disc pl-5 space-y-1">
+        {summary.map((bullet) => <li>{bullet}</li>)}
+      </ul>
+    ) : (
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-2.5">{summary}</p>
+    )}
     <div class="flex items-center gap-2">
       <span
         class="uppercase text-[10px] px-2 py-0.5 rounded-sm font-medium tracking-wide"

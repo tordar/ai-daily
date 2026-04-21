@@ -86,7 +86,16 @@ Edit the earlier digest file to reduce significance to 1 for any superseded stor
 - Lead with the subject and the verb — "Anthropic Launches Claude Design" beats "Introducing Claude Design: Anthropic's New Design Product."
 - When a story bundles several sub-releases, pick the headline item and mention the rest in the summary.
 
-**Summaries must be tight.** 2-3 sentences is the default, 4 only when a fourth sentence adds signal nothing else provides. Pick the 2-3 most concrete numbers and cut the rest — every extra stat dilutes the ones that matter.
+**Summaries are bullet points, not prose.** Write the `summary` field as a YAML list of 3–5 short bullets. Each bullet is one fact — what shipped, a key number, a signal. No bullet should run longer than a single line on a typical screen. Skip connective prose ("meanwhile," "the company also"); just list the facts. Pick the 2–3 most concrete numbers total and drop the rest.
+
+Example:
+```yaml
+summary:
+  - "New Anthropic Labs product for prototypes, slides, and mockups."
+  - "Onboarding reads your codebase and design files to auto-build a team design system."
+  - "Powered by Opus 4.7; research preview for Pro/Max/Team/Enterprise."
+  - "HN reaction thread: 375 points, 243 comments."
+```
 
 ## Output
 
@@ -96,7 +105,10 @@ Write the digest to `src/content/digests/YYYY-MM-DD.yaml` using today's date:
 date: "YYYY-MM-DD"
 stories:
   - title: "Concise headline"
-    summary: "2-3 sentences with specific details."
+    summary:
+      - "Bullet 1 — one fact, one line."
+      - "Bullet 2 — a key number or benchmark."
+      - "Bullet 3 — community signal (HN pts, stars)."
     url: "https://primary-source-url"
     source: "domain.com"
     tag: "models"
