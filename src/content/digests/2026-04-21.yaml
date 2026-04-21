@@ -1,0 +1,36 @@
+date: "2026-04-21"
+stories:
+  - title: "Anthropic Secures 5 GW of AWS Compute in $25B Amazon Deal"
+    summary: "Amazon committed $5 billion to Anthropic on April 20, with up to $20 billion more tied to milestones; Anthropic pledged $100 billion in AWS spend over the next decade. The deal locks in up to 5 GW of compute for Claude training and inference — Anthropic's direct answer to OpenAI's months-long claim that it made a 'strategic misstep' on compute. Amazon is now running the same playbook with both top AI labs, having struck a similar investment-plus-cloud-deal with OpenAI just two months prior."
+    url: "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai"
+    source: "aboutamazon.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "OpenAI Codex Can Now See Your Screen and Control Any App"
+    summary: "OpenAI's April 16–20 Codex updates transform it from a code assistant into a full desktop agent: it can now see your screen and control any macOS app, generate images inline via gpt-image-1.5, and install plugins from GitHub URLs or local sources. The plugin catalog grew to 90+ integrations — Atlassian Rovo, CircleCI, CodeRabbit, GitLab Issues, Microsoft Suite, Render — and the April 20 changelog adds namespaced MCP registration, parallel-call opt-in, and Realtime V2 background agent streaming. ChatGPT Business and Enterprise Codex users grew 6× between January and April 2026."
+    url: "https://venturebeat.com/technology/openai-drastically-updates-codex-desktop-app-to-use-all-other-apps-on-your-computer-generate-images-preview-webpages"
+    source: "venturebeat.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Slopsquatting: Attackers Register the Packages AI Hallucinates"
+    summary: "A supply-chain attack called slopsquatting is getting renewed security attention: adversaries register package names that AI coding assistants tend to hallucinate, then wait for developers to run the suggested install. USENIX Security research across 576,000 code samples found 38% of hallucinated names are two-package conflations, 13% are typo variants, and 51% are pure fabrications — all predictable enough to squat in advance. Defenses include SBOMs, sandboxed installs, and package-provenance validation before accepting any AI-suggested dependency."
+    url: "https://www.aikido.dev/blog/slopsquatting-ai-package-hallucination-attacks"
+    source: "aikido.dev"
+    tag: "community"
+    significance: 3
+
+  - title: "FinceptTerminal Gains 3,100 Stars Today — Open-Source Bloomberg Alternative"
+    summary: "FinceptTerminal is today's top GitHub trending repository, gaining 3,100 stars in a single day. The Python project provides real-time data for 19,000+ financial instruments, AI-powered equity research, and 100+ data connectors under AGPL-3.0 — positioning itself as a free Bloomberg Terminal for developers and analysts."
+    url: "https://github.com/Fincept-Corporation/FinceptTerminal"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Thunderbird Ships Thunderbolt — Open-Source, Multi-Model AI Client"
+    summary: "Thunderbolt, from the Mozilla Thunderbird team, is an open-source AI client that lets developers work with frontier, local, and on-premises models without subscription lock-in: 'Choose your models. Own your data. Eliminate vendor lock-in.' The TypeScript cross-platform app targets enterprise on-premises deployments and is currently undergoing a security audit. It gained 675 GitHub stars today, reflecting growing developer appetite for AI clients that sidestep OpenAI and Anthropic billing."
+    url: "https://github.com/thunderbird/thunderbolt"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
