@@ -1,0 +1,22 @@
+# AI Daily Dev
+
+> A daily AI news digest for developers. Top stories curated every weekday at 08:00 CET, linking to primary sources (official blogs, Hacker News discussions, GitHub repos, YouTube videos). Published by Tordar Tømmervik; curation is automated by Claude Opus under an editorial routine kept in the public repo.
+
+## Daily digests
+
+Each weekday digest lives at `/digest/YYYY-MM-DD` and contains 5–7 ranked stories with bullet-point summaries and outbound links to primary sources. The latest digest is also served at `/`.
+
+- [Daily archive](https://www.ai-daily.dev/archive)
+- [RSS feed](https://www.ai-daily.dev/feed.xml)
+- [Weekly rollup](https://www.ai-daily.dev/weekly/) — top 10 stories of the ISO week
+- [Monthly rollup](https://www.ai-daily.dev/monthly/) — top 10 stories of the calendar month
+
+## Methodology
+
+- [About & editorial oversight](https://www.ai-daily.dev/about)
+- [Source list (sources.yaml)](https://github.com/tordar/ai-daily/blob/main/sources.yaml)
+- [Curation routine (routine-prompt.md)](https://github.com/tordar/ai-daily/blob/main/routine-prompt.md)
+
+## Licensing
+
+Story summaries and ranking are original editorial work; primary sources retain their own copyright. Citation is welcome — please link to the digest URL and the primary source.

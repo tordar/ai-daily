@@ -45,11 +45,42 @@ const topStories = allStories
 const monthLabel = formatMonthLabel(month);
 const title = `AI Daily Dev — ${monthLabel}`;
 const description = topStories.length > 1
-  ? `Top stories: ${topStories[0].title}, ${topStories[1].title}.`
-  : "Monthly rollup.";
+  ? `Top AI stories of ${monthLabel}: ${topStories[0].title}, ${topStories[1].title}, and more.`
+  : `Monthly AI news rollup for ${monthLabel}.`;
+
+const pageUrl = `https://www.ai-daily.dev/monthly/${month}`;
+const extraSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": title,
+    "description": description,
+    "url": pageUrl,
+    "inLanguage": "en",
+    "isPartOf": { "@id": "https://www.ai-daily.dev/#website" },
+    "publisher": { "@id": "https://www.ai-daily.dev/#organization" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": topStories.map((s: any, i: number) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "name": s.title,
+        "url": s.url,
+      })),
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ai-daily.dev/" },
+      { "@type": "ListItem", "position": 2, "name": monthLabel, "item": pageUrl },
+    ],
+  },
+];
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} extraSchema={extraSchema}>
   <Header />
   <ShortcutBar navLabel="change month" />
 

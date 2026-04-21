@@ -27,9 +27,45 @@ const allStories = weekEntries.flatMap((e: any) => e.data.stories);
 allStories.sort((a: any, b: any) => b.significance - a.significance);
 const topStories = allStories.slice(0, 10);
 const weekNum = Number(week.split("-W")[1]);
+
+const title = `AI Daily Dev — Week ${weekNum}`;
+const description = topStories.length > 1
+  ? `Top AI stories of Week ${weekNum}: ${topStories[0].title}, ${topStories[1].title}, and more.`
+  : `Weekly AI news rollup for Week ${weekNum}.`;
+
+const pageUrl = `https://www.ai-daily.dev/weekly/${week}`;
+const extraSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": title,
+    "description": description,
+    "url": pageUrl,
+    "inLanguage": "en",
+    "isPartOf": { "@id": "https://www.ai-daily.dev/#website" },
+    "publisher": { "@id": "https://www.ai-daily.dev/#organization" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": topStories.map((s: any, i: number) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "name": s.title,
+        "url": s.url,
+      })),
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ai-daily.dev/" },
+      { "@type": "ListItem", "position": 2, "name": `Week ${weekNum}`, "item": pageUrl },
+    ],
+  },
+];
 ---
 
-<Base title={`AI Daily Dev — Week ${weekNum}`}>
+<Base title={title} description={description} extraSchema={extraSchema}>
   <Header />
   <ShortcutBar navLabel="change week" />
   <div class="flex items-center justify-between border-b border-[var(--color-border)] py-5 px-6">

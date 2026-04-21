@@ -1,0 +1,92 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import ShortcutBar from "../components/ShortcutBar.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "AI Daily Dev — About";
+const description = "How AI Daily Dev is edited, how stories are curated, and who's behind it.";
+
+const extraSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": title,
+    "description": description,
+    "url": "https://www.ai-daily.dev/about",
+    "isPartOf": { "@id": "https://www.ai-daily.dev/#website" },
+    "publisher": { "@id": "https://www.ai-daily.dev/#organization" },
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Tordar Tømmervik",
+      "jobTitle": "Publisher & Editor",
+      "url": "https://github.com/tordar",
+      "sameAs": ["https://github.com/tordar"],
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ai-daily.dev/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.ai-daily.dev/about" },
+    ],
+  },
+];
+---
+
+<Base title={title} description={description} extraSchema={extraSchema}>
+  <Header />
+  <ShortcutBar />
+
+  <main class="px-6 py-10 max-w-2xl mx-auto">
+    <h1 class="text-2xl font-bold text-[var(--color-story-title)] tracking-tight mb-6">About AI Daily Dev</h1>
+
+    <section class="mb-8">
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3">
+        AI Daily Dev is a daily AI news digest for developers. Every weekday at 08:00 CET, a new digest ships with 5–7 of the day's most important AI stories — ranked, summarised as bullet points, and linked to the primary source.
+      </p>
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+        There are no page-view ads, no paywalls, no autoplaying videos, and no SEO filler. If a story doesn't pass the bar, it's not in the digest.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-sm font-semibold text-[var(--color-story-title)] uppercase tracking-wider mb-3">Editorial oversight</h2>
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3">
+        The site is published and edited by <a href="https://github.com/tordar" rel="me author" class="text-[var(--color-accent)] hover:underline">Tordar Tømmervik</a>, a software engineer based in Norway. Tordar sets the editorial routine, reviews output, corrects mistakes, and is accountable for what's published.
+      </p>
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+        Story curation is automated: <a href="https://www.anthropic.com" class="text-[var(--color-accent)] hover:underline">Claude Opus</a> runs the editorial routine each weekday morning, selects the stories, and writes the summaries. The editor reviews the result, fixes issues, and improves the routine when it gets something wrong. The combination — human oversight, AI curation — is the whole design, not an apology for it.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-sm font-semibold text-[var(--color-story-title)] uppercase tracking-wider mb-3">Methodology</h2>
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-3">
+        Everything that drives the digest is public, in the <a href="https://github.com/tordar/ai-daily" class="text-[var(--color-accent)] hover:underline">project repository</a>:
+      </p>
+      <ul class="text-sm text-[var(--color-text-secondary)] leading-relaxed list-disc pl-5 space-y-1.5">
+        <li><a href="https://github.com/tordar/ai-daily/blob/main/routine-prompt.md" class="text-[var(--color-accent)] hover:underline">routine-prompt.md</a> — the full editorial routine, including what to cover, what to skip, and how to write titles and summaries.</li>
+        <li><a href="https://github.com/tordar/ai-daily/blob/main/sources.yaml" class="text-[var(--color-accent)] hover:underline">sources.yaml</a> — the full list of sources checked every day.</li>
+        <li><a href="https://github.com/tordar/ai-daily/commits/main" class="text-[var(--color-accent)] hover:underline">commit history</a> — every change to the routine, every digest, every correction.</li>
+      </ul>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-sm font-semibold text-[var(--color-story-title)] uppercase tracking-wider mb-3">Corrections</h2>
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+        If you spot a factual error, stale claim, or missed story, open an issue at <a href="https://github.com/tordar/ai-daily/issues" class="text-[var(--color-accent)] hover:underline">github.com/tordar/ai-daily/issues</a>. Material corrections are applied to the digest in place and noted in the commit history.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-sm font-semibold text-[var(--color-story-title)] uppercase tracking-wider mb-3">Citation</h2>
+      <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+        Summaries and ranking are original editorial work. Primary sources retain their own copyright. If you want to quote the digest, a link to the specific <code class="text-xs font-mono bg-[var(--color-border-section)] px-1.5 py-0.5 rounded">/digest/YYYY-MM-DD</code> URL and the primary source is always welcome.
+      </p>
+    </section>
+  </main>
+
+  <Footer />
+</Base>

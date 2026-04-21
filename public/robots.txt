@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ai-daily.dev/sitemap-index.xml
+Sitemap: https://www.ai-daily.dev/sitemap-index.xml
