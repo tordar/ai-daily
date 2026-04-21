@@ -32,9 +32,21 @@ const formattedDate = dateObj.toLocaleDateString("en-US", {
 });
 const title = `AI Daily Dev — ${formattedDate}`;
 const description = `Today: ${stories[0].title}, ${stories[1].title}, and more.`;
+
+const extraSchema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ai-daily.dev/" },
+      { "@type": "ListItem", "position": 2, "name": "Archive", "item": "https://www.ai-daily.dev/archive" },
+      { "@type": "ListItem", "position": 3, "name": formattedDate, "item": `https://www.ai-daily.dev/digest/${date}/` },
+    ],
+  },
+];
 ---
 
-<Base title={title} description={description} digestDate={date} stories={stories}>
+<Base title={title} description={description} digestDate={date} stories={stories} extraSchema={extraSchema}>
   <Header />
   <ShortcutBar />
   <DateNav date={date} prevDate={prevDate} nextDate={nextDate} />
