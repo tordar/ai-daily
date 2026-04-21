@@ -6,7 +6,7 @@ stories:
     image: "https://cdn.sanity.io/images/4zrzovbb/website/96ea2509a90e527642c822303e56296a07bcfce4-1920x1080.png"
     source: "anthropic.com"
     tag: "models"
-    significance: 5
+    significance: 1
   - title: "OpenAI Agents SDK Gets Sandbox Execution and Frontier Model Harness"
     summary: "OpenAI shipped the next evolution of its Agents SDK on April 15, adding a sandboxed code execution layer with built-in support for E2B, Vercel, Modal, Cloudflare, Daytona, Blaxel, and Runloop. The updated harness adds configurable memory, Codex-like filesystem tools, and sandbox-aware multi-agent orchestration. Python support is GA via the API at standard pricing; TypeScript support is planned in a follow-up release."
     url: "https://openai.com/index/the-next-evolution-of-the-agents-sdk/"

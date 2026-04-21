@@ -1,0 +1,53 @@
+date: "2026-04-21"
+stories:
+  - title: "Anthropic Takes $5B from Amazon, Commits $100B to AWS in Return"
+    summary:
+      - "$5B fresh investment from Amazon (up to $25B total); Anthropic commits $100B to AWS over 10 years."
+      - "Secures up to 5GW of compute — Trainium2, 3, and 4 chips — for training and running Claude."
+      - "Deal struck at $380B valuation; Anthropic's ARR hit $30B, up 3× from end of 2025."
+      - "Mirrors Amazon's $50B injection into OpenAI in February; two of AI's top three labs now anchored to AWS."
+    url: "https://www.anthropic.com/news/anthropic-amazon-compute"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Alibaba's Qwen 3.6-Max-Preview Claims SWE-bench Pro Crown"
+    summary:
+      - "Released April 20; Alibaba claims #1 on SWE-bench Pro, Terminal-Bench 2.0, SkillsBench, QwenClawBench, QwenWebBench, and SciCode."
+      - "256K context window, text-only at launch; labeled a work-in-progress preview — no open weights."
+      - "HN thread posted today; r/LocalLLaMA GGUF benchmark post scored 460+ with 80 comments."
+      - "Compatible with OpenAI and Anthropic API specs; available via Qwen Studio and Alibaba Cloud API."
+    url: "https://qwen.ai/blog?id=qwen3.6-max-preview"
+    source: "qwen.ai"
+    tag: "models"
+    significance: 4
+
+  - title: "NSA Runs Claude Mythos on Classified Networks Despite Pentagon Blacklist"
+    summary:
+      - "Pentagon labeled Anthropic a 'supply chain risk'; NSA running Mythos on classified systems regardless (Axios and TechCrunch, Apr 19–20)."
+      - "Pentagon demanded Claude be available for 'all lawful purposes'; Anthropic refused uses tied to autonomous weapons and mass surveillance."
+      - "CEO Dario Amodei met White House Chief of Staff Wiles and Treasury Secretary Bessent on April 17 to discuss government deployment."
+    url: "https://techcrunch.com/2026/04/20/nsa-spies-are-reportedly-using-anthropics-mythos-despite-pentagon-feud/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "FinceptTerminal Hits #1 GitHub Trending with 3.1k Stars Today"
+    summary:
+      - "3,109 stars today; C++20 desktop app with Qt6 UI and embedded Python — Bloomberg-terminal analytics in a single binary."
+      - "37 investor personas (Buffett, Graham, Lynch, Munger…) backed by multi-provider LLM support: OpenAI, Anthropic, Gemini, Groq, Ollama."
+      - "Covers real-time market analytics, investment research, economic data tools, and geopolitical framing."
+    url: "https://github.com/Fincept-Corporation/FinceptTerminal"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "MIT Technology Review Releases Its First AI-Only Annual Watch List"
+    summary:
+      - "New 'AI 10' list published today on stage at EmTech AI on MIT's campus — first standalone AI list from MIT TR."
+      - "Confirmed items include AI companions, mechanistic interpretability, generative coding, and hyperscale data centers."
+      - "Born from the 2026 Breakthrough Technologies list having too many AI candidates; team will report on all 10 throughout 2026."
+    url: "https://www.technologyreview.com/2026/04/14/1135298/coming-soon-10-things-that-matter-in-ai-right-now/"
+    source: "technologyreview.com"
+    tag: "research"
+    significance: 3
