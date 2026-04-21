@@ -1,0 +1,45 @@
+name: Slack weekly digest
+
+on:
+  schedule:
+    # Fridays 15:00 UTC (17:00 CET / 16:00 BST) — after the Friday 08:00 CET digest lands
+    - cron: "0 15 * * 5"
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "ISO week to post (e.g. 2026-W16). Leave empty for current week."
+        required: false
+        type: string
+      dry_run:
+        description: "Print payload instead of posting to Slack"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Post weekly rollup to Slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://ai-daily.dev' }}
+        run: |
+          args=""
+          if [ -n "${{ inputs.week }}" ]; then
+            args="$args --week=${{ inputs.week }}"
+          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            args="$args --dry-run"
+          fi
+          npm run slack:weekly -- $args

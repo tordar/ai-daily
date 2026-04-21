@@ -10,7 +10,8 @@
     "build": "node --import tsx scripts/generate-og.ts && astro build",
     "build:og": "node --import tsx scripts/generate-og.ts",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "slack:weekly": "node --import tsx scripts/slack-weekly.ts"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",

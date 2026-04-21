@@ -68,6 +68,36 @@ npm run build      # Generate OG images + build site
 npm run build:og   # Generate OG images only
 ```
 
+## Slack bot (weekly rollup)
+
+A GitHub Action posts the weekly rollup — the same top 10 stories shown at `/weekly/YYYY-WNN`, ranked by significance — to a Slack channel every Friday at 15:00 UTC (17:00 CET).
+
+### One-time setup
+
+1. **Create a Slack app** at [api.slack.com/apps](https://api.slack.com/apps) → *From scratch*.
+2. Under **OAuth & Permissions**, add the `chat:write` bot scope, then *Install to Workspace* and copy the **Bot User OAuth Token** (`xoxb-…`).
+3. Invite the bot to the target channel: `/invite @your-bot-name` in the channel. Copy the channel ID (click channel name → *About* → scroll to bottom).
+4. In the GitHub repo, add two secrets under *Settings → Secrets and variables → Actions*:
+  - `SLACK_BOT_TOKEN` — the `xoxb-…` token
+  - `SLACK_CHANNEL_ID` — the channel ID (e.g. `C0123456789`)
+5. Optionally override the site URL with an Actions *variable* named `SITE_URL`.
+
+### Manual runs
+
+Trigger from the *Actions → Slack weekly digest → Run workflow* UI. Optional inputs:
+
+- `week` — post a specific ISO week (e.g. `2026-W15`)
+- `dry_run` — print the payload in the job log instead of posting
+
+### Local preview
+
+```bash
+npm run slack:weekly -- --dry-run                # current week
+npm run slack:weekly -- --dry-run --week=2026-W16
+```
+
+To post from your machine, set `SLACK_BOT_TOKEN` and `SLACK_CHANNEL_ID` in your env and drop `--dry-run`.
+
 ## Adding a digest manually
 
 Create `src/content/digests/YYYY-MM-DD.yaml`:
