@@ -1,5 +1,7 @@
 # AI Daily Dev — Daily Digest Routine
 
+**Model: Claude Opus.** Run `/model opus` before starting this routine — it involves cross-source ranking, editorial judgement, and concise writing, all of which benefit from Opus over Sonnet.
+
 You are generating today's digest for ai-daily.dev, a developer-focused AI news site.
 
 ## Philosophy
@@ -23,6 +25,16 @@ Before publishing, you MUST have reviewed every post since the last digest date 
 - `ai.meta.com/blog/` (Meta AI)
 
 Any **new product launch, new model, new API, or major capability release** from these labs is mandatory inclusion regardless of community signal. Community buzz may lag an announcement by a day or two — don't penalize a story for being fresh. Minor version bumps, hiring posts, and policy/safety essays are NOT mandatory.
+
+**How to check these sources.** Most frontier-lab index pages block WebFetch with 403 (anthropic.com/news, openai.com/news, x.ai/news, ai.meta.com/blog in particular). Do NOT waste retries on WebFetch — use WebSearch with site-restricted queries like:
+
+- `site:anthropic.com/news "April 2026"`
+- `site:openai.com/index "April 2026"` (new posts live under `/index/` or `/news/`)
+- `site:deepmind.google/blog "April 2026"`
+- `site:x.ai/news OR site:docs.x.ai April 2026`
+- `site:ai.meta.com/blog "April 2026"`
+
+The search snippet gives you titles + dates; cite the lab's official URL in the digest. Only use WebFetch for Hacker News and GitHub pages, which tend to allow it.
 
 ## How to rank stories
 
