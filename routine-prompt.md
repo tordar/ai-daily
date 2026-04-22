@@ -133,8 +133,10 @@ Then generate the OG image and commit:
 npm run build:og
 git add src/content/digests/ public/og/
 git commit -m "digest: YYYY-MM-DD"
-git push
+git push origin HEAD:main
 ```
+
+**Important:** always push to `main` explicitly with `HEAD:main`. Cloud runners may check out a sandbox branch (e.g. `claude/*`) whose default upstream is NOT `main`. A plain `git push` pushes to that sandbox branch and the site never updates. `git push origin HEAD:main` forces the commit onto the `main` branch regardless of the local branch name. If the push is rejected as non-fast-forward, run `git fetch origin main && git rebase origin/main` and try the push again.
 
 ## Newsletter
 
