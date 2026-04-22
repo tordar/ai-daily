@@ -1,0 +1,56 @@
+date: "2026-04-22"
+stories:
+  - title: "Google Cloud Next '26 Kicks Off With Agentic-Cloud Keynote"
+    summary:
+      - "Thomas Kurian and Sundar Pichai opened Next '26 in Las Vegas this morning at 9am PT under the banner 'The agentic cloud'."
+      - "Agentspace folds into Gemini Enterprise; no-code Agent Designer lands in preview, Agent Gallery + Deep Research agent go GA."
+      - "Gemini 3.1 Pro available in Vertex AI, Android Studio, Antigravity, and Gemini CLI; 3.1 Flash-Lite ships as the cheapest Gemini 3 tier."
+      - "Next-gen Ironwood TPU (10× v5p, 4× v6e per chip) featured across the AI Hypercomputer stack; event runs Apr 22–24."
+    url: "https://cloud.google.com/blog/products/ai-machine-learning/google-agentspace-enables-the-agent-driven-enterprise"
+    source: "cloud.google.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Kimi K2.6 Ships Open Weights, Matches Opus 4.7 at 88% Lower Cost"
+    summary:
+      - "Moonshot AI released Kimi K2.6 on April 20 under Modified MIT — 1T total / 32B active MoE, 256K context, native vision."
+      - "58.6% SWE-Bench Pro beats GPT-5.4 (57.7%) and Claude Opus 4.6 (53.4%); 80.2% SWE-Bench Verified, 96.4% AIME 2026."
+      - "Orchestrates up to 300 parallel sub-agents across 4,000 coordinated steps, with 12+ hour autonomous coding runs demoed."
+      - "$0.60/M input vs Opus 4.7's $5.00/M; HN launch thread at 592 pts / 303 comments, now the #4 model on Artificial Analysis Intelligence Index."
+    url: "https://news.ycombinator.com/item?id=47835735"
+    source: "news.ycombinator.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Vercel Breached via Context AI OAuth Supply-Chain Attack"
+    summary:
+      - "Vercel disclosed on April 20 that an employee's Context.ai OAuth grant let attackers pivot into Vercel's Google Workspace."
+      - "Attack chain: Lumma Stealer malware hit Context.ai in February; 'Allow All' OAuth scope exposed Vercel's internal systems."
+      - "ShinyHunters impersonator listed Vercel source, databases, and API keys on BreachForums for $2M; real group denies involvement."
+      - "Mandiant engaged; 'sensitive' encrypted env vars reportedly not readable, but crypto devs are rotating keys en masse."
+    url: "https://techcrunch.com/2026/04/20/app-host-vercel-confirms-security-incident-says-customer-data-was-stolen-via-breach-at-context-ai/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Mozilla's Thunderbolt Hits GitHub Trending as Self-Hostable AI Client"
+    summary:
+      - "MPL-2.0 'AI client' from MZLA Technologies — pitched as what Thunderbird did for email, but for enterprise AI."
+      - "596 stars added today on GitHub; native Linux/Windows/macOS/iOS/Android plus a web client."
+      - "Multi-provider out of the box: Anthropic, OpenAI, Mistral, OpenRouter, plus local Ollama and llama.cpp."
+      - "Pitched against Copilot/ChatGPT Enterprise/Claude Enterprise for shops that refuse vendor lock-in."
+    url: "https://github.com/thunderbird/thunderbolt"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "WiFi DensePose Repo RuView Goes Viral With 22k Stars"
+    summary:
+      - "ruvnet/RuView turns commodity WiFi CSI into real-time human pose, vitals, and presence detection — no cameras."
+      - "22,400+ stars total, 824 added today; hit #1 trending on X globally over the weekend."
+      - "Targets $9 ESP32 sensors, 17-keypoint pose via a WiFlow model trained without video, per the README."
+      - "Critics note much of the signal-processing core is still stubbed — the hype may be outrunning the code."
+    url: "https://github.com/ruvnet/RuView"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
