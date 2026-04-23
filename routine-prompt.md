@@ -2,6 +2,18 @@
 
 **Model: Claude Opus.** Run `/model opus` before starting this routine — it involves cross-source ranking, editorial judgement, and concise writing, all of which benefit from Opus over Sonnet.
 
+## Step 0 — Sync the working directory to the latest `main` (MANDATORY, run this FIRST)
+
+Cloud runners may start with a cached filesystem snapshot that is older than the current `main`. If you skip this step your commit will include phantom "deletions" of every file that has been added to `main` since the cache was built, and pushing it will obliterate the site. **Always run before doing anything else:**
+
+```bash
+git fetch origin main
+git reset --hard origin/main
+git clean -fd
+```
+
+Then reload any instruction files from disk (including this one — read `routine-prompt.md` again after the reset so you're running the current editorial guidance, not the cached one).
+
 You are generating today's digest for ai-daily.dev, a developer-focused AI news site.
 
 ## Philosophy
@@ -128,15 +140,21 @@ stories:
   # ... more stories (5-7 total)
 ```
 
-Then generate the OG image and commit:
+Then generate the OG image and commit. Before pushing, sanity-check the diff — if it touches anything outside `src/content/digests/` and `public/og/`, STOP and investigate (Step 0 was probably skipped):
+
 ```bash
 npm run build:og
 git add src/content/digests/ public/og/
+git status   # must show ONLY the new YYYY-MM-DD.yaml and the matching OG png
+git diff --cached --stat   # same check
 git commit -m "digest: YYYY-MM-DD"
 git push origin HEAD:main
 ```
 
-**Important:** always push to `main` explicitly with `HEAD:main`. Cloud runners may check out a sandbox branch (e.g. `claude/*`) whose default upstream is NOT `main`. A plain `git push` pushes to that sandbox branch and the site never updates. `git push origin HEAD:main` forces the commit onto the `main` branch regardless of the local branch name. If the push is rejected as non-fast-forward, run `git fetch origin main && git rebase origin/main` and try the push again.
+**Push rules:**
+- Always push to `main` explicitly with `HEAD:main`. Cloud runners may check out a sandbox branch (e.g. `claude/*`) whose default upstream is NOT `main`. A plain `git push` pushes to that sandbox and the site never updates.
+- If the push is rejected as non-fast-forward, run `git fetch origin main && git rebase origin/main` and try again. NEVER `--force`.
+- Never use `git add -A` or `git add .` — only add the two specific paths above.
 
 ## Newsletter
 

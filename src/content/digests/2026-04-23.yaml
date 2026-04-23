@@ -1,0 +1,61 @@
+date: "2026-04-23"
+stories:
+  - title: "Google Splits TPU v8 into Training and Inference Chips, Launches Gemini Enterprise Agent Platform"
+    summary:
+      - "Cloud Next 2026 (April 22) shipped TPU 8t for training (9,600 chips/superpod, 121 exaflops, native FP4) and TPU 8i for inference (384MB SRAM, 288GB HBM, 80% better perf-per-dollar vs Ironwood)."
+      - "Vertex AI rebranded to Gemini Enterprise Agent Platform — 200+ models including Claude Opus 4.7, new Agent Designer visual canvas, managed MCP servers across Google Cloud."
+      - "Agent2Agent (A2A) protocol hit GA with 150+ organizations on board — Microsoft, AWS, Salesforce, SAP, ServiceNow."
+    url: "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/"
+    source: "blog.google"
+    tag: "industry"
+    significance: 5
+
+  - title: "SpaceX Secures $60B Option to Acquire Cursor, Preempting $2B Fundraise"
+    summary:
+      - "SpaceX (xAI's parent) disclosed April 21 it holds the right to buy Cursor for $60B this year — or pay $10B for a Colossus-plus-Cursor collaboration tying its million-H100-class supercomputer to Cursor's IDE."
+      - "Announcement preempted Cursor's planned $2B funding round; 730+ comments across multiple HN threads debating whether frontier devs have already moved off Cursor to agentic tools."
+      - "CNBC reports Microsoft also looked at buying Cursor before SpaceX closed the option."
+    url: "https://news.ycombinator.com/item?id=47855293"
+    source: "news.ycombinator.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI Launches Workspace Agents, Phases Out Custom GPTs"
+    summary:
+      - "Workspace Agents (April 22) are Codex-powered, cloud-resident, shareable across an org, and keep running long-horizon workflows while users are offline."
+      - "Pre-built agents cover report prep, coding, and message triage; invocable from ChatGPT or Slack."
+      - "Research preview for Business, Enterprise, Edu, Teachers plans — free until May 6, then credit-based pricing. Custom GPTs being deprecated."
+    url: "https://openai.com/index/introducing-workspace-agents-in-chatgpt/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Unauthorized Discord Group Breached Anthropic's Restricted Mythos Model"
+    summary:
+      - "Bloomberg (April 22): a private Discord group obtained Claude Mythos access via a contractor's credentials combined with a Mercor HR platform data leak."
+      - "Mythos is the cybersecurity-capable model Anthropic restricts to Project Glasswing partners (Apple, Amazon, Cisco, etc.)."
+      - "The group used it mostly for mundane tasks (test websites) rather than attacks. Anthropic is investigating the third-party vendor; no evidence the breach reached its own systems."
+    url: "https://www.euronews.com/next/2026/04/22/hackers-breach-anthropics-too-dangerous-to-release-mythos-ai-model-report"
+    source: "euronews.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Hermes Agent Crosses 100K Stars with Self-Evolving Skills"
+    summary:
+      - "NousResearch/Hermes Agent passed 103,000 GitHub stars this month — overtook OpenClaw on GitHub Trending."
+      - "Self-evolution uses DSPy + GEPA (Genetic-Pareto Prompt Evolution) to improve skills, prompts, and code from execution traces — no GPU training required."
+      - "Evolved skills land as PRs for human review rather than overwriting. GEPA is from an ICLR 2026 Oral (Agrawal et al.) showing reflective prompt evolution beats RL with as few as three examples."
+    url: "https://github.com/NousResearch/hermes-agent-self-evolution"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Thinking Machines Lab Deepens Google Cloud Pact in Multi-Billion Deal"
+    summary:
+      - "Mira Murati's Thinking Machines signed a multi-billion-dollar expansion with Google Cloud on April 22 — GB300 systems plus access to Google's latest AI."
+      - "TechCrunch values the deal in single-digit billions; cements TML's alignment with Google over founders' former employer."
+      - "Lands alongside Anthropic's April Google/Broadcom expansion — Google is now the default infrastructure provider for OpenAI's strongest challengers."
+    url: "https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 3
