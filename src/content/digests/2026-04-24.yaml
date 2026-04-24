@@ -1,0 +1,56 @@
+date: "2026-04-24"
+stories:
+  - title: "OpenAI Ships GPT-5.5 in ChatGPT and Codex, 88.7% SWE-Bench and 60% Fewer Hallucinations"
+    summary:
+      - "Standard, Thinking, and Pro variants rolled out April 23 to Plus/Pro/Business/Enterprise plans plus Codex."
+      - "88.7% SWE-bench, 92.4% MMLU, and a reported 60% drop in hallucinations over GPT-5.4."
+      - "API pricing: $5/$30 per M tokens standard, $30/$180 Pro; Codex user base now at 4M."
+      - "TechCrunch frames the release as OpenAI's step toward a ChatGPT 'super app' — longer agentic runs with less user prompting."
+    url: "https://openai.com/index/introducing-gpt-5-5/"
+    source: "openai.com"
+    tag: "models"
+    significance: 5
+
+  - title: "DeepSeek Drops V4 Open Weights Same Day as GPT-5.5, 1.6T MoE Under Apache 2.0"
+    summary:
+      - "V4 Pro: 1.6T total / 49B active MoE; V4 Flash: 284B / 13B active — both Apache 2.0 with 1M-token context."
+      - "Bloomberg: new Hybrid Attention Architecture (Compressed Sparse + Heavily Compressed) plus an 'Engram' memory layer hits 97% needle-in-a-haystack."
+      - "Release timing against GPT-5.5 is explicit — DeepSeek is pitching V4 as the open-source answer to every closed frontier model."
+      - "Lands as Tencent and Alibaba are reportedly in talks to lead DeepSeek's first outside round at a $20B+ valuation."
+    url: "https://www.bloomberg.com/news/articles/2026-04-24/deepseek-unveils-newest-flagship-a-year-after-ai-breakthrough"
+    source: "bloomberg.com"
+    tag: "models"
+    significance: 5
+
+  - title: "xAI Launches Grok Voice Think Fast 1.0, Under 1-Second Latency via Starlink"
+    summary:
+      - "Flagship voice model built with Starlink for reasoning-in-the-background on multi-step voice workflows."
+      - "Time-to-first-audio under 1 second — roughly 5× faster than the nearest competitor per xAI."
+      - "Targets customer support, sales, and high-volume tool-calling; positioned against OpenAI Realtime and ElevenLabs."
+      - "Companion Grok STT/TTS APIs launch alongside — $0.10/hr batch, $0.20/hr streaming, with speaker diarization and expressive speech tags."
+    url: "https://x.ai/news/grok-voice-think-fast-1"
+    source: "x.ai"
+    tag: "models"
+    significance: 4
+
+  - title: "Meta to Cut 8,000 Jobs While Guiding 2026 AI Capex to $115B–$135B"
+    summary:
+      - "Internal memo April 23: ~10% of headcount (about 8,000 roles), cuts starting May 20, plus 6,000 open reqs scrapped."
+      - "Meta Superintelligence Labs is exempt — reductions concentrate in non-AI product, recruiting, and support orgs."
+      - "Funds 2026 capex guidance of $115B–$135B on AI infra and talent; Zuckerberg's 'personal superintelligence for everyone' push cited in the memo."
+      - "Second major workforce cut in roughly a year — the sharpest Big Tech reshape yet to fund AI spend."
+    url: "https://www.cnbc.com/2026/04/23/meta-will-cut-10percent-of-workforce-as-it-pushes-more-into-ai.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Hugging Face ml-intern Beats Claude Code on GPQA, Open-Source Autonomous ML Engineer"
+    summary:
+      - "Agentic loop up to 300 iterations reads arXiv/HF Papers, finds datasets, launches training jobs, and iterates."
+      - "Demo: Qwen3-1.7B pushed from ~10% → 32% on GPQA in under 10 hours of autonomous fine-tuning."
+      - "Scores above Claude Code (~23%) on the same benchmark per Hugging Face; built on the smolagents framework."
+      - "On GitHub Trending daily and weekly; CLI plus web app, fully open source."
+    url: "https://github.com/huggingface/ml-intern"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
