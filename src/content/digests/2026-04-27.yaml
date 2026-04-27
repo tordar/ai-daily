@@ -1,0 +1,57 @@
+date: "2026-04-27"
+stories:
+  - title: "Google Pledges Up to $40B for Anthropic at $350B Valuation"
+    summary:
+      - "$10B in cash up front; another $30B unlocks if Anthropic hits performance targets — disclosed in Bloomberg/CNBC reports April 24."
+      - "Lands days after Amazon's $25B follow-on; Anthropic run-rate revenue hit $30B this month, up from ~$9B at end of 2025."
+      - "Google's third Anthropic check since 2023 — and Anthropic still buys TPU capacity from Google, so part of the cash round-trips as compute spend."
+      - "HN front page Apr 24–25, 700+ comments framing the deal as 'vendor financing at scale' and a hedge against OpenAI."
+    url: "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Cohere to Acquire Aleph Alpha in $20B Sovereign-AI Play"
+    summary:
+      - "Combined Canadian–German entity keeps the Cohere name, headquartered in Canada; pitched as a sovereign alternative to US frontier labs."
+      - "Schwarz Group (parent of Lidl) leads Cohere's concurrent Series E at a ~$20B valuation, plus €500M in structured financing."
+      - "Aleph Alpha brings a 250-person team plus European-language tokenizers and small-model expertise; targets public sector, defense, finance, energy."
+      - "Announced April 24 — first major sovereign-AI consolidation of the year, ahead of expected EU regulatory and shareholder approval."
+    url: "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic Postmortem: Three Bugs Tanked Claude Code for Six Weeks"
+    summary:
+      - "March 4 change cut default reasoning effort from high to medium; reverted April 7 after user pushback."
+      - "March 26 bug discarded thinking history mid-session, making Claude 'forgetful' and burning quotas; fixed April 10."
+      - "April 16 system prompt capped responses at 25 words between tool calls — measurably worse coding; reverted April 20."
+      - "Anthropic is resetting usage limits for all subscribers; AMD AI exec called Claude Code 'unusable for complex engineering' before the fix."
+      - "Companion HN post 'I cancelled Claude: token issues, declining quality, and poor support' hit the front page April 24."
+    url: "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Sora App Goes Dark Today as OpenAI Pulls the Plug"
+    summary:
+      - "sora.com web and mobile apps discontinued April 26, 2026; API follows September 24."
+      - "Active users fell from a peak of ~1M to under 500K while the app burned ~$1M/day in compute."
+      - "Disney's $1B Sora character-licensing deal scrapped — Disney was reportedly told under an hour before the public shutdown notice."
+      - "Compute being redirected to GPT-5.5, Codex, and the rumored ChatGPT 'super app' ahead of OpenAI's IPO push."
+    url: "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Multica Hits 21K Stars as 'Agents-as-Teammates' Goes Mainstream"
+    summary:
+      - "Open-source platform that lets you assign issue-tracker tickets to Claude Code, Codex, OpenClaw, Hermes, Gemini, or Cursor agents — they pick up the work, write code, report blockers, update status."
+      - "21.6K GitHub stars and v0.2.17 shipped April 26; +7K stars in the past week pushed it to #5 on GitHub Trending."
+      - "Same Trendshift week saw andrej-karpathy-skills cross 70K stars and Hermes Agent pass 100K — the 'skills + managed agents' stack is consolidating."
+      - "Self-host build logs on Hetzner and DigitalOcean trending alongside it as teams move agent fleets off vendor SaaS."
+    url: "https://github.com/multica-ai/multica"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
