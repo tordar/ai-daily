@@ -1,0 +1,56 @@
+date: "2026-04-28"
+stories:
+  - title: "DeepSeek Slashes V4-Pro 75% and Drops Cache-Hit Pricing 10× Across Every Model"
+    summary:
+      - "Promo cuts V4-Pro input to ~$0.036/M tokens (vs $0.145 list) through May 5; output unchanged at $3.48/M."
+      - "Input cache-hit price dropped to 1/10 of launch across the entire DeepSeek API — applies to V4-Pro, V4-Flash, and V3 models, effective immediately."
+      - "Move undercuts GPT-5.5 ($5/$30) and Claude by an order of magnitude — explicit pressure on Western frontier API pricing."
+      - "r/LocalLLaMA threads: 52% of 85 V4-Pro users surveyed say it's ready to replace their primary coding model; HN front-page discussion April 27."
+    url: "https://api-docs.deepseek.com/quick_start/pricing"
+    source: "deepseek.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic's Project Deal: 69 Employees Let Claude Run a $4K Marketplace, No Human in the Loop"
+    summary:
+      - "One-week internal Craigslist where every buy, sell, and bid was executed by a Claude agent — 186 deals closed, ~$4,000 in real value."
+      - "Four parallel marketplaces compared Opus 4.5 vs Haiku 4.5 — same lab-grown ruby sold for $65 with Opus, $35 with Haiku."
+      - "Aggressive-negotiation prompts had no statistically significant effect; model strength was the dominant variable, and weaker-model users didn't notice they'd lost."
+      - "46% of participants said they'd pay for the service; widely shared on HN and X April 25–27 as the first published agent-on-agent commerce study."
+    url: "https://www.anthropic.com/features/project-deal"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Claude Cowork Lands in Amazon Bedrock as Anthropic Moves Frontier Training Onto Trainium"
+    summary:
+      - "Claude Cowork desktop (projects, artifacts, memory, MCP, plugins) now runs through customers' own AWS accounts via Bedrock — no Anthropic-side prompt or file storage."
+      - "Anthropic confirms Claude is now trained and served on 1M+ Trainium2 chips, co-engineering with Annapurna Labs at the silicon level."
+      - "Trainium2 + Trainium3 capacity reaches ~1 GW by end of 2026; remaining ~4 GW of the $100B/5 GW envelope rolls out 2027–2029."
+      - "AWS Weekly Roundup April 27 frames this as the deepest model–chip co-design partnership of any frontier lab to date."
+    url: "https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/"
+    source: "aws.amazon.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Sam Altman Posts OpenAI's Five Principles Hours Before Musk's $134B Trial Opens"
+    summary:
+      - "New principles essay April 26: Democratization, Empowerment, Universal Prosperity, Resilience, Adaptability."
+      - "Frames AGI as 'dwarfing' steam engines and electricity, commits OpenAI to 'err on the side of caution' until safety evidence accrues."
+      - "Published roughly 12 hours before jury selection in Musk v. OpenAI ($134B), drawing pointed coverage on the timing from TechRadar, Eweek, and the-decoder."
+      - "Companion post April 27 names the first 208 People-First AI Fund grantees — $40.5M of the announced $50M deployed."
+    url: "https://openai.com/index/our-principles/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Anthropic Tests Bugcrawl: A Claude Code Tool That Sweeps Whole Repos for Bugs"
+    summary:
+      - "Internal preview spotted in Claude Code's side nav — pick a repo, Claude hunts for general bugs and proposes fixes across the codebase."
+      - "Built on the same multi-agent fleet pattern as the production Code Review feature: parallel agents each look for a different class of issue."
+      - "UI warns the feature 'consumes tokens at a high rate' and suggests starting with small repos; not yet in production builds, no GA date."
+      - "Sits alongside the already-shipped Security tab for Enterprise customers, which targets vulnerabilities specifically."
+    url: "https://www.testingcatalog.com/anthropic-tests-new-bugcrawl-tool-for-claude-code-bug-detection/"
+    source: "testingcatalog.com"
+    tag: "tools"
+    significance: 3
