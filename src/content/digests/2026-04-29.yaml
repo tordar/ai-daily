@@ -1,0 +1,56 @@
+date: "2026-04-29"
+stories:
+  - title: "Microsoft Drops Cloud and Model Exclusivity in Reset OpenAI Pact Through 2032"
+    summary:
+      - "Microsoft loses exclusive resale rights to OpenAI models; OpenAI products can now ship on AWS, Google Cloud, and Oracle, though Azure stays primary and gets first-ship rights."
+      - "Microsoft's IP license through 2032 becomes non-exclusive; the AGI escape clause that would have let OpenAI walk on payments is removed."
+      - "OpenAI keeps a 20% revenue share to Microsoft through 2030 (now under an undisclosed cap) and commits to spend at least $250B on Azure by 2032."
+      - "Two HN front-page threads (items 47921248 and 47921262) within hours; covered by every major outlet as the biggest restructuring since Microsoft's 2019 investment."
+    url: "https://openai.com/index/next-phase-of-microsoft-partnership/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "China Vetoes Meta's $2B Manus Acquisition on National Security Grounds"
+    summary:
+      - "NDRC ordered all parties to withdraw; decision was elevated to the National Security Commission chaired by Xi Jinping before being finalized."
+      - "Co-founders Xiao Hong and Ji Yichao had been barred from leaving China during the months-long probe that began days after the December announcement."
+      - "Meta had already integrated Manus into internal systems and onboarded its executives — unwinding will be 'complicated in practice' per CNN/TechCrunch."
+      - "First major foreign-AI acquisition blocked by Beijing; CNBC frames it as an explicit signal that AI talent is now treated as a strategic national asset."
+    url: "https://techcrunch.com/2026/04/27/china-vetoes-metas-2b-manus-deal-after-months-long-probe/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Unauthenticated RCE in Hugging Face LeRobot Sits Unpatched at CVSS 9.8"
+    summary:
+      - "CVE-2026-25874: pickle.loads() on attacker-controlled gRPC payloads in SendPolicyInstructions and SendObservations executes before any validation."
+      - "Production LeRobot deployments often bind to 0.0.0.0; VulnCheck validated exploitation against version 0.4.3 with no auth required."
+      - "LeRobot tech lead Steven Palma says the inference path 'needs to be almost entirely refactored'; fix not landing until 0.6.0."
+      - "Affected #nosec-suppressed code shipped despite Hugging Face authoring safetensors specifically to retire pickle — same project, opposite practice."
+    url: "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html"
+    source: "thehackernews.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Gemini Wires Claude and ChatGPT into Live Crypto Trading via MCP"
+    summary:
+      - "First regulated US exchange to expose order entry to LLMs over an MCP server — natural-language rules like 'sell ETH if it drops below $3,000' get executed by the model."
+      - "Launch skills are read-only plus order placement: Get Market Data, Find the Spread, Retrieve Candles; the agent can't withdraw, transfer, or change account settings."
+      - "Open MCP standard means any compliant client works — Anthropic and OpenAI cited at launch, with more to follow; no per-call fee, only standard trading fees."
+      - "Concrete production deployment of MCP outside coding tools, immediately after the Linux Foundation took stewardship of the protocol."
+    url: "https://www.gemini.com/blog/introducing-agentic-trading-on-gemini-the-future-of-crypto-is-autonomous"
+    source: "gemini.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Anthropic and OpenAI Brief House Homeland Security on Cyber-Capable Models Behind Closed Doors"
+    summary:
+      - "Two separate classified briefings April 28; first time the labs have walked Congress through offensive-cyber capabilities of their newest models."
+      - "Anthropic detailed why Claude Mythos Preview is being held in Project Glasswing controlled access — the model finds and exploits critical flaws too quickly for a public release."
+      - "OpenAI laid out a tiered release plan for GPT-5.4-Cyber; staffers tied the urgency to a prior session on jailbroken models that demonstrated school-shooting and bombing scenarios."
+      - "Lawmakers say the briefings have shifted timelines on AI-cyber legislation aimed at under-resourced critical infrastructure operators."
+    url: "https://www.axios.com/2026/04/28/openai-anthropic-congress-cyber-briefings"
+    source: "axios.com"
+    tag: "industry"
+    significance: 3
