@@ -1,0 +1,67 @@
+date: "2026-04-30"
+stories:
+  - title: "Nvidia Open-Sources Nemotron 3 Nano Omni, a 30B Multimodal MoE With 9x Throughput"
+    summary:
+      - "Hybrid Mamba-Transformer MoE: 30B total, 3B active, 256K context, vision/audio/video/text in a single inference loop."
+      - "Tops six open-model leaderboards — MMlongbench-Doc, OCRBenchV2, WorldSense, DailyOmni, VoiceBench, MediaPerf — at ~9× the throughput of peer omni models."
+      - "BF16, FP8, NVFP4, and Unsloth GGUFs on Hugging Face day one; community report of 1M-context 25 t/s on a $400 RX 6700 XT."
+      - "Free tier on OpenRouter; Foxconn, Palantir, Oracle, and H Company already in production; Crusoe and Clarifai serving at 400 t/s zero-day."
+    url: "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/"
+    source: "nvidia.com"
+    tag: "open-source"
+    significance: 5
+
+  - title: "Poolside Releases Laguna XS.2, Its First Open-Weight Coding Model Under Apache 2.0"
+    summary:
+      - "33B-total / 3B-active MoE, fully in-house training stack, 30T tokens, sized to fit a 36 GB Mac via Ollama."
+      - "44.5% SWE-bench Pro, 30.1% Terminal-Bench 2.0, 68.2% SWE-bench Verified — beats Claude Haiku 4.5 (39.5%) and dense Gemma 4 31B (35.7%) on Pro."
+      - "Launch-day support in vLLM, Transformers, and NVIDIA TRT-LLM; weights on Hugging Face, free on OpenRouter, in Ollama and Puter.js."
+      - "Companion proprietary Laguna M.1 (72.5% SWE-bench Verified) free via API for a limited time; HN front page item 47936511."
+    url: "https://poolside.ai/blog/introducing-laguna-xs2-m1"
+    source: "poolside.ai"
+    tag: "models"
+    significance: 4
+
+  - title: "AWS Lands OpenAI Models on Bedrock and Reboots Amazon Quick as a Desktop AI Agent"
+    summary:
+      - "What's Next with AWS 2026 in San Francisco, April 28 — first concrete shipping of the post-Microsoft OpenAI distribution rights."
+      - "GPT-5.5 and GPT-5.4 in preview on Amazon Bedrock; Codex on Bedrock authenticates with AWS creds and counts toward AWS commitments."
+      - "Bedrock Managed Agents (limited preview) is built on the OpenAI harness — first non-Microsoft cloud-native OpenAI agent service."
+      - "Amazon Quick relaunches as a local-first desktop app: free tier with no AWS account, $20/user/mo Plus; native Google Workspace, M365, Slack, Salesforce."
+    url: "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/"
+    source: "aws.amazon.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "White House Opposes Anthropic's Plan to Open Mythos Access to 70 More Organizations"
+    summary:
+      - "WSJ scoop, picked up by Bloomberg April 30: Trump admin officials told Anthropic they don't agree with expanding Mythos from ~50 to ~120 entities."
+      - "Two stated objections: cyber-offensive capability proliferation, and Anthropic compute capacity that would dilute government priority access."
+      - "Lands two days after the Anthropic and OpenAI classified briefings to House Homeland Security on cyber-capable models."
+      - "Bloomberg Opinion frames the public spat as already 'eroding national security efforts' that depend on government use of Mythos."
+    url: "https://www.bloomberg.com/news/articles/2026-04-30/white-house-opposes-anthropic-plan-for-mythos-access-wsj-says"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Mistral Ships Workflows in Public Preview, a Temporal-Powered Engine for Enterprise AI"
+    summary:
+      - "Durable, observable orchestration layer baked into Mistral Studio and Le Chat; Python workflows publish to Le Chat for org-wide use."
+      - "Built on Temporal with AI-specific extensions: streaming, large payload handling, traceable execution, human-in-the-loop approvals."
+      - "Mistral says it's already running millions of executions per day across ASML, ABANCA, CMA-CGM, France Travail, La Banque Postale, and Moeve."
+      - "Orchestrator is Mistral-managed, but execution workers and data stay in customer cloud, on-prem, or hybrid environments."
+    url: "https://mistral.ai/news/workflows"
+    source: "mistral.ai"
+    tag: "frameworks"
+    significance: 3
+
+  - title: "FIDO Alliance Stands Up AI Agent Authentication and Agentic Commerce Working Groups"
+    summary:
+      - "Two new groups: Agentic Authentication (delegation + phishing-resistant auth) and Payments (agent-initiated commerce, chaired by Mastercard and Visa)."
+      - "Google donates Agent Payments Protocol (AP2) v0.2 — adds 'Human Not Present' transactions — as the seed spec for the payments group."
+      - "Mastercard and Google co-donate Verifiable Intent, a tamper-evident log of user-authorized agent actions, into the same workstream."
+      - "First serious industry move to standardize agent identity and accountability the way FIDO standardized passkeys for humans."
+    url: "https://fidoalliance.org/fido-alliance-to-develop-standards-for-trusted-ai-agent-interactions/"
+    source: "fidoalliance.org"
+    tag: "industry"
+    significance: 3
