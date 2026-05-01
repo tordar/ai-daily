@@ -1,0 +1,56 @@
+date: "2026-05-01"
+stories:
+  - title: "Anthropic Refunds Claude Code Users After 'HERMES.md' Commit Strings Silently Drained Quotas"
+    summary:
+      - "Substring match in Claude Code's harness-detection logic routed any session whose recent git history contained 'HERMES.md' to extra-usage billing instead of plan quota."
+      - "One Max-20x user lost $200 in overage credits while plan usage was still at 13%; charges occurred silently with no UI warning."
+      - "GitHub issue anthropics/claude-code#53262 traces the bug to the wider crackdown on third-party agent harnesses (Hermes, Codex CLI, Goose)."
+      - "Hit HN front page at 828 points; refunds plus $200 in credits issued ~9 hours later. Discussion: HN item 47948012."
+    url: "https://github.com/anthropics/claude-code/issues/53262"
+    source: "github.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "OpenAI Begins GPT-5.5-Cyber Rollout — Then Quietly Adopts Anthropic's Restricted-Access Model"
+    summary:
+      - "Sam Altman: rollout 'to critical cyber defenders in the next few days' via the expanded Trusted Access for Cyber (TAC) program."
+      - "TAC scaled to thousands of vetted defenders across government, critical infrastructure, security vendors, cloud platforms, and financial institutions."
+      - "TechCrunch headline of the day: 'After dissing Anthropic for limiting Mythos, OpenAI restricts access to Cyber, too' — Altman called the same approach 'fear-based marketing' two weeks ago."
+      - "No technical card or benchmarks against Mythos published; positioned as a fine-tuned GPT-5.5 with relaxed guardrails for security work."
+    url: "https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/"
+    source: "techcrunch.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Mistral Ships Medium 3.5 and Vibe Remote Agents — 77.6% on SWE-bench Verified, Open Weights"
+    summary:
+      - "128B dense multimodal model, 256K context, single set of weights for instruction-following, reasoning, and coding."
+      - "77.6% SWE-bench Verified and 91.4% on τ³-Telecom; beats Devstral 2 and Qwen3.5 397B-A17B on agentic benchmarks."
+      - "Vibe Remote Agents run cloud sandboxes in parallel from the Vibe CLI or Le Chat, open PRs on GitHub, and 'teleport' a local session to the cloud."
+      - "API at $1.5/M input, $7.5/M output; weights on Hugging Face under a modified MIT license; HN discussion at item 47949642."
+    url: "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5"
+    source: "mistral.ai"
+    tag: "models"
+    significance: 4
+
+  - title: "Tencent Open-Sources a 440 MB On-Device Translator That Beats 72B Models in 33 Languages"
+    summary:
+      - "Hy-MT1.5-1.8B-1.25bit ships at 440 MB after Sherry ternary quantization (3:4 sparsity, 1.25 effective bits) — paper accepted to ACL 2026."
+      - "Outperforms Tower-Plus-72B, Qwen3-32B, Microsoft Translator, and Doubao on standard zh/en↔X benchmarks; 1,056 translation directions across 33 languages."
+      - "Custom STQ kernel hits SIMD alignment on mobile CPUs — runs offline on phones with limited RAM."
+      - "Weights and GGUFs on Hugging Face (tencent/Hy-MT1.5-1.8B-1.25bit); release timed to the May Day holiday travel surge in China."
+    url: "https://huggingface.co/tencent/Hy-MT1.5-1.8B-1.25bit"
+    source: "huggingface.co"
+    tag: "open-source"
+    significance: 3
+
+  - title: "ElevenLabs Relaunches ElevenMusic as a Listen-Remix-Create Hybrid With ~4,000 Licensed Artists"
+    summary:
+      - "Pivot from a B2B production library to a consumer app that streams, remixes (genre/tempo), and generates from lyric/melody/mood prompts."
+      - "Free tier caps at 7 songs/day; Pro at $9.99/mo unlocks 500 generations/mo; positioned as 'fully licensed, artist-first by design.'"
+      - "Roughly 4,000 mostly-emerging human artists onboarded with revenue share; direct shot at Suno and Udio amid mounting label lawsuits."
+      - "Launch coincides with Taylor Swift's legal team filing on AI music likeness — TechCrunch frames the consumer pivot as the bet that licensing wins this round."
+    url: "https://musically.com/2026/04/30/elevenlabs-launches-elevenmusic-as-not-just-a-listening-app/"
+    source: "musically.com"
+    tag: "industry"
+    significance: 3
