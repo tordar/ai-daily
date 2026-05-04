@@ -1,0 +1,56 @@
+date: "2026-05-04"
+stories:
+  - title: "Sam Altman Opens ChatGPT Subs to OpenClaw — Anthropic Holds the Block"
+    summary:
+      - "Altman tweet at 2:33am on May 2: 'sign in to openclaw with your chatgpt account now and use your subscription there.'"
+      - "ChatGPT Plus ($23/mo) now backs GPT-5.4 inside OpenClaw — directly opposite Anthropic's April 4 ban on running Claude Pro/Max plans through third-party harnesses."
+      - "OpenClaw sits at ~346k GitHub stars and 3.2M users; making ChatGPT the auth/billing layer locks that distribution to OpenAI."
+      - "Strategic split: OpenAI is buying agent volume, Anthropic is protecting margins on autonomous-agent token spend."
+    url: "https://thenextweb.com/news/openai-openclaw-chatgpt-subscription-agent"
+    source: "thenextweb.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Anthropic Opens Claude Security Public Beta — Opus 4.7 Auditing Whole Codebases"
+    summary:
+      - "Public beta launched April 30 to all Claude Enterprise customers via the Claude.ai sidebar and claude.ai/security."
+      - "Opus 4.7 traces data flows across files and modules instead of pattern-matching for known signatures, then writes verified patches."
+      - "Adds scheduled scans, Slack/Jira webhooks, CSV/Markdown exports, and triage tracking on top of the February research preview."
+      - "Launch partners include CrowdStrike, Microsoft Security, Palo Alto Networks, SentinelOne, TrendAI, and Wiz; Team and Max access 'coming soon.'"
+    url: "https://siliconangle.com/2026/04/30/anthropic-announces-claude-security-public-beta-find-fix-software-vulnerabilities/"
+    source: "siliconangle.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Uber Burned Its Entire 2026 AI Budget on Claude Code in Four Months"
+    summary:
+      - "CTO Praveen Neppalli Naga told the company it had spent the full annual AI budget by April after rolling Claude Code to 5,000 engineers in December."
+      - "Claude Code adoption jumped 32% → 84% of engineers; per-developer API spend ran $500–$2,000/month."
+      - "70% of committed code now originates from AI; ~11% of live backend updates ship with no human in the loop."
+      - "HN front page (item 47976415) — debate centers on whether $100k/year per engineer in token spend pencils out vs hiring."
+    url: "https://news.ycombinator.com/item?id=47976415"
+    source: "news.ycombinator.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Pentagon Signs Seven Big Tech AI Vendors for Classified Networks — Anthropic Locked Out"
+    summary:
+      - "DoD Friday deal covers SpaceX, OpenAI, Google, Microsoft, Nvidia, AWS, and Reflection on classified networks."
+      - "Anthropic excluded after refusing terms allowing Claude for 'all lawful purposes' including autonomous weapons and mass surveillance."
+      - "Trump administration earlier tagged Anthropic a 'supply chain risk' — a label previously reserved for foreign-adversary-linked firms."
+      - "Federal judge in California blocked the blanket ban last month; White House reportedly reopened talks after the Mythos and Claude Security launches."
+    url: "https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic"
+    source: "cnn.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Hermes Agent Crosses 130K Stars as Developers Migrate Off OpenClaw"
+    summary:
+      - "Nous Research's persistent personal agent for Telegram, Discord, Slack, WhatsApp, Signal, and Email is now ~130k GitHub stars — among the fastest-growing OSS projects on record."
+      - "Closed learning loop after every task auto-extracts skills and persists user preferences across sessions."
+      - "Works with every major model provider; pitch is no vendor lock-in vs the OpenClaw + ChatGPT couple."
+      - "Migration buzz on r/LocalLLaMA this week, fueled by the ClawHub malware audit that found 824 malicious skills out of 10,700."
+    url: "https://github.com/nousresearch/hermes-agent"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
