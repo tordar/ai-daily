@@ -1,0 +1,56 @@
+date: "2026-05-05"
+stories:
+  - title: "Anthropic and OpenAI Both Launch Wall Street Joint Ventures on the Same Day"
+    summary:
+      - "Anthropic JV with Blackstone, Hellman & Friedman, Goldman Sachs at $1.5B — $300M each from Anthropic, Blackstone, H&F; $150M from Goldman; co-investors include Apollo, GIC, Sequoia, General Atlantic, Leonard Green."
+      - "OpenAI's 'The Deployment Company' closes $4B from 19 investors at a $10B valuation, anchored by TPG, Brookfield, Advent, Bain — with a 17.5% guaranteed return over five years."
+      - "Both vehicles embed forward-deployed engineers inside customer companies (Palantir-style) instead of selling API credits — direct shot at McKinsey/Accenture-style AI consulting."
+      - "Initial pipeline: each consortium's PE-owned portfolio in healthcare, manufacturing, financial services, retail, and real estate; both labs are reportedly targeting fall 2026 IPOs."
+    url: "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Baidu's ERNIE 5.1 Preview Tops LMArena's Chinese Leaderboard, Beats DeepSeek V4-Pro"
+    summary:
+      - "ERNIE 5.1 Preview hits #13 globally on LMArena Text Arena with a 1,476 score — #1 Chinese model, ahead of DeepSeek V4-Pro released a week earlier."
+      - "Roughly one-third the total parameters of ERNIE 5.0 and about half the active parameters; Baidu says it took ~6% of ERNIE 5.0's pre-training compute."
+      - "Trained with decoupled fully-asynchronous reinforcement learning and scaled agentic post-training; full ERNIE 5.1 expected at Baidu Create 2026."
+      - "Tops LMArena's Legal AI category worldwide; not released as open weights."
+    url: "https://ernie.baidu.com/blog/posts/ernie-5.1-preview-0430-release-on-lmarena/"
+    source: "ernie.baidu.com"
+    tag: "models"
+    significance: 3
+
+  - title: "Sakana AI Open-Sources KAME, a Tandem Speech-to-Speech Model That Injects LLM Knowledge in Real Time"
+    summary:
+      - "Front-end Moshi-style S2S transformer streams audio every ~80ms; back-end LLM runs async and pushes 'oracle' tokens into a fourth stream as they arrive."
+      - "MT-Bench score jumps from 2.05 to 6.43 versus the bare S2S baseline while keeping near-zero response latency vs the 2.1s of cascaded systems."
+      - "Backend is swappable — works with GPT-4.1, Claude Opus 4.1, or Gemini 2.5 Flash with no front-end retraining; weights and inference/finetuning code on HuggingFace (SakanaAI/kame)."
+      - "Paper accepted at ICASSP 2026."
+    url: "https://pub.sakana.ai/kame/"
+    source: "sakana.ai"
+    tag: "research"
+    significance: 3
+
+  - title: "OpenAI Ships Passkey-Only Account Security in a Yubico Partnership"
+    summary:
+      - "Opt-in setting that disables passwords entirely; sign-in requires passkeys or hardware security keys, with email/SMS recovery turned off in favor of backup keys."
+      - "Sign-in sessions are shortened to limit blast radius if a device or session is compromised; targeted at journalists, dissidents, elected officials, and security researchers."
+      - "Yubico bundle offered at preferred pricing through OpenAI."
+      - "Will be mandatory June 1 for individual members of OpenAI's Trusted Access for Cyber program accessing GPT-5.5-Cyber."
+    url: "https://openai.com/index/advanced-account-security/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "GPT-5.5 Plans Its Own May 5 Launch Party — Altman Invites Musk Anyway"
+    summary:
+      - "Altman told Stripe Sessions the model itself proposed the May 5 date and 5:55 PM start, asked for short speeches, and requested a suggestion box for a future GPT-5.6."
+      - "Invite-only meetup in San Francisco; Codex selected attendees from a public registration form that filled almost immediately."
+      - "Altman publicly invited Elon Musk despite Musk's $134B lawsuit against OpenAI: 'he can come if he wants… the world needs more love.'"
+      - "Ceremonial only — GPT-5.5 itself shipped to ChatGPT and the API on April 23."
+    url: "https://www.aol.com/articles/sam-altman-asked-gpt-5-083001942.html"
+    source: "aol.com"
+    tag: "community"
+    significance: 2
