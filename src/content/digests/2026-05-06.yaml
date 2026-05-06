@@ -1,0 +1,56 @@
+date: "2026-05-06"
+stories:
+  - title: "OpenAI Ships GPT-5.5 Instant as ChatGPT's New Default Model"
+    summary:
+      - "Replaces GPT-5.3 Instant across ChatGPT and ships in the API as `chat-latest`; old model stays available for paid users for three months."
+      - "52.5% fewer hallucinated claims on high-stakes medical, legal, and financial prompts; 37.3% fewer incorrect claims on user-flagged conversations."
+      - "Responses are 30.2% shorter in words and 29.2% shorter in lines on internal evals."
+      - "AIME 2025 jumps to 81.2 from 65.4; MMMU-Pro to 76 from 69.2."
+      - "Personalization from past chats, files, and connected Gmail rolling out to Plus and Pro on web."
+    url: "https://openai.com/index/gpt-5-5-instant/"
+    source: "openai.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Apple Will Let iOS 27 Users Pick Their AI Provider for Siri"
+    summary:
+      - "Bloomberg: Extensions setting in iOS 27, iPadOS 27, and macOS 27 lets users route Siri queries to Claude or Gemini, not just ChatGPT."
+      - "Ends OpenAI's exclusive Apple Intelligence deal that shipped with iOS 18."
+      - "Selection lives under Apple Intelligence and Siri in Settings; requires the third-party app to be installed."
+      - "Apple plans to unveil the change at WWDC on June 8."
+    url: "https://sherwood.news/tech/apple-to-let-users-choose-between-anthropic-google-and-openai-models/"
+    source: "sherwood.news"
+    tag: "industry"
+    significance: 4
+
+  - title: "NIST CAISI Pegs DeepSeek V4 Pro Eight Months Behind US Frontier"
+    summary:
+      - "Government evaluation across nine benchmarks in cyber, software engineering, science, abstract reasoning, and math — including held-out PortBench and ARC-AGI-2 semi-private."
+      - "V4 Pro scores 32% on CTF-Archive-Diamond cyber vs GPT-5.5's 71%; 46% on ARC-AGI-2 semi-private vs 79%."
+      - "Performs roughly on par with GPT-5, which shipped about eight months earlier; called the most capable Chinese model evaluated to date."
+      - "More cost-efficient than GPT-5.4 mini on 5 of 7 benchmarks, ranging 53% cheaper to 41% more expensive."
+    url: "https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro"
+    source: "nist.gov"
+    tag: "research"
+    significance: 3
+
+  - title: "OpenAI Details the WebRTC Stack Behind Voice AI for 900M Weekly Users"
+    summary:
+      - "Engineering deep-dive on rebuilding the realtime voice pipeline to keep first-hop latency, jitter, and packet loss low at scale."
+      - "Replaces one-port-per-session media termination with a transceiver edge service that converts WebRTC into simpler internal protocols for inference, ASR, TTS, and tools."
+      - "Smaller fixed UDP surface to load-balance and secure; stateful ICE and DTLS sessions get stable ownership across global routing."
+      - "On HN front page; authored by Yi Zhang and William McDonald."
+    url: "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "OpenAI Opens ChatGPT Ads Manager Beta With CPC Bidding"
+    summary:
+      - "Self-serve Ads Manager and partner buys roll out three months after ads went live in the US Free and Go tiers."
+      - "Cost-per-click bidding plus expanded measurement; ads stay clearly labeled and don't influence answer ranking, OpenAI says."
+      - "Plus, Pro, Business, Enterprise, and Education tiers remain ad-free."
+    url: "https://openai.com/index/new-ways-to-buy-chatgpt-ads/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 2
