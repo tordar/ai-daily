@@ -1,0 +1,59 @@
+date: "2026-05-07"
+stories:
+  - title: "Anthropic Lands SpaceX Colossus 1 and Doubles Claude Code Rate Limits"
+    summary:
+      - "Anthropic takes all the compute capacity at SpaceX's Memphis Colossus 1 site: 300+ MW and 220,000+ Nvidia H100/H200/GB200 GPUs landing within the month."
+      - "Claude Code five-hour limits doubled for Pro, Max, Team, and Enterprise plans; peak-hour throttling on Pro and Max removed."
+      - "Claude Opus API tier-1 input rate limit jumps 1500%; output tokens-per-minute up 900%."
+      - "Notable plot twist: Musk has publicly called Anthropic 'misanthropic and evil' while suing OpenAI; Anthropic also expressed interest in developing multi-gigawatt orbital compute with SpaceX."
+      - "On HN front page; Bloomberg, CNBC, and Engadget all leading with the Memphis tie-up."
+    url: "https://www.anthropic.com/news/higher-limits-spacex"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Claude Managed Agents Add Dreaming, Outcomes, and Multi-Agent Orchestration"
+    summary:
+      - "Code with Claude SF keynote ships three new capabilities for Claude Managed Agents."
+      - "Dreaming (research preview): a scheduled offline pass that reviews past sessions, prunes stale notes, merges duplicates, and surfaces recurring mistakes — triggered via /dream or run automatically."
+      - "Outcomes (public beta): rubric-driven success criteria graded in a separate context; up to 10pp task-success lift in internal evals, biggest gains on harder problems."
+      - "Multi-agent orchestration (public beta): a lead agent fans tasks out to specialists with their own models, prompts, and tools, working in parallel on a shared filesystem."
+      - "Anthropic says API volume is up 17x year-on-year; Mercado Libre's 23,000 engineers are targeting 90% autonomous coding by Q3."
+    url: "https://claude.com/blog/new-in-claude-managed-agents"
+    source: "claude.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "SubQ Ships the First Sub-Quadratic Frontier LLM with a 12M-Token Context Window"
+    summary:
+      - "Subquadratic exits stealth with $29M seed and SubQ 1M-Preview, an LLM built on Subquadratic Sparse Attention that scales linearly in compute and memory."
+      - "Native 12M-token context; ~52x faster than FlashAttention at 1M tokens; priced at roughly 1/5 of Claude Opus or GPT-5.5 for comparable workloads."
+      - "82.4% on SWE-Bench, edging Opus 4.6 (81.4%) and Gemini 3.1 Pro (80.6%)."
+      - "Two beta products: an API exposing the full 12M window and SubQ Code, a CLI agent on the same model."
+      - "On HN with active architecture debate (item 48023079)."
+    url: "https://subq.ai/introducing-subq"
+    source: "subq.ai"
+    tag: "models"
+    significance: 4
+
+  - title: "Anthropic Drops Ten Wall Street Agents and Microsoft 365 Add-Ins for Claude"
+    summary:
+      - "Ten ready-to-run finance agent templates for pitchbooks, KYC screening, model building, earnings reviews, and month-end close."
+      - "Each template ships as a plugin in Claude Cowork and Claude Code, plus a cookbook for Claude Managed Agents."
+      - "Excel, PowerPoint, and Word add-ins live now; Outlook coming soon — context carries between apps so a Claude session can move from spreadsheet to deck without re-prompting."
+      - "Eight new data connectors (Dun & Bradstreet, Fiscal AI, Guidepoint, IBISWorld, Verisk, others) plus a Moody's MCP app covering 600M+ public and private companies."
+    url: "https://www.anthropic.com/news/finance-agents"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "xAI Ships Grok Connectors for Slack, Notion, Google Workspace, GitHub, and Linear"
+    summary:
+      - "Live on Grok Web: deep app integrations that let Grok read and write across the tools developers actually live in."
+      - "Slack and Notion: search and post messages, edit pages, databases, and wikis across team docs."
+      - "Google Workspace bundle covers Gmail, Drive, Docs, Sheets, and Calendar in one connector; GitHub connector handles code search, PR summaries, and reviews."
+      - "Linear connector reads the backlog, summarizes sprint progress, and creates new issues."
+    url: "https://x.ai/news/grok-connectors"
+    source: "x.ai"
+    tag: "tools"
+    significance: 2
