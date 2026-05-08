@@ -1,0 +1,68 @@
+date: "2026-05-08"
+stories:
+  - title: "OpenAI Drops Three Realtime Voice Models With GPT-5-Class Reasoning"
+    summary:
+      - "GPT-Realtime-2: speech-in/speech-out model with GPT-5-class reasoning, parallel tool calls, spoken preambles like 'let me check that,' and a 128K context (up from 32K)."
+      - "GPT-Realtime-Translate: live speech-to-speech translation across 70+ input languages and 13 output languages, designed to keep pace with the speaker."
+      - "GPT-Realtime-Whisper: streaming speech-to-text that emits text as the user is still talking — aimed at captions, meeting notes, and live agents."
+      - "GPT-Realtime-2 scores 15.2pp higher than GPT-Realtime-1.5 on Big Bench Audio; Zillow reports a 26pp jump in call success rates in early testing."
+      - "Pricing: $32/$64 per 1M audio input/output tokens for GPT-Realtime-2; $0.034/min for Translate; $0.017/min for Whisper."
+    url: "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/"
+    source: "openai.com"
+    tag: "models"
+    significance: 5
+
+  - title: "DeepMind's AlphaEvolve Posts Real Wins in Genomics, Power Grids, and Quantum"
+    summary:
+      - "One-year impact paper: the Gemini-powered coding agent has been deployed on production scientific and engineering workloads at Google and partners."
+      - "Genomics: cut variant detection errors in PacBio's DeepConsensus pipeline by 30%."
+      - "Energy: lifted feasible-solution rates for an AC Optimal Power Flow GNN from 14% to 88%."
+      - "Quantum: produced circuits with 10x lower error than hand-tuned baselines for molecular simulation on Google's Willow chip."
+      - "Earth AI natural-disaster risk model gained 5pp average accuracy across 20 categories (wildfires, floods, tornadoes, etc.)."
+    url: "https://deepmind.google/blog/alphaevolve-impact/"
+    source: "deepmind.google"
+    tag: "research"
+    significance: 4
+
+  - title: "The Information: Meta Builds 'Hatch' Consumer Agent on Claude"
+    summary:
+      - "Codename Hatch — an autonomous agent for Facebook, Instagram, WhatsApp, and Threads that summarizes chats, tracks competitors, and posts on trending topics."
+      - "Currently powered by Claude Opus 4.6 and Sonnet 4.6; Meta plans to swap in its own Muse Spark model at launch."
+      - "Internal testing wraps end of June; a separate agentic Instagram shopping tool targets end of 2026."
+      - "Frames Meta as following Anthropic and OpenAI into the consumer-agent race, not the chatbot race."
+    url: "https://www.theinformation.com/articles/meta-building-ai-agent-called-hatch-agentic-shopping-tool-instagram"
+    source: "theinformation.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "DeepSeek-TUI Crosses 20k Stars With a V4 Coding Agent in the Terminal"
+    summary:
+      - "Independent Rust-based coding agent for DeepSeek V4 Pro and V4 Flash; #2 on GitHub Trending today (+5,799 stars in 24 hours)."
+      - "Single binary, no Node/Python; ships an MCP client, sandbox, durable task queue, LSP diagnostics, and live cost tracking."
+      - "Built around DeepSeek V4's 1M-token context and prefix cache, with native chain-of-thought streaming."
+      - "v0.8.20 shipped today; 76 releases since launch from solo maintainer Hunter Bown."
+    url: "https://github.com/Hmbown/DeepSeek-TUI"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Addy Osmani's Agent Skills Hits 33k Stars With 20 Production Workflows"
+    summary:
+      - "Markdown skills that encode senior-engineer workflows for AI coding agents — specs, tests, reviews, and ship gates."
+      - "20 skills across Define, Plan, Build, Verify, Review, and Ship phases; 3 specialist personas, 4 reference checklists, 7 slash commands."
+      - "Works with any agent that accepts system prompts; MIT-licensed; baked-in practices from 'Software Engineering at Google'."
+      - "+3,062 stars in the last 24 hours, sitting near the top of GitHub Trending."
+    url: "https://github.com/addyosmani/agent-skills"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Perplexity Adds Finance Search to the Agent API"
+    summary:
+      - "One tool call returns licensed financial datasets, real-time prices, and cited web sources — no per-vendor wiring."
+      - "Covers filings, fundamentals, earnings, transcripts, estimates, ETFs, and market activity with inline citations on every result."
+      - "Lands alongside Perplexity Computer for Professional Finance, which generates tearsheets, memos, and dashboards on top of the same data."
+    url: "https://www.perplexity.ai/hub/blog/introducing-finance-search-in-the-agent-api"
+    source: "perplexity.ai"
+    tag: "tools"
+    significance: 2
