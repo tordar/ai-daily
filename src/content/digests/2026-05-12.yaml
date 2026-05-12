@@ -1,0 +1,69 @@
+date: "2026-05-12"
+stories:
+  - title: "Google Catches Hackers Using AI to Build a Working Zero-Day"
+    summary:
+      - "Google Threat Intelligence Group says it disrupted the first AI-built zero-day used in a planned mass-exploitation campaign."
+      - "The exploit, written in Python with help from cybercrime model OpenClaw, bypasses 2FA on a widely deployed open-source web admin tool."
+      - "Attackers tipped Google off by leaving a hallucinated CVSS score inside the script; Google notified the vendor before any victims were hit."
+      - "GTIG analyst John Hultquist: \"It's here. The era of AI-driven vulnerability and exploitation is already here.\""
+      - "Front-page coverage at CNBC, Bloomberg, NBC News, and Bleeping Computer; on HN with active debate about Anthropic's Mythos and Project Glasswing."
+    url: "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access"
+    source: "cloud.google.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Anthropic Brings the Native Claude Platform Into AWS Accounts"
+    summary:
+      - "Claude Platform on AWS is now GA — Anthropic's full native platform (Messages API, Console, Managed Agents, Agent Skills, MCP connector, web search/fetch, code execution) accessed through an AWS account."
+      - "Billing, IAM auth, and CloudTrail logging route through AWS; Anthropic still operates the service and processes data outside the AWS security boundary."
+      - "Opus 4.7, Sonnet 4.6, and Haiku 4.5 available at launch across 17 AWS regions; new models ship there as they release."
+      - "AWS is the first cloud provider to host the native Claude Platform, distinct from Bedrock; follows Anthropic's $100B+ AWS compute commitment."
+      - "On HN front page (item 48103042) with active back-and-forth about what \"on AWS\" actually means."
+    url: "https://www.anthropic.com/news/claude-platform-on-aws"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI Stands Up a $4B Deployment Company and Buys Tomoro"
+    summary:
+      - "New OpenAI-controlled entity (\"DeployCo\") launches with $4B+ backing to embed Forward Deployed Engineers inside enterprises and rebuild workflows around GPT-5.5."
+      - "Founding investors led by TPG with Advent, Bain Capital, Brookfield, plus Capgemini, Bain & Company, and McKinsey as integration partners; $10B pre-money."
+      - "Acquires London-based applied-AI firm Tomoro, adding ~150 FDEs and Deployment Specialists with prior work for Tesco, Virgin Atlantic, and Supercell."
+      - "Mirrors Palantir's FDE playbook; on HN (item 48094531)."
+    url: "https://openai.com/index/openai-launches-the-deployment-company/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic Adds Agent View to Claude Code for Parallel Sessions"
+    summary:
+      - "New dashboard inside Claude Code that shows every active session in one place — which agents are waiting on input, which are still working, which are done."
+      - "Background any running session with /bg, or launch headless with `claude --bg [task]`; press the left arrow or run `claude agents` to open the view."
+      - "Research preview on Pro, Max, Team, Enterprise, and Claude API — normal rate limits still apply."
+      - "Part of Anthropic's push to turn Claude Code from a chat-driven CLI into an agent-operations layer for software teams."
+    url: "https://claude.com/blog/agent-view-in-claude-code"
+    source: "claude.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Hermes Agent Dethrones OpenClaw at #1 on OpenRouter"
+    summary:
+      - "Nous Research's open-source self-improving agent took the top spot on OpenRouter's global daily rankings on May 10 — 224B tokens/day vs. OpenClaw's 186B."
+      - "Persistent agent with memory across sessions, 40+ built-in tools (browser, vision, search), and 20 chat surfaces (Telegram, Discord, Slack, Google Chat, terminal)."
+      - "\"Tenacity\" v0.13.0 (May 7) added a Kanban board for managing sub-agents, a /goal command for long-horizon tasks, and security hardening."
+      - "Free to run on any VPS, home server, or laptop; reads as the first open-source agent to lead an aggregator-wide ranking."
+    url: "https://github.com/NousResearch/hermes-agent"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "pi-mono Crosses 44k Stars as a Full Coding-Agent Stack in One Repo"
+    summary:
+      - "Indie dev Mario Zechner's monorepo bundles a coding-agent CLI, a unified Anthropic/OpenAI/Google/Groq LLM API, TUI + web UI libraries, a Slack bot, and vLLM pods."
+      - "All components are designed as interchangeable parts, so teams can swap providers or UIs without rewriting the agent loop."
+      - "On GitHub Trending this week alongside semantic codebase search, an autonomous ML engineer, and a multi-agent trading firm — the \"team of agents\" pattern keeps eating single-chatbot tools."
+      - "Already powers production systems including the OpenClaw coding agent."
+    url: "https://github.com/badlogic/pi-mono"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
