@@ -140,14 +140,32 @@ stories:
   # ... more stories (5-7 total)
 ```
 
-Then generate the OG image and commit. Before pushing, sanity-check the diff — if it touches anything outside `src/content/digests/` and `public/og/`, STOP and investigate (Step 0 was probably skipped):
+Then generate the OG image and commit. **Both the YAML and the OG png must exist before pushing.** Two runs in May 2026 published YAML-only digests because `npm run build:og` failed silently and the soft sanity check didn't catch it. The block below has hard guards that exit non-zero if either expected output is missing — run it as written:
 
 ```bash
+TODAY=$(date -u +%F)
+echo "Publishing digest for $TODAY"
+
+# Install deps and build the OG image. The sandbox may start without node_modules.
+npm ci
 npm run build:og
-git add src/content/digests/ public/og/
-git status   # must show ONLY the new YYYY-MM-DD.yaml and the matching OG png
-git diff --cached --stat   # same check
-git commit -m "digest: YYYY-MM-DD"
+
+# HARD GUARDS — refuse to proceed if either expected output file is missing.
+test -f "src/content/digests/$TODAY.yaml" \
+  || { echo "FATAL: src/content/digests/$TODAY.yaml is missing. STOP. Do NOT push."; exit 1; }
+test -f "public/og/$TODAY.png" \
+  || { echo "FATAL: public/og/$TODAY.png is missing — npm run build:og likely failed. STOP. Do NOT push."; exit 1; }
+
+# Stage exactly the two expected paths. Never `git add -A` or `git add .`.
+git add "src/content/digests/$TODAY.yaml" "public/og/$TODAY.png"
+
+# Diff sanity check — staged changes must be exactly those two files and nothing else
+# (no deletions, no edits outside src/content/digests/ and public/og/). If anything
+# else appears, STOP — Step 0 was probably skipped.
+git status
+git diff --cached --stat
+
+git commit -m "digest: $TODAY"
 git push origin HEAD:main
 ```
 
@@ -155,6 +173,7 @@ git push origin HEAD:main
 - Always push to `main` explicitly with `HEAD:main`. Cloud runners may check out a sandbox branch (e.g. `claude/*`) whose default upstream is NOT `main`. A plain `git push` pushes to that sandbox and the site never updates.
 - If the push is rejected as non-fast-forward, run `git fetch origin main && git rebase origin/main` and try again. NEVER `--force`.
 - Never use `git add -A` or `git add .` — only add the two specific paths above.
+- **Never publish YAML without its OG image.** If `npm run build:og` fails or the png isn't produced, the guards above will exit and you must stop. Report the failure in your final summary instead — a YAML-only digest breaks social previews and is worse than no digest.
 
 ## Newsletter
 
