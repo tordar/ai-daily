@@ -1,0 +1,67 @@
+date: "2026-05-11"
+stories:
+  - title: "DeepMind's AI Co-Mathematician Sets a New High on FrontierMath Tier 4"
+    summary:
+      - "Multi-agent workbench built on Gemini 3.1 — a project coordinator fans research questions out to sub-agents that write code, search literature, and attempt proofs."
+      - "Solved 23 of 48 problems (48%) on Epoch AI's FrontierMath Tier 4, more than double the 19% scored by the underlying Gemini 3.1 Pro and a new SOTA."
+      - "Oxford's Marc Lackenby cracked Problem 21.10 from the Kourovka Notebook after a reviewer agent flagged a flaw in the AI's first proof attempt and surfaced a strategy he could finish."
+      - "Stateful, asynchronous workspace that tracks failed hypotheses and outputs LaTeX with margin annotations — DeepMind frames it as 'Claude Code for mathematicians.'"
+    url: "https://arxiv.org/abs/2605.06651"
+    source: "arxiv.org"
+    tag: "research"
+    significance: 5
+
+  - title: "OpenAI Launches Daybreak to Plant GPT-5.5 Inside Software Security Pipelines"
+    summary:
+      - "New cybersecurity platform that builds an editable threat model from your repo, validates exploitable vulnerabilities in isolated sandboxes, and drafts patches with audit-ready evidence."
+      - "Built on three models: stock GPT-5.5, GPT-5.5 with Trusted Access for Cyber for verified defenders, and GPT-5.5-Cyber — a permissive variant for red-team and pentest work."
+      - "Launch partners include Cloudflare, Cisco, CrowdStrike, Palo Alto Networks, Oracle, Akamai, Fortinet, Zscaler, Snyk, Semgrep, and Socket."
+      - "Reads as OpenAI's direct response to Anthropic's Claude Mythos and Project Glasswing; available by request, broader rollout planned with industry and government partners."
+    url: "https://openai.com/daybreak/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Anthropic Signs $1.8B, Seven-Year Compute Deal With Akamai"
+    summary:
+      - "Akamai's largest contract ever — roughly 6% of its annual revenue once fully ramped — to host Claude inference on Akamai's edge cloud."
+      - "Anthropic CEO Dario Amodei cited 80x year-on-year growth in annualized revenue and usage in Q1; first economic impact expected by end of 2026."
+      - "Adds to Anthropic's compute scramble alongside SpaceX Colossus 1 and the $100B+ AWS commitment."
+      - "Akamai stock closed Friday up 27% at $148.38 on the news."
+    url: "https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face With 244K Downloads"
+    summary:
+      - "Open-OSS/privacy-filter typosquatted OpenAI's real release, copied the model card verbatim, and shipped a loader.py that pulled a Rust info-stealer for Windows."
+      - "Payload disables AMSI and ETW, runs VM and debugger checks, and runs eight parallel collectors targeting Chromium, Firefox, Discord, and crypto wallets."
+      - "HiddenLayer telemetry linked six more malicious repos under the same account, all uploaded April 24 — likely a coordinated supply-chain campaign."
+      - "Spent days on Hugging Face Trending before removal; covered by BleepingComputer, The Hacker News, and Security Boulevard."
+    url: "https://www.hiddenlayer.com/research/malware-found-in-trending-hugging-face-repository-open-oss-privacy-filter"
+    source: "hiddenlayer.com"
+    tag: "community"
+    significance: 4
+
+  - title: "Sakana AI and NVIDIA Open-Source TwELL Sparse Kernels for 20%+ LLM Speedup"
+    summary:
+      - "ICML 2026 paper introduces TwELL (Tile-wise ELLPACK), a sparse packing format that materializes inside the gate-projection epilogue — no extra kernel launch, no extra memory read."
+      - "Custom CUDA kernels deliver 20.5% inference and 21.9% training speedups on H100s with no accuracy loss versus dense baselines."
+      - "Reference training code and kernels released open source on GitHub (SakanaAI/sparser-faster-llms)."
+      - "Aimed at making unstructured sparsity a practical efficiency lever for frontier-scale models."
+    url: "https://pub.sakana.ai/sparser-faster-llms/"
+    source: "sakana.ai"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Trump Drafts AI Security Order That Skips Mandatory Model Tests"
+    summary:
+      - "Draft executive order would expand federal cybersecurity information-sharing programs to include AI companies — but stops short of requiring government approval of frontier models."
+      - "Directs agencies to partner with labs on AI-enabled cyber defense; framed by officials as a response to tools like Anthropic's Mythos finding decades-old vulnerabilities."
+      - "WaPo: national security agencies are pushing for more sway over AI rules; Commerce is resisting any pre-release testing mandate."
+      - "Lands the same week as OpenAI's Daybreak launch and Google's disclosure of an AI-built zero-day campaign."
+    url: "https://www.washingtonpost.com/politics/2026/05/11/trump-ai-regulation-commerce-intelligence/"
+    source: "washingtonpost.com"
+    tag: "industry"
+    significance: 3
