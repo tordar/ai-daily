@@ -1,0 +1,56 @@
+date: "2026-05-13"
+stories:
+  - title: "Google Replaces the Chromebook With a Gemini-First Googlebook"
+    summary:
+      - "Android Show I/O Edition reveal: Googlebook laptops, an Android 17-based desktop OS (codename Aluminium), and Gemini Intelligence across phones, Wear OS, Auto, and glasses."
+      - "First Googlebooks ship this fall with Acer, ASUS, Dell, HP, and Lenovo; each has a 'glowbar' on the lid and runs Android apps natively, with files synced from Android phones."
+      - "Create My Widget lets users describe a widget in natural language (TechRadar calls it the 'first step in generative UI'); Gemini Intelligence rolls to Galaxy S26 and Pixel 10 this summer."
+      - "On HN front page (item 48111545): 749 points, 464 comments."
+    url: "https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/"
+    source: "blog.google"
+    tag: "industry"
+    significance: 5
+
+  - title: "DeepMind Puts Gemini Inside the Mouse Cursor"
+    summary:
+      - "Magic Pointer captures the visual and semantic context around the cursor so users can point at a paragraph, product, or code block instead of typing a prompt."
+      - "Live today: ask Gemini in Chrome about whatever your pointer is over, plus playable demos in Google AI Studio."
+      - "Ships in Googlebook this fall, the developer-facing companion to the consumer Android Show reveal."
+      - "DeepMind frames it as the first cursor redesign in 50+ years — shifting the work of conveying intent from the user to the model."
+    url: "https://deepmind.google/blog/ai-pointer/"
+    source: "deepmind.google"
+    tag: "research"
+    significance: 4
+
+  - title: "Anthropic Eyes a $900B Valuation in a New $30B Round"
+    summary:
+      - "Bloomberg: Anthropic is asking investors to submit allocations within 48 hours on a new round of at least $30B."
+      - "$900B+ pre-money would top OpenAI's $852B post from earlier this year — the first time Anthropic leads OpenAI by valuation."
+      - "Follows the February $30B Series G at $380B and an annualized revenue run rate of $30B (80x Q1 growth)."
+      - "Round could close this month; company is in early talks with Goldman, JPMorgan, and Morgan Stanley about an October 2026 IPO."
+    url: "https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Show HN: Needle Distills Gemini Tool Calling Into a 26M-Param Model"
+    summary:
+      - "Cactus Compute's 'Simple Attention Network' is a 26M-parameter function-calling model distilled from Gemini-3.1-Flash-Lite — aimed at phones, watches, and glasses."
+      - "Argument: tool calling is retrieval-and-assembly, not reasoning, so a frontier model is overkill for picking the right function and filling slots."
+      - "On Cactus's runtime: 6000 tok/s prefill, 1200 tok/s decode; small enough to fine-tune locally on a Mac or PC."
+      - "Show HN (item 48111896); weights and training code open-sourced at cactus-compute/needle."
+    url: "https://news.ycombinator.com/item?id=48111896"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "mattpocock/skills Crosses 71K Stars and Defines the SKILL.md Standard"
+    summary:
+      - "TypeScript educator Matt Pocock's personal `.claude/skills/` directory is now 71.7K stars and has held the top of GitHub Trending for weeks."
+      - "17 skills covering planning (/grill-me, /to-prd, /to-issues), coding (/tdd, /prototype), and quality (/improve-codebase-architecture, /diagnose, /triage)."
+      - "Each skill is a single SKILL.md file under 200 lines with YAML frontmatter — being treated as the de-facto reference shape for Anthropic Agent Skills."
+      - "Last push May 7; sustained +10K stars/week through May."
+    url: "https://github.com/mattpocock/skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
