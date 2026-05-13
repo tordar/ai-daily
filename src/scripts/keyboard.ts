@@ -144,9 +144,9 @@
     title.textContent = 'Keyboard Shortcuts';
 
     const shortcuts: [string, string][] = [
-      ['↑ / ↓', 'Next / previous story'],
+      ['↑ / ↓  or  k / j', 'Next / previous story'],
       ['Enter', 'Open story in new tab'],
-      ['← / →', 'Previous / next day or period'],
+      ['← / →  or  h / l', 'Previous / next day or period'],
       ['d', 'Go to today\'s digest'],
       ['w', 'Go to this week\'s rollup'],
       ['m', 'Go to this month\'s rollup'],
@@ -270,11 +270,13 @@
         }
         break;
 
+      case 'h':
       case 'ArrowLeft':
         e.preventDefault();
         clickNav('prev');
         break;
 
+      case 'l':
       case 'ArrowRight':
         e.preventDefault();
         clickNav('next');
