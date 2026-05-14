@@ -1,0 +1,67 @@
+date: "2026-05-14"
+stories:
+  - title: "Anthropic Ships Claude for Small Business and Hits the Road"
+    summary:
+      - "New packaged install puts Claude inside QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365."
+      - "15 ready-to-run agentic workflows across finance, ops, sales, marketing, HR, and customer service — payroll planning, invoice chasing, month-end close, campaign management."
+      - "Runs inside Claude Cowork; user approves each plan before anything sends, posts, or pays; account permissions carry over from the connected tool."
+      - "No surcharge on top of existing Claude licenses; a 10-city free fluency-training tour kicks off today (May 14) in Chicago."
+    url: "https://www.anthropic.com/news/claude-for-small-business"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Nadella Tells Court Microsoft Feared Becoming OpenAI's IBM"
+    summary:
+      - "Day 9 testimony in Musk v. Altman: Satya Nadella's April 2022 email said 'I don't want to be IBM and OpenAI to be Microsoft.'"
+      - "Nadella cited the need for 'real agency at every layer of the stack' — the framing behind Microsoft's own model lineup and the diversified OpenAI compute pacts."
+      - "Sam Altman on the stand May 12 rejected Musk's 'stole a charity' theory: the nonprofit was 'left for dead' when Musk walked."
+      - "Week 1 already produced Musk's admission that xAI distills OpenAI models; trial in Oakland continues."
+    url: "https://www.cnbc.com/2026/05/13/microsoft-feared-openai-reliance-musk-altman-trial-testimony-reveals.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "OpenHuman Hits GitHub Trending With a 'Subconscious Loop' Local Agent"
+    summary:
+      - "Rust + Tauri desktop agent: 5.6K stars total, +1.7K in the last day, GPL-3.0 licensed, still labelled early beta."
+      - "118+ OAuth connectors auto-fetch Gmail, Notion, GitHub, Slack, Stripe, Calendar, Drive, Linear, and Jira every 20 minutes into a local Markdown 'memory tree' (Karpathy-style wiki)."
+      - "A Purkinje-cell-inspired 'Neocortex' fires random memory recalls in the background so the agent keeps acting on standing tasks even when you stop typing."
+      - "Ships with a desktop mascot that joins Google Meets as a participant; smart routing sends reasoning to a frontier model, vision to a vision model, easy tasks to a cheap one."
+    url: "https://github.com/tinyhumansai/openhuman"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "obra/superpowers Pushes TDD-Style Subagents Into Claude Code"
+    summary:
+      - "Jesse Vincent's plugin installs 14 composable skills — brainstorming, writing-plans, executing-plans, TDD, git-worktrees — that trigger automatically inside Claude Code."
+      - "Subagent-driven development dispatches a fresh subagent per task with a two-stage review (spec compliance, then code quality)."
+      - "Marketed claim: Claude runs autonomously for a couple of hours without leaving the plan; install via `/plugin install superpowers@claude-plugins-official`."
+      - "+1.4K stars in a day on the back of mattpocock/skills' run; another data point that the SKILL.md pattern is consolidating into a de-facto standard."
+    url: "https://github.com/obra/superpowers"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "agentmemory Reports 95.2% on LongMemEval Using BM25 + Vector"
+    summary:
+      - "Drop-in persistent memory server for Claude Code, Cursor, Gemini CLI, and OpenCode — anything that speaks MCP or HTTP shares the same memory."
+      - "Hybrid BM25+vector retrieval scores 95.2% on LongMemEval (ICLR 2025) vs. 96.6% pure-vector and 86.2% BM25 alone — vectors add +9pp to BM25."
+      - "Extends Karpathy's LLM Wiki pattern with confidence scoring, lifecycle, and a knowledge graph; ships a token-savings calculator (`npx @agentmemory/agentmemory status`)."
+      - "+1.4K stars in a day; sits alongside obra/superpowers on GitHub Trending as the 'long-running coding agent' stack matures."
+    url: "https://github.com/rohitg00/agentmemory"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Supertonic 3 Open-Sources 31-Language On-Device TTS in 99M Params"
+    summary:
+      - "Korean studio Supertone bumps its ONNX TTS from 5 to 31 languages while staying at ~99M parameters — an order of magnitude below 0.7B–2B open baselines."
+      - "Runs faster on CPU than larger baselines measured on A100, with browser inference via onnxruntime-web and bindings for Python, JS, and iOS."
+      - "Adds expressive tags (laughs, breaths, sighs) and reports fewer repeat/skip failures than v2."
+      - "+0.9K stars in a day on GitHub Trending; weights live on the Supertone Hugging Face org."
+    url: "https://github.com/supertone-inc/supertonic"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
