@@ -1,0 +1,67 @@
+date: "2026-05-15"
+stories:
+  - title: "Anthropic and the Gates Foundation Commit $200M to AI for Global Health"
+    summary:
+      - "Four-year deal: grant dollars, Claude usage credits, and Anthropic engineering time pooled with the Gates Foundation."
+      - "Health gets the largest slice — drug discovery for polio, HPV, and eclampsia/preeclampsia, and tooling so ministries in low- and middle-income countries can act on health data."
+      - "Funds open datasets and benchmarks for dozens of underserved African languages so any lab can train better translation and tutoring models."
+      - "K–12 tutoring and college-advising tools targeted at the US, sub-Saharan Africa, and India; HN thread on the announcement is debating how much of the headline figure is real cash vs. credit retirement."
+    url: "https://www.anthropic.com/news/gates-foundation-partnership"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Cisco Cuts ~4,000 Jobs to Double Down on AI Infrastructure"
+    summary:
+      - "Restructuring announced alongside record Q3 earnings; affected staff start receiving notices today and totals less than 5% of headcount."
+      - "AI infrastructure orders from hyperscalers now $5.3B fiscal year-to-date; full-year order guidance raised from $5B to $9B."
+      - "FY26 revenue range lifted to $62.8–$63.0B (was $61.2–$61.7B); restructuring carries up to $1B in charges."
+      - "Stock jumped 16% after hours — the market is reading this as another data point that the AI capex cycle is still accelerating."
+    url: "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Microsoft MDASH Tops Anthropic Mythos on CyberGym, Finds 16 Windows Flaws"
+    summary:
+      - "New 'Multi-Model Agentic Scanning Harness' orchestrates 100+ specialized agents across multiple frontier and distilled models — staged scan, debate, then proof-of-concept attack."
+      - "88.45% on CyberGym (1,507 real-world vuln-repro tasks), ahead of Anthropic Mythos and OpenAI GPT-5.5 single-model setups; 21/21 planted bugs found with zero false positives on a private test driver."
+      - "Surfaced 16 new Windows vulnerabilities, including 4 critical RCEs, all patched in this month's Patch Tuesday; 96% recall on five years of confirmed MSRC cases for clfs.sys and 100% on tcpip.sys."
+      - "Private preview opens to enterprise customers in June; lands the same week as OpenAI's Daybreak and slots in next to Anthropic's Glasswing program."
+    url: "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-finds-16-new-vulnerabilities/"
+    source: "microsoft.com"
+    tag: "research"
+    significance: 4
+
+  - title: "nexu-io/open-design Hits 40K Stars in 17 Days as a Claude Design Clone"
+    summary:
+      - "Local-first, MIT-licensed alternative to Anthropic's Claude Design — same artifact-first loop (prototypes, slides, mockups, video) but no cloud lock-in."
+      - "Ships 31 skills and 72 brand-grade design systems (Linear, Stripe, Vercel, Notion, Apple, Tesla) as portable Markdown; HTML/PDF/PPTX/MP4 export with sandboxed preview."
+      - "Detects 16 coding-agent CLIs already on your machine — Claude Code, Codex, Cursor, Gemini CLI, Copilot, Qwen, Kimi — and routes work to whichever you already pay for; BYOK throughout."
+      - "Repo created April 28; ~40.7K stars, 4.7K forks, 726 commits — the open-source lag behind a closed launch has compressed from months to under three weeks."
+    url: "https://github.com/nexu-io/open-design"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Claude Code 2.1.142 Switches Fast Mode to Opus 4.7 by Default"
+    summary:
+      - "Two releases in two days (2.1.141 May 13, 2.1.142 May 14); /fast now runs on Opus 4.7 unless you set CLAUDE_CODE_OPUS_4_6_FAST_MODE_OVERRIDE=1."
+      - "Background `claude agents` gains --add-dir, --settings, --mcp-config, --plugin-dir, --permission-mode, --model, --effort, and --dangerously-skip-permissions for full session control."
+      - "Plugins with a root-level SKILL.md now auto-surface as a skill; /plugin details pane lists the LSP servers a plugin provides."
+      - "Fixes that matter: MCP_TOOL_TIMEOUT now actually raises per-request fetch timeout, background agents stop crash-looping with the Chrome extension, and Windows network-drive working dirs no longer deadlock."
+    url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.142"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "'Gemini Spark' Leaks Ahead of I/O as Google's Always-On Agent"
+    summary:
+      - "Google app beta 17.23 ships an onboarding screen branding the former 'Gemini Agent' as 'Gemini Spark' — an 'everyday AI agent' that runs in the background instead of waiting for prompts."
+      - "Pulls signal from Connected Apps, chats, tasks, websites you're logged into, Personal Intelligence, and location to book flights, manage email, fill forms, and shop without step-by-step prompting."
+      - "Stores remote browser session data (including login state) so workflows continue while you're away; the same screen warns it can share sensitive info or make purchases without re-confirming."
+      - "References a 'skills' system, hinting Google is moving toward Anthropic-style modular templates; expected as a headline at Google I/O on May 19."
+    url: "https://9to5google.com/2026/05/14/gemini-spark-insight/"
+    source: "9to5google.com"
+    tag: "models"
+    significance: 3
