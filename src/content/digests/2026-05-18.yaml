@@ -1,0 +1,67 @@
+date: "2026-05-18"
+stories:
+  - title: "OpenAI Merges ChatGPT, Codex, and Developer API Into One Org Under Brockman"
+    summary:
+      - "Co-founder Greg Brockman takes permanent product leadership; Codex chief Thibault Sottiaux now runs the combined core platform across consumer, enterprise, and developer."
+      - "Memo: 'invest in a single agentic platform and merge ChatGPT and Codex into one unified agentic experience for all' — Atlas browser folds into the same surface."
+      - "Lands four days before Google I/O and amid escalating pressure from Anthropic's enterprise lead; framed as run-up to a potential IPO later this year."
+      - "Reverses the 'side quests' era that began with December's 'code red' refocus on ChatGPT."
+    url: "https://thenextweb.com/news/openai-brockman-chatgpt-codex-unified-agentic-platform"
+    source: "thenextweb.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Salesforce Will Spend $300M on Anthropic Tokens This Year — 'Almost Entirely on Coding'"
+    summary:
+      - "Benioff on the All-In podcast: a single customer's $300M annual token bill makes Salesforce one of Anthropic's largest commercial accounts."
+      - "Salesforce has also invested $300M+ in Anthropic and holds ~1% — payer and shareholder at the same time."
+      - "Teasing 'cool stuff with Slack and code' next; wants coding agents inside Slack alongside Agentforce."
+      - "Calls for an intermediary routing layer so simple tokens go to cheap models, not Claude — a hint at where the spend cap eventually bites."
+    url: "https://thenextweb.com/news/salesforce-benioff-300-million-anthropic-tokens-slack-coding"
+    source: "thenextweb.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Codex Lands in the ChatGPT Mobile App for Remote Control From Your Phone"
+    summary:
+      - "iOS and Android, every plan including Free and Go; sessions run on your Mac, devbox, or remote env while the phone is just the control surface."
+      - "Approve commands, review diffs and test output, switch models, add context, or start new threads — files and credentials never leave the host machine."
+      - "Secure relay keeps sessions reachable across devices without exposing them to the public internet; Codex for Windows remote support 'coming soon.'"
+      - "Remote SSH for company devboxes also went GA the same day; the long-running r/OpenAI and GitHub request to match Claude's mobile loop is finally answered."
+    url: "https://openai.com/index/work-with-codex-from-anywhere/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "'Gemini Omni' Leaks Days Before Google I/O as Google's First Unified Video Model"
+    summary:
+      - "UI strings spotted inside the live Gemini app on May 2 — 'Powered by Omni' next to internal codename Toucan (Veo 3.1) — confirm a separate, newer system."
+      - "Unifies text, image, video, and synced audio in one model rather than chaining Veo 3.1 + Nano Banana; chat-based edits like 'swap the red car for a black one' instead of timeline tools."
+      - "Demo clip of a chalkboard trigonometry proof renders on-screen text legibly frame-to-frame — the failure mode that breaks Sora and Veo."
+      - "Sources peg the accompanying Gemini 3.5 as landing roughly at GPT-5.5 and meaningfully behind Claude Mythos; keynote 10 AM PT May 19, dev session 1:30 PM PT."
+    url: "https://chromeunboxed.com/an-impressive-new-gemini-omni-video-model-just-leaked-ahead-of-google-i-o/"
+    source: "chromeunboxed.com"
+    tag: "models"
+    significance: 4
+
+  - title: "OpenHuman Tops GitHub Trending With a Local-First Personal Agent Built in Rust"
+    summary:
+      - "Desktop app on macOS/Windows/Linux written in Rust + Tauri; rejects Electron for a Memory Tree stored in local SQLite and exported as an Obsidian-compatible vault."
+      - "118+ one-click OAuth connectors poll every 20 minutes; a 'subconscious loop' reads outstanding todos and acts without prompting."
+      - "Mascot can join a Google Meet as a separate participant, transcribe into memory, and speak back; screen-reading and inline keyboard autocomplete from your own data."
+      - "Repo created May 13; ~14.3K stars and +1.7K today on GitHub Trending — independent reviewers are already flagging the breadth of permissions it requests."
+    url: "https://github.com/tinyhumansai/openhuman"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Vercel Labs Ships Zero, a Systems Language Built for Agents to Read"
+    summary:
+      - "Experimental .0 language compiling to sub-10 KiB native binaries; no mandatory GC, no implicit async, no hidden allocator — predictable memory and control flow."
+      - "Capability-based I/O: every effect must be declared in the function signature and is enforced at compile time."
+      - "Compiler emits JSON diagnostics with stable codes and typed repair metadata; `zero explain` and `zero fix --plan --json` give agents structured fixes, no prose to parse."
+      - "v0.1.1 released May 15 and crossed ~900 GitHub stars in 24 hours — a working experiment, not yet a production dependency."
+    url: "https://github.com/vercel-labs/zero"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
