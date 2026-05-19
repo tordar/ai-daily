@@ -1,0 +1,67 @@
+date: "2026-05-19"
+stories:
+  - title: "Gemini Omni Lands at I/O as Google's First Unified Video, Audio, and Image Model"
+    summary:
+      - "Single model generates synchronized video, audio, voice, and text in one pass — replacing the Veo 3.1 + Nano Banana split pipeline."
+      - "Chat-based editing: 'swap the red car for a black one' or 'remove the watermark' rewrites only the affected frames, keeping the rest pixel-stable."
+      - "Inherits Gemini's long context — characters keep their faces, outfits, and props across scenes of a short film."
+      - "Rolls out in Flash and Pro tiers across the Gemini app and AI Studio; the UI leak that surfaced two weeks ago ('Powered by Omni' next to codename Toucan) is now live."
+    url: "https://blog.google/products/gemini/gemini-3/"
+    source: "blog.google"
+    tag: "models"
+    significance: 5
+
+  - title: "Google Ships a New Gemini Flagship at I/O Behind Claude Mythos and GPT-5.5"
+    summary:
+      - "New top-tier Gemini debuts in AI Mode in Search on day one — first time Google has shipped a frontier model into Search at launch."
+      - "Pre-keynote benchmarks circulating cite ~84.6% on ARC-AGI-2 and meaningful jumps on multimodal reasoning, but still trail Anthropic's April-7 Mythos and OpenAI's GPT-5.5 on the hardest agentic-coding evals."
+      - "Available via the Gemini app, AI Studio, and the Gemini API; Antigravity IDE picks it up as the default agent model."
+      - "Demis Hassabis framed it as the model that unifies all Gemini capabilities — single-model multimodality, deeper reasoning, lower latency at the Flash tier."
+    url: "https://blog.google/technology/google-deepmind/google-io-2026/"
+    source: "blog.google"
+    tag: "models"
+    significance: 5
+
+  - title: "Gemini Spark Becomes Google's First Always-On Personal Agent"
+    summary:
+      - "Background agent that polls your connected apps, learns your patterns, and acts proactively — the surface that replaces Project Mariner (shut down May 4)."
+      - "Cleans up Gmail, drafts meeting briefs from across your docs, and assembles a personal news digest without prompting."
+      - "Asks permission before purchases or sensitive sends, but Google still flags it as 'experimental' and notes risk of unintended actions."
+      - "Compared head-to-head with Claude Cowork in coverage; ships inside the Gemini app for paid tiers first."
+    url: "https://9to5google.com/2026/05/14/gemini-spark-insight/"
+    source: "9to5google.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Google Previews Android XR Glasses With Samsung, Warby Parker, and Gentle Monster"
+    summary:
+      - "Two tiers shown: a display-free AI pair with camera + mics + speakers for hands-free Gemini, and an in-lens display variant for navigation and live translation."
+      - "Samsung's 'Jinju' reference design: 12MP Sony IMX681, Snapdragon AR1, 155 mAh battery, photochromic lenses, ~50g frame."
+      - "First Android XR partners include XREAL's optical-see-through Project Aura headset (70° FoV, CES Innovation Award winner)."
+      - "Consumer pricing teased at $379–$499 for the audio-only tier; ships into a smart-glasses category facing its first real privacy backlash."
+    url: "https://www.androidauthority.com/android-xr-glasses-preview-google-io-2026-3665773/"
+    source: "androidauthority.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Aluminium OS and the First Googlebook Laptops Replace the Chromebook"
+    summary:
+      - "New laptop OS merges Android and ChromeOS into a single Gemini-native desktop — bottom dock, virtual desktops, Quick Settings, built-in Link to iOS."
+      - "Acer, ASUS, Dell, HP, and Lenovo signed on as launch hardware partners; first Googlebooks ship fall 2026."
+      - "Hands-on leaks showed an ARM-first stack with Pixel-style integrations; the official product name is still under wraps ('Aluminium' is the internal codename)."
+      - "Chromebook line is being wound down — the Pixelbook Go is the last ChromeOS device Google will sell directly."
+    url: "https://thenextweb.com/news/google-io-2026-gemini-intelligence-android-xr-glasses"
+    source: "thenextweb.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Academic-Research-Skills Hits GitHub Trending #2 as the Claude Code Skills Wave Crests"
+    summary:
+      - "Imbad0202/academic-research-skills: full research→write→review→revise→finalize pipeline as a Claude Code skill bundle, +1.4K stars today and ~12.5K total."
+      - "Author's stance: 'AI is a copilot, not the pilot' — the skills handle reference-hunting, citation formatting, data verification, and consistency checks; humans keep the thesis."
+      - "Five of GitHub Trending's top 20 this week are skill registries — mattpocock/skills, tech-leads-club/agent-skills, K-Dense-AI/scientific-agent-skills, and HKUDS/CLI-Anything (now 36.9K stars) round it out."
+      - "Signal: the agent-tooling community is converging on shareable, composable skill packs instead of monolithic agents."
+    url: "https://github.com/Imbad0202/academic-research-skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3

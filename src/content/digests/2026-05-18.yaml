@@ -42,7 +42,7 @@ stories:
     url: "https://chromeunboxed.com/an-impressive-new-gemini-omni-video-model-just-leaked-ahead-of-google-i-o/"
     source: "chromeunboxed.com"
     tag: "models"
-    significance: 4
+    significance: 1
 
   - title: "OpenHuman Tops GitHub Trending With a Local-First Personal Agent Built in Rust"
     summary:
