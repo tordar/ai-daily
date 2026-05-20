@@ -1,0 +1,68 @@
+date: "2026-05-20"
+stories:
+  - title: "Claude Managed Agents Get Self-Hosted Sandboxes and Private MCP Tunnels"
+    summary:
+      - "Self-hosted sandboxes shipped in public beta — tool execution moves to your infra while Anthropic still runs orchestration, context, and recovery."
+      - "Launch providers are Cloudflare, Daytona, Modal, and Vercel; each ships a configured guide for the Claude Platform."
+      - "MCP tunnels in research preview let agents reach private MCP servers over a single outbound connection — no inbound firewall rules, no public endpoints."
+      - "Lands the day before Anthropic's Code with Claude London Day 1 keynote (May 20)."
+    url: "https://claude.com/blog/claude-managed-agents-updates"
+    source: "claude.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Google Sunsets Gemini CLI on June 18, Folds It Into Antigravity CLI"
+    summary:
+      - "Gemini CLI and Gemini Code Assist extensions stop serving Google AI Pro, Ultra, and free Code Assist accounts on June 18, 2026."
+      - "Standard and Enterprise licenseholders keep current access — the cut hits independent devs and hobbyists first."
+      - "Replacement Antigravity CLI is a ~140 MB Go binary with built-in browser control, sandbox, Git policies, skills runtime, and subagents."
+      - "Agent Skills, Hooks, Subagents, and Extensions all carry over as Antigravity plugins."
+      - "HN thread on the front page within hours; commenters bristling at the forced migration and binary size."
+    url: "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
+    source: "developers.googleblog.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Gemini 3.5 Flash Lands at 3x the Old Flash Price as Google Aims It at Everything"
+    summary:
+      - "$1.50 / $9 per 1M tokens — 3x Gemini 3 Flash Preview and 6x Gemini 3.1 Flash-Lite."
+      - "Gets within striking distance of Gemini 3.1 Pro ($2 / $12) and beats it on Terminal-bench 2.1 (76.2%) at 4x the speed."
+      - "Simon Willison's read: 'Flash' is no longer the cheap tier — Google plans to route everything through 3.5 Flash and price accordingly."
+      - "Live across the Gemini API, AI Studio, Antigravity, Vertex AI, the Gemini app, and AI Mode in Search; GA on GitHub Copilot the same day."
+    url: "https://simonwillison.net/2026/May/19/gemini-35-flash/"
+    source: "simonwillison.net"
+    tag: "models"
+    significance: 4
+
+  - title: "WebMCP Hits Chrome 149 Origin Trial, Letting Sites Expose Tools to Browser Agents"
+    summary:
+      - "Proposed open web standard that turns any page into an MCP server for in-browser AI agents."
+      - "Two APIs: a declarative one wired to HTML forms, and an imperative one for JS-driven workflows."
+      - "Replaces brittle DOM scraping with structured, machine-friendly tool calls the page itself defines."
+      - "Origin trial opens with Chrome 149; available today behind a flag for local development."
+    url: "https://developer.chrome.com/docs/ai/webmcp"
+    source: "developer.chrome.com"
+    tag: "frameworks"
+    significance: 4
+
+  - title: "Google Punts Gemini 3.5 Pro to June After Audible Groan at the I/O Keynote"
+    summary:
+      - "Pichai on stage: 'I know you can't wait to get your hands on it. Give us until next month.'"
+      - "Google says 3.5 Pro is already running internally; the delay is to RL-train it on production traffic from 3.5 Flash first."
+      - "Means the day-one I/O frontier story leans entirely on Gemini 3.5 Flash plus Omni for video."
+      - "Pro is still expected to land behind Anthropic's Mythos and OpenAI's GPT-5.5 on the hardest agentic-coding evals."
+    url: "https://dnyuz.com/2026/05/20/why-google-held-back-a-huge-new-ai-model-at-its-big-conference/"
+    source: "dnyuz.com"
+    tag: "models"
+    significance: 3
+
+  - title: "Karpathy's autoresearch Loop Spreads as Shopify's 53% Speed PR Gets Flagged Overfit"
+    summary:
+      - "Single-file ML experiment harness Karpathy open-sourced in March; ~25.9K stars and +1.7K today on GitHub Trending."
+      - "Shopify filed a 93-commit PR claiming a 53% speedup on the nanochat training baseline."
+      - "Reviewers flag the result as overfit to the harness's scalar metric — the PR is still unmerged."
+      - "Signal: agents are now cheap enough that teams optimize overnight until the eval breaks rather than the model."
+    url: "https://github.com/karpathy/autoresearch"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
