@@ -1,0 +1,68 @@
+date: "2026-05-21"
+stories:
+  - title: "Andrej Karpathy Joins Anthropic to Run a Claude-Powered Pre-Training Team"
+    summary:
+      - "OpenAI co-founder and ex-Tesla AI lead starts this week under pre-training lead Nick Joseph."
+      - "Mandate: stand up a new team that uses Claude itself to accelerate pre-training research — the bottleneck Anthropic just bought 220K H-class GPUs to push on."
+      - "Karpathy pauses his year-old education startup Eureka Labs to take the role."
+      - "HN front-page thread 'I've joined Anthropic' is the top developer story of the day."
+    url: "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Cursor Composer 2.5 Matches Opus 4.7 and GPT-5.5 at One-Tenth the Price"
+    summary:
+      - "Built on Moonshot's Kimi K2.5 checkpoint, with Cursor putting 85% of compute into extra training and RL on top."
+      - "79.8% on SWE-Bench Multilingual and 63.2% on CursorBench v3.1 — within points of Opus 4.7 and GPT-5.5."
+      - "Priced at $0.50 / $2.50 per million input/output tokens, roughly a tenth of Anthropic and OpenAI's frontier tiers."
+      - "Trained on 25× more synthetic tasks than Composer 2, including 'feature deletion' rebuild puzzles."
+      - "HN reaction split between developers cheering open-base coding models and skeptics flagging benchmark gaming on Cursor's own evals."
+    url: "https://cursor.com/blog/composer-2-5"
+    source: "cursor.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Anthropic Tells Investors It's About to Have Its First Profitable Quarter"
+    summary:
+      - "Q2 revenue guided to $10.9B — more than double Q1's $4.8B, and more than all of 2025 combined."
+      - "Projected operating profit of $559M (excludes stock-based comp); last summer's investor deck said profitability not before 2028."
+      - "Growth rate ahead of historical peaks at Zoom, Google, and Facebook."
+      - "Disclosed inside an ongoing round that bankers now expect to value Anthropic above OpenAI."
+    url: "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic Pays $300M+ for Stainless and Pulls It From Every Rival"
+    summary:
+      - "Stainless's AI compiler generates the official SDKs for OpenAI, Google, Cloudflare, Runway, and Meta from OpenAPI specs."
+      - "Anthropic confirmed it will wind down hosted Stainless products and restrict the engine to internal teams."
+      - "Third acquisition in six months after Bun and Vercept; pairs with the Karpathy hire as a one-week talent + infra play."
+      - "HN reaction calls it 'somewhat anti-competitive' — rivals now have to rebuild SDK and MCP-server tooling from scratch."
+    url: "https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "OpenAI Joins C2PA, Embeds Google SynthID, and Ships openai.com/verify"
+    summary:
+      - "OpenAI becomes a C2PA Conforming Generator — every image from ChatGPT, the API, and Codex now carries signed provenance metadata."
+      - "Adds Google DeepMind's SynthID invisible watermark as the durable second layer that survives screenshots and re-encoding."
+      - "Public verification tool at openai.com/verify accepts any uploaded image and reports which signals are present."
+      - "At launch it only verifies OpenAI-generated content; cross-lab support depends on Anthropic and others adopting the same stack."
+    url: "https://openai.com/index/advancing-content-provenance/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "DeepMind Plugs Project Genie's World Model Into Street View"
+    summary:
+      - "Pick any U.S. address; Genie 3 generates a navigable, interactive scene grounded in Google's 280B-image Street View archive."
+      - "60-second sessions at 720p; same engine Waymo already uses to train robotaxis on rare scenarios like tornadoes and elephants in the road."
+      - "Live globally for $200/month Google AI Ultra subscribers; the new $99.99 Ultra tier does not get access."
+      - "Still video-game quality, not photorealistic, and not yet physics-aware."
+    url: "https://techcrunch.com/2026/05/19/googles-genie-world-model-can-now-simulate-real-streets-with-street-view/"
+    source: "techcrunch.com"
+    tag: "research"
+    significance: 4
