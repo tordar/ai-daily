@@ -1,0 +1,69 @@
+date: "2026-05-22"
+stories:
+  - title: "OpenAI's Reasoning Model Disproves an 80-Year-Old Erdős Conjecture"
+    summary:
+      - "Internal general-purpose reasoning model produced an infinite family of point configurations that beat square-grid scaling on the 1946 planar unit distance problem."
+      - "First time a prominent open question central to a math subfield has been solved autonomously by AI — and by a model not specially trained on math."
+      - "Fields medalist Tim Gowers wrote the companion paper and said he would recommend it to the Annals of Mathematics 'without hesitation.'"
+      - "Verified externally by Noga Alon, Melanie Wood, Thomas Bloom, and Princeton's Will Sawin, who tightened the exponent."
+      - "HN front-page thread; reaction split between mathematicians calling it a milestone and skeptics asking how the proof tracks attribution to prior literature."
+    url: "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+    source: "openai.com"
+    tag: "research"
+    significance: 5
+
+  - title: "OpenAI Files Confidentially for a September IPO at a $1T+ Valuation"
+    summary:
+      - "Draft S-1 going to the SEC this week with Goldman Sachs, Morgan Stanley, and Cooley as advisors."
+      - "Target valuation north of $1 trillion — up from $852B post-money on the $122B round that closed in March."
+      - "Pits OpenAI against SpaceX (S-1 already public, June Nasdaq listing) and Anthropic (October window) in the public-markets race."
+      - "Sources cite $25B annualized revenue as of February vs. $600B in committed five-year compute spend."
+    url: "https://www.cnbc.com/2026/05/20/openai-ipo-filing.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Trump Pulls the AI Executive Order Hours Before the Signing Ceremony"
+    summary:
+      - "Would have stood up a voluntary 90-day pre-release review framework for frontier models, with NSA, Treasury, CISA, and NIST in the loop."
+      - "OpenAI and Anthropic had been negotiating terms; Trump told reporters the draft 'gets in the way' of US leadership over China."
+      - "Internal split: pro-innovation aides wanted it strictly voluntary; national-security advisors pushed for classified NSA testing with teeth."
+      - "No new signing date; the postponement leaves frontier safety governance back at the voluntary commitments level from 2023."
+    url: "https://www.cnbc.com/2026/05/21/trump-ai-executive-order-postponed.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Mini Shai-Hulud Worm Exfiltrates 3,800 GitHub Internal Repos via Nx Console"
+    summary:
+      - "Poisoned Nx Console VS Code extension (2.2M installs, verified publisher) sat live in the marketplace for ~18 minutes on May 18 — long enough for thousands of installs."
+      - "GitHub confirmed 3,800 internal repos exfiltrated after the extension reached a Nx maintainer's machine; OpenAI and Mistral each had employee devices compromised in the same campaign."
+      - "Credential stealer specifically targeted 1Password vaults, Claude Code configs, npm tokens, GitHub tokens, and AWS keys."
+      - "CVE-2026-45321 (CVSS 9.6) covers the chained pull_request_target + Actions cache poisoning trick that originally reached the Nx maintainer."
+      - "TeamPCP claimed responsibility; security teams are now scanning every IDE extension that ships an MCP setup hook."
+    url: "https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/"
+    source: "bleepingcomputer.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Matt Pocock's skills Repo Becomes the Default Claude Code Reference at 98K Stars"
+    summary:
+      - "TypeScript educator's personal .claude/skills/ folder, MIT-licensed, sitting at ~98K stars and still adding ~13K/week."
+      - "21 SKILL.md primitives — /tdd, /diagnose, /grill-with-docs, /caveman (compresses chat output to cut tokens ~75%) — pitched as 'real engineering, not vibe coding.'"
+      - "Top weekly trending AI repo on GitHub for the third week running; pattern is being copied by every team publishing their own .claude folder."
+      - "Validates the SKILL.md format Anthropic shipped as an open spec back in December 2025."
+    url: "https://github.com/mattpocock/skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Anthropic Loosens Claude Mythos Secrecy After Congressional Pressure"
+    summary:
+      - "Project Glasswing partners can now share Mythos-discovered vulnerability findings beyond the ~50-org consortium — including with regulators and affected vendors."
+      - "Trigger was a letter from Rep. Josh Gottheimer arguing 'no entity should be contractually restricted from warning others… about urgent cyber risks.'"
+      - "Anthropic frames it as Glasswing 'maturing' rather than backing down; user agreements have already been amended."
+      - "Mythos remains gated to defensive cybersecurity orgs via a $100M Anthropic-funded credit pool; no consumer launch in sight."
+    url: "https://gizmodo.com/anthropic-is-loosening-the-secrecy-around-claude-mythos-so-findings-can-be-shared-broadly-2000760355"
+    source: "gizmodo.com"
+    tag: "industry"
+    significance: 3
