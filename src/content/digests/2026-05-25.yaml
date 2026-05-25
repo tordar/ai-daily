@@ -1,0 +1,56 @@
+date: "2026-05-25"
+stories:
+  - title: "Pope Leo XIV Publishes the First Papal Encyclical on AI Alongside an Anthropic Co-Founder"
+    summary:
+      - "Magnifica Humanitas released today at the Vatican Synod Hall; signed May 15, 135 years to the day after Leo XIII's Rerum Novarum on labor and industrialization."
+      - "Anthropic co-founder Chris Olah on the launch panel — first time a pope has personally attended the press conference for one of his own social encyclicals."
+      - "Argues AI's simulation of faces, voices, empathy, and wisdom 'encroaches on the deepest level of communication, that of human relationships' and explicitly rejects transhumanism."
+      - "Frames AI as the second industrial revolution and the next great test for Catholic social teaching on dignity, labor, and justice."
+    url: "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html"
+    source: "vaticannews.va"
+    tag: "industry"
+    significance: 5
+
+  - title: "Claude Mythos Found 10,000 Critical Vulns in a Month — Patches Can't Keep Up"
+    summary:
+      - "Project Glasswing's first month surfaced 10,000+ high/critical-severity findings across ~50 partner orgs; 1,094 confirmed critical so far."
+      - "Only 97 patched upstream — some open-source maintainers have asked Anthropic to slow the disclosure rate."
+      - "Standout finds: a 27-year-old OpenBSD kernel flaw and a 16-year-old FFmpeg bug; Cloudflare reported ~2,000 bugs (400 high/critical), Mozilla patched 271 in Firefox 150."
+      - "Anthropic committing $4M to OSSF Alpha-Omega and ~$100M in Mythos credits to maintainers; Mythos itself stays gated to the defensive consortium."
+    url: "https://www.anthropic.com/research/glasswing-initial-update"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 5
+
+  - title: "Leaked Audio: Zuckerberg Trained Meta's AI on the 8,000 Employees It Was About to Fire"
+    summary:
+      - "More Perfect Union surfaced an April 30 all-hands recording one day before mass layoff emails went out."
+      - "'Model Capability Initiative' captured keystrokes, mouse clicks, and screenshots from Gmail, GChat, VSCode, and internal AI assistant Metamate."
+      - "Zuckerberg on tape: average Meta employee is 'significantly higher' IQ than contractor labor — better training data."
+      - "1,000+ Meta workers have signed an internal petition to kill the program; EU employees exempt by GDPR."
+      - "Meta has not confirmed the recording's authenticity; story trended on Reddit and X all weekend, with 'train your replacement' the dominant framing."
+    url: "https://www.theregister.com/AI/ML/2026/05/22/zuck_defends_monitoring_employees_to/"
+    source: "theregister.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "DeepMind's AI Co-Scientist Lands in Nature After Re-Deriving a Decade of Imperial Lab Work"
+    summary:
+      - "Multi-agent Gemini system that generates, debates, ranks, and evolves scientific hypotheses against literature and structured databases."
+      - "Imperial College's Fleming Initiative gave it an unsolved antimicrobial-resistance problem; it proposed the same hypothesis Prof. José Penadés' team reached over a decade — in hours."
+      - "Now available to scientists across all 17 DOE National Labs via the Genesis Mission partnership; underlying Science Skills data layer is open on GitHub and inside Antigravity."
+      - "Companion Nature analysis flags real limits: hypothesis quality drops sharply outside well-trodden subfields with dense prior literature."
+    url: "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/"
+    source: "deepmind.google"
+    tag: "research"
+    significance: 3
+
+  - title: "xAI Wires Vercel, Canva, Gamma, and S&P Global Into Grok as Native Connectors"
+    summary:
+      - "Users can deploy sites via Vercel, build designs in Canva, ship slide decks in Gamma, and pull live market data from S&P Global without leaving Grok."
+      - "Caps a heavy May for xAI: Grok 4.3 (May 4), Grok Build 0.1 coding model in early access (May 14), persistent Grok Skills (May 18), connectors (May 22)."
+      - "Aimed squarely at the same agent-workflow real estate Gemini Spark and ChatGPT Operator are competing for."
+    url: "https://docs.x.ai/developers/release-notes"
+    source: "x.ai"
+    tag: "tools"
+    significance: 2
