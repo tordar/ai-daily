@@ -1,0 +1,67 @@
+date: "2026-05-26"
+stories:
+  - title: "Anthropic Closes $30B at a $900B Valuation, Overtaking OpenAI"
+    summary:
+      - "Second $30B round inside a single calendar year — Series G in February was $380B post-money, this one lands above $900B."
+      - "Co-led by Sequoia, Dragoneer, Altimeter, and Greenoaks at ~$2B each; Founders Fund and General Catalyst also participating."
+      - "Pushes Anthropic past OpenAI's $852B March valuation as the world's most valuable AI startup for the first time."
+      - "Backed by Q2 guidance of $10.9B revenue (more than double Q1's $4.8B) and a first-ever quarterly operating profit."
+    url: "https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI's Codex Can Now Drive Your Mac While It's Locked"
+    summary:
+      - "New 'Locked Use' mode lets developers send Codex tasks from their phone and have it click, type, and navigate macOS apps with the screen off."
+      - "Apple authorization plugin temporarily unlocks the Mac, with short-lived auth, covered displays, and instant relock on any local input."
+      - "Mac-only; blocked in the EEA, UK, and Switzerland; explicitly cannot drive Terminal, Codex itself, or system admin prompts."
+      - "Reaction split — power users see remote agent superpower, security folks compare it to giving a 'sketchy AI company HAL 9000 access' to your laptop."
+    url: "https://www.macrumors.com/2026/05/22/codex-use-mac-apps-when-locked/"
+    source: "macrumors.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Anthropic in Talks to Run Claude on Microsoft's Maia 200 Chip"
+    summary:
+      - "Early-stage deal would rent Azure capacity backed by Microsoft's own 3nm custom accelerator, launched in January."
+      - "Microsoft says Maia 200 delivers >30% better tokens-per-dollar than the previous silicon in its fleet."
+      - "Would make Anthropic the first major external Maia customer and add a fifth silicon vendor — alongside Nvidia, AWS Trainium, Google TPUs, and SpaceX/xAI Colossus."
+      - "Same week Anthropic locks in its $900B round; The Information and CNBC both confirm the talks."
+    url: "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Understand-Anything Hits 32K Stars Turning Codebases Into Knowledge Graphs"
+    summary:
+      - "Yuxiang Lin's Claude Code plugin sits at 32K GitHub stars and added 5,604 in a single day — top trending AI repo this week."
+      - "Multi-agent pipeline scans a repo, builds an interactive graph of files, functions, classes, and dependencies, then opens a clickable web dashboard with plain-English explanations."
+      - "Also works with Codex, Cursor, Copilot, and Gemini CLI; ships a guided-tour mode for onboarding new engineers."
+      - "v2.7.3 released May 19; pitched explicitly at the 'opened a 50K-line repo and had no idea where to start' problem."
+    url: "https://github.com/Lum1104/Understand-Anything"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "DeepMind Scientist Argues LLMs Will Never Be Conscious"
+    summary:
+      - "Senior staff scientist Alexander Lerchner's 'Abstraction Fallacy' paper, now on DeepMind's official publications page, says algorithmic symbol manipulation is structurally incapable of instantiating experience."
+      - "Argument: a symbol is only a symbol because a conscious observer defined it as one — computation is mapmaker-dependent, not an intrinsic physical process."
+      - "Directly conflicts with the AGI rhetoric of his own CEO Demis Hassabis; 5,370+ downloads and spreading on Reddit and X after 404 Media's writeup."
+      - "Philosophers polled by 404 say the argument is sound but unoriginal — variations of Searle's Chinese Room from decades ago."
+    url: "https://www.404media.co/google-deepmind-paper-argues-llms-will-never-be-conscious/"
+    source: "404media.co"
+    tag: "research"
+    significance: 3
+
+  - title: "Memory Is Now Two-Thirds of What an AI Chip Costs to Build"
+    summary:
+      - "Epoch AI's new component-cost tracker: HBM rose from 52% of AI accelerator BOM in Q1 2024 to 63% in Q4 2025, averaged across Nvidia, AMD, Google, and Amazon designs."
+      - "HBM spend across those four jumped from ~$12B in 2024 to ~$32B in 2025; total AI-chip component spend doubled to $52B."
+      - "All three HBM suppliers effectively sold out; hyperscalers are reportedly financing SK Hynix's expansion, including the EUV lithography machines."
+      - "Front-paged on Hacker News yesterday as the clearest data showing the AI bottleneck has moved from logic to memory."
+    url: "https://epoch.ai/data-insights/ai-chip-component-cost-shares"
+    source: "epoch.ai"
+    tag: "research"
+    significance: 3
