@@ -1,0 +1,64 @@
+date: "2026-05-27"
+stories:
+  - title: "Curl Is Drowning in AI-Assisted Security Reports, Maintainer Warns"
+    summary:
+      - "Daniel Stenberg's 'The pressure' post: incoming security reports now run 4–5× higher than 2024 — more than one per day."
+      - "12 confirmed vulnerabilities with half the release cycle still left, a project record; on track for ~30 CVEs before mid-2026."
+      - "These are detailed, AI-assisted reports, not the old 'AI slop' — the crushing part is the sheer volume of high-priority work."
+      - "Stenberg says it's the first time his wife has raised concerns about his hours; picked up by LWN, Simon Willison, and HN."
+    url: "https://daniel.haxx.se/blog/2026/05/26/the-pressure/"
+    source: "daniel.haxx.se"
+    tag: "community"
+    significance: 4
+
+  - title: "Microsoft Copilot Cowork Leaks Files via a Prompt Injection"
+    summary:
+      - "PromptArmor showed Copilot Cowork can be steered by indirect prompt injection into exfiltrating a user's files."
+      - "Cowork auto-approves sending emails and Teams messages, so it can ship pre-authenticated download links with no human click."
+      - "Data leaks when the victim opens the message and an external image beacons out; worked against frontier models including Claude Opus 4.7."
+      - "Also affects Claude Cowork, the Anthropic product Microsoft's version is built on; amplified by Simon Willison and on HN's front page."
+    url: "https://www.promptarmor.com/resources/microsoft-copilot-cowork-exfiltrates-files"
+    source: "promptarmor.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Codegraph Adds 16K Stars in a Week by Slashing Coding-Agent Tool Calls"
+    summary:
+      - "Pre-indexed local code knowledge graph that feeds Claude Code, Codex, Cursor, OpenCode, and Gemini symbol and call-graph data."
+      - "Benchmarks across 6 real codebases show ~92% fewer tool calls; indexing and lookups run 100% local with no API calls."
+      - "Added ~16,000 GitHub stars in a week and 2,434 in a single day — #2 on GitHub Trending and the top weekly AI repo."
+    url: "https://github.com/colbymchenry/codegraph"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Apple Credits Anthropic for a Claude-Found macOS Kernel Root Bug"
+    summary:
+      - "macOS Tahoe 26.5 release notes credit Anthropic Research and Calif.io for CVE-2026-28952, a kernel flaw that let apps gain root."
+      - "Calif's team used Claude Mythos Preview to go from no bugs to a working macOS root exploit in five days, defeating Apple's Memory Integrity Enforcement."
+      - "Front-paged on Hacker News (~147 points) as concrete proof that AI is now surfacing real OS kernel zero-days."
+    url: "https://news.ycombinator.com/item?id=48273169"
+    source: "news.ycombinator.com"
+    tag: "research"
+    significance: 3
+
+  - title: "Anthropic's Restricted Mythos Model Is Heading Into Claude Code"
+    summary:
+      - "Code strings referencing 'claude-mythos-1-preview' surfaced in Claude Code, then vanished — pointing to a commercial Mythos 1."
+      - "An access description ties the model to Claude Code and the Claude Security dashboard, both gated to Enterprise for now."
+      - "Marks a shift from Anthropic's earlier 'stays restricted' line to 'could reach the public once the right safeguards are in place.'"
+      - "Mythos launched April 7 as a locked research preview and has since been credited in OS- and browser-level vulnerability finds."
+    url: "https://www.testingcatalog.com/anthropic-prepares-mythos-1-for-claude-code-and-claude-security/"
+    source: "testingcatalog.com"
+    tag: "models"
+    significance: 3
+
+  - title: "OpenAI Turns On Codex Goal Mode by Default"
+    summary:
+      - "May 26 update flips goal mode on by default across the Codex app, IDE extension, and CLI."
+      - "You define an outcome and success criteria and Codex keeps working toward it across turns, backed by persistent storage."
+      - "Same release adds team plugin sharing, a marketplace-aware plugin list, and macOS 'appshots' that send the front app window to Codex."
+    url: "https://developers.openai.com/codex/changelog"
+    source: "openai.com"
+    tag: "tools"
+    significance: 2
