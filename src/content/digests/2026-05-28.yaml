@@ -1,0 +1,67 @@
+date: "2026-05-28"
+stories:
+  - title: "Anthropic: Claude Mythos Has Found 10,000+ Critical Vulnerabilities in a Month"
+    summary:
+      - "Project Glasswing's first monthly update: ~50 partners using Mythos Preview have surfaced 10,000+ high- or critical-severity bugs across the world's most systemic software."
+      - "Cloudflare alone found 2,000 bugs (400 high/critical) with a false-positive rate it calls better than its human testers; Mozilla patched 271 Firefox vulns — a 10× lift over an older Claude model."
+      - "Anthropic separately scanned 1,000 OSS projects and flagged 6,202 high/critical vulns out of 23,019 issues; the new bottleneck is no longer finding bugs but verifying and patching them."
+      - "Front-paged on HN; Mythos itself stays locked — Anthropic still says no safeguards are strong enough to ship it."
+    url: "https://www.anthropic.com/research/glasswing-initial-update"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 5
+
+  - title: "AI-Generated 'Malware-Slop' npm Package Steals Claude Files, Leaks Its Own GitHub Token"
+    summary:
+      - "mouse5212-super-formatter, an npm package codenamed Malware-Slop by OX Security, recursively uploaded /mnt/user-data — Claude's file upload/output directory — to an attacker-controlled GitHub repo."
+      - "The AI-written installer hard-coded a fallback GitHub PAT, letting researchers walk straight in and trace every exfiltration; the attacker's GitHub account was created hours before publishing."
+      - "Hit 676 downloads before npm pulled it; The Register, The Hacker News and bleepingcomputer all covered the OPSEC faceplant."
+      - "OX warns the bar for shipping malware just dropped: expect a wave of sloppy, APT-mimicking npm and PyPI packages over the next quarter."
+    url: "https://www.theregister.com/cyber-crime/2026/05/27/supply-chain-brain-drain-npm-attacker-foolishly-leaks-own-github-private-token/"
+    source: "theregister.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Altman and Amodei Walk Back the AI Jobs Apocalypse as $1T IPOs Loom"
+    summary:
+      - "Altman to CBA's Matt Comyn: 'I was pretty wrong' about white-collar displacement — 'delighted to be wrong about this' after his own Slack/email AI delegation experiment underwhelmed."
+      - "Amodei reframes his prior '50% of white-collar jobs' line via the Jevons paradox: if AI automates 90% of a job, 'everyone does the 10%' and total work expands."
+      - "Both reversals land as OpenAI and Anthropic prep IPOs reportedly aiming at ~$1T valuations apiece; Fortune and Time both flagging the timing as suspicious."
+      - "HN reaction skeptical — top comments accuse both of pre-roadshow narrative laundering rather than genuine updating."
+    url: "https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/"
+    source: "fortune.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Hermes Agent Overtakes OpenClaw as OpenRouter's #1 Agent Despite Half the Stars"
+    summary:
+      - "Nous Research's self-improving agent now processes more daily tokens via OpenRouter than OpenClaw — the first time the GitHub-stars leader has lost the actual-usage crown."
+      - "160K stars in 12 weeks since the February 25 launch; growing ~3,800 stars/week vs OpenClaw's mature ~1,700/week pace."
+      - "v0.14.0 (May 16) is the 62nd tagged release in 30 days — built-in learning loop creates new skills from each session and persists them across runs."
+      - "Pitch: 'the agent that grows with you,' Python, MIT-licensed, runs on local Ollama, Anthropic, or OpenAI backends."
+    url: "https://github.com/NousResearch/hermes-agent"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Claude Code v2.1.152 Auto-Applies Review Fixes to the Working Tree"
+    summary:
+      - "/code-review --fix now writes the suggested reuse, simplification, and efficiency edits straight to disk — no copy-paste round trip; /simplify is now an alias for it."
+      - "/reload-skills lets you hot-swap skill definitions without restarting, and skills/slash-commands can now declare disallowed-tools to harden untrusted contexts."
+      - "/usage gains a per-category breakdown showing what's burning quota — skills, subagents, plugins, individual MCP servers."
+      - "Ships alongside fixes for a PowerShell cd permission bypass and a macOS find vnode-table crash on large directory trees."
+    url: "https://code.claude.com/docs/en/changelog"
+    source: "claude.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Pope Leo's 'Magnifica Humanitas' Calls to 'Disarm AI' — Anthropic Co-Founder on Stage"
+    summary:
+      - "42,300-word encyclical released May 25 — the first papal text dedicated to AI — argues human dignity 'does not depend on a person's abilities, wealth or position.'"
+      - "Calls to remove AI from military and economic monopolies, demand transparency on benefits, and tax-shift to ease the burden on the displaced."
+      - "Anthropic co-founder Chris Olah presented alongside the document at the Vatican Synod Hall; Anthropic posted his remarks the same day."
+      - "Tech reception mixed — Fast Company calls it 'mostly positive with quibbles'; philosophers note it leans heavily on Rerum Novarum and Centesimus Annus framing."
+    url: "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-magnifica-humanitas-presentation-ai-disarmament.html"
+    source: "vaticannews.va"
+    tag: "community"
+    significance: 3
