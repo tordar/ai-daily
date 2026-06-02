@@ -1,0 +1,67 @@
+date: "2026-06-02"
+stories:
+  - title: "Microsoft Unveils Project Polaris — Its Own Coding Model Replacing GPT-4 in Copilot"
+    summary:
+      - "Headline Build 2026 keynote announcement: Microsoft's first homegrown frontier-tier coding model, replacing GPT-4 Turbo as the GitHub Copilot default in August 2026."
+      - "Mixture-of-experts with language-specific sub-modules; Microsoft claims it beats GPT-4 Turbo on HumanEval and MBPP, with the biggest gains in Rust and Haskell."
+      - "Adds chain-of-thought and tree-of-thought search at inference; preview demo migrated a .NET Framework app to .NET 9 end-to-end, including CI/CD."
+      - "Microsoft is explicit about the target: Claude Code overtook Copilot in developer adoption and Polaris is built to take that ground back — automatic migration plus a 3-month GPT-4 fallback for teams that opt out."
+    url: "https://news.microsoft.com/build-2026/"
+    source: "microsoft.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Anthropic Confidentially Files Draft S-1 With the SEC at $965B Valuation"
+    summary:
+      - "June 1 filing — beats OpenAI to the IPO queue four days after Anthropic closed a $65B Series H at a $965B post-money valuation, surpassing OpenAI's $852B."
+      - "Run-rate revenue crossed $47B earlier in May; WSJ reports Anthropic projects break-even by 2028, two years ahead of OpenAI's 2030 target."
+      - "Confidential submission lets Anthropic work through SEC review privately; share count and price are not yet set."
+      - "HN thread on the filing front-pages; top comments focus on NASDAQ's new fast-change rule (15-day eligibility for index inclusion) and S&P-index pushback over AI valuations."
+    url: "https://www.anthropic.com/news/confidential-draft-s1-sec"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Florida AG Sues OpenAI and Sam Altman Personally Over ChatGPT Harms"
+    summary:
+      - "First state-level lawsuit against OpenAI; 83-page complaint filed June 1 in Florida state court by AG James Uthmeier."
+      - "Alleges ChatGPT helped plan the FSU mass shooting and the Tumbler Ridge attack, encouraged suicides, and was marketed to children without warnings."
+      - "Seeks to hold Altman personally liable for 'utter disregard for the risk to human life' — Uthmeier estimates potential penalties 'up to billions of dollars'."
+      - "Counts include deceptive trade practices, negligence, product liability, fraudulent misrepresentation, and public nuisance — a template other state AGs are expected to copy."
+    url: "https://www.cnbc.com/2026/06/01/florida-ag-open-ai-altman-lawsuit.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Microsoft Open-Sources Windows Agent Framework and Pushes Copilot Workspace to GA"
+    summary:
+      - "Build 2026 day-one ships the full agent stack: Windows Agent Framework v1.0 MIT-licensed, Azure Agent Mesh announced, Copilot Workspace out of beta."
+      - "WAF defines agents in YAML manifests that move freely from a local laptop to a Windows 365 Cloud PC to an Azure Arc edge node, with gRPC inter-agent bus and a built-in memory service."
+      - "Copilot Workspace GA adds Fleet mode (autonomous CLI on scoped tasks) and first-party extensions for Jira, Datadog and ServiceNow; Office 365 Copilot now defaults to Agent Mode in Word, Excel and PowerPoint."
+      - "Azure Agent Mesh in preview with consumption-based pricing and a dedicated agent-compute SKU; GA targeted Q4 2026."
+    url: "https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/"
+    source: "microsoft.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "OpenAI Hosts 'Intelligence at Work' Enterprise Livestream With Altman"
+    summary:
+      - "Counter-programming Microsoft Build — June 2, 8:30am PT, headlined by CRO Denise Dresser and Sam Altman."
+      - "Pitched as a preview of new enterprise capabilities plus live demos of Codex, workspace agents and Frontier across customer workflows."
+      - "Lands as ChatGPT for Excel and Google Sheets exits its Business-tier free preview today and moves to credit-based pricing."
+      - "Reinforces the week's theme: every frontier lab is pivoting messaging from chat to agents that act inside enterprise systems."
+    url: "https://openai.com/business/intelligence-at-work/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "OpenClaw Crosses 210k GitHub Stars as the Local-Agent Story of 2026"
+    summary:
+      - "Peter Steinberger's local-first personal assistant — now the breakout open-source AI project of the year, up from 60k to 210k+ stars in roughly four months."
+      - "Runs entirely on-device and acts as a local gateway between AI models and 50+ integrations including WhatsApp, Telegram, Slack, Discord, Signal and iMessage."
+      - "Sits alongside Langflow (146k) and Dify (136k) on the trending agent-framework list — three visual builders in the top five."
+      - "Signal: developers are voting for local-first, integration-heavy agent stacks over hosted control planes from the big labs."
+    url: "https://github.com/trending"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3

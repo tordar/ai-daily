@@ -31,7 +31,7 @@ stories:
     url: "https://www.reuters.com/technology/microsoft-set-unveil-new-coding-model-build-conference-information-reports-2026-05-28/"
     source: "reuters.com"
     tag: "models"
-    significance: 4
+    significance: 1
 
   - title: "CNN Sues Perplexity Over 17,000 Scraped Articles, Photos and Videos"
     summary:
