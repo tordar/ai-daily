@@ -1,0 +1,67 @@
+date: "2026-06-03"
+stories:
+  - title: "Trump Signs Voluntary 30-Day AI Executive Order — Musk and Zuck Pared It Down From 90"
+    summary:
+      - "Signed June 2 — AI companies are asked (not required) to share covered frontier models with the federal government for up to 30 days before release."
+      - "Earlier May draft set a 90-day window; lobbying by Musk and Zuckerberg shortened it, and the final text explicitly bars any mandatory licensing or preclearance."
+      - "Directs NIST to author the voluntary framework and stands up an 'AI cybersecurity clearinghouse' to share vulnerability info across agencies."
+      - "HN front page (Trump signs downsized AI order after weeks of reversals): voluntary scheme + 'trusted partner' carveouts dominate the comment thread."
+    url: "https://www.cnbc.com/2026/06/02/trump-executive-order-ai.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI Pushes Codex Past Coding — Sites, Annotations and 6 Role-Specific Plugins"
+    summary:
+      - "Headline of OpenAI's June 2 'Intelligence at Work' livestream: Codex is being repositioned from a coding agent to a generalist white-collar workhorse."
+      - "Six role plugins (sales, data analytics, creative, product design, public-equity investing, investment banking) bundle 62 business apps and 110 prebuilt skills."
+      - "'Sites' spins up OpenAI-hosted dashboards and internal web apps from a prompt; 'Annotations' lets users highlight a region of a doc, sheet, or slide and edit it in place."
+      - "OpenAI now claims 5M weekly Codex users, with non-developers ≈20% of the base and growing 3× faster than engineers; Codex rolls into the ChatGPT app 'in the next few weeks'."
+    url: "https://openai.com/index/codex-for-every-role-tool-workflow/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Anthropic Opens Project Glasswing to 150 Critical-Infrastructure Operators in 15+ Countries"
+    summary:
+      - "June 2 expansion of the Mythos-powered security program from 50 pilot partners to 150 across power, water, healthcare, communications and hardware."
+      - "Named additions include Okta, Samsung, SK Hynix, SK Telecom, NATO and the EU's ENISA — each had to clear Anthropic's security bar to get model access."
+      - "Mythos has now flagged 23,000+ potential vulnerabilities (Anthropic projects ~6,000 confirmed severe), up from the 10,000 disclosed in the initial-update post."
+      - "HN thread front-pages within hours; top concern is the dual-use shape of a model that finds zero-days at this rate now sitting inside infrastructure operators."
+    url: "https://www.anthropic.com/news/expanding-project-glasswing"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Nvidia Unveils N1X RTX Spark — Arm Laptop SoC With Blackwell GPU and 128GB Unified Memory"
+    summary:
+      - "Jensen's June 1 Computex keynote: Nvidia's first PC-class chip, co-designed with MediaTek; ships in Windows-on-Arm laptops from Microsoft, Dell, HP, Asus, Lenovo and MSI in fall 2026."
+      - "20-core Arm CPU plus 6,144 Blackwell CUDA cores (RTX 5070-class) and up to 128GB unified memory — Apple M-series-style addressing for AI workloads."
+      - "A cheaper N1 variant lands with 12-core CPU / 2,560 CUDA cores; both run CUDA natively, which is the real moat versus Snapdragon X and AMD's Strix Halo."
+      - "Frames Nvidia's stack-from-cloud-to-PC pitch: same CUDA story from Blackwell servers down to the laptop you train and infer on."
+    url: "https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "OpenAI Models and Codex Go GA on Amazon Bedrock"
+    summary:
+      - "June 2 — GPT-5.5, GPT-5.4 and the Codex agent are now generally available through Amazon Bedrock in commercial and GovCloud regions."
+      - "Pricing matches OpenAI's first-party rates and Bedrock usage counts toward existing AWS commitments — no separate procurement contract."
+      - "Codex on Bedrock is reachable from the Codex App, Codex CLI and the VS Code / JetBrains / Xcode plugins, with all inference routed through AWS."
+      - "OpenAI cites 4M weekly Codex developers; signal-wise this closes the loop where Anthropic (already on Bedrock) had a structural advantage for AWS-native enterprises."
+    url: "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "xAI Drops Composer 2.5 Into Grok Build — Hosting Cursor's Kimi-Based Coding Model"
+    summary:
+      - "June 1 — Grok Build's /models menu now serves Composer 2.5, the Cursor coding model built on Moonshot's open-weight Kimi K2.5 checkpoint with heavy RL post-training."
+      - "Pricing: $0.50 / $2.50 per 1M input/output tokens; a faster variant at $3 / $15 per 1M — roughly 10× cheaper than Opus 4.7 or GPT-5.5 at similar SWE-Bench scores."
+      - "Comes with the disclosure that xAI's next Grok Build model is being trained from scratch on Colossus 2 with ~1M H100-equivalents in a SpaceXAI / Cursor compute partnership."
+      - "Reaction on r/cursor and HN reproduces the May launch debate: benchmarks competitive on the easy 80% of tasks, but devs still alt-tab to Opus 4.7 for the hard 20%."
+    url: "https://x.ai/news/composer-2-5"
+    source: "x.ai"
+    tag: "models"
+    significance: 3

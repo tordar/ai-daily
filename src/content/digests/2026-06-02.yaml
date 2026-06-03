@@ -53,7 +53,7 @@ stories:
     url: "https://openai.com/business/intelligence-at-work/"
     source: "openai.com"
     tag: "industry"
-    significance: 3
+    significance: 1
 
   - title: "OpenClaw Crosses 210k GitHub Stars as the Local-Agent Story of 2026"
     summary:
