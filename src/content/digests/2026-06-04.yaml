@@ -1,0 +1,56 @@
+date: "2026-06-04"
+stories:
+  - title: "Anthropic Maps a Year of AI Cyber Misuse to MITRE ATT&CK — 67% of Banned Actors Used Claude for Malware"
+    summary:
+      - "Anthropic studied 832 accounts banned for malicious cyber activity between March 2025 and March 2026, mapping 13,873 actions across 482 unique ATT&CK techniques."
+      - "Medium- or high-risk actors using AI for cyber ops jumped from 33% to 56% across the year — a 1.7× rise the report frames as a structural shift, not a blip."
+      - "Malware development dominates: 67.3% of the 832 actors used Claude to build malicious software; only 6.5% reached more advanced 'lateral movement' help."
+      - "Subset of findings ships in Verizon's 2026 DBIR; Anthropic also publishes an interactive LLM ATT&CK Navigator at red.anthropic.com."
+    url: "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 5
+
+  - title: "Microsoft Ships MAI-Code-1-Flash and MAI-Thinking-1 — First In-House Models for Copilot, Claim Lead Over Claude Haiku 4.5"
+    summary:
+      - "June 2 Build keynote: MAI-Code-1-Flash is a 5B-parameter coding model rolling out to all GitHub Copilot tiers (Free → Max) starting in VS Code."
+      - "Microsoft reports 51.2% on SWE-Bench Pro vs Claude Haiku 4.5's 35.2%, with up to 60% fewer tokens on harder Verified problems via 'adaptive solution length'."
+      - "MAI-Thinking-1 is a 35B-active-parameter sparse MoE reasoner with 256K context, trained entirely on commercially licensed data (no third-party distillation), in private preview on Foundry."
+      - "HN thread headlines the production-harness training story — model was tuned inside the live Copilot loop, not benchmarked into it after the fact."
+    url: "https://microsoft.ai/news/introducingmai-code-1-flash/"
+    source: "microsoft.ai"
+    tag: "models"
+    significance: 5
+
+  - title: "xAI Makes Grok the Default Voice for 2.5M Vapi Agents"
+    summary:
+      - "June 3 — Grok Voice becomes the engine behind all 12 of Vapi's core voices, the speech layer for 2.5M+ voice agents already deployed on the platform."
+      - "Vapi's blind eval ranked Grok Voice #1 against incumbent providers; a 4,500-vote X poll split 50/50 trying to distinguish a Grok clone from the human original."
+      - "xAI's TTS and low-latency STT APIs are now reachable through the Vapi SDK, pricing positioned directly against ElevenLabs (TTS) and OpenAI Whisper (STT)."
+      - "Frames Grok Voice as the cost/quality leader after last week's Voice Agent API debut — xAI now owns the model AND the distribution channel."
+    url: "https://x.ai/news/grok-vapi"
+    source: "x.ai"
+    tag: "tools"
+    significance: 4
+
+  - title: "OpenAI Pitches a Federal Blueprint for Frontier AI — Mandatory CAISI Evals, No Pre-Approval"
+    summary:
+      - "June 3 policy paper proposes a three-part U.S. framework: a single national standard built on state frontier-safety laws, CAISI as the lead federal evaluator, and a cross-agency resilience plan."
+      - "CAISI would run mandatory pre-deployment evaluations of 'the most capable frontier models' and monitor progress toward recursive self-improvement — but only recommend, never block or license."
+      - "Lands one day after Trump's voluntary 30-day disclosure EO; OpenAI's pitch is essentially the durable statute version of that order."
+      - "Pairs with a separate June 3 brief on youth safety and OpenAI's election-safeguards 2026 update — coordinated policy push, not a one-off."
+    url: "https://openai.com/index/frontier-safety-blueprint/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Anthropic Launches Services Track for Claude Partner Network — 40,000 Firms Applied Since March"
+    summary:
+      - "Three-tier program (Select, Preferred, Global Premier) gates partner status on certified practitioners, production deployments, and public customer endorsements."
+      - "Global Premier requires 1,000 certified practitioners, 100 customers across three+ regions, 15 public endorsements, and a joint business plan with Anthropic."
+      - "Anthropic says 40,000+ firms have applied since the March launch and 10,000+ consultants have earned a Claude certification."
+      - "Companion Claude Partner Hub portal refreshes partner standings daily — pitched as Anthropic's enterprise-channel answer to AWS/Google/Microsoft partner programs."
+    url: "https://www.anthropic.com/news/services-track-partner-hub"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
