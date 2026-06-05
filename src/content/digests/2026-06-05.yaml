@@ -1,0 +1,56 @@
+date: "2026-06-05"
+stories:
+  - title: "MiniMax Drops M3 — Open-Weight 1M-Context Model Beats GPT-5.5 on SWE-Bench Pro"
+    summary:
+      - "June 1 launch: first open-weight model to combine frontier coding, 1M-token context and native multimodal (text/image/video) input in one architecture."
+      - "Scores 59.0% on SWE-Bench Pro — ahead of GPT-5.5 (58.6%) and Gemini 3.1 Pro (54.2%), still behind Claude Opus 4.8 at 69.2%."
+      - "New MiniMax Sparse Attention (MSA) cuts per-token compute to ~1/20 of M2 at 1M context, with 9.7× faster prefill and 15.6× faster decode."
+      - "API live now at $0.60/$2.40 per 1M input/output tokens — roughly 8–20% of leading proprietary U.S. models; weights and technical report promised within 10 days."
+    url: "https://www.minimax.io/blog/minimax-m3"
+    source: "minimax.io"
+    tag: "models"
+    significance: 5
+
+  - title: "OpenAI Upgrades GPT-Rosalind With GPT-5.5 Agentic Stack — Beats Base Model on Every Life-Sciences Eval"
+    summary:
+      - "June 3 update folds GPT-5.5's agentic coding and tool-use into the life-sciences model, with new plugins for AlphaFold, PubMed and bioinformatics pipelines inside Codex."
+      - "New LabWorkBench (real, never-trained-on wet-lab protocols): GPT-Rosalind 63.2% vs GPT-5.5 55.8% using 5.3% fewer tokens."
+      - "On GeneBench long-horizon genomics analysis: 21.6% vs 20.4% accuracy with 31% fewer tokens than GPT-5.5."
+      - "Research preview now open to eligible orgs worldwide; Novo Nordisk joins Amgen, Moderna, Allen Institute and Thermo Fisher in the program."
+    url: "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/"
+    source: "openai.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Autonomous AI Tool Finds 2-Year-Old Redis RCE in Most Cloud Environments"
+    summary:
+      - "CVE-2026-23479 (\"RediShell\"): use-after-free in Redis blocking-client code lets an authed user run arbitrary OS commands; introduced in 7.2.0 and unpatched until May 5."
+      - "Found by Theori's Xint Code, an autonomous AI bug-hunter — demo'd as a working RCE at Wiz's ZeroDay.Cloud 2025 in London last December."
+      - "NVD scores it 8.8 (CVSS 3.1); Wiz's scan puts Redis in a majority of cloud environments, most running without a password, meaning the default user already has every privilege the chain needs."
+      - "Concrete data point in the week's HN narrative that AI-found zero-days are arriving faster than vendors can patch them."
+    url: "https://thehackernews.com/2026/06/autonomous-ai-tool-finds-2-year-old-rce.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 4
+
+  - title: "xAI's Grok Imagine Video 1.5 Tops Image-to-Video Arena With 720p Clips and Native Audio"
+    summary:
+      - "June 3 preview API: image-to-video at 720p/24fps, 6–15 second clips, with synchronized dialogue, lip-sync, SFX and ambient audio generated in a single inference pass."
+      - "+52 Elo on Image-to-Video Arena over Grok Imagine 1.0 — #1 ahead of ByteDance Seedance 2.0, Alibaba HappyHorse 1.0 and Google Veo."
+      - "API pricing: $0.08/sec at 480p, $0.14/sec at 720p; optimized for clip extension so users can chain shots into multi-shot narratives."
+      - "Musk posted a Grok Imagine 1.5–generated Iliad movie trailer on X on June 4 captioned 'want full movie?' — story trended across film-tech Twitter."
+    url: "https://x.ai/news/grok-imagine-1-5"
+    source: "x.ai"
+    tag: "models"
+    significance: 3
+
+  - title: "Meta Business Agent Goes Global Across WhatsApp, Instagram and Messenger"
+    summary:
+      - "June 3 Conversations 2026 keynote in London: 2-year limited test ends, agent is now available to every business worldwide; 1M+ businesses already running one on WhatsApp/Messenger."
+      - "Handles answering questions, booking appointments, qualifying sales leads, recommending products and reroutes to humans when needed; getting started is free."
+      - "Companion Meta Business Agent Platform connects agents to hundreds of systems (Shopify, Zendesk, etc.) so they can take action on behalf of the business."
+      - "Pitched as Meta's first real consumer-AI revenue lever after Muse Spark — the agent runs free now, paid tiers arrive 'in the coming months'."
+    url: "https://about.fb.com/news/2026/06/meta-business-agent/"
+    source: "fb.com"
+    tag: "industry"
+    significance: 3
