@@ -1,0 +1,67 @@
+date: "2026-06-08"
+stories:
+  - title: "Apple Opens iOS 27 Siri to Claude, ChatGPT and Gemini at Cook's Final WWDC"
+    summary:
+      - "WWDC keynote unveils a new Extensions API: users pick any AI app from the App Store as the engine for Siri, Writing Tools and Image Playground."
+      - "Default Siri now runs on a custom 1.2T-parameter Gemini model — Apple confirmed the ~$1B/year Google deal on stage."
+      - "Foundation Models framework expands so third-party iOS 27 apps can also call Apple's on-device LLM and route to chosen extensions."
+      - "Tim Cook's last WWDC keynote as CEO; iOS 27 / iPadOS 27 / macOS 27 dev betas shipped same afternoon, public release in September."
+    url: "https://www.tomsguide.com/news/live/wwdc-2026-live-news-updates"
+    source: "tomsguide.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI's Dreaming V3 Replaces ChatGPT's Saved-Memories List"
+    summary:
+      - "June 4 rollout: a background process synthesizes memory from past chats — no more telling ChatGPT what to remember."
+      - "Memories age and refresh automatically (e.g. ‘going to Singapore in July' → ‘went to Singapore in July 2026' once the trip ends)."
+      - "OpenAI says factual recall jumps from 67.9% (2025) to 82.8% with Dreaming V3."
+      - "US Plus/Pro first; ~5× lower compute per user clears the path to Free and Go users in coming weeks."
+    url: "https://openai.com/index/chatgpt-memory-dreaming/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Anthropic Files Confidential S-1 — $965B Private Valuation Heads for IPO"
+    summary:
+      - "June 1 confidential draft S-1 with the SEC kicks off review for an Anthropic IPO; share count and price range still TBD."
+      - "Self-reported run-rate revenue ~$47B in May 2026, up from ~$10B a year earlier."
+      - "Series H closed last week at $965B post-money — adds Anthropic to the trillion-dollar AI IPO queue with SpaceX (roadshow this week) and OpenAI."
+      - "HN front-page thread on the filing crossed 700 points."
+    url: "https://www.anthropic.com/news/confidential-draft-s1-sec"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Trump's AI Order Asks Frontier Labs for 30-Day Pre-Release Access"
+    summary:
+      - "June 2 EO ‘Promoting Advanced AI Innovation and Security' sets up a voluntary pre-release channel for ‘covered frontier models'."
+      - "Up to 30 days of government access before broader release (down from a 90-day draft) plus a classified cyber-capability benchmark."
+      - "Stands up an AI cybersecurity clearinghouse with industry and critical-infrastructure operators; replaces Biden-era safety rules."
+      - "Explicitly not a licensing or pre-clearance regime — no mandatory permits to ship a model."
+    url: "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/"
+    source: "whitehouse.gov"
+    tag: "industry"
+    significance: 3
+
+  - title: "Anthropic Maps a Year of AI-Enabled Cyberattacks Onto MITRE ATT&CK"
+    summary:
+      - "832 banned Claude accounts (March 2025–March 2026) plotted against MITRE ATT&CK; shared with Verizon's 2026 DBIR."
+      - "67.3% used Claude to develop malware; 6.5% used it for lateral movement inside compromised networks."
+      - "Anthropic argues ATT&CK still doesn't cover the hardest behaviors — autonomous orchestration and real-time decision-making."
+      - "Lands the same week Project Glasswing expanded to ~150 new orgs in 15+ countries (power, water, healthcare) for Claude Mythos vuln scanning."
+    url: "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 3
+
+  - title: "Open Design Hits 57K Stars as Local-First Claude Design Alternative"
+    summary:
+      - "v0.9.0 shipped June 2 — 57.4K GitHub stars and 6.5K forks roughly 8 weeks after first commit."
+      - "Bundles 259+ Skills and 142+ Design Systems for prototypes, slides and decks with sandboxed HTML/PDF/PPTX/MP4 export."
+      - "Agent-agnostic: plugs into Claude Code, OpenClaw, Codex, Cursor, Qwen, Copilot and other CLIs via your own keys."
+      - "Positioned as the self-host answer to Anthropic Labs' Claude Design (Opus 4.7), released April 2026."
+    url: "https://github.com/nexu-io/open-design"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
