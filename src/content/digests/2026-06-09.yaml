@@ -1,0 +1,67 @@
+date: "2026-06-09"
+stories:
+  - title: "Apple Open-Sources Foundation Models Framework, Deprecates SiriKit and Ships Xcode Agents"
+    summary:
+      - "WWDC Platforms State of the Union (June 8) — Foundation Models framework gains image input, cloud-model routing and Dynamic Profiles; will be open-sourced later this year to run wherever Swift runs, including Linux servers."
+      - "App Intents 2.0 + Siri Extensions become the mandatory integration surface for Siri AI; SiriKit (since 2016) gets a formal deprecation notice."
+      - "Xcode 27 ships an Agent Client Protocol (ACP) client and Xcode Agents that can run tests, Playgrounds and Simulator apps; Device Hub replaces the standalone Simulator."
+      - "New Core AI framework lands as the OS-level path for on-device models on Apple silicon; an `fm` CLI and Python SDK expose the same on-device model outside Swift."
+    url: "https://developer.apple.com/news/?id=lvart8mq"
+    source: "developer.apple.com"
+    tag: "frameworks"
+    significance: 5
+
+  - title: "Anthropic's Agent SDK Billing Split Lands June 15 — Claude Code, Zed and OpenClaw Lose the Subscription Pool"
+    summary:
+      - "From Monday June 15, programmatic Claude usage (Agent SDK, `claude -p`, Claude Code GitHub Actions, third-party agents) draws from a new monthly Agent SDK credit pool billed at full API list prices."
+      - "Per-seat credits: $20 Pro, $100 Max 5×, $200 Max 20× — non-poolable, non-rolling; once depleted, automated requests stop unless overflow billing is manually enabled."
+      - "Interactive use (claude.ai web/desktop/mobile, Claude Code TUI, Cowork) stays on the existing subscription pool."
+      - "Opt-in emails started landing June 8; Zed has already published a migration guide and HN is filling up with cost recalculations for OpenClaw and Cursor users."
+    url: "https://thenewstack.io/anthropic-agent-sdk-credits/"
+    source: "thenewstack.io"
+    tag: "tools"
+    significance: 5
+
+  - title: "Cognition Rebrands Windsurf as Devin Desktop, Adopts Open Agent Client Protocol"
+    summary:
+      - "June 2 over-the-air update flips every Windsurf install to Devin Desktop with plans, extensions and keybindings intact."
+      - "Default surface is the Agent Command Center — a Kanban view that manages local and cloud agents (Devin, Codex, Claude Agent, OpenCode) side-by-side."
+      - "Devin Local is a from-scratch Rust rewrite of the Cascade agent: ~30% more token-efficient with native subagent support."
+      - "Ships Agent Client Protocol (ACP) — open spec lets any compatible agent run inside any ACP editor; Apple's Xcode 27 picked up the same client a week later."
+    url: "https://devin.ai/blog/windsurf-is-now-devin-desktop"
+    source: "devin.ai"
+    tag: "tools"
+    significance: 4
+
+  - title: "SpaceX–xAI IPO Prices Thursday — $1.77T Combined Valuation Would Be the Largest Listing in History"
+    summary:
+      - "Roadshow wraps this week; SpaceX prices after the close June 11 and trades June 12 on Nasdaq as SPCX at a fixed $135/share."
+      - "555.6M Class A shares at $135 puts post-money at ~$1.77T — above Tesla (~$1.6T) and the seventh-largest U.S. company by market cap."
+      - "Includes xAI, which SpaceX absorbed in February at a $1.25T combined value; public investors get the Grok/Colossus compute stack alongside Starlink."
+      - "Pricing skips the traditional book-build range — the S-1 launched with blank price fields and went straight to a fixed number."
+    url: "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Pentagon Races to Replace Anthropic's Claude With OpenAI, Google and xAI Models in Classified Networks"
+    summary:
+      - "Defense Department is benchmarking GPT-5.5, Gemini 3.5 Flash and Grok against Claude across 25 'power user' teams, after Hegseth labeled Anthropic a supply-chain risk."
+      - "Trigger: Anthropic refused to drop guardrails on mass surveillance and autonomous-weapons use cases that the May contract revision demanded."
+      - "Anthropic is suing in the Northern District of California; a federal judge already blocked an initial DoD effort to unwind the Maven Smart System contract."
+      - "Scientific American's June 8 piece argues the swap will take months — Claude is wired into Maven prompts, evaluators and golden datasets that don't transfer cleanly."
+    url: "https://www.techtimes.com/articles/317998/20260608/pentagon-racing-replace-anthropics-claude-because-it-was-too-safe-war.htm"
+    source: "techtimes.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Google DeepMind Launches AI for Math Initiative With IAS, IHES, Imperial, Simons and Tata"
+    summary:
+      - "Five-institution partnership funded by Google.org gets access to Gemini Deep Think, AlphaEvolve (algorithm discovery) and AlphaProof (formal proof completion)."
+      - "Goal: identify the next class of mathematical problems ripe for AI-driven attack and stand up shared tooling for human-AI proof workflows."
+      - "Lands two weeks after AlphaProof Nexus published novel partial answers to several Erdős problems — DeepMind frames the initiative as the institutional follow-through."
+      - "Wes Roth video on the announcement crossed 280K views in 48 hours; r/MachineLearning thread debating 'is mathematician the next job to fall?' has 1.6K comments."
+    url: "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/ai-for-math/"
+    source: "blog.google"
+    tag: "research"
+    significance: 3
