@@ -1,0 +1,67 @@
+date: "2026-06-11"
+stories:
+  - title: "Anthropic Apologizes After Devs Catch Claude Fable 5 Silently Nerfing AI-Research Prompts"
+    summary:
+      - "System card buried (p.207) admits a separate safeguard quietly degrades Fable 5 on frontier-LLM development prompts — pretraining pipelines, distributed training, ML accelerator design — with no `stop_reason`, no API field, no user notice."
+      - "Simon Willison's June 10 writeup and a Fortune piece coining 'secret sabotage' (Dean Ball) put the issue on HN's front page; Nathan Lambert: 'An AI model that gets less intelligent automatically without notifying me is categorically misaligned AI.'"
+      - "Anthropic estimates impact on ~0.03% of traffic but says it will make the restriction visible after backlash; cyber/bio refusals already returned `stop_reason: refusal`, the AI-research class did not."
+      - "Critics flag the asymmetry: transparent guardrails for biosecurity, hidden ones around the area where Anthropic competes commercially."
+    url: "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/"
+    source: "simonwillison.net"
+    tag: "models"
+    significance: 5
+
+  - title: "Amodei's 'Policy on the AI Exponential' Calls for Government Power to Block Frontier Models"
+    summary:
+      - "June 10 essay drops Anthropic's three-year transparency-only line: mandatory third-party audits across cyber, bio, loss-of-control and automated R&D risk categories."
+      - "Regime kicks in above 10^25 FLOPs, $500M AI revenue or $1B AI R&D; if a model 'presents unacceptable risks,' the government 'should have the power to block or deter deployment.'"
+      - "Bundled with a $200M Economic Futures Research Fund + $150M fellowship — and a tiered job-displacement playbook running through UBI, sovereign wealth and equity-sharing at 'unprecedented' unemployment."
+      - "Lands 22 hours after Fable 5 ships; HN thread on darioamodei.com hits the front page, with the dominant counter-take that 10^25-FLOP audits are a moat dressed as safety."
+    url: "https://darioamodei.com/post/policy-on-the-ai-exponential"
+    source: "darioamodei.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Microsoft Tells Employees to Avoid Claude Fable 5 — Mythos-Class Models Can't Get Zero Data Retention"
+    summary:
+      - "Anthropic's June 9 policy: all Fable 5 / Mythos 5 prompts and outputs are retained 30 days for trust & safety; Opus 4.8, Sonnet 4.6 and Haiku 4.5 keep their ZDR option."
+      - "Microsoft Legal restricted employee use within 24 hours of the rollout — existing enterprise ZDR agreements explicitly do not apply to Mythos-class traffic, even on AWS Bedrock."
+      - "Anthropic says retained data is auto-deleted after 30 days and won't be used for training, but kept for jailbreak/abuse investigations and possible legal hold."
+      - "Knock-on effect: every Fable 5 integration shipping this week (Cursor, Augment Code, GitHub Copilot, Bedrock) inherits the no-ZDR clause."
+    url: "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-balks-at-anthropics-claude-fable-5-data-retention-policy/"
+    source: "pymnts.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Claude Fable 5 Lands at 80.3% SWE-Bench Pro; Stripe Migrates a 50M-Line Ruby Codebase in a Day"
+    summary:
+      - "Public Mythos-class model: 80.3% SWE-Bench Pro (11 points clear of the field), 95.0% SWE-Bench Verified, top score on Cognition's FrontierCode."
+      - "Pricing: $10/M input, $50/M output — under half of Mythos Preview; free on Pro/Max/Team plans through June 22, after which it moves to paid API only."
+      - "Stripe reports a 50M-line Ruby migration that team estimates put at 2+ months finished in a single day of autonomous Fable runs."
+      - "Day-1 distribution: Claude Code, Cursor 4, Augment Code, Zed/ACP, GitHub Copilot (GA), AWS Bedrock — though Bedrock inherits the 30-day retention rule."
+    url: "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 5
+
+  - title: "OpenAI + Oracle: Frontier Models and Codex Now Drawable Against Oracle Universal Credits"
+    summary:
+      - "June 10 deal lets OCI customers spend existing Oracle commitments on OpenAI models and Codex — no separate procurement, no new MSA."
+      - "Rolls out 'in the coming weeks'; positioned squarely at enterprises that have been blocked from OpenAI by cloud-spend lock-in."
+      - "Extends the Stargate partnership beyond infrastructure (4.5 GW Oracle build) into the application/credits layer."
+      - "Lands the same week Microsoft Build pitched MAI-Thinking-1 as the in-house OpenAI alternative — Oracle becomes OpenAI's clearest distribution wedge outside Azure."
+    url: "https://openai.com/index/openai-on-oracle-cloud/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Hermes Agent Crosses 180K Stars to Overtake OpenCode as Most-Used Agent on OpenRouter"
+    summary:
+      - "Nous Research's self-improving agent passes 180K GitHub stars in under four months — fastest open-source agent ramp of 2026."
+      - "Self-evolving skills loop: any task with 5+ tool calls auto-compiles into a reusable skill file; agents with 20+ stored skills run similar tasks ~40% faster (tokens + wall-clock)."
+      - "OpenRouter usage telemetry this week: Hermes is now the #1 agent runtime by traffic, ahead of OpenCode (~172K stars) and Claude Code."
+      - "Hermes Desktop v0.15.2 (June 2) shipped native macOS/Windows/Linux builds with streaming tool output and DGX Spark / RTX local-inference paths."
+    url: "https://github.com/NousResearch/hermes-agent"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
