@@ -1,0 +1,67 @@
+date: "2026-06-12"
+stories:
+  - title: "OpenAI Buys Ona to Power Long-Running Codex Tasks"
+    summary:
+      - "June 11 deal: OpenAI acquires Ona, the Kiel, Germany cloud-platform startup that gives AI agents secure, pre-configured execution environments with tools, systems and context preloaded."
+      - "Ona's team folds into the Codex effort, which now serves 5M weekly active users — up from 3M in April; Ona has supported 2M developers with reproducible cloud workspaces."
+      - "Strategic angle: Codex gets the runtime to take on multi-step, long-horizon work — Bloomberg frames it as OpenAI grabbing the compute layer for agents before Anthropic does."
+      - "Terms undisclosed; transaction subject to standard closing. Top HN comment: 'compute layer ownership is going to be critical going forward.'"
+    url: "https://openai.com/index/openai-to-acquire-ona/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "SpaceX–xAI Opens on Nasdaq Today at $1.77T — Largest IPO in History"
+    summary:
+      - "SPCX starts trading June 12 after pricing Thursday at a fixed $135/share, raising $75B and blowing past Saudi Aramco's $29.4B 2019 record by 2.5×."
+      - "Implied valuation ~$1.77T, above Tesla and the seventh-largest US company by market cap; 555.6M Class A shares hit the float."
+      - "Includes xAI, absorbed by SpaceX in February at a $1.25T combined value — public investors now own the Grok/Colossus compute stack alongside Starlink."
+      - "$17.5B of legacy debt from X and xAI rolls into the SPCX balance sheet; S-1 launched with blank price fields and skipped the traditional book-build range."
+    url: "https://www.npr.org/2026/06/11/nx-s1-5853199/spacex-ipo-price-elon-musk"
+    source: "npr.org"
+    tag: "industry"
+    significance: 4
+
+  - title: "xAI Opens Grok Build Plugin Marketplace With Six Launch Partners"
+    summary:
+      - "June 11 launch: built-in `/marketplace` catalog in Grok Build CLI, with browse-install-update flow that never leaves the terminal."
+      - "Launch plugins: MongoDB (data + query tuning), Vercel (deploys), Sentry (stack-trace debugging), Chrome DevTools (live browser control), Cloudflare (Workers/DO), and Superpowers (agentic workflows)."
+      - "A plugin bundles skills, slash commands, agents, hooks, MCP servers and LSPs in one installable package — mirrors the Claude Code / Codex skill pattern."
+      - "Open catalog at `xai-org/plugin-marketplace` on GitHub; pull requests welcome. Caveat: still gated behind the $299/mo SuperGrok Heavy plan."
+    url: "https://x.ai/news/grok-plugin-marketplace"
+    source: "x.ai"
+    tag: "tools"
+    significance: 4
+
+  - title: "Cursor Bugbot Now 3× Faster and 22% Cheaper on Composer 2.5"
+    summary:
+      - "June 11 update: average review drops from ~5 minutes to ~90 seconds; 90% of runs finish under three minutes."
+      - "Finds 10% more bugs per review (0.62 vs 0.56) at ~22% lower cost — gains attributed to Composer 2.5 training progress."
+      - "New `/review`, `/review-bugbot`, `/review-security` commands run pre-push; syncs with the GitHub/GitLab Bugbot so the same diff isn't re-reviewed."
+      - "Smart PR re-reviews now focus only on what's new since the last pass. Available in Cursor 3.7+ and at cursor.com/agents; CLI support coming."
+    url: "https://cursor.com/blog/bugbot-updates-june-2026"
+    source: "cursor.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Google Ships Gemini 3.5 Live Translate Across 70+ Languages"
+    summary:
+      - "Audio model built on Gemini 3 Pro: streaming speech-to-speech translation in 70+ languages with auto source-language detection."
+      - "Preserves speaker intonation, pacing and pitch; translates mid-sentence instead of waiting for the speaker to finish — the gap that killed earlier real-time tools."
+      - "Rollout: public preview via Gemini Live API and AI Studio for developers; enterprise private preview in Google Meet; consumer rollout in Google Translate on Android and iOS."
+      - "Launch partners Agora, LiveKit, Pipecat, Software Mansion and Vision Agents flag latency and pacing as a new bar for live multimedia."
+    url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/"
+    source: "blog.google"
+    tag: "models"
+    significance: 4
+
+  - title: "Agent-Skills Crosses 55K Stars as SKILL.md Ecosystem Hits Critical Mass"
+    summary:
+      - "Addy Osmani's `addyosmani/agent-skills` tops GitHub Trending today at ~55K stars (+3.3K in 24h) — production-grade SKILL.md workflows encoding senior-engineer decision flows."
+      - "Format works across every major coding agent: Claude Code, Codex CLI, Cursor, Gemini CLI, Windsurf/Devin Desktop, Copilot."
+      - "Broader ecosystem: Vercel's skills.sh marketplace passes 91K total installs; Anthropic's official skills repo crosses 75K stars; registries now index 74K+ skills."
+      - "Same trend driving the Grok Build marketplace launch this week and OpenAI's AGENTS.md push under the Agentic AI Foundation."
+    url: "https://github.com/addyosmani/agent-skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
