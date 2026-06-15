@@ -1,0 +1,68 @@
+date: "2026-06-15"
+stories:
+  - title: "US Government Forces Anthropic to Pull Fable 5 and Mythos 5 Worldwide"
+    summary:
+      - "Commerce Department export-control directive landed at 5:21pm ET on June 12; Anthropic killed both models for everyone within hours because it can't filter foreign nationals in real time."
+      - "Both models had been GA for three days — Fable 5 launched June 9 at $10/M input, $50/M output and topped SWE-Bench Pro at 80.3%."
+      - "Trigger per Anthropic: government cited Pliny the Liberator's June 10 multi-agent classifier-bypass; Anthropic disputes it was a universal jailbreak and calls the order a 'misunderstanding.'"
+      - "Bloomberg reports Amazon CEO Andy Jassy flagged the issue to Treasury; Anthropic pre-IPO synthetic futures dropped ~3%, implied valuation ~$1.64T."
+      - "HN front page: 'Statement on US government directive...' hit ~1.2K points / 600+ comments; refunds offered to upgraders who cancel before June 20."
+    url: "https://www.anthropic.com/news/fable-mythos-access"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Anthropic's Shutdown Hands India's Sovereign-AI Camp Its Strongest Argument Yet"
+    summary:
+      - "Indian startups had wired Claude into chatbots, medical-diagnosis tools and document pipelines — the June 12 cutoff forced a same-day scramble to GPT and open-weights."
+      - "Sarvam CEO Vivek Raghavan: 'Don't confuse access with ownership.' Sridhar Vembu and Mohandas Pai publicly called for a national frontier-model program."
+      - "Anthropic is India's second-largest market; the suspension is now the case study in every sovereign-AI deck in Delhi this week."
+      - "Cuts both ways for Europe — analysts note any US lab is one Commerce Department directive away from a global outage."
+    url: "https://thenextweb.com/news/india-sovereign-ai-anthropic-fable-suspension-debate"
+    source: "thenextweb.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "OpenAI Retires GPT-5.2 — ChatGPT Auto-Migrates Every Live Conversation to GPT-5.5"
+    summary:
+      - "June 12 removal of GPT-5.2 Instant / Thinking / Pro from ChatGPT; existing threads silently continue on the matching GPT-5.5 tier."
+      - "Followed the standard 90-day post-successor sunset clock kicked off when GPT-5.5 Instant shipped in March."
+      - "Developer checklist: pin explicit version IDs, re-test tuned prompts and output parsers, audit anything still calling `gpt-5.2-*` in production."
+      - "GPT-5.6 'kindle-alpha' checkpoint that leaked through a Codex sandbox on June 3 — 1.5M-context, cleaner UI generation — is still not officially acknowledged."
+    url: "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    source: "openai.com"
+    tag: "models"
+    significance: 3
+
+  - title: "EngineAI Files Confidentially for Hong Kong IPO as Humanoid Stampede Hits Public Markets"
+    summary:
+      - "Shenzhen-based EngineAI, last valued at $1.5B, working with CICC and Citic on a HKEX listing; filing dated June 12."
+      - "Opened a 12,000 m² Shenzhen plant June 1 and started shipping its first T800 robots — three years old, already in volume production."
+      - "Joins Unitree (~$7B targeted Shanghai STAR float) and Agibot (~$6B Hong Kong) in the 2026 Chinese humanoid IPO queue."
+      - "Bloomberg cites SpaceX-xAI's $1.77T June 12 debut as the validation institutional buyers wanted before backing robotics names."
+    url: "https://www.bloomberg.com/news/articles/2026-06-12/humanoid-robot-manufacturer-engineai-is-said-to-file-for-hong-kong-ipo"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Anthropic Public Record: 52K Americans Want Cancer Cures and Fear Job Loss"
+    summary:
+      - "First wave of Anthropic's nationally representative AI-attitudes survey (Nov–Dec 2025 fieldwork, 51,907 respondents), published June 12."
+      - "Top hopes: cure cancer/Alzheimer's (48%), help people with disabilities (36%), make daily life easier (23%)."
+      - "Top fears: job displacement (64%), cognitive dependency (56%), misinformation (52%); only 15% trust AI companies to self-regulate."
+      - "70%+ back government regulation; non-users worry about jobs at 70% vs daily users at 54% — exposure flips the politics."
+    url: "https://www.anthropic.com/news/anthropic-public-record"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 3
+
+  - title: "The Information: Anthropic Quietly Repositions Its Launch Partners as Competitors"
+    summary:
+      - "Reports Anthropic asked Figma and Canva to co-launch Claude Design in April — weeks before unveiling a product that directly competes with both."
+      - "Same playbook surfaces around Mythos: customers told to expect frontier capability, then silently routed to weaker Opus 4.8 on AI-research prompts."
+      - "Anthropic backtracked on the silent routing June 10 after the Simon Willison / Nathan Lambert backlash; partner concerns are now the second front."
+      - "HN takeaway: building on a frontier-lab platform increasingly looks like seeding a competitor with your roadmap."
+    url: "https://www.theinformation.com/articles/anthropic-blindsides-business-partners"
+    source: "theinformation.com"
+    tag: "industry"
+    significance: 3
