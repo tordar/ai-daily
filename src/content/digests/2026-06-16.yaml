@@ -1,0 +1,68 @@
+date: "2026-06-16"
+stories:
+  - title: "Anthropic Sued for Overselling Claude Max: '20x' Plan Allegedly Delivers 6–8x"
+    summary:
+      - "Class action filed June 14 in the Northern District of California by DC-based plaintiff Karl Kahn."
+      - "Claim: the $200/mo Max 20× delivers ~6–8× of Pro and the $100/mo Max 5× delivers ~3.5× of Pro — far short of the marketing."
+      - "Kahn says one 5-hour Claude Code session burned 15% of his weekly allowance; he then bought top-ups after hitting caps."
+      - "Lawsuit seeks damages, restitution and an injunction; Anthropic declined to comment."
+      - "Lands the day before the long-scheduled June 15 Agent SDK billing split, which moves Claude Code and headless `claude -p` off the same subscription pool."
+    url: "https://www.engadget.com/2194626/anthropic-hit-with-lawsuit-over-its-claude-max-usage-limits/"
+    source: "engadget.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Anthropic Sends Engineers to DC as Fable 5 Stays Offline Into Day 4"
+    summary:
+      - "WSJ (updated Sunday June 14) — senior Anthropic technical staff in Washington meeting with administration officials to negotiate an end to the June 12 export-control directive."
+      - "Floated compromise: a joint technical review where Anthropic engineers walk government security researchers through the jailbreak Anthropic still disputes is universal."
+      - "No deal, no timeline and no public statement that the government's concerns have been satisfied as of Monday."
+      - "Fable 5 and Mythos 5 remain disabled worldwide; refund window for users who upgraded right before the suspension closes June 20."
+    url: "https://www.techtimes.com/articles/318376/20260615/anthropic-races-lift-fable-5-export-ban-top-engineers-sent-washington-deal.htm"
+    source: "techtimes.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "LiteLLM RCE Chain Lands on CISA KEV — Active Exploitation, No Auth Needed"
+    summary:
+      - "CISA added CVE-2026-42271 (command injection in BerriAI's LiteLLM proxy) to the Known Exploited Vulnerabilities list on June 8; federal deadline June 22."
+      - "Horizon3.ai chained it with Starlette host-header bypass CVE-2026-48710 — CVSS 10.0, unauthenticated RCE on any internet-exposed LiteLLM gateway."
+      - "Obsidian Security disclosed a separate three-CVE chain (CVE-2026-47101/47102/40217) on June 15: low-privilege user → proxy_admin → RCE via MCP."
+      - "Patches in LiteLLM v1.83.14-stable; runZero and Bleeping Computer report scanning and exploitation already widespread."
+    url: "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html"
+    source: "thehackernews.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Claude 4 Originals Retire From the API as the Agent SDK Billing Split Goes Live"
+    summary:
+      - "June 15: `claude-sonnet-4-20250514` and `claude-opus-4-20250514` return errors on the API; callers must move to Sonnet 4.5/Opus 4.8 or the Fable/Mythos tier (when access is restored)."
+      - "Same day, Agent SDK, `claude -p`, Claude Code GitHub Actions and third-party SDK apps draw from a separate monthly credit pool — $20 Pro / $100 Max 5× / $200 Max 20× — metered at full API rates."
+      - "No rollover; once depleted, automated requests stop unless overflow billing is manually enabled. Interactive claude.ai and Claude Code TUI usage stay on the original subscription pool."
+      - "First weekend of metering on the new pool fed straight into the Max usage lawsuit narrative the next morning."
+    url: "https://docs.anthropic.com/en/docs/about-claude/model-deprecations"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "ChatGPT Memory Starts Writing Narrative Dossiers Sorted by Work, Hobbies and Travel"
+    summary:
+      - "New memory rollout for Plus and Pro in the US builds a prose profile organised by categories (work, hobbies, projects, travel, preferences) — no explicit 'remember this' needed."
+      - "OpenAI claims 82.8% recall accuracy on stored facts in internal evals of the 'Dreaming V3' summariser."
+      - "Privacy backlash: users on r/ChatGPT report invented details about jobs and family bleeding into unrelated conversations; opt-out is per-category, not per-fact."
+      - "Lands alongside the new ChatGPT 'Lockdown mode' that disables outbound network and browsing tools to blunt prompt-injection data exfiltration."
+    url: "https://the-decoder.com/chatgpt-now-saves-narrative-dossiers-about-you-sorted-by-work-hobbies-and-travel-preferences/"
+    source: "the-decoder.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "U of T Researchers' LLM-Driven Worm Compromises 73.8% of a 33-Host Network"
+    summary:
+      - "arXiv:2606.03811 from CleverHans Lab (Toronto, Vector Institute, Cambridge, ServiceNow); operational details redacted before posting."
+      - "Worm runs a local open-weight LLM on each host it compromises and reasons through attack strategy on the fly — no fixed exploit list, no cloud API call."
+      - "Across 15 runs on an isolated 33-host 'FakeCorp' lab: 31.3 vulns identified, 23.1 hosts (73.8%) compromised with elevated access, 20.4 hosts (61.8%) self-replicated to."
+      - "Now climbing HN again after BSidesLondon and Infosecurity Europe demos last week; help-net-security and The Hacker News both leading with it Monday."
+    url: "https://thehackernews.com/2026/06/researchers-build-self-replicating-ai.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 3

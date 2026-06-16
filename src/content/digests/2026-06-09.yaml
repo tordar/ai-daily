@@ -20,7 +20,7 @@ stories:
     url: "https://thenewstack.io/anthropic-agent-sdk-credits/"
     source: "thenewstack.io"
     tag: "tools"
-    significance: 5
+    significance: 1
 
   - title: "Cognition Rebrands Windsurf as Devin Desktop, Adopts Open Agent Client Protocol"
     summary:
