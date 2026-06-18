@@ -1,0 +1,67 @@
+date: "2026-06-18"
+stories:
+  - title: "Noam Shazeer Leaves Google for OpenAI as IPO Looms"
+    summary:
+      - "Transformer co-author and Gemini co-lead announced the move on X this morning, less than two years after Google paid ~$2.7B to bring him back from Character.AI."
+      - "Lands as OpenAI prepares to file confidentially for an IPO that could price as soon as September at a $730B private valuation."
+      - "Wire saturation across Bloomberg, CNBC, The Information, and Investing.com; HN front page item 48578957 (\"Noam Shazeer is joining OpenAI\")."
+      - "Top comment frames Shazeer as the new lead for architecture research, citing his work on transformers, MoE, and efficient decoding."
+    url: "https://news.ycombinator.com/item?id=48578957"
+    source: "news.ycombinator.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Anthropic Overhauls Claude Design With System Imports and Code Round-Trips"
+    summary:
+      - "Major update lets teams import a design system from a GitHub repo, design files, or raw uploads; Claude then auto-corrects output against it before showing the user."
+      - "New admin role can lock a single approved system across an org so every asset conforms to brand guidelines."
+      - "Bidirectional handoff with Claude Code via a new /design command, with shared usage limits between the two products."
+      - "Fixes the token-burning problem that let a PCWorld reviewer torch 80% of a weekly Pro allowance in 25 minutes generating three variations."
+    url: "https://www.anthropic.com/news/claude-design-anthropic-labs"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Matt Pocock's Claude Code Skills Hit #1 on GitHub Trending"
+    summary:
+      - "Repo of 21 markdown skills straight from his .claude directory crossed 80,500 stars, +1,523 in the last 24 hours."
+      - "/grill-me interviews the agent about a plan until every branch resolves; /tdd enforces red-green-refactor; /handoff compacts a session for the next agent."
+      - "Pitched as a fix for Claude doing technically correct work that misses the actual goal — forcing explore, propose, test, then implement."
+      - "Companion repo obra/superpowers (cross-tool skills framework) trending alongside at +1,129 stars in 24h."
+    url: "https://github.com/mattpocock/skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Google Sunsets Gemini CLI Today, Forces Migration to Antigravity"
+    summary:
+      - "Gemini CLI and Gemini Code Assist IDE extensions stop serving requests for AI Pro, Ultra, and individual free users as of June 18."
+      - "Antigravity CLI keeps Agent Skills, Hooks, Subagents, and Extensions (rebranded as plugins) — but Google admits no 1:1 feature parity at launch."
+      - "Roughly 30-day migration window since the I/O 2026 announcement on May 19; Code Assist Standard, Enterprise, and GitHub seats are unaffected."
+      - "Developers flagging breakage in existing automation; cottage industry of 15-minute migration guides on Medium and indie blogs."
+    url: "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/"
+    source: "developers.googleblog.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "OpenAI Adds Five Realtime API Voices and Cuts Cache Pricing"
+    summary:
+      - "Ash, Ballad, Coral, Sage, and Verse join the Realtime API with finer control over emotion, accent, and tone via system instructions."
+      - "Cached text input now costs 50% less; cached audio input 80% less."
+      - "OpenAI says a typical 15-minute conversation runs about 30% cheaper than at Realtime API launch."
+      - "Voices available in the Playground; 28+ replies on the developer community announcement thread."
+    url: "https://community.openai.com/t/new-realtime-api-voices-and-cache-pricing/998238"
+    source: "community.openai.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Fable 5 Stays Dark Into Day Six as Refund Window Closes"
+    summary:
+      - "Six days into the export-control suspension, neither Anthropic nor Commerce has announced a restoration date."
+      - "Refund window for users who upgraded June 9–14 closes June 20; free-trial pricing window expires June 22."
+      - "Trump adviser David Sacks publicly accused Anthropic of refusing to fix the jailbreak before export controls; Anthropic counters the jailbreak \"isn't serious.\""
+      - "Polymarket pricing \"restored before July 1\" softening from yesterday's ~80% as senior Anthropic engineers continue DC talks."
+    url: "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-adviser-david-sacks-says-anthropic-refused-to-fix-fable-5-jailbreak-before-us-export-controls"
+    source: "tomshardware.com"
+    tag: "industry"
+    significance: 3
