@@ -1,0 +1,67 @@
+date: "2026-06-19"
+stories:
+  - title: "OpenAI o3 Cracks 18 Stumped Rare Disease Cases in Boston Children's NEJM AI Study"
+    summary:
+      - "Boston Children's, Harvard, and OpenAI ran o3 Deep Research over 376 previously unsolved pediatric genomes and got new diagnoses on 18 (4.8% extra yield)."
+      - "Breakdown: 10 neurodevelopmental, 4 neuromuscular, 2 early childhood psychosis, 2 sudden unexpected pediatric deaths — all confirmed by clinicians."
+      - "Hospital says the program has unlocked 40+ previously unsolved cases, saved ~60,000 hours of analyst time, and redeployed >$7M in labor costs."
+      - "Genetic investigations director Catherine Brownstein: 'a total game changer.' Published June 18 in NEJM AI."
+    url: "https://openai.com/index/diagnose-rare-childhood-diseases/"
+    source: "openai.com"
+    tag: "research"
+    significance: 5
+
+  - title: "Anthropic and Okta Ship Zero-Touch MCP Connector Auth for Claude Enterprise"
+    summary:
+      - "Admins now provision MCP connectors organization-wide through Okta; users get connector access on first login with no per-user OAuth dance."
+      - "First implementation of MCP's new Enterprise-Managed Authorization extension, built on Okta's Cross App Access (XAA) standard."
+      - "Asana, Atlassian, Canva, Figma, Granola, Linear, and Supabase live at launch; Slack coming soon."
+      - "Hubspot, Ramp, and Webflow are rolling it out across their teams; VS Code adds matching IDE support."
+    url: "https://claude.com/blog/enterprise-managed-auth"
+    source: "claude.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "GPT-5.5 Instant Hits Frontier-Tier Health Performance for Free ChatGPT Users"
+    summary:
+      - "OpenAI says GPT-5.5 Instant now matches its frontier Thinking models on the hardest health evaluations, including HealthBench Professional."
+      - "230M+ people ask ChatGPT health questions weekly; OpenAI reports a 71% drop in factuality issues vs GPT-5.3 Instant."
+      - "Evaluation is steered by OpenAI's Global Physician Network — 262 doctors, 26 specialties, 59 countries."
+      - "Biggest health-capability jump since GPT-5; pitched as the consumer-side counterpart to the Boston Children's o3 study."
+    url: "https://openai.com/index/improving-health-intelligence-in-chatgpt/"
+    source: "openai.com"
+    tag: "models"
+    significance: 4
+
+  - title: "DeepMind's AI Control Roadmap Treats Frontier Agents as Insider Threats"
+    summary:
+      - "New plan defends Google's internal systems against potentially adversarial AI agents using the same playbook as a rogue employee with office keys."
+      - "Companion paper 'Three Layers of Agent Security' splits the problem across single agents, multi-agent systems, and ecosystem-wide cyber defense."
+      - "Builds on June 11's $10M multi-agent safety funding call with Schmidt Sciences, ARIA, Cooperative AI Foundation, and Google.org."
+      - "MIT Tech Review framed the work as DeepMind's first concrete take on what happens when millions of agents start interacting."
+    url: "https://deepmind.google/blog/securing-the-future-of-ai-agents/"
+    source: "deepmind.google"
+    tag: "research"
+    significance: 4
+
+  - title: "Grok Lands Natively on Databricks Agent Bricks at the Data + AI Summit"
+    summary:
+      - "xAI's flagship Grok models now run inside Databricks Agent Bricks, sitting next to OpenAI, Anthropic, and Meta models on the same governed platform."
+      - "Agents can reason over Lakehouse data directly — no external pipelines, no copying enterprise data out of Databricks' governance layer."
+      - "Zero data retention endpoints on the xAI side; Databricks doesn't train foundation models on customer data."
+      - "Announced June 18 at the Databricks Data + AI Summit; Musk shared the integration on X."
+    url: "https://x.ai/news/grok-databricks"
+    source: "x.ai"
+    tag: "tools"
+    significance: 3
+
+  - title: "Fable 5 Goes Dark Into Day Seven as Anthropic's Refund Window Hits Tomorrow"
+    summary:
+      - "Still no restoration date; Commerce talks continue with no announced deal one week into the export-control suspension."
+      - "Refund window for users who upgraded June 9–14 closes tomorrow, June 20 — last business day to claw back a charge for a model nobody can use."
+      - "Polymarket 'restored before July 1' has slid from ~80% to 58%; 'by July 10' sits around 74%."
+      - "Anthropic still calls the underlying jailbreak 'not serious'; the open-source camp keeps pointing at this week's MIT-licensed GLM-5.2 as the alternative."
+    url: "https://www.anthropic.com/news/fable-mythos-access"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 2
