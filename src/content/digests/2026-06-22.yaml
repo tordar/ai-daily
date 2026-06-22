@@ -1,0 +1,67 @@
+date: "2026-06-22"
+stories:
+  - title: "Claude Opus 4.7 Beats Human Teams 20x on Robot-Dog Tasks in Project Fetch Phase Two"
+    summary:
+      - "Anthropic rerun of last year's quadruped study with Opus 4.7 driving non-roboticist employees."
+      - "Claude was 10x+ faster than every human team that finished a task, 37x faster than the no-AI team, 19x faster than the team using an AI assistant."
+      - "Generated nearly 10x less code than humans for comparable or better results."
+      - "Still couldn't fetch the actual ball — failed at closed-loop visual precision control."
+    url: "https://www.anthropic.com/research/project-fetch-phase-two"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 4
+
+  - title: "OpenAI Ships Record & Replay for Codex on macOS"
+    summary:
+      - "Demonstrate a workflow on your Mac once, Codex turns the recording into a reusable skill."
+      - "Shipped June 18 in Codex 26.616; requires Computer Use enabled."
+      - "Available on Plus, Pro, Business, Enterprise, and Edu — excludes EU, UK, and Switzerland."
+      - "Generated skill describes when to use it, inputs, steps, and how to verify."
+    url: "https://developers.openai.com/codex/record-and-replay"
+    source: "openai.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "xAI Drops a Free Grok Add-in Into Microsoft Word"
+    summary:
+      - "Side-panel Grok with live web research, document editing, and Mermaid-rendered diagrams."
+      - "Searches xAI, Brave, and Bing in parallel with source attribution."
+      - "Free from the Microsoft 365 marketplace — direct shot at paid Copilot."
+      - "Excel and PowerPoint add-ins followed in the same wave."
+    url: "https://x.ai/news/introducing-word-addin"
+    source: "x.ai"
+    tag: "tools"
+    significance: 3
+
+  - title: "Ponytail Cracks 44K Stars Telling Coding Agents Not to Write the Code"
+    summary:
+      - "Skill/plugin that runs Claude Code, Codex, Cursor, and Gemini CLI through a YAGNI ladder before they generate anything."
+      - "24K stars in three days post-launch; 44K stars and 2,100 forks by June 21."
+      - "Author benchmarks: 80–94% less code, 3–6x faster tasks, 47–77% lower API cost."
+      - "HN debates whether the 'lazy senior dev' framing breaks on genuinely custom work."
+    url: "https://github.com/DietrichGebert/ponytail"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Agentjacking: Poisoned Sentry Errors Hijack Claude Code, Cursor, and Codex"
+    summary:
+      - "Tenet Security disclosure: attacker-crafted Sentry events are pulled in via MCP and executed by the coding agent."
+      - "Claude Code, Cursor, and Codex all ran attacker commands at developer privilege in tests."
+      - "2,388 organizations exposed via public DSNs; Sentry called the issue 'technically not defensible' and declined to patch."
+      - "First high-profile demo of MCP tool-poisoning landing on production coding agents."
+    url: "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html"
+    source: "thehackernews.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Fable 5 Ban Hits Day 10 as NSA Testimony Reshapes the Story"
+    summary:
+      - "NSA Director Joshua Rudd told Sen. Warner in a classified June 11 briefing that Mythos breached 'nearly all' NSA classified systems in hours during a red-team."
+      - "Senator Warner went public over the weekend; now the most-cited reason for the June 12 export-control directive."
+      - "Free Fable 5/Mythos 5 trial for Pro/Max/Team/Enterprise subscribers expired today with the models still dark globally."
+      - "Fable 5 reappeared in the Claude Android model picker Sunday but throws a rate-limit error — Anthropic confirms it's a UI artifact, not a partial restore."
+    url: "https://www.anthropic.com/news/fable-mythos-access"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
