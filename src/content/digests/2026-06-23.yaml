@@ -1,0 +1,56 @@
+date: "2026-06-23"
+stories:
+  - title: "Gemini 2.5 Pro Gets Deep Think, Computer Use, and Native Audio in One Drop"
+    summary:
+      - "Deep Think reasoning rolls out to 2.5 Pro on the Gemini API, AI Studio, and Vertex AI — no longer Ultra-only."
+      - "Project Mariner's browser-control tool and native audio output now exposed for both 2.5 Pro and 2.5 Flash."
+      - "Thinking budgets extend to 2.5 Pro so developers can cap or disable reasoning tokens per call; structured thought summaries land in the response payload."
+      - "Cited benchmarks: 87.6% LiveCodeBench, 65th percentile USAMO, IMO gold-medal standard."
+    url: "https://deepmind.google/blog/gemini-25-our-world-leading-model-is-getting-even-better/"
+    source: "deepmind.google"
+    tag: "models"
+    significance: 5
+
+  - title: "OpenAI Opens GPT-5.5-Cyber to All Defenders and Sics Codex on Open-Source CVEs"
+    summary:
+      - "Full GPT-5.5-Cyber GA for verified defenders: 85.6% on CyberGym vs 81.8% for stock GPT-5.5."
+      - "Codex Security plugin ships in the Codex app — finds, validates, and patches vulnerabilities inline with attack-path traces and severity reports."
+      - "'Patch the Planet' partners with Trail of Bits, HackerOne, and Calif across cURL, Python, Go, urllib3, PyPI, Valkey, RustCrypto, and 12 more."
+      - "First-week tally: hundreds of bugs, 64 PRs, 51 issues across 19 projects; field results include a Firefox WASM CVE patched before Pwn2Own."
+    url: "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "SpaceX Sells Reflection $6.3B of Colossus 2 Compute for an Open-Weights Frontier Run"
+    summary:
+      - "Nvidia-backed Reflection AI commits $150M/month from July 1 through 2029 for GB300 capacity at SpaceX's Memphis data center."
+      - "Reflection has yet to ship a public frontier model; this is the compute it needs to actually train one."
+      - "Adds an open-source lab to Colossus's roster alongside existing Anthropic, Google, and Cursor deals."
+      - "SPCX closed off ~10%, its worst day since the Nasdaq debut — the market still hasn't decided if AI compute revenue makes SpaceX a hyperscaler."
+    url: "https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Hermes Agent Crosses 200K Stars With Skills Hub Past 90K"
+    summary:
+      - "Nous Research's self-evolving agent runtime added 23K stars in roughly two weeks; Dealroom names it the fastest-growing open-source agent framework of 2026."
+      - "June 5's 'Surface Release' v0.16.0 shipped a native macOS/Windows/Linux desktop app with one-click install and concurrent multi-profile sessions."
+      - "Skills Hub now lists 90,881 community skills across 12 registries, up from a few hundred at launch."
+      - "Self-evolution loop pairs DSPy + GEPA to let Hermes optimize its own prompts, skills, and code from real usage."
+    url: "https://github.com/NousResearch/hermes-agent"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Nobel Laureate John Jumper Defects From DeepMind to Anthropic"
+    summary:
+      - "AlphaFold lead and 2024 Chemistry Nobel winner is leaving Google DeepMind after almost nine years to join Anthropic after a short break."
+      - "Lands four days after Gemini co-lead Noam Shazeer's jump to OpenAI — two top architects out of DeepMind in one week."
+      - "Anthropic gets a marquee science-AI hire on top of its existing Claude-for-Science push and the John Jumper-style protein work it already funds."
+      - "Bloomberg broke the story; CNBC, TechCrunch, and TNW confirmed within hours."
+    url: "https://www.bloomberg.com/news/articles/2026-06-19/nobel-winner-john-jumper-to-leave-google-deepmind-for-anthropic"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 3
