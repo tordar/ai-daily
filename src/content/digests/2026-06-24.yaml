@@ -1,0 +1,56 @@
+date: "2026-06-24"
+stories:
+  - title: "Anthropic Drops Claude Tag, an Always-On Slack Teammate Running on Opus 4.8"
+    summary:
+      - "Tag @Claude in any Slack channel and it joins the conversation as a persistent team member, building context as the channel evolves."
+      - "Ambient mode lets Claude proactively post updates, follow up on forgotten threads, and surface relevant info from other channels."
+      - "Research preview today for Claude Enterprise and Team customers on Opus 4.8; replaces the legacy Claude in Slack app on August 3."
+      - "Anthropic says 65% of its own product team's code now comes from the internal version of Claude Tag."
+    url: "https://www.anthropic.com/news/introducing-claude-tag"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "xAI Ships /goal in Grok Build for Multi-Hour Autonomous Coding Runs"
+    summary:
+      - "New slash command in xAI's terminal coding agent — hand it an objective and it plans, executes, and verifies until done."
+      - "Subagents handle planning, implementation, and verification in sequence with a visible progress checklist."
+      - "Verification loop covers code review, webpage inspection, and script execution before marking a goal complete."
+      - "Gated to SuperGrok Heavy ($300/month) and Grok Build CLI users."
+    url: "https://x.ai/news/introducing-goal"
+    source: "x.ai"
+    tag: "tools"
+    significance: 4
+
+  - title: "OpenAI Counterprograms Claude Tag With Slack Action Connectors in ChatGPT"
+    summary:
+      - "ChatGPT Enterprise and Edu now let ChatGPT join Slack channels, create reminders, upload files, and update user profiles via the Slack connector."
+      - "Shipped the same day as Claude Tag — Slack is officially the new battleground for workplace AI agents."
+      - "Some actions require additional Slack OAuth scopes or Enterprise Grid admin approval; per-action allow/deny controls available to admins."
+      - "Works alongside existing Slack search; rollout follows the June 17 ChatGPT scheduled-tasks launch."
+    url: "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes"
+    source: "openai.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Claude Hit Two Outages in 14 Hours on the Day Claude Tag Shipped"
+    summary:
+      - "June 23 outage started ~14:02 UTC and was marked resolved at 16:44 UTC after elevated error rates across Claude.ai, API, Console, Code, and Cowork."
+      - "Downdetector peaked at 7,119 US reports within 11 minutes of onset."
+      - "Followed a separate June 22 incident less than 14 hours earlier — Claude for Government was unaffected in both."
+      - "Bad timing for a product launch built on an always-on assumption; HN and r/ClaudeAI threads piled on within minutes."
+    url: "https://status.claude.com/history"
+    source: "status.claude.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "r/LocalLLaMA Maps the Local AI Ecosystem From 49K Posts and 800K Comments"
+    summary:
+      - "Community OC analysis of two years of subreddit data charts which open-weight models, runners, and quant formats actually win mindshare."
+      - "Posted June 22; subreddit now 755K members and remains the fastest-feedback channel for new open releases."
+      - "Sibling post the same day benchmarks local text-to-image models across text rendering, faces, anatomy, and spatial reasoning on GX10 Spark hardware."
+      - "Both threads climbed to top-of-week as MiniMax M3 and Reflection's compute deal kept open-source momentum in focus."
+    url: "https://www.reddit.com/r/LocalLLaMA/"
+    source: "reddit.com"
+    tag: "community"
+    significance: 3
