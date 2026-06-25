@@ -1,0 +1,57 @@
+date: "2026-06-25"
+stories:
+  - title: "OpenAI Unveils Jalapeño, Its First Custom Inference Chip Co-Built With Broadcom"
+    summary:
+      - "Custom LLM-inference accelerator co-developed with Broadcom; OpenAI's first Intelligence Processor."
+      - "Nine months from initial design to manufacturing tape-out — billed as the fastest ASIC cycle ever for a chip of this class."
+      - "Engineering samples already running GPT-5.3-Codex-Spark in the lab at production frequency and power."
+      - "Targets ~50% inference cost reduction vs current GPUs; gigawatt-scale rollout with Microsoft starts end of 2026, 10GW committed through 2029."
+      - "Direct shot at Nvidia's pricing power — HN thread climbed the front page within hours."
+    url: "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "GPT-5 Pro Cracks a 3-Year T-Cell Puzzle for a Jackson Lab Immunologist"
+    summary:
+      - "Derya Unutmaz handed GPT-5 Pro a 2022 dataset on how deoxyglucose pushes T cells toward inflammatory Th17 fate."
+      - "Model proposed an IL-2 disruption mechanism in days and correctly predicted unpublished follow-up results."
+      - "Includes a prioritized list of wet-lab experiments to validate the hypothesis."
+      - "Unutmaz: AI is now so central he 'can't imagine doing science without it' — but human oversight stays in the loop."
+    url: "https://openai.com/index/gpt-5-immunology-mystery/"
+    source: "openai.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Grok Lands Inside Interactive Brokers With Options, Futures, and an Approval Gate"
+    summary:
+      - "xAI announcement today: link an IBKR account to Grok for portfolio analysis, scenario modeling, and order drafting in plain English."
+      - "Adds options, futures, and futures options to the equities/ETF support IBKR already exposed to Claude and ChatGPT."
+      - "Every Grok-generated order routes through a dedicated 'AI Instructions' tab — user has to explicitly approve before anything reaches the market."
+      - "No passwords or API keys shared with xAI; auth handled inside IBKR's own perimeter."
+    url: "https://x.ai/news/grok-interactive-brokers"
+    source: "x.ai"
+    tag: "tools"
+    significance: 3
+
+  - title: "Meta Builds Arena, an AI-Powered Prediction Market to Take On Kalshi and Polymarket"
+    summary:
+      - "Zuckerberg has tasked a team with shipping Arena, a standalone app where users wager play-money on real-world events."
+      - "Forecasts politics, sports, and world news using a points system — no crypto or blockchain at launch, despite the obvious Polymarket comparison."
+      - "DraftKings and Robinhood both fell on the news; Kalshi is reportedly raising at a $40B valuation."
+      - "Play-money is a starting position — real-money is the upside if engagement and regulators line up."
+    url: "https://www.cnbc.com/2026/06/23/nyt-says-meta-builds-prediction-market-these-stocks-are-falling.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Loop Library Lands as 'Loop Engineering' Becomes Coding-Agent Meta"
+    summary:
+      - "Forward Future's Loop Library now indexes 26 curated agent loops — each with trigger, verifier, and stop condition baked in."
+      - "Concept seeded by OpenClaw's Peter Steinberger on June 7: stop prompting agents, start designing the system that prompts them."
+      - "Companion explainx.ai/loops registry is up to 100 loop pages with weekly additions."
+      - "Steinberger's kickoff post crossed 6.5M views in days; verifier design — not the model — is the bottleneck."
+    url: "https://signals.forwardfuture.ai/loop-library/"
+    source: "forwardfuture.ai"
+    tag: "community"
+    significance: 3
