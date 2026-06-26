@@ -1,0 +1,56 @@
+date: "2026-06-26"
+stories:
+  - title: "Anthropic Says Alibaba Ran the 'Largest Known Distillation Attack' on Claude"
+    summary:
+      - "Letter to the US Senate Banking Committee alleges operators tied to Alibaba's Qwen lab ran 28.8M Claude exchanges from 25,000 fraudulent accounts between April 22 and June 5."
+      - "Targets called out by name: software engineering, agentic reasoning, and long-horizon tasks — exactly the capabilities Anthropic charges premium for."
+      - "HN thread surfaces the underlying market: Chinese resellers offer Claude tokens at 70–90% below list by pooling Max accounts and reselling reasoning traces."
+      - "Alibaba ADRs slid to a 16-month low on the news, extending YTD losses to 33%."
+    url: "https://news.ycombinator.com/item?id=48667069"
+    source: "news.ycombinator.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Congressional Fable 5 Deadline Lands Today as Anthropic's Suspension Hits Two Weeks"
+    summary:
+      - "Bipartisan Senate letter demanded Commerce Secretary Lutnick justify the June 12 export-control order by today, June 26."
+      - "Anthropic confirms it is still serving zero traffic to Fable 5 and Mythos 5 — including to its own foreign-national employees."
+      - "Company says the jailbreak Commerce cited is narrow and reproducible against GPT-5.5 and other public models that face no equivalent restriction."
+      - "First time the US has yanked a frontier model under national-security authorities — precedent the rest of the industry is watching closely."
+    url: "https://www.anthropic.com/news/fable-mythos-access"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Google Loses Two More Gemini Researchers to Anthropic — Four Senior Departures in Six Days"
+    summary:
+      - "Bloomberg: Jonas Adler (coding) and Alexander Pritzel (pretraining) — both key Gemini contributors — are heading to Anthropic."
+      - "Follows Nobel laureate John Jumper's defection earlier this month and Noam Shazeer's jump to OpenAI."
+      - "Pre-IPO equity at Anthropic and OpenAI is the explicit pull; at least one departure was preceded by Google reallocating compute away from the researcher's project."
+      - "Adler and Pritzel were co-authors on AlphaFold with Jumper — DeepMind's protein-AI bench is now substantially thinner."
+    url: "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "xAI Adds /goal to Grok Build: Hand Off a Coding Task and Walk Away"
+    summary:
+      - "New mode inside the Grok Build CLI plans the work, executes the checklist, and self-verifies via code review, web inspection, or script execution."
+      - "Two-model pipeline: Composer 2.5 plans and verifies, Grok Build 0.1 executes."
+      - "Operator controls: /goal status, pause, resume, clear — but no review step during the run."
+      - "Direct shot at Claude Code's long-running agent loop and OpenAI's Codex 'maxxing' workflow shipped four days prior."
+    url: "https://x.ai/news/introducing-goal"
+    source: "x.ai"
+    tag: "tools"
+    significance: 3
+
+  - title: "Qualcomm Drops $14B to Punch a Hole in Nvidia's AI Monopoly"
+    summary:
+      - "June 24: Qualcomm confirms $3.92B all-stock acquisition of Modular, the AI software startup behind the MAX inference platform and Mojo language."
+      - "Same week: Reuters reports Qualcomm in advanced talks to buy AI-chip startup Tenstorrent for $8–10B (Jim Keller's RISC-V-based design house)."
+      - "Combined ~$14B bet aims at an Nvidia-free stack — Modular's open compiler on Tenstorrent's open-ISA silicon."
+      - "QCOM stock jumped 4%+ on the Tenstorrent leak; deal close not guaranteed."
+    url: "https://www.techtimes.com/articles/319017/20260624/qualcomm-bets-14-billion-cracking-nvidias-ai-monopoly-risc-v-open-compiler.htm"
+    source: "techtimes.com"
+    tag: "industry"
+    significance: 3
