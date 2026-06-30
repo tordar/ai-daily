@@ -1,0 +1,67 @@
+date: "2026-06-30"
+stories:
+  - title: "Meta's Brain2Qwerty v2 Decodes Typed Sentences From MEG With 78% Best-Subject Accuracy"
+    summary:
+      - "Non-invasive brain-to-text pipeline reaches 61% mean word accuracy across 9 volunteers — versus the prior 8% ceiling for non-implant methods."
+      - "Best participant hits 78% word accuracy with more than half of sentences decoded at one word error or less."
+      - "Trained on ~22,000 sentences, 10 hours per participant in a magnetoencephalography (MEG) scanner."
+      - "Meta released full v1 and v2 training code; the Basque Center on Cognition, Brain, and Language released the v1 dataset."
+    url: "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/"
+    source: "ai.meta.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Fable 5 Restoration Looks Imminent After Tom Brown Talks; Polymarket Prices July 1 at 43%"
+    summary:
+      - "Anthropic MD Chris Ciauri: 'We are very confident the models will become available again in the coming days.'"
+      - "Polymarket 'restored by June 30' contract sits at 41.5% (was 9.5% on June 26) as Mythos cleared earlier in the week."
+      - "Tom Brown replaced Dario Amodei in daily Commerce talks; Trump said on June 19 that Anthropic is 'no longer a national-security threat'."
+      - "Leaked Anthropic code hints at gated US-first restoration with weekly usage caps and government-ID verification (live July 8)."
+    url: "https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon"
+    source: "axios.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "AI Engineer World's Fair Day 2: Anthropic Pushes MCP Registry API as Coding Agents Take Center Stage"
+    summary:
+      - "Day 2 of the 6,000-engineer Moscone event opens with the Coding Agents keynote across 10 tracks."
+      - "Anthropic unveiled the official MCP Registry API — the central index now holds ~2,000 server entries, up 407% from the September 2025 preview."
+      - "Mahesh Murag (Anthropic) presenting Claude skills; Tom Dohmke speaking at the GitHub HQ side event Tuesday evening."
+      - "Agenda dominated by MCP, verifier-driven loops, and 'agent reliability' — the topics that have crowded out vibe-coding on dev Twitter."
+    url: "https://www.ai.engineer/worldsfair/2026"
+    source: "ai.engineer"
+    tag: "community"
+    significance: 3
+
+  - title: "Anthropic Overtakes OpenAI in Enterprise AI Spend for the First Time"
+    summary:
+      - "Ramp's May AI Index: 34.4% of US firms now pay for Anthropic tools vs 32.3% for OpenAI — first time Anthropic leads."
+      - "Anthropic credits Claude Code, then says 65% of its own product team's commits are now authored by Claude Tag (their internal Slack agent)."
+      - "Claude Tag (launched June 23) replaces the old Claude-in-Slack app and turns Claude into a shared, ambient teammate inside a channel."
+      - "Anthropic May run-rate revenue crossed $47B — context for the $965B Series H two months ago."
+    url: "https://venturebeat.com/technology/anthropic-launches-claude-tag-replacing-its-slack-app-with-a-persistent-ai-teammate-that-learns-monitors-and-works-autonomously"
+    source: "venturebeat.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "GitHub Copilot's Metered Billing Drives a One-Month Developer Exodus"
+    summary:
+      - "Reddit/X threads show monthly Copilot bills jumping from $29 to ~$750, and from $50 to $3,000 on heavy agentic workflows."
+      - "Switch from flat-rate to token-based 'AI Credits' took effect June 1 — 30 days in, dev forums are still dominated by migration threads."
+      - "Cursor's Standard/Premium seat split and Devin Desktop's $20-$200 tiering are the most-cited alternatives; Claude Code usage spikes."
+      - "Microsoft's pitch — 'use Copilot for everything' — built the workflows that metered pricing now charges 10–50× more for."
+    url: "https://www.theregister.com/ai-and-ml/2026/06/02/github-copilot-users-threaten-exit-as-metered-billing-kicks-in/"
+    source: "theregister.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "DeepSeek V4.1 Lands With Native MCP — China's Open-Weight Wave Hits Six in Two Weeks"
+    summary:
+      - "V4.1 ships native MCP protocol support (no adapter layer), image + audio multimodal input, and enterprise tool-chain integration."
+      - "Two months after V4 (April 24); Hugging Face has it as the top trending model within a week of release."
+      - "Sixth open-weight Chinese frontier release of the month — joins Qwen 3.6, Hunyuan Large 3, ERNIE 5.1, Doubao Pro, GLM 5.2."
+      - "Marks DeepSeek's pivot from 'no commercialization' to enterprise sales, funded by a recent 5B yuan round."
+    url: "https://api-docs.deepseek.com/news/news260424"
+    source: "deepseek.com"
+    tag: "open-source"
+    significance: 3
