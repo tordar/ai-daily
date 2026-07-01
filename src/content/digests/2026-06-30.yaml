@@ -20,7 +20,7 @@ stories:
     url: "https://www.axios.com/2026/06/27/anthropic-fable-5-return-soon"
     source: "axios.com"
     tag: "industry"
-    significance: 4
+    significance: 1
 
   - title: "AI Engineer World's Fair Day 2: Anthropic Pushes MCP Registry API as Coding Agents Take Center Stage"
     summary:

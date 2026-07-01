@@ -1,0 +1,67 @@
+date: "2026-07-01"
+stories:
+  - title: "Anthropic Redeploys Claude Fable 5 Globally After Export Controls Lifted"
+    summary:
+      - "Fable 5 returns today to Claude.ai, Claude Platform, Claude Code, and Claude Cowork worldwide — weeks after a US directive forced Anthropic to pull it."
+      - "New safety classifier co-developed with the US government now blocks the technique from the Amazon report in over 99% of cases."
+      - "Pro, Max, Team, and select Enterprise plans get Fable 5 free for up to 50% of weekly usage limits through July 7; usage credits after that."
+      - "AWS Bedrock, Google Cloud Vertex, and Microsoft Foundry access is being re-enabled 'as quickly as possible'."
+    url: "https://www.anthropic.com/news/redeploying-fable-5"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Google Ships Gemini Omni Flash — Conversational Video Editing via the API"
+    summary:
+      - "New Gemini model generates and edits video from natural-language prompts — swap characters, change camera angles, relight scenes with a chat command."
+      - "Priced at $0.10 per second of output; up to 10-second clips at launch, longer coming."
+      - "Shipped alongside Nano Banana 2 Lite (image gen at $0.034/image), both live on Google AI Studio, the Gemini API, and Vertex AI today."
+      - "Positioned squarely at Sora 2 and Kling 3.0 on price-per-second."
+    url: "https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-lite-and-gemini-omni-flash-available/"
+    source: "cloud.google.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Anthropic Launches Claude Science, an AI Workbench for Research Labs"
+    summary:
+      - "New product bundles a coordinating agent with 60+ scientific databases across genomics, proteomics, structural biology, and cheminformatics."
+      - "Reviewer agent checks citations and calculations; every output ships with an auditable history for reproducibility."
+      - "Renders 3D protein structures, genome browser tracks, and other lab-native artifacts directly in the workbench."
+      - "Beta on Pro/Max/Team/Enterprise; up to 50 AI-for-Science projects get $30k in credits (applications open through July 15)."
+    url: "https://www.anthropic.com/news/claude-science-ai-workbench"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "GuardFall: Bash Tricks Break Shell Guards in 10 of 11 Open-Source Coding Agents"
+    summary:
+      - "Adversa AI research: pattern-based shell blocklists check the raw command string, but bash expands quotes and $IFS after the check runs."
+      - "Tested against Hermes, OpenCode, Roo-code, and 8 others — only Continue defended against it."
+      - "Exploits let a poisoned prompt exfiltrate SSH keys, cloud credentials, or wipe the home directory under the developer's full account."
+      - "Follows May's TrustFall keypress attack on four commercial CLIs — the shell-injection surface for agentic coding tools keeps widening."
+    url: "https://thehackernews.com/2026/06/guardfall-exposes-open-source-ai-coding.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 4
+
+  - title: "OpenAI Previews GPT-5.6 With Sol, Terra, and Luna Tiers"
+    summary:
+      - "Sol is the flagship, Terra is 2× cheaper than GPT-5.5 at similar quality, Luna is the low-cost tier at $1/$6 per 1M tokens."
+      - "Sol Ultra scores 91.9% on Terminal-Bench 2.1 (vs Mythos 5 at 88%); Sol matches Mythos Preview on ExploitBench with ~1/3 the tokens."
+      - "Access restricted to trusted partners at launch; broader rollout gated behind a strengthened cyber-safety stack."
+      - "Community reaction split: cheers for the readable naming and Luna's price, skepticism on the vendor-run benchmarks."
+    url: "https://openai.com/index/previewing-gpt-5-6-sol/"
+    source: "openai.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Chinese Labs Ship Three Open-Weight Coding Models in Three Weeks"
+    summary:
+      - "MiniMax M3 (Jun 1), Kimi K2.7 Code (mid-June), and GLM-5.2 (late June) all land within a month — each pushing frontier coding scores."
+      - "GLM-5.2 leads Terminal-Bench among the three and pushes into Opus 4.8 territory on FrontierSWE; MiniMax M3 is 3.7× cheaper and multimodal."
+      - "Chinese-origin models went from <2% of OpenRouter token volume in 2024 to a majority share in early 2026."
+      - "Timing lands the same week export controls on Fable 5 lift — open weights route around policy that closed APIs can't."
+    url: "https://medium.com/@cognidownunder/glm-5-2-vs-minimax-m3-vs-kimi-k2-7-932be6412bbd"
+    source: "medium.com"
+    tag: "open-source"
+    significance: 3
