@@ -1,0 +1,67 @@
+date: "2026-07-02"
+stories:
+  - title: "Anthropic Ships Claude Sonnet 5 — Near-Opus Coding at $2/$10"
+    summary:
+      - "Sonnet 5 becomes the default model for Free and Pro on Claude.ai and ships to Max, Team, and Enterprise; also live in Claude Code and the API."
+      - "80.4% on Terminal-Bench 2.1 beats Opus 4.8's 74.6% — first Sonnet to beat its Opus sibling on a major coding benchmark; 63.2% on SWE-bench Pro."
+      - "Introductory pricing: $2 per 1M input / $10 per 1M output through Aug 31, then rises to $3/$15 — roughly 40% of Opus 4.8's $5/$25."
+      - "Generally available in GitHub Copilot, AWS Bedrock, and Microsoft Foundry from day one; 155 points on Hacker News with mixed reception on the tokenizer eating more tokens per task."
+    url: "https://www.anthropic.com/news/claude-sonnet-5"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Meta Plans a Cloud Business Renting GPUs to Outside Customers"
+    summary:
+      - "New segment would sell on-demand GPU capacity and possibly hosted models — direct challenge to AWS, Azure, and GCP."
+      - "Powered by Meta's custom MTIA accelerators alongside thousands of Nvidia H100s and upcoming B200s."
+      - "Meta's 2026 AI capex guidance sits at $125–145B; Zuckerberg says cloud is 'definitely on the table' as excess capacity materializes."
+      - "Stock jumped over 8% on July 1 on the report — biggest intraday move in nearly two months."
+    url: "https://www.nextplatform.com/cloud/2026/07/01/of-course-meta-platforms-is-going-to-be-a-cloud/5265392"
+    source: "nextplatform.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "DuneSlide: Two Zero-Click Prompt Injections Give RCE in Cursor"
+    summary:
+      - "Cato AI Labs found CVE-2026-50548 and CVE-2026-50549 in Cursor IDE, both CVSS 9.8, patched in Cursor 3.0."
+      - "First flaw abuses the run_terminal_cmd working_directory param to add attacker paths to the write allowlist without a prompt."
+      - "Second flaw abuses the symlink safety check — when resolution fails, Cursor falls back to trusting the shortcut's in-project path."
+      - "Attack payload comes from any content the agent reads: an MCP tool response, a web page, a shared repo — no user click required. Cato says similar flaws exist in other coding agents."
+    url: "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Unit 42: Attackers Are Registering AI-Hallucinated Domains as Phishing Traps"
+    summary:
+      - "Palo Alto's Unit 42 calls it 'phantom squatting' — the domain-name equivalent of slopsquatting for packages."
+      - "Across 685,339 queries about 913 brands, two LLMs produced 2.1M links; 13,229 malicious URLs and ~250,000 unregistered hallucinations remain up for grabs."
+      - "Researchers flagged one postal-service domain 51 days before an attacker registered it and shipped a pixel-perfect brand clone with a malicious Android app."
+      - "Unit 42 says the vector exploits a 'structural property of LLM architectures that remains inherently unpatchable'."
+    url: "https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/"
+    source: "unit42.paloaltonetworks.com"
+    tag: "research"
+    significance: 4
+
+  - title: "OpenAI Introduces GeneBench-Pro — Top Models Fail Real Biology 70% of the Time"
+    summary:
+      - "129 synthetic problems across genomics, quantitative biology, and translational medicine; each task ships a dataset and a research question, not a multiple-choice quiz."
+      - "GPT-5.6 Sol Pro tops the leaderboard at 31.5% pass rate at max reasoning; Sol without Pro reaches 28.7%."
+      - "Best non-OpenAI model is Claude Opus 4.8 at 16.0% — a two-times gap that flatters OpenAI on a benchmark it built."
+      - "82 of the 129 problems were validated by external genetics faculty; benchmark is fully synthetic so answers are checkable against ground truth."
+    url: "https://openai.com/index/introducing-genebench-pro/"
+    source: "openai.com"
+    tag: "research"
+    significance: 3
+
+  - title: "Check Point: A DeepSeek Chat Built Working Browser-Only Ransomware"
+    summary:
+      - "First documented case of a frontier model turning a theoretical browser-only ransomware idea into a working attack chain, per Check Point Research."
+      - "Uses the File System Access API — a phishing decoy asks for folder access, then reads, exfiltrates, encrypts, and overwrites files client-side."
+      - "No native payload, no browser exploit, no root — runs on Windows and Android; the ransom note is rendered in a normal Chromium tab."
+      - "Researchers say DeepSeek followed the malicious prompt from a single broad ask; Anthropic and OpenAI models refused or produced non-functional fragments."
+    url: "https://research.checkpoint.com/2026/browser-only-ransomware-from-llm-hallucinations-to-a-practical-attack-technique/"
+    source: "research.checkpoint.com"
+    tag: "research"
+    significance: 3
