@@ -1,0 +1,56 @@
+date: "2026-07-03"
+stories:
+  - title: "xAI Ships Grok Voice Agent Builder at $0.05/min"
+    summary:
+      - "No-code beta on x.ai/voice — plain-English description to a live voice agent in about two minutes."
+      - "One speech-to-speech model instead of the usual STT + LLM + TTS stack; sub-second first-token latency."
+      - "80+ voices, 25+ languages with mid-call switching, plus 2-minute brand-voice cloning; MCP tools, guardrails, and observability built in."
+      - "$0.05/min for the agent plus $0.01/min for telephony — well under the $0.10–$0.20/min that stitched stacks with comparable quality run."
+    url: "https://x.ai/news/grok-voice-agent-builder"
+    source: "x.ai"
+    tag: "tools"
+    significance: 5
+
+  - title: "NVIDIA Releases Nemotron TwoTower — 2.42× Faster Text Generation at 98.7% Quality"
+    summary:
+      - "Open-weight diffusion LM built by adding a trainable denoiser tower to a frozen 30B Nemotron-3-Nano autoregressive backbone."
+      - "Retains 98.7% of the AR baseline's quality with 2.42× wall-clock throughput; denoiser trained on 2.1T tokens vs the backbone's 25T pretraining."
+      - "Blocks of tokens are denoised in parallel with cross-attention to the frozen context tower — no full retrain of the base model."
+      - "Weights on Hugging Face under the NVIDIA Nemotron Open Model License, commercial use permitted; needs ~2× 80GB GPUs in BF16."
+    url: "https://huggingface.co/nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16"
+    source: "huggingface.co"
+    tag: "models"
+    significance: 4
+
+  - title: "Anthropic and Glasswing Partners Propose a Cross-Lab Jailbreak Severity Rubric"
+    summary:
+      - "Joint draft with Amazon, Microsoft, and Google under the Project Glasswing umbrella — first attempt at an industry-agreed way to score jailbreak severity."
+      - "Four axes: capability gain vs existing tools, breadth of tasks unlocked, ease of weaponization, and discoverability."
+      - "Goal is a common language between labs and governments so the next Amazon-style disclosure doesn't blindside a redeploy."
+      - "Landed alongside a deeper post-mortem on the Fable 5 cyber classifier — the classifier now blocks the reported technique in >99% of cases."
+    url: "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 4
+
+  - title: "AWS Puts $1B Into a Forward Deployed Engineering Org for Agentic AI"
+    summary:
+      - "Announced ahead of AWS Summit DC — pods of 5–6 engineers embed with a customer to ship agentic AI in days, not months."
+      - "Follows the FDE playbooks OpenAI and Anthropic have been running with strategic customers."
+      - "Launch roster: Allen Institute, Cox Automotive, NBA, NFL, Ricoh, Southwest Airlines."
+      - "Partner-Led FDE motion extends the same model through Accenture, Deloitte, and other AWS consulting partners."
+    url: "https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers"
+    source: "aboutamazon.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Claude for Chrome Hits GA; Background Agents Now Auto-Commit and Open Draft PRs"
+    summary:
+      - "Claude Code 2.1.198 promotes Claude for Chrome — the in-browser agent that was in research preview since August 2025 — to general availability."
+      - "Background agents launched from `claude agents` now commit, push, and open a draft PR when they finish work in a worktree instead of stopping to ask."
+      - "New Notification hook events (agent_needs_input / agent_completed) let long-running sessions ping you when they actually need attention."
+      - "/dataviz skill added — a design-system guide plus a runnable color-palette validator for chart work."
+    url: "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
