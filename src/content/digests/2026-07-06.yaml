@@ -1,0 +1,67 @@
+date: "2026-07-06"
+stories:
+  - title: "Court Unseals the Pentagon–Anthropic Emails That Ended the DoD Deal"
+    summary:
+      - "Full exchange between Dario Amodei and Emil Michael (Pentagon undersecretary for research and engineering) filed in ND Cal on July 2 and published by Gizmodo — first look at the private terms of the fight."
+      - "Amodei's redlines: no fully autonomous weapons, no domestic surveillance. Michael's response: 'just not workable,' with 'one more chance to align on core principles' before parting ways."
+      - "Pentagon's counter-ask was that Claude cover 'all lawful uses' — Amodei noted US law does allow domestic surveillance, so the phrase would erase both redlines."
+      - "Defense Secretary Pete Hegseth designated Anthropic a supply-chain risk the next day; multiple HN threads on the exchange."
+    url: "https://gizmodo.com/read-the-tense-emails-between-the-pentagon-former-uber-exec-and-anthropic-dario-amodei-2000780849"
+    source: "gizmodo.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI Pitches a 5% Stake for the US Government — Worth Roughly $42.6B"
+    summary:
+      - "FT report picked up July 2: Altman floated a public-fund-style equity grant directly to Trump, Commerce Secretary Lutnick, and Treasury Secretary Bessent."
+      - "Vehicle would be modeled on the Alaska Permanent Fund; proposal envisions Anthropic, Google, and Meta ceding matching 5% stakes."
+      - "At OpenAI's current $852B mark, the government slice would be worth about $42.6B — would require an act of Congress."
+      - "Comes days after the White House delayed the wider GPT-5.6 launch; active HN thread argues the arrangement bakes in a permanent regulatory conflict of interest."
+    url: "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Microsoft Stands Up a $2.5B 'Frontier Company' With 6,000 Embedded AI Engineers"
+    summary:
+      - "New Microsoft operating unit sends forward-deployed pods into enterprise customers to co-design, deploy, and operate AI systems on their data."
+      - "Launch clients: London Stock Exchange Group, Unilever, Land O'Lakes, Novo Nordisk, Accenture; SI partners include Accenture, Capgemini, EY, KPMG, and PwC."
+      - "Led by Rodrigo Kede Lima, previously president of Microsoft Asia; explicitly designed to route customer data across OpenAI, Anthropic, Microsoft AI, and open-source models."
+      - "Fifth big FDE-for-AI vehicle in eight weeks — after OpenAI's and Anthropic's May JVs and AWS's $1B org announced on July 2."
+    url: "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "'Owl Alpha' on OpenRouter Was Meituan's 1.6T LongCat-2.0 the Whole Time"
+    summary:
+      - "Meituan open-sourced LongCat-2.0 on June 30 under MIT — a 1.6T-parameter MoE, ~48B active per token, native 1M-token context."
+      - "Was already running as the anonymous 'Owl Alpha' on OpenRouter — first on Hermes Agent by monthly volume, second on Claude Code, third on OpenClaw; ~10.1T tokens/month at peak."
+      - "SWE-bench Pro 59.5 beats GPT-5.5's 58.6 and Gemini 3.1 Pro's 54.2, though still behind Claude Opus 4.7/4.8."
+      - "First trillion-parameter model trained end-to-end on domestic Chinese ASICs (~50,000 chips) — no Nvidia in the loop; API is $0.75/$2.95 per 1M tokens, $0.30/$1.20 during the launch promo."
+    url: "https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips"
+    source: "venturebeat.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Google DeepMind's Ammaar Reshi Ports C&C Generals to iOS With Claude Code"
+    summary:
+      - "Native macOS/iPhone/iPad build of the 2003 RTS Command & Conquer: Generals Zero Hour — real engine on ARM64, DXVK→MoltenVK→Metal, no emulator."
+      - "Built on EA's GPL v3 source drop plus community forks (GeneralsX, Fighter19's Unix port); the AI-driven work is the iOS/iPadOS touch controls, mobile build tooling, and engine fixes."
+      - "First build took 40 minutes; two days of debugging burned Reshi's entire Claude Max quota."
+      - "Full source open on GitHub; front-paged HN with the expected argument about how much credit belongs to Claude versus the human directing it."
+    url: "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad"
+    source: "github.com"
+    tag: "community"
+    significance: 4
+
+  - title: "Midjourney Fires Back at Disney/Universal/Warner: Show Us How You Use AI Too"
+    summary:
+      - "New motion filed July 3 seeks to force the studios to hand over AI business plans, training datasets, model weights, and board-deck AI slides."
+      - "Overturns an earlier ruling that had limited studio discovery to 'consumer-facing' AI use only."
+      - "'Everybody's doin' it' defense: if studios train internal image models on unlicensed content for storyboarding, that becomes evidence of industry custom."
+      - "Case is the highest-stakes generative-AI copyright fight now in discovery — Disney and Universal sued in 2025, Warner joined months later."
+    url: "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 3
