@@ -1,0 +1,67 @@
+date: "2026-07-07"
+stories:
+  - title: "Alberta Scans 466M Lines of Code With Claude in 20 Hours — 6.5 Years' Work"
+    summary:
+      - "Anthropic case study out July 6: Alberta's Ministry of Technology and Innovation ran ~50 Claude Code agents in parallel across all 27 provincial ministries."
+      - "Coverage: 1,280 applications and 3,400 code repositories — every repository Alberta owns."
+      - "Two-stage routine: rules-engine flag pass, then Claude review that cites the exact file and line so developers can verify each finding."
+      - "Alberta says the same work would have taken about 6.5 years of manual review; the province is publishing white papers so other governments can copy the setup."
+    url: "https://www.anthropic.com/news/alberta-government-claude-cybersecurity"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "China Yanks AI Companion Agents on July 15 — Doubao and Qwen Pull the Feature"
+    summary:
+      - "ByteDance's Doubao and Alibaba's Qwen will disable all user-created AI agent features on July 15 to comply with China's new Interim Measures for Anthropomorphic AI Interaction Services."
+      - "Every existing user agent stops functioning that day; Doubao redirects builders to Maoxiang, ByteDance's separate character-app product."
+      - "Configurations and chat histories stay viewable during a transition, then get purged from platform servers on October 15."
+      - "Front-line evidence that China is willing to shut down live consumer AI features to enforce its personification rules — the first big regulatory kill of a mainstream Chinese AI product line."
+    url: "https://technode.com/2026/07/06/bytedances-doubao-and-alibabas-qwen-to-shut-down-ai-agent-features-on-july-15/"
+    source: "technode.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "UN Opens First Global Dialogue on AI Governance in Geneva With 193 Member States"
+    summary:
+      - "Two-day inaugural session runs July 6–7 in Geneva, convened by the UN General Assembly with every member state at the table."
+      - "Guterres framed AI as no longer a technology issue but a geopolitical one; independent scientific panel warned no technical guarantee of safety currently exists."
+      - "Draft priorities: shared testing and risk-measurement so 'safety travels with the technology,' plus a proposed AI Child Safety Pledge."
+      - "Session two lands in New York in May 2027; ITU's AI for Good Global Summit picks up in Geneva through July 10."
+    url: "https://www.un.org/global-dialogue-ai-governance/en"
+    source: "un.org"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic's Fable 5 Subscription Grace Ends Today — Credits or Nothing From July 8"
+    summary:
+      - "Pro, Max, Team, and select Enterprise plans have Fable 5 included up to 50% of weekly limits through July 7 (today)."
+      - "From July 8 the model bills only through usage credits at $10 / $50 per Mtok — double Opus 4.8, ~5× Sonnet 5's intro rate."
+      - "No automatic metered fallback: if credits are not enabled in Settings → Usage before the pool empties, Fable 5 access just stops mid-session."
+      - "Standard Enterprise seats get zero grace period and were on credits from day one; teams relying on Fable 5 for July work are being told to set a cap now."
+    url: "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/"
+    source: "bleepingcomputer.com"
+    tag: "models"
+    significance: 4
+
+  - title: "xAI Ships 21 New Grok Voices, All Natively Multilingual Across 25+ Languages"
+    summary:
+      - "Announced July 6 — one API, one voice, every language: no per-language variants."
+      - "Voices cast for specific jobs: support, characters, commentary, advertising, education; original five upgraded for pacing and phrasing."
+      - "Inline speech tags like [pause] and <whisper> give developers explicit delivery control at generation time."
+      - "Available in the realtime Voice Agent API, the standalone TTS API, and the no-code Grok Voice Agent Builder shipped last week."
+    url: "https://x.ai/news/new-flagship-voices"
+    source: "x.ai"
+    tag: "tools"
+    significance: 3
+
+  - title: "OpenAI's codex-plugin-cc Runs Codex From Inside Claude Code — Back at #1 Trending"
+    summary:
+      - "Official OpenAI plugin lets Claude Code delegate reviews and tasks to Codex without leaving the terminal — one command install."
+      - "Re-took #1 on GitHub trending this weekend, ahead of JuliusBrussee/caveman (token compressor) and alibaba/page-agent."
+      - "Notable as a first-party cross-lab integration: OpenAI shipping tooling that treats Anthropic's coding agent as the shell it plugs into."
+      - "Companion piece to Anthropic's Claude for Chrome GA and background-agent PR-drafting from last week — the coding agents are converging on each other's surfaces."
+    url: "https://github.com/openai/codex-plugin-cc"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
