@@ -1,0 +1,67 @@
+date: "2026-07-08"
+stories:
+  - title: "Meta Ships Brain2Qwerty v2 — Typing From Thought at 61% Word Accuracy, No Implant"
+    summary:
+      - "Meta AI's July 7 post details the first non-invasive MEG brain-to-text pipeline to match implant-tier accuracy on freely composed sentences."
+      - "61% average word accuracy across participants, 78% for the best subject — the previous non-invasive benchmark sat at 8%."
+      - "Trained on ~22,000 sentences from 9 volunteers, each recorded for 10 hours typing under a MEG scanner."
+      - "HN thread hit 98 points and 52 comments; the standing catch is that MEG hardware is still a room-sized scanner, not a headset."
+    url: "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/"
+    source: "ai.meta.com"
+    tag: "research"
+    significance: 4
+
+  - title: "EU Unveils Cybersecurity + AI Action Plan — Implementation Only, No New Law"
+    summary:
+      - "Commission announced July 7 in Brussels; tech chief Henna Virkkunen confirmed the plan will not be accompanied by any new legislation."
+      - "Three pillars: safe/responsible AI use, stronger cyber defense via NIS2 and the Cyber Resilience Act, and scaled European AI capabilities."
+      - "ENISA gets a mandate to build a 'European Blueprint' for secure access to advanced AI systems plus a test platform for energy, transport, health, finance, and public administration."
+      - "Launches an EU Grand Challenge on AI for cybersecurity to seed native tooling — a hedge against the bloc's dependence on U.S. frontier models."
+    url: "https://commission.europa.eu/news-and-media/news/new-eu-plan-address-risks-and-opportunities-advanced-ai-cybersecurity-2026-07-07_en"
+    source: "commission.europa.eu"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic Signs $19B, 20-Year Kentucky Data Center Lease With TeraWulf"
+    summary:
+      - "TeraWulf press release: 401 MW critical IT campus at the Justified Data site in Hawesville, Kentucky, built on a former aluminum smelter."
+      - "Initial capacity in service second half of 2027, full 401 MW ramp by early 2028; deal value exceeds TeraWulf's ~$12B market cap."
+      - "TeraWulf simultaneously divests its 50.1% stake in the Abernathy (Texas) JV to a Fluidstack-led group to focus on the Anthropic build."
+      - "Second megawatt-scale Anthropic compute deal in a week after last week's SpaceX partnership — Anthropic is buying capacity ahead of Fable 5's post-grace credit-only pricing that starts today."
+    url: "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
+    source: "terawulf.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Ukraine Says It Will Only Buy AI Models It Can Run Itself"
+    summary:
+      - "Kyiv's Ministry of Digital Transformation told Reuters on July 7 it will procure only self-hostable models for government, business, and military use."
+      - "Chief AI Officer Roman Kyslyi cited the U.S. Commerce Department's forced pause on Anthropic access as the trigger; remote-only APIs are 'interim' at best."
+      - "Diia government app currently runs on Gemini via EU-hosted servers with personal data stripped before every query."
+      - "Kyivstar is building a domestic model on Google's open-weight Gemma for autumn rollout across government, private sector, and defence."
+    url: "https://www.reuters.com/world/europe/ukraine-pick-ai-models-operated-without-provider-control-official-says-2026-07-07/"
+    source: "reuters.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "DeepSeek Locks In V4 GA for Mid-July With Peak-Hour API Pricing"
+    summary:
+      - "First peak/off-peak schedule on a frontier open-weight API: 9am–12pm and 2pm–6pm China time bill at 2× the off-peak rate."
+      - "V4-Pro is 1.6T total / 49B active params; V4-Flash is 284B/13B — both stay MIT-licensed, both graduate from the April preview."
+      - "Preview cost curve set the tone for the 'margin collapse' thesis making the rounds on HN: V4-Pro API is roughly a fifth of Opus 4.8 pricing at similar SWE-bench Verified numbers."
+      - "Legacy names deepseek-chat and deepseek-reasoner shut off July 24 — migrate before then."
+    url: "https://api-docs.deepseek.com/news/news260424"
+    source: "deepseek.com"
+    tag: "models"
+    significance: 3
+
+  - title: "'GLM 5.2 and the Coming AI Margin Collapse' Hits HN Front Page"
+    summary:
+      - "Martin Alderson essay argues Z.ai's open-weight GLM 5.2 matches Opus/GPT quality on agentic coding at ~15–20% of the price."
+      - "Thesis: task-routing across GLM 5.2, DeepSeek V4, and Qwen 3.6 captures the margin the frontier labs currently earn on Opus-only workflows."
+      - "Caveats acknowledged in-thread: no vision, higher token counts from heavier thinking, slower interactive latency."
+      - "HN discussion is the developer counterpart to today's frontier-lab compute megadeals — the closed labs are locking in supply just as open weights close the quality gap."
+    url: "https://news.ycombinator.com/item?id=48809877"
+    source: "news.ycombinator.com"
+    tag: "community"
+    significance: 3
