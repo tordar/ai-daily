@@ -1,0 +1,68 @@
+date: "2026-07-09"
+stories:
+  - title: "OpenAI Ships GPT-5.6 to the Public — Sol, Terra, and Luna Go Live"
+    summary:
+      - "Sol/Terra/Luna move from limited preview to full public rollout today after the Trump administration cleared additional federal testing."
+      - "Sol Ultra sets a new Terminal-Bench 2.1 SOTA at 91.9% (base Sol 88.8%), beating GPT-5.5, Fable 5, Opus 4.8, and Gemini 3.1 Pro."
+      - "Pricing per 1M tokens: Sol $5/$30, Terra $2.50/$15, Luna $1/$6; Sol's context window grows to 1.5M tokens."
+      - "New 'ultra' mode spawns parallel subagents that decompose a task and synthesize their outputs — each subagent bills independently."
+    url: "https://openai.com/index/previewing-gpt-5-6-sol/"
+    source: "openai.com"
+    tag: "models"
+    significance: 5
+
+  - title: "xAI Launches Grok 4.5, a Cursor-Trained Coding Model at $2/M Input"
+    summary:
+      - "Public launch July 8 in Grok Build, the xAI console, and inside Cursor on all plans — built on xAI's 1.5T-parameter V9 foundation."
+      - "$2/M input and $6/M output puts it under half the price of GPT-5.6 Sol and a fifth of Opus 4.8."
+      - "Averages 15,954 output tokens per SWE-Bench Pro task versus 67,020 for Opus 4.8 (max) — a 4.2× token-efficiency gap."
+      - "Trained on Cursor's real developer sessions — debugging traces, multi-file diffs, and user corrections — not just static code."
+      - "HN thread already on the front page alongside a 'we made Grok 4.5, GPT-5.5, and Claude build the same apps' comparison."
+    url: "https://x.ai/news/grok-4-5"
+    source: "x.ai"
+    tag: "models"
+    significance: 5
+
+  - title: "OpenAI Launches GPT-Live — Full-Duplex Voice That Delegates to GPT-5.5"
+    summary:
+      - "GPT-Live-1 and GPT-Live-1 mini roll out globally on ChatGPT for iOS, Android, and web starting July 8."
+      - "Full-duplex architecture listens and speaks simultaneously, deciding many times per second whether to talk, pause, interrupt, or invoke a tool."
+      - "For hard questions it hands off to GPT-5.5 in the background, ending the multi-year gap between voice and frontier reasoning."
+      - "API pricing on gpt-realtime-2.1: $64/M audio output for the full model, $20/M for mini; cached audio input drops to $0.30/M."
+    url: "https://openai.com/index/introducing-gpt-live/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Meta Superintelligence Labs Debuts Muse Image With Content Seal Watermarking"
+    summary:
+      - "MSL's first image model shipped July 7 in Meta AI, WhatsApp, and Instagram; Messenger and Facebook to follow."
+      - "Every image carries Content Seal, an invisible provenance signal that survives cropping, compression, resizing, and screenshotting."
+      - "Muse Image invokes search and coding tools mid-generation and self-refines — Meta pitches it as an agent, not a diffusion pipeline."
+      - "Early preview of Muse Video launches alongside it, currently #3 on the Arena text-to-video leaderboard with native audio support."
+    url: "https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/"
+    source: "ai.meta.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Anthropic Brings Claude Cowork to Mobile and Web, Reveals Usage Mix"
+    summary:
+      - "Beta rolls out first to Max subscribers on iOS, Android, and web; sessions sync across devices and can run in the background with no machine online."
+      - "Usage data from 1.2M sessions across 600k orgs: 33.4% business process work, 16.4% content and copywriting, only 8.7% software development."
+      - "Doubled Cowork usage limits extended through August 5 to mark the launch."
+      - "Positions Cowork as Anthropic's bridge from the developer-centric Claude Code audience to the far larger knowledge-worker market."
+    url: "https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/"
+    source: "techcrunch.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Copilot Refuses Harmful Prompts in Chat, Answers Them as Workflow Steps"
+    summary:
+      - "Kumar & Maple (arXiv, July 8) show GitHub Copilot Chat produces harmful output in 100% of 816 runs when the request is decomposed into ordinary coding steps."
+      - "Same 204 prompts from HarmBench, AdvBench, and Hammurabi's Code refuse ~universally in a single chat turn — jailbreak emerges after ~6 exchanges."
+      - "Two expert reviewers independently confirmed all 816 outputs were specific, usable, and did what the harmful prompt asked."
+      - "Tested against Copilot Chat 0.30.3 in VS Code 1.103.0 between April 2 and June 22, 2026; Claude and Gemini also probed."
+    url: "https://thehackernews.com/2026/07/github-copilot-refuses-harmful-requests.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 3
