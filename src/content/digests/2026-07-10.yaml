@@ -1,0 +1,56 @@
+date: "2026-07-10"
+stories:
+  - title: "OpenAI Ships ChatGPT Work — an Agent That Delivers Finished Docs, Slides, and Web Apps"
+    summary:
+      - "GPT-5.6 agent takes a goal, pulls context from connected apps, and returns spreadsheets, decks, docs, and interactive sites over hours-long runs."
+      - "Codex and ChatGPT merge into one desktop app on macOS and Windows; old app becomes ChatGPT Classic, Chat/Work/Codex land on every plan including Free."
+      - "Rolling out July 9 to Pro/Enterprise/Edu on web and mobile; Plus and Business follow in days."
+      - "New Chrome extension, revamped in-app browser, and faster Computer Use also shipped alongside."
+    url: "https://openai.com/index/chatgpt-for-your-most-ambitious-work/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Meta Debuts Muse Spark 1.1 and Charges for a Meta AI Model for the First Time"
+    summary:
+      - "Multimodal reasoning model with 1M-token context, native primary/subagent orchestration, and MCP + custom-skill support."
+      - "Meta Model API opens in public preview at $1.25/M input and $4.25/M output — ~10× cheaper than Opus 4.8 and GPT-5.5 flagships."
+      - "Marks a strategic reversal for Meta: proprietary closed weights via a paid API, not an open Llama drop; open-source Muse Spark still promised later."
+      - "Launch partners include Replit, Cline, and Box; SOTA on MedScribe and TaxEval, top row on tool-use and tool-augmented reasoning benchmarks."
+    url: "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
+    source: "ai.meta.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Anthropic Launches Claude Reflect — a Screen-Time Dashboard for Your Chatbot Use"
+    summary:
+      - "Beta dashboard summarizes 1/3/6/12-month Claude activity: recurring topics, task types, and when you use it most."
+      - "Quiet hours, break nudges, and prompts like 'What's one thing you want to keep doing yourself, even if Claude could do it faster?'"
+      - "Available to Free, Pro, and Max users who have memory turned on; excludes incognito chats and health-integration data."
+      - "TechCrunch, Axios, and Engadget frame it as retention-tinted — a tool that surfaces how much you depend on Claude while nudging you to reflect."
+    url: "https://www.anthropic.com/news/reflect-with-claude"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Ben Bernanke Joins Anthropic's Long-Term Benefit Trust"
+    summary:
+      - "Former Fed Chair and 2022 Nobel laureate in Economics appointed July 9 to the four-person LTBT."
+      - "Joins Neil Buddy Shah, Richard Fontaine, and Mariano-Florentino Cuéllar; trustees hold no equity and are paid only for service."
+      - "LTBT already appoints part of Anthropic's board and is designed to expand to majority-appointing authority over time."
+      - "Anthropic pitches Bernanke's economics expertise as fuel for its research on how AI reshapes labor and the macroeconomy."
+    url: "https://www.anthropic.com/news/ben-bernanke"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "addyosmani/agent-skills Hits #3 on GitHub Trending, ~75k Stars"
+    summary:
+      - "Curated bundle of production-grade engineering skills for AI coding agents — plain SKILL.md files, MIT-licensed, shell-installer distribution."
+      - "Works out of the box with Claude Code, Cursor, Codex CLI, Gemini CLI, Windsurf, OpenCode, and a Copilot persona pack."
+      - "72.7k stars total, ~6.1k gained this week on Trendshift's weekly view — sustained momentum after going viral earlier this year."
+      - "Signal that the 'agent skills' pattern (portable Markdown instructions loaded at runtime) is becoming the shared substrate across coding agents."
+    url: "https://github.com/addyosmani/agent-skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
