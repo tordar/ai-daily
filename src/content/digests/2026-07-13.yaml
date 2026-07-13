@@ -1,0 +1,70 @@
+date: "2026-07-13"
+stories:
+  - title: "Terry Tao Ports His 27-Year-Old Java Applets With AI Coding Agents"
+    summary:
+      - "Fields medalist migrated ~two dozen Java 1.0 math visualizations from 1999 to modern JavaScript over a few days."
+      - "One minor bug in the AI-generated code; agents surfaced two bugs in Tao's original code he had missed."
+      - "Also finished an abandoned 27-year-old 'Inkscape but in Minkowski space' special-relativity applet in a couple hours of vibe coding."
+      - "Tao names Claude Code among the tools and published an edited transcript of the session."
+      - "Top of the Hacker News front page for most of Sunday, July 12."
+    url: "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/"
+    source: "terrytao.wordpress.com"
+    tag: "community"
+    significance: 5
+
+  - title: "OpenAI Claims GPT-5.6 Sol Ultra Proved the 50-Year-Old Cycle Double Cover Conjecture"
+    summary:
+      - "Proof PDF posted July 10 on OpenAI's CDN with sole author credit assigned to the model."
+      - "Sol Ultra ran 64 parallel subagents and produced the argument in under an hour."
+      - "Conjecture (Szekeres 1973, Seymour 1979): every bridgeless graph has cycles covering each edge exactly twice."
+      - "Method reduces to cubic graphs, invokes the 8-flow theorem, and applies a linear-algebra edge labeling."
+      - "Mathematical community has not yet validated the proof; HN thread already skeptical about the attribution."
+    url: "https://news.ycombinator.com/item?id=48863490"
+    source: "news.ycombinator.com"
+    tag: "research"
+    significance: 5
+
+  - title: "Apple Sues OpenAI Over Alleged Trade Secret Theft Across Its Hardware Org"
+    summary:
+      - "Filed July 10 in N.D. California; complaint calls the scheme 'at every level' up through OpenAI's chief hardware officer."
+      - "Apple says 400+ former Apple employees now work at OpenAI."
+      - "Names Tang Tan (ex-Apple VP, now OpenAI hardware chief) for coaching interviewees to bring physical Apple parts to interviews."
+      - "Names ex-Apple senior EE Chang Liu for keeping a work laptop and downloading confidential design documents."
+      - "OpenAI's response: 'We have no interest in other companies' trade secrets.'"
+    url: "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Real-World GPT-5.6 Migration: 2.2× Faster, 27% Cheaper, and One Ugly Tool-Call Quirk"
+    summary:
+      - "Ploy migrated its marketing-site-building agent from Claude Opus 4.8 to GPT-5.6 — first Opus dethroning in four months."
+      - "2.2× faster to finished pages, 27% lower cost, and roughly half the output tokens."
+      - "Matched page: Opus wrote a 17,957-char globals.css with 174 CSS variables vs GPT-5.6's 2,508 chars and 45 variables."
+      - "Gotcha: GPT-5.6 sends all 25 top-level tool parameters every call, inventing offsets that made 52–64% of file reads return empty."
+    url: "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6"
+    source: "ploy.ai"
+    tag: "tools"
+    significance: 4
+
+  - title: "ai-job-search Blows Past 19.5k Stars — Fastest-Growing Claude Code Repo of 2026"
+    summary:
+      - "Framework by Mads Lorentzen that evaluates postings, tailors CVs, writes cover letters, and preps interviews — all in Claude Code."
+      - "19.5k stars and 5.6k forks in a few weeks; author landed an AI engineer role using his own /scrape, /apply, /interview loop."
+      - "Drafter-reviewer agent pattern treats each application as an adversarial document rather than a form-fill."
+      - "Hit #1 on GitHub trending July 7 and still adding ~4k stars this past week."
+    url: "https://github.com/MadsLorentzen/ai-job-search"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Federal Reserve Names Marc Andreessen to Co-Lead a New AI-and-Jobs Task Force"
+    summary:
+      - "Fed chair Warsh announced the Productivity and Jobs task force July 9; Andreessen co-leads with Stanford economist Chuck Jones and Microsoft's Asha Sharma."
+      - "Mandate: measure how AI reshapes labor and productivity, then feed findings into FOMC monetary-policy deliberations."
+      - "Conflict-of-interest scrutiny: a16z manages ~$90B with ~$3.4B in AI-specific investments raised six months ago."
+      - "First time the Fed has stood up a dedicated general-purpose-technology panel of this kind."
+    url: "https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/"
+    source: "washingtonpost.com"
+    tag: "industry"
+    significance: 3
