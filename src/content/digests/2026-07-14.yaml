@@ -1,0 +1,67 @@
+date: "2026-07-14"
+stories:
+  - title: "Samsung Health Will Wipe Your Data If You Refuse AI-Training Consent"
+    summary:
+      - "New in-app prompt asks users to consent to health data — steps, sleep, medication, cycle tracking, treatments, test results — being used to train Samsung's AI models, with human review."
+      - "Opting out triggers a warning that sync will stop and the account's health data will be deleted unless retained by law."
+      - "Data is intended to train upcoming Galaxy Watch 9 fitness algorithms; privacy advocates call it an 'AI-or-nothing' toll booth, not consent."
+      - "Story sat at #1 on the Hacker News front page through Tuesday, July 14; reporting from 9to5Google, Android Authority, Neowin, GSMArena, Cybernews."
+    url: "https://news.ycombinator.com/item?id=48897991"
+    source: "news.ycombinator.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "MemGhost: One Email Plants a Persistent False Memory in an AI Agent"
+    summary:
+      - "arXiv paper 'When Claws Remember but Do Not Tell' (July 6) shows a black-box attack that ships a single email, poisons an agent's long-term memory, hides the change from the reply, and steers later sessions."
+      - "Full stealth-injection attack succeeds 87.5% of the time against an OpenClaw agent on GPT-5.4 and 71.4% against a Claude Code SDK agent on Sonnet 4.6."
+      - "Tested against six frontier and cost-effective models (GPT-5.4, Sonnet 4.5/4.6, DeepSeek v4, Grok 4.1, MiniMax-M2.5); baselines failed to match on any."
+      - "Authors release WhisperBench, a 108-case benchmark for persistent-agent memory attacks; payloads generalize from Claude/OpenClaw to NanoClaw, Hermes, and the Mem0 memory backend."
+    url: "https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Cloudflare and AWS Turn On x402 Stablecoin Micropayments for AI Agents"
+    summary:
+      - "Cloudflare's Monetization Gateway (waitlist) and AWS CloudFront's x402 integration (GA) let sites charge AI agents per HTTP request — no account, no subscription, no checkout."
+      - "Settlement in USDC and Open USD on Base at sub-second speed and sub-cent transaction cost; x402 is now under the Linux Foundation."
+      - "Cloudflare's data: 52% of crawler requests are now for AI training as of June 2026, up from 22% in spring 2025."
+      - "Two hyperscaler edge networks landing the same agent-payment primitive within two weeks; InfoQ frames it as the first credible pay-per-crawl layer for the open web."
+    url: "https://www.infoq.com/news/2026/07/cloudflare-aws-x402-micropayment/"
+    source: "infoq.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Google Delays Gemini 3.5 Pro to July 17, Scrapping the 2.5 Base Model"
+    summary:
+      - "DeepMind pushed the public rollout from mid-July to Friday, July 17, after abandoning the 2.5 Pro base layer for an extended pre-training run on the native Gemini 3 foundation."
+      - "Rebuild targets multi-step math reasoning and SVG scene generation — the two areas Google engineers flagged as ceilings when benchmarking against GPT-5.6 Sol and Fable 5."
+      - "Reported specs (unconfirmed by Google): 2M-token context, a Deep Think reasoning layer, and native agentic workflow chaining."
+      - "Third slip in six months; leaves Anthropic and OpenAI unchallenged at the frontier for another week."
+    url: "https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm"
+    source: "techtimes.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Anthropic Hires Monzo Co-Founder Tom Blomfield to Its Compute Team"
+    summary:
+      - "Blomfield announced on X on Monday, July 13 that he is taking leave from Y Combinator to join Anthropic as a member of technical staff."
+      - "Reports to co-founder and chief compute officer Tom Brown; Blomfield says 'availability of compute becomes one of the most important issues to solve' as models enter early recursive self-improvement."
+      - "Follows Andrej Karpathy (May), John Jumper (June), and Eric Boyd (April) — Anthropic's fourth marquee non-researcher hire of 2026."
+      - "Signals continued emphasis on infrastructure over pure research; no engineering background disclosed for the compute-team role."
+    url: "https://sifted.eu/articles/anthropic-monzo-founder-tom-blomfield"
+    source: "sifted.eu"
+    tag: "industry"
+    significance: 3
+
+  - title: "Meta Patent Filing: An AI That Listens All Day and Logs Your Mood"
+    summary:
+      - "US 2026/0182881 A1, published July 2, describes a wearable/home device that analyzes sighs, laughter, and voice tone to infer emotional state and keeps a timestamped log."
+      - "System pairs audio with location, nearby objects, and medication timing; some variants listen continuously, others only at set check-ins."
+      - "Single named inventor Lachlan Dunn; provisional filing dates to December 2024."
+      - "Meta's line: patents 'disclose concepts that may or may not be implemented' — but the filing is drawing sharp coverage from 404 Media, Slashdot, and BoingBoing this week."
+    url: "https://www.404media.co/meta-patents-ai-device-that-tracks-your-emotions-watches-you-take-your-meds/"
+    source: "404media.co"
+    tag: "industry"
+    significance: 3
