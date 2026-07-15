@@ -1,0 +1,65 @@
+date: "2026-07-15"
+stories:
+  - title: "OpenAI Unveils Codex Micro, Its First Hardware — a Macro Pad for the Codex CLI"
+    summary:
+      - "Programmable keypad co-built with boutique keyboard maker Work Louder, launching Wednesday July 15."
+      - "13 mechanical keys, clickable rotary encoder, 2D analog joystick, and six programmable layers of Codex CLI shortcuts."
+      - "OpenAI's first branded hardware product — targeting the ~5M weekly Codex users."
+      - "First teased June 29 at the AI Engineer World's Fair in San Francisco; coverage in TechTimes, TheNextWeb, DevOps.com."
+    url: "https://thenextweb.com/news/openai-codex-micro-hardware-work-louder"
+    source: "thenextweb.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Anthropic Opens Artifacts to Public Viewing and Multiplayer Editing"
+    summary:
+      - "Any Claude Artifact link is now viewable by anyone, no Claude account required."
+      - "Multiple users can co-edit the same Artifact live inside Claude Code."
+      - "Artifacts can also be spawned directly from Slack via the Claude Tag integration."
+      - "Announced by the ClaudeDevs channel on July 14; picked up by TestingCatalog and DevOps.com."
+    url: "https://devops.com/anthropic-brings-live-shareable-artifacts-to-claude-code/"
+    source: "devops.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Xi Jinping Will Personally Keynote China's WAIC — a First for the Summit"
+    summary:
+      - "Xi to open the July 17 World AI Conference in Shanghai in person."
+      - "First appearance since WAIC launched in 2018; positions AI as a national strategic priority."
+      - "Same day as the rumored Gemini 3.5 Pro public rollout — a symbolic collision."
+      - "Bloomberg, SCMP, CGTN coverage across July 13-14; picked up by every major geopolitics desk."
+    url: "https://www.bloomberg.com/news/articles/2026-07-13/xi-to-debut-at-china-s-flagship-ai-summit-as-us-rivalry-heats-up"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic Launches Claude for Teachers, Free for US K-12 Educators Through 2027"
+    summary:
+      - "Verified K-12 teachers get free premium Claude features and a curated teaching-skills library."
+      - "Curriculum connectors mapped to standards in all 50 states."
+      - "Free through June 30, 2027; pilot in Detroit Public Schools Community District."
+      - "Same-day coverage in Chalkbeat, EdSurge, Forbes, The Hill, and 9to5Mac."
+    url: "https://www.anthropic.com/news/claude-for-teachers"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "TSMC Posts Record Q2 as AI Demand Sells N3 and CoWoS Through Year-End"
+    summary:
+      - "Q2 revenue up 36% YoY to NT$1.27T (~$39.6B); June alone jumped 68% YoY."
+      - "N3 process node and CoWoS advanced packaging both fully booked through Q4 2026."
+      - "The concrete number behind every 'compute crunch' headline — and behind Anthropic/OpenAI custom-silicon shopping."
+    url: "https://finance.yahoo.com/technology/articles/tsmc-q2-revenue-jumps-36-053756945.html"
+    source: "finance.yahoo.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Graphify Turns Codebases Into Queryable Knowledge Graphs for AI Agents"
+    summary:
+      - "Open-source tool that ingests source, SQL schemas, and docs into a graph coding agents can query."
+      - "Aim: give agents structured project context instead of raw file crawling."
+      - "86.7K stars total, +1,851 today alone; top of GitHub Trending Python this week."
+    url: "https://github.com/Graphify-Labs/graphify"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
