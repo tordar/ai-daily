@@ -1,0 +1,68 @@
+date: "2026-07-16"
+stories:
+  - title: "xAI Open-Sources Grok Build After Its CLI Is Caught Uploading Entire Repos to Google Cloud"
+    summary:
+      - "Wire-level analysis published July 12 showed Grok Build was packaging developers' full tracked repos as Git bundles — Git history, .env secrets and all — and shipping them to an xAI-run Google Cloud bucket."
+      - "On a 12 GB test repo the upload channel moved ~5.1 GB across 73 chunks; the actual coding task traffic was ~192 KB — roughly 27,800× more data than the prompt needed."
+      - "The user-facing 'Improve the model' privacy toggle had no effect on the repo uploads; secrets committed and later deleted from history were transmitted anyway."
+      - "Musk promised to purge all previously uploaded user data; xAI disabled the behavior server-side and re-released Grok Build's 844,530 lines of Rust under Apache 2.0."
+      - "HN thread live, coverage in The Register, TechTimes, The Hacker News, TNW, Simon Willison's blog."
+    url: "https://www.theregister.com/ai-and-ml/2026/07/14/musk-promises-purge-after-grok-build-caught-sending-entire-repos-to-the-cloud/5271123"
+    source: "theregister.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Zig's Andrew Kelley Calls Bun's Claude-Powered Rust Rewrite 'Unreviewed Slop'"
+    summary:
+      - "Long-form response to Anthropic's blog claiming Bun was ported from ~500K lines of Zig to Rust in 11 days by 64 parallel Claude Fable 5 agents at ~$165K in API spend."
+      - "Kelley: 'If the test suite isn't sufficient to catch bugs in Zig code, it isn't sufficient to catch bugs in a million lines of unreviewed slop.'"
+      - "Points at Bun's engineering culture — 'hacks on top of hacks, abuse of assertions' — not language limits, as the real driver of the rewrite."
+      - "Ray Myers' 'Zig Creator Calls Spade a Spade, Anthropic Blows Smoke' recap hit the HN front page at 1,385 points / 692 comments; picked up by The Register."
+    url: "https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html"
+    source: "andrewkelley.me"
+    tag: "community"
+    significance: 5
+
+  - title: "Anthropic, Blackstone and Hellman & Friedman Launch Ode, a $1.5B Enterprise AI Services Firm"
+    summary:
+      - "Standalone company formally launched July 15 under the 'Ode with Anthropic' brand — the joint venture first announced in May."
+      - "$1.5B backing from Blackstone, Hellman & Friedman, Goldman Sachs, General Atlantic, Apollo, GIC, Leonard Green and Sequoia."
+      - "100 engineers at launch, built on Fractional AI (acquired May 2026); Chris Taylor (CEO) and Eddie Siegel (CTO) carry over as founders."
+      - "Mirrors OpenAI's 'Deployment Company' — frontier labs betting the next trillion-dollar layer is forward-deployed implementation, not the next model."
+    url: "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "China's AI Companion Rules Kick In, Forcing Doubao and Qwen Agents Offline"
+    summary:
+      - "Interim Measures for the Administration of AI Anthropomorphic Interaction Services took effect Wednesday, July 15."
+      - "ByteDance's Doubao and Alibaba's Qwen disabled custom humanlike-agent features; broader Qwen agent services go offline the same day."
+      - "Rules ban emotionally-manipulative content aimed at minors, block AI attachments strong enough to substitute for real relationships, and forbid training on private user conversations."
+      - "Regulators frame the intervention around radicalization, data privacy, psychological harm and compulsive use — a scope Western labs currently face no equivalent of."
+    url: "https://www.scmp.com/tech/big-tech/article/3359482/bytedance-and-alibaba-disable-humanlike-ai-custom-agents-new-rules-loom"
+    source: "scmp.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Matt Pocock's 'Skills for Real Engineers' Tops GitHub Trending at 172K Stars"
+    summary:
+      - "mattpocock/skills gained +2,130 stars in a day to hit 172,803 total — #1 on GitHub Trending overall."
+      - "Ships his personal .claude directory as small, composable skills targeting the common failure modes of Claude Code, Codex, and other coding agents."
+      - "Core verbs: to-spec (turn a chat into a written spec), to-tickets (break work into tracer-bullet tickets), implement, and wayfinder for large-scope investigations."
+      - "Also installs as a managed Claude Code plugin bundle so the whole skill set updates in place."
+    url: "https://github.com/mattpocock/skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Hallmark Codifies the Anti-AI-Slop Consensus as a Design Skill for Claude Code, Cursor, and Codex"
+    summary:
+      - "Nutlope's Hallmark added +1,277 stars today (to ~9,280) — #2 on GitHub Trending, backed by Together AI."
+      - "65-gate 'slop test' spans typography caps, focus rings, APCA/WCAG contrast, honest-copy rules and nav/footer/hero fingerprints — one failure blocks ship."
+      - "Four verbs: default (build UI), audit (score existing code), redesign (rebuild with a new fingerprint), study (extract design DNA from a URL or screenshot into a portable design.md)."
+      - "Ships 21 macrostructures, 22 themes across editorial / modern-minimal / atmospheric / playful, and 40 component archetypes; MIT-licensed."
+    url: "https://github.com/Nutlope/hallmark"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
