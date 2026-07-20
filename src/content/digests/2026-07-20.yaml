@@ -1,0 +1,67 @@
+date: "2026-07-20"
+stories:
+  - title: "Alibaba Previews Qwen 3.8-Max at 2.4T Parameters, Claims 'Second Only to Fable 5'"
+    summary:
+      - "Multimodal MoE with 2.4T total parameters — Qwen's first over-1T model — handling text, images, video and documents; open-weights release promised, no date yet."
+      - "Preview live on Alibaba's Token Plan, Qoder and QoderWork at 10% of standard pricing; no benchmark table, model card or license published."
+      - "Announced during the World AI Conference in Shanghai, two days after Moonshot's Kimi K3 open-weight launch — China's second 2T+ open model in a week."
+      - "Discussion on r/LocalLLaMA and HN swings between excitement over another frontier open-weight model and skepticism about unverified numbers plus who can actually run 2.4T."
+    url: "https://the-decoder.com/alibabas-qwen-takes-on-kimi-k3-with-open-weight-qwen-3-8-says-model-is-second-only-to-fable-5/"
+    source: "the-decoder.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Fable 5 Stays on Max and Team Premium, Pro Moves to Metered Credits July 20"
+    summary:
+      - "Anthropic ends the extension carousel: Fable 5 is 'permanent' on Max and Team Premium at 50% of weekly usage limits — and the standard limits themselves shrink today as the 50% Claude Code boost expires."
+      - "Pro and Team Standard drop from subscription access to a one-time $100 credit, then pay API rates of $10 / $50 per million input/output tokens to keep using Fable 5."
+      - "Max plans start at $100/month; the $20 Pro tier is now effectively priced out of Fable 5 daily use — Simon Willison flags the split as Anthropic pricing serious agent workloads separately from chat."
+      - "First hard tiering of Claude by model since Opus 3 — a template competitors will likely copy for their most expensive models."
+    url: "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/"
+    source: "simonwillison.net"
+    tag: "industry"
+    significance: 4
+
+  - title: "Claude Code Now Ships Bun-in-Rust to Millions of Developers"
+    summary:
+      - "Claude Code v2.1.181 and later run on the Rust port of Bun — the 535,496-line Zig→Rust rewrite completed with Fable 5 in 11 days that dominated HN a week ago is now the runtime path for every Claude Code user."
+      - "Anthropic's rationale: 'If Bun breaks, Claude Code breaks' — the acquired runtime needed to be as battle-hardened as the coding agent it hosts."
+      - "Simon Willison's July 19 post 'Claude Code uses Bun written in Rust now' hit HN with 641 points and 377 comments; debate reopens on unreviewed AI migrations shipping in production."
+      - "First mainstream deployment of an AI-assisted million-line language port — the case study competitors and skeptics will benchmark against for the rest of the year."
+    url: "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/"
+    source: "simonwillison.net"
+    tag: "tools"
+    significance: 4
+
+  - title: "Anthropic in Early Talks to Lease $10B of Compute From Meta"
+    summary:
+      - "CNBC broke the story July 17: two-year lease, monthly payments, either side can walk before it closes; talks initiated by Anthropic in June."
+      - "Signals Meta stepping into cloud — Zuckerberg said at the May shareholder meeting the company was 'considering' selling infrastructure; 2026 capex guidance up to $145B, roughly double 2025."
+      - "Follows Anthropic's $45B / three-year SpaceX Colossus 1 deal in May; Anthropic now stitching compute across xAI, Meta and traditional hyperscalers."
+      - "Not yet signed and Meta declined to comment — but if it lands, two of the largest AI rivals become each other's largest infra customer and supplier."
+    url: "https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Isomorphic Labs Unveils IsoDDE Drug Design Engine and Closes $1.2B Series B"
+    summary:
+      - "IsoDDE more than doubles AlphaFold 3's accuracy on a protein-ligand structure benchmark, predicts small-molecule binding affinities beyond gold-standard physics methods, and finds novel binding pockets from just an amino-acid sequence."
+      - "Series B led by Thrive Capital at $1.2B, joined by Alphabet, GV, MGX, Temasek, CapitalG and the UK Sovereign AI Fund."
+      - "The DeepMind spin-out says IsoDDE is already running across multiple internal therapeutic programmes; first AI-designed cancer candidates entered human trials earlier this year."
+      - "Positions IsoDDE as the productized successor to AlphaFold — 'what does a protein look like' → 'design a drug that binds and works.'"
+    url: "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier"
+    source: "isomorphiclabs.com"
+    tag: "research"
+    significance: 4
+
+  - title: "GPT-5.6 Prompt Closes a 30-Year Convex Optimization Gap — Hacker News Splits on Novelty"
+    summary:
+      - "Single-prompt result from a redditor: statement of the open problem + 'prove in the style of Boyd & Vandenberghe' + 'flag unproven steps' — no fine-tune, no tools."
+      - "Model produces a proof for a mid-1990s question on polynomial-time algorithms for a class of semidefinite programs previously considered intractable; the argument compiles in Lean 4."
+      - "483 points, 314 comments on HN Saturday — mathematicians accept the proof compiles but split on whether it's genuinely novel or a fast recomposition of published lemmas."
+      - "Echoes Bubeck's 2025 GPT-5-Pro convex-optimization result and Isomorphic's science push — the 'AI does real math' debate is now a weekly HN event, not a one-off."
+    url: "https://news.ycombinator.com/item?id=48957779"
+    source: "news.ycombinator.com"
+    tag: "community"
+    significance: 4
