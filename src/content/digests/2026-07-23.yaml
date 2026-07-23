@@ -1,0 +1,59 @@
+date: "2026-07-23"
+stories:
+  - title: "AMD Launches MI400 Series and Helios Rack With 12 GW Booked by OpenAI and Meta"
+    summary:
+      - "Day 2 of Advancing AI 2026: MI455X enters volume production — 40 PFLOPs FP4, 20 PFLOPs FP8, 432 GB HBM4 and 19.6 TB/s per chip."
+      - "Helios rack packs 72 MI455X GPUs, 31 TB pooled HBM4, 2.9 exaFLOPS FP4 — priced ~$5.25M, 40% above Nvidia's second-gen Rubin."
+      - "EPYC 'Venice' launches alongside: first x86 server CPU on TSMC 2nm, 256 cores and 512 threads per socket, ~1 GB of L3."
+      - "OpenAI + Meta booked 12 GW of AMD accelerator capacity across generations; Microsoft Azure (ND MI455X v7), Oracle, and Tata are early Helios customers."
+      - "MI500-series previewed for 2027; AMD says 8 of the world's top 10 AI companies now run workloads on Instinct GPUs."
+    url: "https://www.datacenterdynamics.com/en/news/amd-unveils-full-mi400-product-lineup-claims-mi500-chips-will-deliver-1000x-increase-in-ai-performance/"
+    source: "datacenterdynamics.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI Ships Presence, Its Enterprise Voice and Chat Agent Platform"
+    summary:
+      - "Limited GA on July 22 for eligible enterprises — not a self-serve API, delivered as a deployed product."
+      - "Bundles company knowledge, SOPs, approved actions, simulations, evals, guardrails, GPT-Live realtime voice, and a Codex-powered improvement loop."
+      - "OpenAI's own support line: 75% of inbound issues resolved without a human; agent-to-human handoffs down 15 points in 10 days."
+      - "Early customers include BBVA (Mexico banking), SoftBank (Japanese-language support), and Australian insurer IAG."
+      - "HN thread is skeptical — top comments argue an in-house MCP server plus M365 Copilot beats leaning on OpenAI consultants."
+    url: "https://openai.com/index/introducing-openai-presence/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "GitHub Halves Public Bug Bounty Payouts and Moves Top Rewards to a VIP Tier"
+    summary:
+      - "New rates land July 27: critical drops from $20k–$30k+ to a flat $10k."
+      - "Medium/high/critical all ≥50% lower against the old ranges; low-severity down about 59%."
+      - "Invite-only permanent VIP tier keeps $30k+ payouts, faster triage, and closer access to GitHub's security engineers."
+      - "Reports filed before July 27, including everything in the current queue, are grandfathered on the old terms."
+      - "Follows a May 2026 policy demanding working PoCs; framing: 'you don't earn more by submitting more.'"
+    url: "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/"
+    source: "github.blog"
+    tag: "industry"
+    significance: 3
+
+  - title: "Anthropic Adds Economic Index Connector to Claude"
+    summary:
+      - "New MCP connector shipped July 22 in the Claude Directory — no install, works in every conversation and every Claude model."
+      - "Ask Claude about how AI is used across occupations, regions, and tasks; answers cite Index data and expose the underlying rows."
+      - "Full datasets stay free on anthropic.com; Claude flags that the Index reflects Claude usage, not the whole labor market."
+      - "Slots into Anthropic's growing connector directory (343+ verified MCP integrations)."
+    url: "https://www.anthropic.com/news/anthropic-economic-index-connector"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Anthropic Publishes Research Agenda for Its $200M Economic Futures Fund"
+    summary:
+      - "Five priority areas: workplace impact, workforce transitions, income-support modernization, worker equity, and public-investment evidence."
+      - "Fund was announced June 10 alongside a $150M national fellowship; today's post sets the call-for-proposals shape."
+      - "Lands as Anthropic's Q2 2026 federal lobbying rose 26% to $1.97M and the company pushes states on frontier-AI rules."
+      - "Companion piece to the same-day Economic Index connector — Anthropic doubling down on being the lab that instruments the AI-labor debate."
+    url: "https://www.anthropic.com/news/economic-futures-research-fund-agenda"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 2
