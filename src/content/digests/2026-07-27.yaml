@@ -1,0 +1,56 @@
+date: "2026-07-27"
+stories:
+  - title: "Kimi K3 Open Weights Drop: 2.8T Params, Largest Open-Weight Model Ever"
+    summary:
+      - "Moonshot AI published Kimi-K3 to huggingface.co/moonshotai at 00:00 UTC today — 2.8T total parameters, 896 experts with 16 firing per token (~50B active), Kimi Delta Attention in 3-of-4 layers."
+      - "Native MXFP4 safetensors are ~594GB; the model still needs roughly 1.4TB of fast memory to load and around 8× H100 80GB minimum before context — closer to BF16 it balloons to ~5.6TB."
+      - "r/LocalLLaMA lit up but is openly joking that almost nobody in the sub can run it — early attention is on quant strategies and community GGUF/MLX builds expected within days."
+      - "Caps the frontier open-weight surge we teased Friday: DeepSeek V4-Pro/Flash stabilized July 24, Kimi K3 lands today, both under permissive licenses."
+    url: "https://huggingface.co/moonshotai/Kimi-K3"
+    source: "huggingface.co"
+    tag: "open-source"
+    significance: 5
+
+  - title: "Anthropic Ships Claude Opus 5 — 30.2% on ARC-AGI-3, Same $5/$25 Price"
+    summary:
+      - "Dropped July 24 across Claude, Cursor, Bedrock, and Vertex; same $5 in / $25 out per M tokens as Opus 4.8, with 1M-token context and low/medium/high effort dial baked into every request."
+      - "ARC-AGI-3 score of 30.2% is roughly 3× the next-best model (GPT-5.6 Sol 7.8%, Opus 4.8 1.5%); leads Frontier-Bench v0.1 (43.3% at max effort) and OSWorld 2.0, still trails Mythos 5 on cyber."
+      - "Builder reaction genuinely split — Dan Shipper (Every) reports it 'argued with instructions, stopped mid-task, broke existing skills'; Aaron Levie (Box) reports +19% on tech evals and +13% on healthcare after retesting."
+      - "Behavior change is the real story: Opus 5 interprets intent instead of following literal prompts — teams migrating from 4.8 are having to strip elaborate scaffolding to get clean results."
+    url: "https://www.anthropic.com/news/claude-opus-5"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Kimi K3 Agents Find 19 Redis Zero-Days, Trigger 7 Emergency Releases"
+    summary:
+      - "Chaofan Shou coordinated 32 specialised K3 agents that cloned Redis source, generated fuzzers, and debugged crashes under GDB — 19 zero-days surfaced in ~90 minutes, per his X post."
+      - "Chain includes a stream consumer-group shared-NACK double-free plus a heap overflow in bundled RedisBloom TDigest — an authenticated RCE PoC dropped for stock Redis 6.2.22, 7.4.9, 8.6.4, and 8.8.0."
+      - "Redis shipped 7 security releases on July 23 to close the reported paths; timings and autonomy claims are self-reported and Redis's public record does not yet validate the full count."
+      - "Follow-up to Friday's OpenAI Hugging Face story — offensive AI is now the delivery mechanism for real-world CVEs, not just red-team demos."
+    url: "https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 4
+
+  - title: "XBOW's Agent Chains Two 9.8-CVSS Bing Images RCEs — SVG → SYSTEM"
+    summary:
+      - "XBOW's autonomous offensive agent surfaced CVE-2026-32194 and CVE-2026-32191, both rated 9.8 CVSS — a crafted SVG hits either the Search-by-Image upload or the bingbot crawler route and executes as NT AUTHORITY\\SYSTEM / root inside Microsoft's image pipeline."
+      - "Neither path needs auth, cookies, session state, or a click — the crawler variant just requires you to host the SVG at any URL Bing will fetch."
+      - "Microsoft patched under coordinated disclosure; XBOW published the mechanics on July 23 after Microsoft asked to hold until fixes rolled to production workers."
+      - "Same lab whose CTF-topping numbers made the news in 2025 — now demonstrating that autonomous agents can chain real-world critical RCEs in production hyperscaler services."
+    url: "https://xbow.com/blog/bing-images-rce-vulnerabilities"
+    source: "xbow.com"
+    tag: "research"
+    significance: 3
+
+  - title: "xAI Puts Grok Inside Google Workspace, Free Add-On for Docs, Sheets, Slides"
+    summary:
+      - "One install from the Google Workspace Marketplace covers Docs, Sheets, and Slides; the underlying model is Grok 4.5, matching the Microsoft 365 integration that shipped earlier this month."
+      - "Sheets: writes formulas, inserts charts, and re-runs scenarios when assumptions change. Docs: drafts, rewrites, pulls context from Gmail/Drive with connectors. Slides: turns outlines into decks with research from web and X."
+      - "Landed on the Marketplace July 21 and officially announced July 24 — free tier, no paywall, US launch."
+      - "Positions Grok as a cross-suite productivity layer, going head-to-head with Gemini in Workspace and Copilot in Microsoft 365 on the same real estate."
+    url: "https://x.ai/news/introducing-google-workspace-addon"
+    source: "x.ai"
+    tag: "tools"
+    significance: 3
