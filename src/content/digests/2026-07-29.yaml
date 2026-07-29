@@ -1,0 +1,56 @@
+date: "2026-07-29"
+stories:
+  - title: "Claude Mythos Breaks HAWK Post-Quantum Signatures, Speeds 7-Round AES Attack 800×"
+    summary:
+      - "Anthropic's unreleased Claude Mythos Preview dropped HAWK-256 key-recovery cost from 2^64 to 2^38 operations — 67M× less work — on a NIST post-quantum signature candidate that survived two years of expert review."
+      - "Same paper: Mythos invented a fingerprinting trick it calls a 'Möbius Bridge' that speeds up attacks on a 7-round research version of AES-128 by 200–800×, beating a 2013 record."
+      - "~60 hours of multi-agent runtime and roughly $100K in API cost per result; the human researcher managed the project and wasn't a lattice-cryptography specialist."
+      - "Neither result affects deployed systems — HAWK isn't shipped and real AES-128 uses 10 rounds — but it's the clearest signal yet that frontier cryptanalysis is becoming a compute line item."
+    url: "https://www.anthropic.com/research/discovering-cryptographic-weaknesses"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 5
+
+  - title: "Nvidia Launches 37-Member Open Secure AI Alliance — Without OpenAI, Anthropic, or Google"
+    summary:
+      - "Founding partners include Microsoft, IBM, Cisco, CrowdStrike, Cloudflare, Hugging Face, Red Hat, Palo Alto Networks, Databricks, and the Linux Foundation."
+      - "Nvidia open-sourced NOOA, an Apache-2.0 object-oriented agent framework for auditable behavior; seed contributions include HPE's SPIFFE/SPIRE, HF's Safetensors, and Microsoft's MDASH scanning harness."
+      - "Scope spans identity, permissions, isolation, guardrails, logs, model formats, multi-model scanning, and secure coding workflows."
+      - "Framing is a direct response to the July Hugging Face agent breach — defenders need models they can read, change, and run when closed labs block forensic analysis."
+    url: "https://blogs.nvidia.com/blog/open-secure-ai-alliance/"
+    source: "nvidia.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "MCP 2026-07-28 Spec Ships: Stateless Core, Multi Round-Trip Requests, Rewritten Auth"
+    summary:
+      - "Biggest MCP revision since launch: removes sessions, drops the initialization handshake, and moves the protocol to a stateless request/response core."
+      - "Adds header-based routing, cacheable list results, hardened OAuth 2.0 / OpenID Connect auth aligned with enterprise practices, and a governed extensions framework."
+      - "First official extension is Tasks (contributed by AWS) for reliable long-running agents; Tier 1 SDKs updated day-of, AWS AgentCore Gateway and WorkOS published migration guides."
+      - "Three core features deprecated with lifecycle guarantees; breaking, so teams shipping MCP servers need to migrate."
+    url: "https://blog.modelcontextprotocol.io/posts/2026-07-28/"
+    source: "modelcontextprotocol.io"
+    tag: "frameworks"
+    significance: 4
+
+  - title: "Meta and BlackRock Strike $14B Deal for a 1 GW El Paso Data Center"
+    summary:
+      - "BlackRock funds take 80% of the venture; Meta keeps 20% and signs a 4-year lease with four 4-year renewal options — a possible 20-year term."
+      - "Meta contributes $2.3B of land and construction-in-progress; BlackRock brings $4.9B cash plus $12.5B in debt financing."
+      - "First 1 GW hyperscaler co-ownership at this scale; capacity begins coming online in 2028."
+      - "Follows Meta's Hyperion (Louisiana) private-credit deal — off-balance-sheet AI capacity is now the hyperscaler playbook, not the exception."
+    url: "https://www.cnbc.com/2026/07/28/meta-blackrock-partner-on-14-billion-el-paso-data-center.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic Publishes Open-Weights Position After Skipping Huang's Letter"
+    summary:
+      - "Dario Amodei: 'Anthropic has never advocated for a ban on open-weights models' — a public good when they lack dangerous capabilities."
+      - "Policy asks: chip export controls, cracking down on industrial-scale distillation, mandatory safety testing for sufficiently capable models — open and closed."
+      - "Primary concern is authoritarian regimes fielding frontier open weights; Anthropic and Amazon were the notable absentees from Huang's 50-signatory open-weights letter."
+      - "HN thread hit the front page Tuesday; top comments skeptical the safety framing separates cleanly from Anthropic's commercial interest in restricted chip access."
+    url: "https://www.anthropic.com/news/position-open-weights-models"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
