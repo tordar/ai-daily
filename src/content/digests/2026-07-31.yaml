@@ -1,0 +1,67 @@
+date: "2026-07-31"
+stories:
+  - title: "OpenAI Cuts GPT-5.6 Luna 80% After Sol Rewrites Its Own Inference Stack"
+    summary:
+      - "Luna drops from $1/$6 to $0.20/$1.20 per million input/output tokens; Terra falls 20% to $2/$12."
+      - "Sol's price is unchanged, but a new Fast mode lands in the API with the same $5/$30 pricing."
+      - "OpenAI credits Sol itself for rewriting production GPU kernels in Triton and Gluon, cutting serving costs ~20%."
+      - "Cuts arrive three weeks after the GPT-5.6 launch; Sam Altman announced them on X as 'major price cuts today'."
+    url: "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/"
+    source: "openai.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Gemini Robotics 2 Gives Humanoids Whole-Body Control"
+    summary:
+      - "Three-model suite: a Vision-Language-Action model, Embodied Reasoning (ER 2), and an on-device variant."
+      - "Coordinates feet-to-fingertips motion, chains hundreds of steps, and adapts to a new robot body in hours."
+      - "92% success unscrewing a light bulb; demos include tying delicate knots and multi-robot collaboration."
+      - "Demis Hassabis: robots 'can now reason through every movement to manage tasks that weren't possible before'."
+    url: "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/"
+    source: "deepmind.google"
+    tag: "research"
+    significance: 5
+
+  - title: "xAI Ships Grok Voice Think Fast 2.0, Widens Transcription Gap to 10x in Noise"
+    summary:
+      - "1.5–2.0x transcription accuracy vs Deepgram Nova 3 and ElevenLabs Scribe v2 across 24 languages; gap widens to ~10x in noisy conditions."
+      - "60% fewer reasoning tokens than Think Fast 1.0 for the same conversational reliability."
+      - "Available now in the xAI API and Grok Voice Agent Builder beta."
+      - "Callers pinned to 'grok-voice-latest' auto-migrate on August 5."
+    url: "https://x.ai/news/grok-voice-think-fast-2"
+    source: "x.ai"
+    tag: "models"
+    significance: 4
+
+  - title: "CVSS 10.0 Ruflo Flaw Lets Attackers Hijack Claude Code and Codex Agents"
+    summary:
+      - "CVE-2026-59726 ('RufRoot') exposes 233 tools — shell, DB ops, memory writes — via an unauthenticated MCP bridge open to the network by default."
+      - "Unauthenticated RCE, provider API key theft, and 'memory poisoning' that persists across patching."
+      - "Fixed in 3.16.3; Noma Labs disclosed June 30 with a working PoC and maintainers shipped a patch inside 24 hours."
+      - "Every version before 3.16.3 is affected — pin, upgrade, or lock the MCP bridge behind auth today."
+    url: "https://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html"
+    source: "thehackernews.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Strix Crosses 43k Stars as AI Pentesters Ship Working Exploits, Not Reports"
+    summary:
+      - "Open-source Apache-2.0 CLI: HTTP proxy, browser exploitation, Python sandbox, CI/CD hooks."
+      - "Refuses to file a finding without a working proof-of-concept payload — no 'possible' bugs."
+      - "43.4k stars this week, hit #1 on GitHub Trending on July 3, adding ~10k stars per week."
+      - "v1.3.1 shipped with official GitHub Actions support for in-pipeline scans."
+    url: "https://github.com/usestrix/strix"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Meta Lifts 2026 AI Capex Floor to $130B as Q2 Free Cash Flow Collapses 91%"
+    summary:
+      - "Q2 revenue $60.8B, +28% YoY; EPS $6.18 missed the $7.17 consensus by nearly 14%."
+      - "Capex reached $31.1B in Q2 alone — 1.8x Q2 2025 — dragging free cash flow down 91% to $784M."
+      - "Full-year capex floor raised to $130–145B, up from $125–145B; announced a $10B+ BlackRock JV to build a data-center campus in El Paso, Texas."
+      - "Q3 revenue guide: $61–64B."
+    url: "https://thenextweb.com/news/meta-q2-2026-capex-ai-buildout"
+    source: "thenextweb.com"
+    tag: "industry"
+    significance: 3
