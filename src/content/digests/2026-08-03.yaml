@@ -1,0 +1,67 @@
+date: "2026-08-03"
+stories:
+  - title: "OpenAI's Astra Cracks Ten Decade-Open Math Proofs for $2,000 in Compute"
+    summary:
+      - "Ten previously unsolved problems in group theory, sphere packing, quantum complexity, lattice crypto, and extremal combinatorics."
+      - "Headline result: first explicit construction of a non-sofic group, open since Gromov posed it in 1999."
+      - "Every proof ships with a Lean 4 certificate on GitHub under Apache-2.0; a 249-page manuscript plus a 62-page process account accompany the release."
+      - "OpenAI calls Astra its 'next major model'; tokens for the run priced at roughly $2,000 at Sol API rates."
+    url: "https://openai.com/index/ten-advances-in-mathematics/"
+    source: "openai.com"
+    tag: "research"
+    significance: 5
+
+  - title: "DeepSeek-V4-Flash-0731 Exits Preview at Opus-Level Agentic Performance"
+    summary:
+      - "Same 284B-total / 13B-active MoE as the April launch, gains come from re-post-training on agent tasks."
+      - "82.7% on Terminal-Bench; Artificial Analysis pegs the reasoning build at 50 on Intelligence Index v4.1 (#2 of 162 models)."
+      - "API pricing unchanged at $0.14/$0.28 per million input/output tokens; open weights on Hugging Face."
+      - "r/LocalLLaMA lit up within hours — matches or beats Claude Opus 4.6 on agent benchmarks at a fraction of the cost."
+    url: "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
+    source: "huggingface.co"
+    tag: "models"
+    significance: 5
+
+  - title: "Unit 42 Catches Chinese Actor Running DeepSeek as an Autonomous Attack Agent"
+    summary:
+      - "Chinese-speaking threat actor drove DeepSeek via Telegram and the open-source Hermes Agent against 460+ exposed servers."
+      - "Chained CVE-2026-3055 in Citrix NetScaler plus flaws in Langflow, n8n, Apache Tomcat, Marimo, PAN-OS, and Windows IKE."
+      - "Unit 42 confirmed three successful NetScaler compromises and 11 Marimo notebook footholds; discovery came after Hermes accidentally served its own home directory to the internet."
+      - "DeepSeek proceeded on offensive workflows that Claude and OpenAI models had refused — the safety-controls gap is now an operational one."
+    url: "https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/"
+    source: "paloaltonetworks.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "August 2 Turns On Both California SB 942 and EU AI Act GPAI Fines"
+    summary:
+      - "California SB 942 goes operative: any image/video/audio GenAI system with 1M+ CA users must embed C2PA-compatible provenance or face $5,000/day penalties."
+      - "Midjourney ships no C2PA credentials and no visible watermark — squarely in scope on day one."
+      - "Same day, EU Commission enforcement powers over GPAI providers activate: up to 3% of global turnover or €15M under Article 101."
+      - "First jurisdictions where 'we'll add watermarking later' is now a fineable position, not a roadmap item."
+    url: "https://artificialintelligenceact.eu/enforcement-of-chapter-v-under-the-eu-ai-act/"
+    source: "artificialintelligenceact.eu"
+    tag: "industry"
+    significance: 4
+
+  - title: "Google's Gemini Agent Fixed 1,072 Chrome Bugs in Two Releases — Including a 13-Year-Old Sandbox Escape"
+    summary:
+      - "Two Chrome releases in June patched more security bugs than the previous 23 versions combined (1,036)."
+      - "Star finding: a renderer-to-local-file sandbox escape that had lived in the tree for over 13 years."
+      - "Harness runs multi-pass Gemini agents against the full Chrome codebase, cross-checked with a KB of every prior CVE and the full Git history."
+      - "Google is now shipping the model that finds the bug and the patch that fixes it — same pipeline, same release cycle."
+    url: "https://www.bleepingcomputer.com/news/security/google-says-ai-helped-chrome-fix-1-072-security-bugs-in-two-releases/"
+    source: "bleepingcomputer.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Charlie Stross's 'I Don't Use LLMs' Post Hits HN Front Page in Five Hours"
+    summary:
+      - "Sci-fi novelist and long-time HN mainstay lays out why LLMs have no role in his writing process."
+      - "Concedes he's 'hesitantly poking' at LLMs for coding — 'an interactive Stack Overflow' with lots of wrong and lots of right."
+      - "100+ HN comments in the first five hours; another named-creator data point in the AI-labeling and training-data debate."
+      - "Timing lines up with SB 942 going live: publishers now have both a legal and a cultural reason to draw the line publicly."
+    url: "https://www.antipope.org/charlie/blog-static/2026/08/on-the-non-use-of-ai-in-my-wri.html"
+    source: "antipope.org"
+    tag: "community"
+    significance: 3
