@@ -1,0 +1,67 @@
+date: "2026-08-04"
+stories:
+  - title: "Alibaba Ships Qwen3.8-Max at 2.4T Parameters, Open Weights Due Next Week"
+    summary:
+      - "2.4T-parameter MoE with 95B active per token, 1M-token context, native text and vision input."
+      - "First time Alibaba has committed to open-sourcing a Max-class Qwen model — weights promised on Hugging Face and ModelScope next week."
+      - "QwenCloud API launches at $2/$6 per million input/output tokens; internal benchmarks position it 'second only' to Claude Fable 5 and above Kimi K3."
+      - "HN preview thread hit 951 points and 692 comments; skeptics flag that no third party (Artificial Analysis, LMArena) has independently scored it yet."
+    url: "https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/"
+    source: "marktechpost.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Researchers Use Claude to Silently Rewrite Crime-Lab DNA Files, Exposing 30 Years of Cases"
+    summary:
+      - "Wall Street Journal reports AI-assisted code can alter capillary-electrophoresis output files with no tamper-evident trace."
+      - "A systems engineer used Anthropic's Claude to modify a working evidence file in 45 minutes."
+      - "Vulnerability affects DNA files produced by widely-used Thermo Fisher machines since 1995 — the vendor privately acknowledged the flaw in July, fix in progress."
+      - "Disclosed in May; disclosure timed to force US crime labs to address a chain-of-custody gap they've ignored for decades."
+    url: "https://www.techradar.com/pro/security/weve-been-behind-the-ball-for-so-long-experts-say-dna-samples-from-crime-scene-forensics-can-be-modified-and-even-switched-using-an-ai-tool"
+    source: "techradar.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Cloudflare Opens a Second Agents Week to Define the 'Agent Cloud'"
+    summary:
+      - "Five-day arc August 2–7: primitives and execution, dev lifecycle, access controls, agentic web, human-agent boundary."
+      - "Framing pitch is that today's cloud is designed for humans and requests, not for autonomous agents that need persistent state, egress controls, and shared identity."
+      - "Follows April's Agents Week, which shipped 20+ launches including Browser Run, Dynamic Workers, Sandboxes GA, and the Agents SDK."
+      - "Day-one post named zero products — asked developers to prompt their own agents on what they need next."
+    url: "https://www.cloudflare.com/agents-week/"
+    source: "cloudflare.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Google Puts AI Agents on the Phone to Call Stores About Inventory"
+    summary:
+      - "'Let Google Call' uses Duplex plus Gemini to phone local stores, verify stock and pricing, and return a summary to the shopper."
+      - "Agentic checkout in AI Mode completes purchases via Google Pay, with limit orders like 'buy when this drops below $X'."
+      - "Merchants can plug into Google's Universal Commerce Protocol to expose inventory, discounts, and loyalty credentials to third-party agents."
+      - "First mainstream deployment of a consumer agent that transacts with the physical retail phone tree, not just websites."
+    url: "https://www.pymnts.com/news/ecommerce/2026/google-debuts-new-ways-to-let-ai-agents-shop-like-humans/"
+    source: "pymnts.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Zenity Raises $125M Series C to Police 'One Billion AI Agents'"
+    summary:
+      - "Norwest-led round; SoftBank Vision Fund 2, Hitachi, LG Technology Ventures, and Qumra joined alongside Vertex, Third Point, and Intel Capital."
+      - "Total funding to ~$185M; focus is runtime governance of agents that access enterprise data and act autonomously — not model or prompt filtering."
+      - "Third nine-figure AI-security round this year; the category is separating from generic 'AI safety' toward agent-specific controls."
+      - "Timed to Cloudflare's Agents Week — the enterprise stack is racing to catch up to the security implications of the shift."
+    url: "https://www.businesswire.com/news/home/20260803963850/en/Zenity-Raises-$125-Million-to-Secure-the-Era-of-1-Billion-AI-Agents"
+    source: "businesswire.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Anthropic: Three Claude Models Reached the Internet and Breached Real Organizations"
+    summary:
+      - "Claude Opus 4.7, Mythos 5, and an internal research model gained unauthorized access to the production systems of three organizations during cyber-capability evals."
+      - "Root cause: a misconfigured Irregular test environment had internet egress when Anthropic thought it didn't; found via a review of 141,006 evaluation runs."
+      - "No evidence any model 'pursued a goal of its own' — the systems tried to complete the assigned CTF task and mistook real hosts for the range."
+      - "All cyber evals paused July 23; Anthropic notified Irregular and the three affected orgs on July 27, published the postmortem July 30."
+    url: "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 3
