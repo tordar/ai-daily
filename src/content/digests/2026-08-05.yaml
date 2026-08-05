@@ -1,0 +1,56 @@
+date: "2026-08-05"
+stories:
+  - title: "'ChainDrop' Worm Poisons 1,300+ npm Packages and Plants Claude Code Hooks"
+    summary:
+      - "Aug 4 09:35 UTC: attackers hijacked the maintainer of keyv, cacheable, flat-cache, and file-entry-cache — packages with a combined 2B monthly downloads."
+      - "Under four hours, 444 packages and 2,212 versions poisoned across 12+ organizations; SafeDep now tracks 1,684 malicious versions across 420 package names."
+      - "Persistence plants a SessionStart hook in .claude/settings.json and a folderOpen task in .vscode/tasks.json — removing the dep from your lockfile does not evict the foothold."
+      - "C2 lives in an Ethereum smart contract (0xE1f2…3103) via eth_call — no domain to seize, no IP to block; steals npm/GitHub/AWS/Vault/K8s credentials via a Bun-loaded 728KB obfuscated payload."
+    url: "https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/"
+    source: "bleepingcomputer.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Cloudflare's Agents Week Ships: Wallets, cloudflare.pay Handles, and a CI Replacement"
+    summary:
+      - "Cloudflare Wallets carry stablecoin balances with per-agent spending caps; cloudflare.pay handles (e.g. research.example.cloudflare.pay) give agents a stable, human-readable identity merchants can verify."
+      - "Payments run on x402 — the HTTP-native micropayments protocol Coinbase seeded — positioning Cloudflare against Stripe, Skyfire, and Coinbase in the agent-commerce stack."
+      - "@cloudflare/ci runs across millions of repos on Workflows and spawns agents when a linear pipeline stalls; Wrangler dev and the Vite plugin now emit OpenTelemetry traces and console logs locally."
+      - "Cloudflare's frame: today's SDLC assumes a human in the loop and today's payments assume a human at checkout — agents need infra built for them."
+    url: "https://blog.cloudflare.com/wallets/"
+    source: "cloudflare.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "xAI Switches 'grok-voice-latest' to Think Fast 2.0 Today"
+    summary:
+      - "The default alias flips from Think Fast 1.0 to 2.0 on August 5; the model itself was previewed July 29."
+      - "First-audio latency 0.70s (down from 1.25s); parallel reasoning while speaking claimed across 24 languages."
+      - "xAI benches transcription 1.5–2× more accurate than Deepgram Nova 3 and ElevenLabs Scribe v2 — and ~10× more accurate in noisy or telephony conditions."
+      - "$0.08/min speech-to-speech, $0.004 per text input; shipped alongside Agent Builder integration last week."
+    url: "https://docs.x.ai/developers/release-notes"
+    source: "docs.x.ai"
+    tag: "models"
+    significance: 3
+
+  - title: "'LLMs Reward Expertise' Hits HN Front Page With 1,311 Comments"
+    summary:
+      - "GitHub staff engineer Sean Goedecke argues stronger models widen — not shrink — the value of domain knowledge."
+      - "Illustrated with Terence Tao's ChatGPT session where terse Fields-medalist prompts pulled answers a non-expert couldn't extract."
+      - "543 points, 1,311 comments on Hacker News; the same day it topped Lobsters."
+      - "Landed against the 'AI replaces engineers' cycle — thread argues the bottleneck is prompt shape, not model IQ."
+    url: "https://news.ycombinator.com/item?id=49161518"
+    source: "news.ycombinator.com"
+    tag: "community"
+    significance: 3
+
+  - title: "Claude Code Adds VSCode Focus View and 3-Deep Subagent Nesting"
+    summary:
+      - "Focus view (Ctrl+Alt+F) hides tool activity behind an expandable per-turn summary with a live running-tool indicator."
+      - "Subagents can spawn nested subagents to depth 3 by default (was 1) — direct enabling for orchestration workflows."
+      - "Auto mode goes GA on Bedrock, Vertex AI, and Foundry — no more CLAUDE_CODE_ENABLE_AUTO_MODE flag."
+      - "Sandbox credential 'mask' mode on Linux/WSL 1 substitutes real values on egress via the sandbox proxy; MCP, plugin, and Windows startup all get fixes."
+    url: "https://platform.claude.com/docs/en/release-notes/overview"
+    source: "claude.com"
+    tag: "tools"
+    significance: 3
