@@ -1,0 +1,67 @@
+date: "2026-08-06"
+stories:
+  - title: "Anthropic's 'Inference Hooks' Put Enterprise DLP in Front of Every Claude Call"
+    summary:
+      - "Beta launched August 5; routes every prompt and tool-call response through the customer's own security server for an allow/deny verdict before Claude sees it."
+      - "Covers chat, Claude Code, Claude Cowork, MCP connectors, skills, and plugins — one org-level config, nothing installed on user devices."
+      - "Ships with shadow mode, role-based exclusions, and percentage rollouts; prewired for Netskope, Palo Alto Networks, Proofpoint, and Zscaler."
+      - "Current limitation: verdicts are binary allow/deny — no rewrite or redact yet."
+    url: "https://claude.com/blog/claude-enterprise-inference-hooks"
+    source: "claude.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Anthropic Confirms In-House Custom Silicon Team, Salaries to $485k"
+    summary:
+      - "August 5 confirmation that Anthropic is hiring semiconductor engineers to co-design chips and models built around Claude's attention mechanisms."
+      - "Roles span architecture, design, and verification; posted bands run $320k–$485k."
+      - "Samsung is in talks as a fab partner, targeting a 2nm process for the first chip."
+      - "Anthropic will keep buying compute from AWS, Google, Nvidia, and AMD while the internal silicon matures."
+    url: "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Mistral Open-Sources Shieldstral: 3B Multimodal Moderation on a 16GB GPU"
+    summary:
+      - "3B-parameter open-weights safety classifier on Hugging Face under Apache 2.0."
+      - "99.4% on HarmBench and 97.7% on VLGuard — matching classifiers up to 7× larger."
+      - "Operators supply moderation rules as plain-language yes/no questions at inference; no retraining to retarget the model."
+      - "Runs on a single 16GB GPU; accepts text and images; topped Hacker News on August 5."
+    url: "https://mistral.ai/news/shieldstral/"
+    source: "mistral.ai"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Show HN: Run an 80B Qwen in 4.3 GB of RAM on a Mac"
+    summary:
+      - "Aggressive 2-bit quantization plus mmap streaming brings an 80B-parameter Qwen down to 4.3 GB of resident memory."
+      - "Same technique fits a 35B model onto an iPhone — inference happens as blocks stream in and out of RAM."
+      - "Show HN thread active August 4–5 (item 49158333); r/LocalLLaMA picked it up the same day."
+      - "Signal: the local-inference crowd is now targeting frontier-scale weights on consumer hardware, not just distilled ones."
+    url: "https://news.ycombinator.com/item?id=49158333"
+    source: "news.ycombinator.com"
+    tag: "community"
+    significance: 3
+
+  - title: "'Poison Claude' Resells Discounted Claude Access — And Reads Every Prompt"
+    summary:
+      - "Okta researchers detail an illegal reseller offering Claude at 5–15% of Anthropic's pricing, published on The Hacker News August 5–6."
+      - "Runs on a pool of fraudulently-registered AWS Bedrock accounts, each stuffed with the standard $100 bonus credit."
+      - "Customers set environment variables to route Claude Code (and any Anthropic-compatible client) through Poison Claude's endpoint — the operator sees every prompt in cleartext."
+      - "Payments in crypto; the service was still live at time of writing."
+    url: "https://thehackernews.com/2026/08/poison-claude-sells-discounted-claude.html"
+    source: "thehackernews.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Tencent Open-Sources 'DB-Agent-Memory' as a Shared-Memory Layer for Agent Teams"
+    summary:
+      - "Turns agent conversations and code into reusable memory assets shared across a multi-agent team."
+      - "Gained ~1,900 stars in a day, near the top of GitHub Trending — 15k+ total."
+      - "Fills the long-term shared-memory gap teams have been improvising around with vector stores and scratch files."
+      - "First big-cloud entry in the emerging agent-memory-infrastructure category."
+    url: "https://github.com/TencentCloud/TencentDB-Agent-Memory"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
