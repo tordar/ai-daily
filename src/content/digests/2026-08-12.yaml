@@ -1,0 +1,56 @@
+date: "2026-08-12"
+stories:
+  - title: "xAI Launches Grok Bot, Always-On AI Teammates With Their Own Cloud Computer"
+    summary:
+      - "xAI opened Grok Bot in early beta on August 11 — persistent agents that sign into your tools, drive them like a human, and keep working after you close the laptop."
+      - "Each Bot gets its own dedicated cloud computer; runtime runs on Cursor infrastructure via a joint distribution deal."
+      - "Access is gated to SuperGrok Heavy ($300/mo), Cursor Ultra ($200/mo), and Cursor Teams Premium ($120/seat); Mac, iOS, Windows, and Linux at launch, Android later."
+      - "Bloomberg framed it as xAI's clearest shot at OpenAI and Anthropic; HN pushback centered on handing an Elon-Musk-owned service login credentials for mail, CRM, and vendor accounts."
+    url: "https://x.ai/news/introducing-grok-bot"
+    source: "x.ai"
+    tag: "tools"
+    significance: 4
+
+  - title: "OpenAI Ships GPT-5.6-Cyber, Which Already Found Two Chrome V8 Zero-Days"
+    summary:
+      - "OpenAI expanded Daybreak on August 11 with two tiers — Blue (GPT-5.6 Sol without cyber guardrails) and Red (the new GPT-5.6-Cyber for exploit validation and red teaming)."
+      - "GPT-5.6-Cyber answered 95% of advanced cybersecurity prompts vs 1.5% for GPT-5.6 Sol under standard safeguards."
+      - "The model turned up two chainable memory-corruption bugs in Chrome's V8 engine; Google fixed one as CVE-2026-15903."
+      - "Access is limited to vetted defenders and researchers; The Hacker News flagged the reduced-refusal posture as the most consequential shift."
+    url: "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/"
+    source: "openai.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Anthropic Locks In Sonnet 5's Introductory Pricing at $2 / $10 per Million Tokens"
+    summary:
+      - "The planned September 1 jump to $3 / $15 is cancelled — Sonnet 5's June launch price is now the permanent price."
+      - "Puts Sonnet 5 at 33% cheaper input and output than the standard tier it was meant to move to."
+      - "HN thread hit 155 points and 63 comments; split between price-to-value fans and users saying Opus 5 at medium effort beats Sonnet 5 for a similar cost."
+      - "Announcement paired with Claude Code's Auto mode flipping on by default in the same 24 hours."
+    url: "https://x.com/claudeai/status/2086891169217122586"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 3
+
+  - title: "Anthropic Opens Claude for Teachers Free to US K-12 Educators"
+    summary:
+      - "Verified US K-12 teachers now get premium Claude features free — sign-ups before June 30, 2027 get a full year."
+      - "Onboarding maps content to academic standards in all 50 states; ships with a library of teaching skills for lesson design and math diagrams."
+      - "Detroit Public Schools Community District signed on as the pilot for an educator well-being study."
+      - "Ships into the same slot OpenAI (ChatGPT for Academic Researchers) and Google are targeting this week — classroom AI is now a three-lab race."
+    url: "https://www.anthropic.com/news/claude-for-teachers"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Prime Intellect Open-Sources Prime Agent, an RLM Harness That Hits 95.5% on ARC-AGI-3"
+    summary:
+      - "MIT-licensed coding and research agent released on August 5; still climbing GitHub Trending on August 12."
+      - "Built on two ideas: a Recursive Language Model that treats subagents as function calls inside a persistent IPython kernel, and a Continual Harness that turns skills and memories into durable state."
+      - "Paired with Claude Opus 5 it scores 95.5% on ARC-AGI-3 — a hair above the 95.4% human-expert baseline."
+      - "Local-first, BYO API key for any supported provider; no hosted service dependency."
+    url: "https://github.com/PrimeIntellect-ai/prime-agent"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
