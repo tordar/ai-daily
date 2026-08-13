@@ -1,0 +1,56 @@
+date: "2026-08-13"
+stories:
+  - title: "xAI Ships Grok 4.6, Ties GPT-5.6 Sol on the Intelligence Index at $2/$6"
+    summary:
+      - "New xAI flagship released August 12, aimed at long-running agentic and coding work."
+      - "Scores 61 on Artificial Analysis's Intelligence Index — level with GPT-5.6 Sol Max, one point behind Fable 5 Max, five points above Grok 4.5."
+      - "500K context window; pricing stays flat at $2 input / $6 output per million tokens."
+      - "Day-zero availability in Cursor, Grok Build, OpenRouter, Vercel, and Cloudflare AI Gateway; Cursor and Grok Build are giving bonus usage the first week."
+    url: "https://x.ai/news/grok-4-6"
+    source: "x.ai"
+    tag: "models"
+    significance: 4
+
+  - title: "Google Puts Gemini Intelligence in the Pixel 11 OS to Book Rides and Order Groceries"
+    summary:
+      - "Made by Google 2026 keynote on August 12 launched the Pixel 11 lineup starting at $899, all running Tensor G6 on TSMC's 2nm process."
+      - "Gemini Intelligence adds agentic multi-step task completion across 40+ third-party apps — Gemini can order groceries, book rides, manage reservations, and dial businesses on your behalf."
+      - "Same day, Google opened Gemini connectors to Granola, Otter.ai, Wix, Zocdoc, OpenTable, Ticketmaster, and seven more partners."
+      - "Reviewers frame it as the biggest repositioning of Pixel since launch — 'Google has singlehandedly raised the bar for AI on your phone.'"
+    url: "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Paper Steals Encrypted Chain-of-Thought Across Anthropic, OpenAI, and Google APIs"
+    summary:
+      - "arXiv 2608.09867, posted August 10 by MATS Research, ELLIS Tübingen, and Max Planck: encrypted reasoning blocks aren't bound to a session, user, or model."
+      - "Attack replays a strong model's reasoning trace into a weaker sibling from the same provider and asks it to transcribe — verbatim CoT falls out."
+      - "Sweep of 6,708 public agent logs pulled 62 live API keys, 33 passwords, and 704 privacy artifacts hidden inside 'encrypted' blocks developers had already published."
+      - "HN discussion active; Simon Willison flagged the same shared-key smell in May but nobody chased it to a full exploit."
+    url: "https://arxiv.org/abs/2608.09867"
+    source: "arxiv.org"
+    tag: "research"
+    significance: 4
+
+  - title: "DeepMind's SL2T Ships Sign-Language-to-Text on the Pixel 11's Camera"
+    summary:
+      - "First shipping phone feature that translates sign language: SL2T reads ASL from the front camera and dictates into Gboard, Live Transcribe, and Gemini queries."
+      - "Trained on 100,000+ hours of signing across 50 sign languages, with roughly a quarter of the data in ASL."
+      - "Ships alongside a new AI Sign Language Advisory Committee that includes the National Association of the Deaf, World Federation of the Deaf, and RIT's NTID."
+      - "Debuts on Pixel 11 today; DeepMind hasn't committed to non-Pixel Android or iOS availability."
+    url: "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/"
+    source: "deepmind.google"
+    tag: "research"
+    significance: 3
+
+  - title: "Lovable Doubles to a $13.3B Valuation With $400M Series C as ARR Triples to ~$600M"
+    summary:
+      - "Menlo Ventures and the EQT Scaleup Europe Fund co-led the round announced August 12; Tencent and Balderton joined, along with new backers from Europe, LatAm, and Asia."
+      - "ARR has climbed from ~$200M in December to a run-rate tracking toward $600M by the end of August, per CEO Anton Osika."
+      - "Enterprise customer list now includes Nvidia, Adidas, Hearst, and Zendesk — the vibe-coding wedge is landing outside prosumer."
+      - "Valuation double December's $6.6B round places Lovable ahead of Cursor's last public mark on ARR growth, if not headline valuation."
+    url: "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 3
