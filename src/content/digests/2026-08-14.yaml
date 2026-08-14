@@ -1,0 +1,67 @@
+date: "2026-08-14"
+stories:
+  - title: "OpenAI Runs GPT-5.6 Sol at 14x Speed on Cerebras With New Ultrafast Tier"
+    summary:
+      - "Preview API tier announced August 13 pushes GPT-5.6 Sol to ~750 output tokens/sec — roughly 14x Standard, 5x Claude Opus 4.8 Fast, 11x Fable 5."
+      - "Inference is served on Cerebras wafer-scale hardware, OpenAI's first production deployment outside Nvidia."
+      - "Answered all 2,500 Humanity's Last Exam questions in 11 hours; launch partners are Jane Street, Podium, Basis, and Rogo for latency-critical finance and voice workloads."
+      - "HN item 49289844 topped the front page on August 14; comment thread focused on inference diversification and pricing implications."
+    url: "https://openai.com/index/previewing-ultrafast/"
+    source: "openai.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Google Ships Gemini 3.7 Flash at Half the Launch Price of 3.6"
+    summary:
+      - "Released August 13, three weeks after 3.6 Flash; introductory pricing of $0.75/$3.75 per million input/output tokens through year-end."
+      - "1M-token context, 64K output, native text/image/audio/video; live in Gemini Spark across 160+ countries at launch."
+      - "DeepSWE benchmark jumps 49.0% → 65.3% and FrontierCode 1.1 Main climbs 34.4% → 43.6%; Google claims wins over Anthropic and OpenAI equivalents on nine benchmarks."
+      - "Ships while Gemini 3.5 Pro remains delayed and Koray Kavukcuoglu transitions in as DeepMind CEO."
+    url: "https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/"
+    source: "9to5google.com"
+    tag: "models"
+    significance: 4
+
+  - title: "DeepSeek Open-Sources Agent Harness as MIT-Licensed Claude Code Rival"
+    summary:
+      - "Developer preview released August 13 alongside DeepSeek-V4 Pro on the API; every component — model adapter, tool registry, agent loop, sandboxes, web UI — is a swappable Cordis plugin."
+      - "Repo hit ~27.5K stars on launch day and pushed past 33K within hours, with ~2K forks."
+      - "Ships with adapters for Anthropic, OpenAI, Gemini, xAI, and local Ollama models; positioned as the first fully open-source alternative to Claude Code, Cursor Agent, and Codex."
+      - "Coverage from VentureBeat, The New Stack, and Pandaily framed it as DeepSeek's play for the agent-tooling layer, not just the model layer."
+    url: "https://github.com/deepseek-ai/deepseek-harness"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Claude Code Flips Auto Mode to Default After Humans Miss 14% of Dangerous Commands"
+    summary:
+      - "Rollout completed August 14 across Pro, Max, Team, and Enterprise; Claude now runs tools without step-by-step approval unless an action is irreversible, destructive, or reaches outside the environment."
+      - "Anthropic's 1,053-tester study found reviewers waved through 13.6% of dangerous commands versus 89% blocked by the auto-mode policy engine."
+      - "Repo-wide edits, file writes, and reversible shell commands proceed silently; git push, rm -rf, network calls to new hosts, and secret access still prompt."
+      - "r/ClaudeAI split on the change — some users welcomed fewer confirmations, others turned auto mode off within minutes of the update landing."
+    url: "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/"
+    source: "techcrunch.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Alibaba Open-Weights Qwen3.8 2.4T MoE, First Max-Class Chinese Model Since Kimi K3"
+    summary:
+      - "Qwen3.8-2.4T-A95B dropped on Hugging Face and ModelScope August 13: 2.4T-parameter sparse MoE with 95B active, 262K native context, 1M extended."
+      - "FP8 quant ships day-one; benchmark results trade blows with Opus 4.8 and GPT-5.6 Sol and sit roughly 10–20 points behind Fable 5."
+      - "Companion 27B dense release slipped — no repo, model card, or license yet, and r/LocalLLaMA is loud about it."
+      - "First Chinese lab to open-weight a Max-tier model since Moonshot's Kimi K3, and the largest open-weight MoE ever released."
+    url: "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+    source: "huggingface.co"
+    tag: "open-source"
+    significance: 4
+
+  - title: "LiteLLM Supply-Chain Breach Dump Exposes CI Secrets From 2,488 Corporate Domains"
+    summary:
+      - "Hudson Rock published the full analysis August 13 of March's LiteLLM/Trivy compromise: 118,829 CI runner dumps totalling 153GB."
+      - "Affected domains include AWS, Samsung, Cisco, Salesforce, Boeing, Deloitte, and S&P Global; SANDCLOCK stealer exfiltrated AI-provider API keys, cloud credentials, and Kubernetes tokens."
+      - "Report ties this to the encrypted-CoT paper from earlier in the week as evidence that AI-tooling supply chains are now the softest link in dev infra."
+      - "Largest developer-security story of the year so far; framed as an inevitability of pip-installing agent tooling into privileged CI runners."
+    url: "https://www.helpnetsecurity.com/2026/08/13/litellm-breach-stolen-credentials-leak/"
+    source: "helpnetsecurity.com"
+    tag: "industry"
+    significance: 3

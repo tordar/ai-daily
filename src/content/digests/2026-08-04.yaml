@@ -9,7 +9,7 @@ stories:
     url: "https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/"
     source: "marktechpost.com"
     tag: "models"
-    significance: 5
+    significance: 1
 
   - title: "Researchers Use Claude to Silently Rewrite Crime-Lab DNA Files, Exposing 30 Years of Cases"
     summary:
