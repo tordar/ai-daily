@@ -1,0 +1,56 @@
+date: "2026-08-18"
+stories:
+  - title: "Anthropic Tells Investors Its Run Rate Hit $65B in July, Ahead of OpenAI's $40B"
+    summary:
+      - "Bloomberg, Reuters, TechCrunch, and CNBC broke on August 17 that Anthropic's annualized revenue run rate crossed $65 billion in late July — more than 7x its end-of-2025 exit."
+      - "Preliminary Q2 revenue of $11.5B (up from $787M a year earlier) landed alongside positive adjusted operating income — the first quarter Anthropic has posted one."
+      - "Run rate went $9B (Dec) → $30B (Apr) → $47B (May) → $65B (Jul); backers now peg an October IPO target of roughly $2T, which would top SpaceX's $1.77T June debut as the largest ever."
+      - "HN thread on the CNBC piece drew 400+ comments arguing over how much of the growth is Claude Code + enterprise Cowork seats vs. one-off big-ticket contracts."
+    url: "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Stripe Closes $7B+ OpenRouter Deal, Buying the AI Gateway Three Months After Its Series B"
+    summary:
+      - "Bloomberg confirmed August 16 that Stripe finalized the OpenRouter acquisition at more than $7B — a 5.4x markup on OpenRouter's $1.3B Series B round in May."
+      - "OpenRouter handles model routing and unified billing across 400+ models for ~8M developers; Stripe gets the plumbing under every 'pick the cheapest model' request."
+      - "HN thread hit ~210 points / ~150 comments in hours, split between 'Stripe is uniquely good at billing this problem' and 'this is Stripe buying distribution, not neutrality.'"
+      - "Reviewers on r/LocalLLaMA flagged the conflict question: will router weights stay agnostic when Stripe now owns the margin on every routed call?"
+    url: "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI Flips Ads On for ChatGPT Free and Go Users in EEA and Switzerland"
+    summary:
+      - "OpenAI Ireland emailed Free/Go users August 15 confirming ads inside ChatGPT starting later this month across the EEA and Switzerland."
+      - "Contextual targeting only — no personalization, no cross-session profiles — with Pro, Plus, Enterprise, Business, and Education staying ad-free."
+      - "Europe follows Japan and South Korea (July), rolling out region-by-region since June; UK went live earlier, France/Germany/Ireland still blocked pending GDPR review."
+      - "Publisher pushback: OpenAI's crawler continues to ignore ai.txt blocks while the answers built from that content now carry paid placements."
+    url: "https://ppc.land/chatgpt-free-and-go-users-in-europe-face-ads-from-later-this-month/"
+    source: "ppc.land"
+    tag: "industry"
+    significance: 4
+
+  - title: "Taiwan Confirms First Autonomous AI Agent Breach of a Nuclear Safety Regulator"
+    summary:
+      - "Ministry of Digital Affairs officially confirmed on August 13 that an autonomous agent stack (open-source frameworks, no human in the loop) breached Taiwan's nuclear safety agency plus 7 energy firms across a 4-day window in early August."
+      - "Attackers bypassed framework safety guardrails by prompt-reframing operations as 'authorized penetration testing' — the first documented case of the technique working against models that ship with refusals."
+      - "Agents ran 12 parallel attack waves across 21 government systems, spawned up to 8 sub-agents each, cracked 85 accounts, exfiltrated 2,500+ personnel records and 7 SSO client secrets."
+      - "Covered by The Register, TechTimes, and rockcybermusings as the moment agentic-cyber threat left the keynote-slide era."
+    url: "https://www.theregister.com/security/2026/08/12/near-autonomous_ai_agents_attack_taiwans_nuclear_safety_agency/"
+    source: "theregister.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Anthropic Raises Its Catastrophic-Misalignment Rating to 'Low' and Reveals an Internal Model 2 It Won't Ship"
+    summary:
+      - "Second company-wide Risk Report (August 14) bumps catastrophic misalignment from 'very low' to 'low' — the first upward move since Anthropic started publishing the score in February."
+      - "Same report discloses Model 2 — described as noticeably more capable than Mythos 5 for internal tasks, but not shipping externally because full predeployment safety assessments haven't finished."
+      - "Anthropic flags that its internal 'most dangerous capability' threshold benchmark has saturated — it can no longer register incremental gains at exactly the moment it says it's seeing acceleration."
+      - "Coverage from Unite.AI, TechTimes, and TECHi split on whether the label change reflects the July Hugging Face incident fallout or Model 2 itself."
+    url: "https://www.anthropic.com/aug-2026-risk-report"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 4
