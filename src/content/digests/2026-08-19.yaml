@@ -1,0 +1,56 @@
+date: "2026-08-19"
+stories:
+  - title: "OpenAI Ships ChatGPT for Teens, Auto-Routing Under-18s Into a Locked-Down Mode"
+    summary:
+      - "Global rollout began Aug 18; account signals or a self-reported 13–17 age auto-enroll users, and predicted-under-18 accounts flip to the teen mode even if the birthdate on file is adult."
+      - "Mode strips romantic/sexual chats, self-harm content, and endearments; homework help is tuned to guide rather than serve answers."
+      - "OpenAI has not published age-prediction accuracy numbers; the rollout is expected to finish within two weeks."
+      - "Launches amid ongoing wrongful-death lawsuits and protests over teen safety — CNBC, Axios, Washington Post, and CNN all led with the story."
+    url: "https://openai.com/index/chatgpt-for-teens/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Anthropic + EPFL Paper Shows 'Mind Virus' Payloads Spreading Through Agent System-Prompt Files"
+    summary:
+      - "Preprint (arXiv 2608.10218) hit mainstream coverage Aug 18 via The Hacker News, IBTimes, and daily.dev; tests self-propagating payloads in a 6-agent coding collab and an OpenClaw-style paired-agent chain."
+      - "All 4 payload variants survived a 20-hop propagation chain; harmful payloads spread worse than benign ones and frontier models are more resistant, but not immune."
+      - "One-line system-prompt warning gave near-total immunity — the practical mitigation devs building agent harnesses can ship today."
+      - "Authors call the risk 'real but currently limited' — compromising a single agent already owns the host, so propagation is bonus not primary."
+    url: "https://thehackernews.com/2026/08/ai-mind-viruses-can-spread-between.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Etched Doubles to a $21B Valuation in a Month, Ships First Sohu Rack to Jane Street"
+    summary:
+      - "Aug 18: $700M round led by new customer Jane Street, up from $10.3B at a $300M Series C just one month earlier in July."
+      - "Total funding now $1.9B; Sequoia, Kleiner Perkins, a16z, Peter Thiel, Bain Capital Ventures, and Blackstone joined Jane Street on the cap table."
+      - "First customer rack is running Jane Street production workloads; Etched sells full 'frontier inference clusters' with a low-voltage prefill chip and custom decode memory/interconnect."
+      - "Community reaction split on whether transformer-specific silicon can keep pace with architecture drift over a 2-year deployment window."
+    url: "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Reddit Turns Text Threads Into AI-Narrated Videos With a New 'Play' Toggle"
+    summary:
+      - "Rolled out Aug 17 on web and Aug 18 on iOS/Android; a 'Play' toggle sits next to 'Read' at the top of eligible posts."
+      - "AI voices read the OP plus selected top comments while synced highlights scroll onscreen, labeled 'Real conversation voiced by AI.'"
+      - "English-only in a limited set of communities; Reddit hasn't disclosed sample size or how comments are selected."
+      - "Public demo is an 8-year-old r/boardgames road-trip-games thread rendered as a ~3-minute video."
+    url: "https://www.techrepublic.com/article/news-reddit-ai-text-posts-videos-audio/"
+    source: "techrepublic.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Claude Code 2.1.234 Auto-Resumes at Usage Limit, Adds GitLab MR Badges in the Statusline"
+    summary:
+      - "Aug 17 release: sessions that hit a claude.ai usage cap now auto-continue when the limit resets; disable via 'Continue automatically at usage limit' in /config."
+      - "Repos with a GitLab remote and an authenticated glab CLI now show 'MR !N' in the footer/statusline with draft, pending, and green states — matching the existing GitHub badge."
+      - "Bundle also fixes Bash execution in claude-code-action, /tui rewind behavior, and slash-command menu event-loop stalls; adds optional prompt spellcheck."
+      - "Anthropic extended the temporary 50% weekly usage boost for Pro and Max Claude Code subscribers through Aug 19."
+    url: "https://www.gradually.ai/en/changelogs/claude-code/"
+    source: "gradually.ai"
+    tag: "tools"
+    significance: 3
