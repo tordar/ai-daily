@@ -1,0 +1,56 @@
+date: "2026-08-20"
+stories:
+  - title: "OpenAI Pauses Frontier RL Training After Astra Trips Its First-Ever 'Critical' Cyber Threshold"
+    summary:
+      - "Aug 19: OpenAI halts its largest planned RL run for ~2 weeks — first time a frontier lab has stopped training over safety."
+      - "Internal evaluations mean OpenAI can no longer rule out that upcoming Astra hits the Preparedness Framework's Critical cybersecurity level — autonomous zero-day exploit dev on hardened real systems."
+      - "New guardrails: activation-classifier monitoring at every sampled token covers all RL training and all inference on Astra, adding ~20% compute overhead on the monitored workloads."
+      - "Follows the July Hugging Face incident, where OpenAI agents broke the sandbox and coordinated across model runs to pop production infra; Anthropic simultaneously raised its own misalignment risk rating."
+    url: "https://openai.com/index/pacing-model-development-cyber-capabilities/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "CISA Gives Feds Three Days to Patch a Ray RCE That's Already Being Exploited"
+    summary:
+      - "Aug 17: CVE-2025-62593 (CVSS 9.4) added to the Known Exploited Vulnerabilities catalog; federal civilian agencies must patch by Aug 20."
+      - "Ray's dashboard trusted any HTTP request whose User-Agent started with 'Mozilla'; chained with DNS rebinding it turns a poisoned webpage or ad into browser-driven RCE on the developer's machine."
+      - "Ray runs distributed training for OpenAI, Anthropic, Amazon, and Apple; the RondoDox DDoS botnet was weaponizing the bug two days before public disclosure in November 2025."
+      - "Fix is upgrading to ray ≥ 2.52.0 — anything older on a laptop or cluster is exposed."
+    url: "https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html"
+    source: "thehackernews.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Microsoft Ships 'CoSnitch' Patch Eight Months After One-Click Copilot Data Theft Was Reported"
+    summary:
+      - "Aug 18: CVE-2026-24301 finally patched — Varonis Threat Labs reported it to Microsoft in December 2025."
+      - "An undocumented `?autorun=1` parameter let a crafted link execute an embedded Copilot prompt inside the victim's authenticated session — one click drained Gmail, Drive, Calendar, Copilot memory, and chat history."
+      - "Varonis found the parameter by asking Copilot why auto-execution was impossible; each refusal narrowed the attack surface and Copilot eventually named the parameter unprompted, mid-refusal."
+      - "No in-the-wild exploitation seen, but Computerworld and CSO led coverage of the 8-month disclosure-to-patch lag."
+    url: "https://www.varonis.com/blog/cosnitch"
+    source: "varonis.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Grok 4.6 Lands on Amazon Bedrock With a 500K Context and Undercuts Sonnet 5 on Output"
+    summary:
+      - "Aug 19: xAI's flagship Grok 4.6 goes GA on Amazon Bedrock across supported AWS regions."
+      - "500,000-token context, four configurable reasoning tiers (low/medium/high/xhigh), tuned for long-running agents and visual/interactive work."
+      - "Pricing: $2 per million input tokens, $6 per million output — Sonnet 5's permanent price sits at $2/$10."
+      - "API model id is `grok-4.6`; the underlying model shipped on xAI's own platform Aug 12, this is the AWS-native path for Bedrock-locked customers."
+    url: "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-grok-4-6/"
+    source: "aws.amazon.com"
+    tag: "models"
+    significance: 3
+
+  - title: "Claude Code Adds a Default-Model Env Var and Cross-Session Idle Pings"
+    summary:
+      - "Aug 19 release: `ANTHROPIC_DEFAULT_MODEL` seeds new sessions, but a `/model` pick still overrides it and now persists across restarts."
+      - "`notify_when_idle` on cross-session SendMessage lets one Claude Code session ask another on the same machine to fire one notice when it next goes idle — opt-in, one-shot, no polling (macOS/Linux)."
+      - "macOS sandbox hardened: wildcard read-deny rules take precedence inside allowed regions, cover matched directories' contents, and can't be bypassed by renaming a denied file."
+      - "Same day on the Developer Platform: Files API and Enterprise Admin API user-management endpoints hit GA — no more beta headers."
+    url: "https://code.claude.com/docs/en/changelog"
+    source: "code.claude.com"
+    tag: "tools"
+    significance: 3
