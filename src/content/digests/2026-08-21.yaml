@@ -1,0 +1,56 @@
+date: "2026-08-21"
+stories:
+  - title: "OpenAI Ships Zero-Retention 'Private Safety Processing' — and Anthropic Blinks Same Day"
+    summary:
+      - "Aug 19: OpenAI previews Private Safety Processing for frontier APIs — detects cross-session misuse via narrow category signals with no prompts or responses attached; customer data can stay on customer infra or use customer-controlled keys."
+      - "Rollout starts September, whitepaper to publish alongside; framed as a direct answer to Anthropic's June rule that mandatory 30-day retention overrides existing ZDR agreements on Fable 5 / Mythos 5 traffic."
+      - "Aug 20 (Bloomberg): Anthropic will let enterprise customers keep the 30-day retention window on their own cloud infrastructure instead of Anthropic's — the walkback was worked out with 100+ customers including Salesforce."
+      - "Followed the June backlash where Microsoft restricted internal Fable 5 use and GitHub Copilot disabled Fable 5 by default pending admin opt-in."
+    url: "https://openai.com/index/offering-zero-data-retention-for-frontier-models/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Anthropic Adds Citigroup to IPO Bank Roster, Filing Could Land Before Month-End"
+    summary:
+      - "Aug 20 (Bloomberg): Citi joins Morgan Stanley, Goldman Sachs, and JPMorgan in the top tier of underwriters on the upcoming listing; more banks are expected."
+      - "Anthropic confidentially filed with the SEC on June 1 targeting an October Nasdaq debut; a public S-1 could land as soon as late August, per people familiar."
+      - "Backers now peg the deal to match or top SpaceX's $1.77T June IPO — the current largest ever."
+      - "Sequel to last week's disclosures: $65B run rate in July, first-ever quarter of adjusted operating profit, and $11.5B preliminary Q2 revenue."
+    url: "https://www.bloomberg.com/news/articles/2026-08-20/anthropic-expects-to-match-spacex-s-record-ipo-size-or-top-it"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Google Workspace's Aug 20 Wave: Gemini DLP, Agent DLP, and 'Ask Gemini' in Chat"
+    summary:
+      - "Rapid Release domains start receiving Gemini DLP today — restricts Drive access by content conditions and labels; Scheduled Release begins Sep 1."
+      - "Agent DLP layers runtime rules on Workspace Studio flows: block or force end-user review based on sourced data, utilized data, and output visibility."
+      - "Ask Gemini in Chat lands as a unified command line — Ctrl+G / Cmd+G — that spans Gmail, Drive, and Calendar; promotional higher limits run through Oct 1."
+      - "Same wave adds Admin Assist to the Google Admin Console for troubleshooting and workflow drafts."
+    url: "https://workspaceupdates.googleblog.com/2026/08/ask-gemini-in-chat.html"
+    source: "workspaceupdates.googleblog.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Show HN #1: A 125M-Param Piano Autocompleter That Runs On-Device at 108 Notes/Sec"
+    summary:
+      - "Simon Edwardsson's transformer generates piano continuations from a few played notes on iPhone 15 — 108 notes/second, INT8, Core ML."
+      - "Custom NOTE(pitch, delta_onset, duration, velocity) tokenization keeps generation autoregressive but musically coherent."
+      - "Trained on hundreds of thousands of aggressively cleaned MIDI files, then DPO-tuned using Gemini 3.5 Flash as a pairwise musical judge."
+      - "Ships as the free RollTab iOS app with a MIDI keyboard; topped the HN front page Aug 20."
+    url: "https://simedw.com/2026/08/20/midi-autocomplete/"
+    source: "simedw.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Coding-Agent CLIs All Shipped on Aug 20: Claude Code 2.1.238, Codex CLI 0.149.0, Antigravity 1.1.17"
+    summary:
+      - "Claude Code v2.1.238 adds user-configurable keyboard shortcuts and smarter plugin installation (skips already-installed dependencies)."
+      - "OpenAI Codex CLI rust-v0.149.0 adds an interactive task-management dashboard and new directory-scoping commands."
+      - "Google's Antigravity CLI v1.1.17 improves agent execution reliability and fixes missing slash commands plus Vim-mode key conflicts."
+      - "Star velocity snapshot: OpenCode 172k, Claude Code 131k, Gemini CLI 105k, Codex 90k, Cline 63k — DeepSeek Harness passed 135k in four days."
+    url: "https://code.claude.com/docs/en/changelog"
+    source: "code.claude.com"
+    tag: "tools"
+    significance: 3
