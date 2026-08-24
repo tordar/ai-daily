@@ -1,0 +1,56 @@
+date: "2026-08-24"
+stories:
+  - title: "'Stealth' Model Ox Alpha Takes Over OpenRouter — Free 1M Context, Anonymous Provider, GLM Fingerprints"
+    summary:
+      - "Ox Alpha appeared Aug 20 on OpenRouter under provider name 'Stealth' — text/image/video in, 1,048,576-token context, 131K max output, free through ~Aug 27."
+      - "First-week traffic dominated by agent harnesses: Claude Code pushed ~9.32B tokens, Nous Research's Hermes Agent ~8.98B — coding agents, not chat UIs."
+      - "Community fingerprinting (95/95 tokenizer probe, Z.ai's exact error strings, GLM-5V-Turbo video-token accounting) points at Zhipu's GLM-5.3 Flash; Z.ai has not confirmed."
+      - "TechCrunch, Bloomberg, and SiliconANGLE all led with the story Aug 23; Patrick Collison (Stripe, acquiring OpenRouter) called it 'very impressive.'"
+    url: "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/"
+    source: "techcrunch.com"
+    tag: "models"
+    significance: 5
+
+  - title: "OpenAI Cuts GPT-5.6 Sol API Prices 20–33% Through November"
+    summary:
+      - "Aug 21: Sol drops to $4 per million input / $20 per million output, from $5 / $30 — cached input goes $0.50 → $0.40."
+      - "Discount holds through Nov 21 on the pay-as-you-go API, Codex credits, and eligible ChatGPT Work plans; Pro/Plus/Business stay at prior rates."
+      - "First cut on Sol since launch — undercuts Claude Opus 5 on output ($20 vs $75) and lands two days after the ZDR reveal."
+      - "Framed by OpenAI as scaling with 'ambition'; framed by everyone else as the China price war reaching the US frontier tier."
+    url: "https://openai.com/index/gpt-5-6/"
+    source: "openai.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Grok's 'Cryptographic Context Injection' Exfiltrates Chat History in Zero Clicks — Reported to xAI in June, Still Unpatched"
+    summary:
+      - "Adversa AI (researcher Rony Utevsky) disclosed Aug 20: a web page ships a PBKDF2 + AES-256-GCM ciphertext plus the key; Grok decrypts it in its own Python runtime and treats the plaintext as instructions."
+      - "Payload builds a 'decryption key' template that inlines the victim's name, approximate location, subscription tier, and prompts, then leaks it via an attacker-controlled URL fetch."
+      - "Classifiers never see the plaintext — same trick also produced Gemini output normally blocked by safety filters."
+      - "Reported to xAI's HackerOne June 3; follow-ups Aug 4 and Aug 10 got no response. 40% success rate across 20 attempts; The Register, The Hacker News, and GBHackers led coverage."
+    url: "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 4
+
+  - title: "ChatGPT for Mac Reads, Drafts, and Sends Apple iMessages — Free Tier Included"
+    summary:
+      - "Aug 20 update to the macOS desktop app adds a Messages plugin covering iMessage, SMS, and RCS threads."
+      - "Available across all tiers including free, and inside ChatGPT Work and Codex modes; Apple Silicon only (no Intel Macs)."
+      - "Requires Full Disk Access, Contacts, and Automation permissions; every outbound message needs explicit user approval."
+      - "Engadget, 9to5Mac, and MacRumors framed it as the deepest OpenAI-into-Apple integration to date."
+    url: "https://9to5mac.com/2026/08/20/chatgpt-update-adds-apple-messages-integration-on-mac/"
+    source: "9to5mac.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Claude Code v2.1.239 Bakes In US-Only-Inference Pricing, Adds Alpine and a Python 1.x Upgrade Helper"
+    summary:
+      - "Aug 21 release: cost estimates now surface the 1.1× US-only-inference premium for data-residency workspaces."
+      - "Fullscreen renderer extended to Bedrock, Vertex, and Foundry setups previously excluded; Alpine/musl builds ship for the first time."
+      - "New Python 1.x upgrade helper, better `/resume` and `/goal` behavior, smoother proxy handling and cross-session messaging."
+      - "Follow-up v2.1.240 (Aug 22) and v2.1.241 (Aug 23) are reliability-only patches."
+    url: "https://code.claude.com/docs/en/changelog"
+    source: "code.claude.com"
+    tag: "tools"
+    significance: 3
