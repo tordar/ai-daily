@@ -1,0 +1,56 @@
+date: "2026-08-25"
+stories:
+  - title: "Nvidia Pays $6B to License Poolside's Model Factory and Poaches 109 Engineers for Nemotron"
+    summary:
+      - "Aug 20 Newcomer scoop, confirmed by Bloomberg, The Information, and Forbes on Aug 24: $6B non-exclusive licence for Poolside's Model Factory plus a $1B primary at $12B pre-money."
+      - "109 Poolside engineers move to Nvidia to build Nemotron; founders and the remaining company stay independent and keep licensing the same tech."
+      - "Explicit target is a US open-weight rival to DeepSeek V4, Kimi K3, and Qwen3.8 — a frontier tier no Western lab has entered in ~11 months."
+      - "Nvidia has now used the same licence-plus-hire playbook for ~$27B of deals this month (Poolside, Groq, Enfabrica), pitched as an antitrust workaround to outright M&A."
+    url: "https://techstartups.com/2026/08/24/nvidia-to-invest-6-billion-to-build-u-s-open-weight-ai-model-alternative-to-chinas-deepseek-kimi-k3-and-qwen/"
+    source: "techstartups.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Alibaba Ships Wan 3.0 With 30-Second Video and Doc-to-Video — And Keeps the Weights Closed"
+    summary:
+      - "Full launch Aug 24 after the Aug 6 public beta, one day after Alibaba's $10.2B Hong Kong share placement earmarked for AI."
+      - "30-second single-shot clips at up to 1080p; accepts DOC, XLS, PPT, PDF, MD, and full web pages as creative references — a slide deck becomes video."
+      - "API on Model Studio and Qwen Cloud at $0.05 / $0.10 / $0.20 per second for 480p / 720p / 1080p, with a 30% discount through Sept 23."
+      - "No open weights, third Wan release in a row to skip a promised open drop; r/StableDiffusion reaction was 'wait until the checkpoint actually appears.'"
+    url: "https://technode.com/2026/08/24/alibaba-launches-wan3-0-video-model-with-30-second-generation-and-document-input/"
+    source: "technode.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Anthropic's Claude Tag Reads Whole Slack Threads and Decides When to Jump In Uninvited"
+    summary:
+      - "Aug 24 update: Claude Tag now evaluates full-conversation context instead of message-by-message, which Anthropic says makes it ~30% better at deciding when to speak."
+      - "Ships under enterprise-product lead Scott White's 'multiplayer AI' thesis — one shared @claude in Slack that any teammate can steer, and that can start work unprompted."
+      - "Follows the June 23 Claude Tag launch and this month's rollout of computer use, browser use, Skills API, and Files API on the Claude Platform."
+      - "Claude Academy also opened this month with courses, badges, and personalized paths for enterprise deploys."
+    url: "https://venturebeat.com/orchestration/anthropics-new-claude-tag-update-lets-its-slack-agent-read-the-full-conversation-and-jump-in-unprompted"
+    source: "venturebeat.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "XPeng's Robot Arm Raises $900M at a $6.3B Valuation, Sets IRON Humanoid for Q4 Mass Production"
+    summary:
+      - "Aug 24: $600M external, $200M from XPeng itself, $100M from executives; IDG Capital led, Alibaba and Tencent joined."
+      - "Largest single private raise in China's embodied-AI sector to date at a $6.3B post-money valuation."
+      - "IRON humanoid moves from July's Guangzhou trial runs to full mass production in Q4 2026, offline retail Q1 2027."
+      - "Announcement lands the same week as Nvidia's Poolside deal — 'physical AI' is now competing with LLM infra for the same investor dollars."
+    url: "https://electrek.co/2026/08/24/xpeng-robotics-900m-iron-humanoid-robot-valuation/"
+    source: "electrek.co"
+    tag: "industry"
+    significance: 4
+
+  - title: "14 npm Packages Drop an LLM-Powered RedC2 Backdoor That --ignore-scripts Can't Block"
+    summary:
+      - "TrendAI disclosure Aug 20, still on the HN front page Aug 24: streak-metrics-math, kit-map-vim, streak-map-cache and 11 similarly named 'calendar' utilities drop RedC2 4.0's RedShell Linux beacon on import."
+      - "Payload lives in dist/index.mjs and runs from any require/import in the dependency graph — no npm lifecycle hook, so --ignore-scripts doesn't stop it."
+      - "RedC2 ships 'Red Agent,' an LLM layer that turns natural-language operator intent into framework beacon commands across Windows, macOS, and Linux."
+      - "Infrastructure overlaps with prior npm attacks TrendAI attributes to North Korean actors (Mastra, Axios); persistence via cron, shell rc, systemd-user, and desktop autostart."
+    url: "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html"
+    source: "thehackernews.com"
+    tag: "research"
+    significance: 3
