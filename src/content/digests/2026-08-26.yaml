@@ -1,0 +1,67 @@
+date: "2026-08-26"
+stories:
+  - title: "OpenAI's Jalapeño Chip Beats Nvidia Blackwell in First Published Inference Benchmarks"
+    summary:
+      - "Debuted at Hot Chips 2026 (Stanford, Aug 25); SemiAnalysis InferenceX numbers went up the same day and hit HN #2 on Aug 26."
+      - "700W Broadcom co-designed ASIC vs Nvidia's 1,200–1,400W Blackwell: 1.5–1.9× throughput per kilowatt and 1.7–3.6× lower latency."
+      - "2.1–4.1× faster on chatty ChatGPT-style workloads; small-volume deploys land end of 2026, wider rollout in 2027."
+      - "Companion OpenAI post 'The Full Stack Behind Abundant Intelligence' frames the chip as the missing layer under models, dev platforms, and consumer products."
+    url: "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia"
+    source: "semianalysis.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Anthropic Rebuilds Claude Memory Around Topics, Adds Sensitive-Content Guardrails and Cross-Cowork Persistence"
+    summary:
+      - "Aug 25 update: memory is now organized topic-by-topic, and users can view or edit individual entries in one panel."
+      - "New sensitive-topic detector applies stricter memory rules to health, finance, and personal-crisis conversations."
+      - "Memory now carries across Cowork sessions so a shared project retains context between teammates."
+      - "On by default for Free / Pro / Max; off by default for Team and Enterprise where admins must opt in."
+    url: "https://siliconangle.com/2026/08/25/anthropic-updates-claudes-memory-to-enhance-customization-and-protect-sensitive-topics/"
+    source: "siliconangle.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "MS Paint's 'Local' AI Image Tool Sends Every Prompt to Microsoft and Watermarks Every Output"
+    summary:
+      - "Xusheng Li reverse-engineered the Aug 25 build: Copilot+ PCs upload prompts to a moderation endpoint before running the on-device model."
+      - "The server returns a per-image GUID that Paint embeds as an invisible watermark in the PNG — same behavior in the Photos app."
+      - "'Local generation' still round-trips to Redmond; the GUID lets Microsoft tie any leaked image back to the account and prompt."
+      - "HN discussion thread reached the front page Aug 25 with 600+ comments debating what 'on-device AI' means when moderation is remote."
+    url: "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/"
+    source: "xusheng.dev"
+    tag: "research"
+    significance: 3
+
+  - title: "Show HN: Swiftlet Runs an 80B Qwen in 4.3 GB on a Mac and a 35B on an iPhone"
+    summary:
+      - "Sub-2-bit quantization plus Metal kernels get an 80B Qwen down to 4.3 GB peak RAM at 4.5–5 tokens/sec on an M5."
+      - "iPhone 17 runs a 35B checkpoint in ~2.5 GB RAM at roughly 1 token/sec — the biggest model shown running on Apple silicon phones to date."
+      - "MIT-licensed; benchmarks and quantization code published alongside the Show HN post."
+      - "Top of r/LocalLLaMA Aug 26; the release lands the same week Ox Alpha's stealth-model hype has developers hunting for open weights that fit locally."
+    url: "https://news.ycombinator.com/item?id=49158333"
+    source: "news.ycombinator.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "ByteDance's OpenViking Turns Agent Memory Into a Virtual Filesystem — 4,000 Stars in a Week"
+    summary:
+      - "Volcano Engine team open-sourced OpenViking Aug 20; +4,211 stars in the past week put it near the top of GitHub trending for AI/ML."
+      - "Unifies memory, RAG, and skills behind a single viking:// URI scheme with L0/L1/L2 hot/warm/cold storage tiers."
+      - "Self-evolves: watches agent tool calls and rewrites its own indexes based on what recent contexts actually retrieved."
+      - "Ships with Claude Code, Codex CLI, and Antigravity adapters out of the box."
+    url: "https://github.com/volcengine/OpenViking"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Speculative Programmatic Tool Calling Speeds Up Agent Harnesses 1.0–1.2× With No Retraining"
+    summary:
+      - "Alex L. Zhang published sPTC and the `alexzhang13/spec-ptc` repo Aug 24; the post trended on AI Twitter through Aug 26."
+      - "Parses partial REPL code as tokens stream, then pre-launches the speculated tool calls as futures before the model finishes writing them."
+      - "Reports 1.0–1.2× wall-clock speedup on agent harnesses running Claude Opus, GPT-5.6 Sol, and Gemini 3.5 without any model or fine-tune changes."
+      - "Framed as a drop-in wrapper around any tool-calling loop — most of the gain comes from long shell and HTTP calls that would otherwise block token generation."
+    url: "https://alexzhang13.github.io/blog/2026/spec-ptc/"
+    source: "alexzhang13.github.io"
+    tag: "research"
+    significance: 3
