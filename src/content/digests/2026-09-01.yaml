@@ -1,0 +1,57 @@
+date: "2026-09-01"
+stories:
+  - title: "Aurora Ransomware Ran Cursor Agent and Claude Sonnet to Hit 20+ Orgs"
+    summary:
+      - "Sep 1 CloudSEK + Gambit Security disclosures: Russian-speaking Aur0ra affiliates used SpaceX's Cursor Agent, running Claude Sonnet in thinking mode, to plan and drive post-compromise activity."
+      - "20+ victims across 9 countries between April and July 2026; 28 recovered chat sessions cover 10 orgs from Apr 8–May 21."
+      - "Operators fed the agent SOCKS tunnels and stolen VPN creds, then let it handle lateral movement over SMB/LDAP/WinRM/RDP, log-wiping, Defender kills, and Zig-compiled ESXi locker deploy."
+      - "Guardrails bypassed by telling Cursor the engagement was a red-team 'simulation'; prompts explicitly excluded CIS ranges and CIS-country domains."
+      - "Lands one day after yesterday's OpenAI-cuts-off-Cursor story and gives xAI a headache heading into Grok 4.7 — Cursor Agent is the first mainstream coding tool to show up in a ransomware IR report."
+    url: "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html"
+    source: "thehackernews.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "DeepSeek Nears $7.4B Round at $74B Pre-Money, Targets 2027 IPO"
+    summary:
+      - "Aug 28 CNBC/Bloomberg reporting: DeepSeek is finalizing a ~50 B RMB / $7.4B raise at a $74B pre-money valuation — roughly a 10× step-up on its last mark."
+      - "Anchor investors: High-Flyer (Liang Wenfeng's quant fund) plus returning names Monolith Management, Shixiang, Tencent, JD.com, NetEase, and battery giant CATL."
+      - "Proceeds earmarked for model research and additional compute ahead of a Shanghai Star Market IPO planned for 2027."
+      - "Puts DeepSeek in the top three Chinese AI labs by valuation next to Moonshot and Zhipu, and above Alibaba's Qwen unit on paper — funding round #2 after its debut $7B round in June."
+    url: "https://www.cnbc.com/2026/08/28/deepseek-founder-liang-wenfeng-high-flyer-china-tech-ipos-funding.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Sony Music and Warner Chappell Sue Anthropic Over Claude Training on Lyrics"
+    summary:
+      - "Complaint filed Aug 28 in California federal court; became public Aug 31. Names Anthropic, Dario Amodei, and co-founder Ben Mann as defendants."
+      - "Plaintiffs allege 'tens of thousands' of copyrighted compositions were scraped through Library Genesis and the Pirate Library Mirror — 'Livin' On a Prayer,' 'Hallelujah,' 'Great Balls of Fire' among them."
+      - "Statutory damages of up to $150,000 per infringed work; on that math the total ask can reach into the billions."
+      - "Follows Anthropic's Sep 2025 $1.5B settlement with book authors over the same piracy archives — plaintiffs are re-running the trained-on-pirated-data playbook that already won once."
+    url: "https://variety.com/2026/music/news/sony-music-publishing-warner-chappell-anthropic-lawsuit-1236847442/"
+    source: "variety.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "OpenAI Buys Tens of Thousands of Mac Minis to Train Computer-Use Agents"
+    summary:
+      - "Aug 31 TechRepublic report: OpenAI is racking headless Mac Minis and Mac Studios as the target hardware for reinforcement learning on computer-use agents."
+      - "Agents learn by driving native macOS UIs across long trajectories; Apple's unified memory lets a single box host multi-app sessions that spill VRAM on GPU nodes."
+      - "Anthropic doing the same via rented Mac fleets on AWS EC2 Mac instances, per the same reporting."
+      - "First serious signal that computer-use RL loops are gated by desktop OS availability, not GPU count — and an accidental win for Apple silicon in a market Nvidia thought it owned."
+    url: "https://www.techrepublic.com/article/news-openai-mac-mini-mac-studio-ai-agents/"
+    source: "techrepublic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Temporal Survey: 80.8% of Engineers Now Use AI Agents Daily"
+    summary:
+      - "2026 State of Development Report surveyed 554 engineers and eng leaders across the US and UK in Apr–May 2026."
+      - "Daily-or-more AI-agent use: 80.8%, up from 47.3% a year ago — a 70.8% relative jump in twelve months."
+      - "Top pain points self-reported: agent state management, debugging non-deterministic runs, and reliability under long-horizon tasks — not raw model quality."
+      - "Samar Abbas (Temporal CEO): 'Our engineers have adopted AI agents faster than most teams have built the infrastructure to run them reliably.'"
+    url: "https://temporal.io/reports/state-of-development-2026"
+    source: "temporal.io"
+    tag: "research"
+    significance: 3
