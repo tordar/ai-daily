@@ -1,0 +1,66 @@
+date: "2026-09-02"
+stories:
+  - title: "Anthropic Ships Claude Fable 5.1 and Mythos 5.1"
+    summary:
+      - "Sept 1 release: same $10/$50 base pricing as Fable 5, but cache reads slashed 75% to $0.25/M tokens — Anthropic says ~25% cheaper on typical workloads, up to 45% on heavily agentic ones."
+      - "Terminal-Bench 4.0 = 55.8% (vs 42.0% for Fable 5, 52.3% for Opus 5); Terminal-Bench-Science 0.1 = 52.6%, more than double Fable 5's 24.7%."
+      - "1M-token context, 128k output; Mythos 5.1 is the same model under a looser safeguard profile for vetted cyber/biosec orgs, ships alongside a new Enterprise Frontier Safeguards architecture and ~60% fewer cybersecurity false positives in Claude Code."
+      - "HN launch thread hits 884 points / 836 comments; Simon Willison's animated-pelican-on-a-bike test rates the high-effort tier the strongest Claude he's used."
+    url: "https://www.anthropic.com/news/claude-fable-5-1"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Anthropic Signs $35B Six-Year Cloud Deal with Nvidia-Backed Lambda"
+    summary:
+      - "Announced Sept 1 alongside the Fable 5.1 launch; capacity comes from a 350 MW Hut 8 build in Nueces County, Texas, with Nvidia leasing the site and reselling chips through Lambda."
+      - "Fourth mega-compute contract for Anthropic in as many weeks: $45B with Nscale (West Virginia), $50B with Fluidstack, $45B with SpaceX — cumulative commitments now north of $175B."
+      - "Formalizes Nvidia's non-exclusive foothold at Anthropic after the Google-TPU commitment last October; Lambda pitches this as the largest single neocloud contract on record."
+    url: "https://www.bloomberg.com/news/articles/2026-08-31/anthropic-seals-35-billion-cloud-deal-with-nvidia-backed-lambda"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Runway Unveils Solaris, an 'Interface World Model' for Live UIs"
+    summary:
+      - "Aug 31 research release: real-time model generates app interfaces frame-by-frame on top of Gen-4.5 video, no DOM, no code — 720p at sub-500ms per-frame latency."
+      - "AlphaSignal 250-evaluator study (7,500 judgments): Solaris preferred over Claude Opus 5-coded UIs 61% of the time on instruction-following, 71% on natural behavior."
+      - "Beats GPT-4o, Gemini 2.5 Pro, and Fable 5 on SSIM and DINOv3 similarity for interface reconstruction; no accessibility APIs — Runway concedes banking/healthcare are structurally blocked."
+      - "Not a public product yet: early-access form only, no pricing or general SDK; Cursor/Replit/Vercel now facing the video-generation stack from an unexpected direction."
+    url: "https://runway.com/news/research/introducing-solaris"
+    source: "runway.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Pentagon Adds ChatGPT and Grok to GenAI.mil, Leaves Claude Out"
+    summary:
+      - "Aug 31 DoD announcement: ChatGPT Mil (OpenAI) and Grok for Government (xAI/Starshield) join Google Gemini on GenAI.mil, cleared to handle CUI at Impact Level 5."
+      - "Portal now open to all 3M DoD personnel; 1.7M unique users already onboarded since the Dec 2025 Gemini-only launch."
+      - "Anthropic conspicuously absent — sources cite a standoff over Claude's usage restrictions on mass surveillance and lethal-autonomous-weapons applications."
+      - "First cross-vendor federal genAI portal at this scale; DoD is now the biggest single enterprise deploying rival frontier chatbots side by side."
+    url: "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "OpenAI Wires Epic EHR into ChatGPT for Clinicians"
+    summary:
+      - "Sept 1 launch: authorized US clinicians can now pull appointment notes, labs, meds, and specialist docs from their org's Epic environment directly into ChatGPT for Healthcare."
+      - "Companion Healthcare Public Data plugin bundles 9 read-only sources — PubMed, ClinicalTrials.gov, DailyMed, CMS Coverage, provider records — into structured retrieval."
+      - "Launch partners: Cedars-Sinai, Memorial Sloan Kettering, HCA Healthcare, Baylor Scott & White, AdventHealth, Boston Children's, UCSF."
+      - "EHR link is org-tier only, not on individual accounts; first OpenAI product to touch identified patient data through a clinical system of record."
+    url: "https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "ChatGPT Ads Manager Opens in India and EMEA as ARR Crosses $1B"
+    summary:
+      - "OpenAI turned on self-service ad buying in India, Europe, MENA, and North Africa on Sept 1; India Ads Manager launches Sept 4 with daily budgets from ₹725."
+      - "50+ launch advertisers in India (OpenAI's second-largest market at 100M+ WAU); WPP and Omnicom named as first agency partners."
+      - "ChatGPT Ads now live in 40+ countries and clears $1B annualized run rate in under 200 days since launch."
+      - "Pressure ahead of the rumored 2027 IPO: ads have moved from experiment to a material revenue line in a single year."
+    url: "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
