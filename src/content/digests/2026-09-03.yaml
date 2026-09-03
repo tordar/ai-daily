@@ -1,0 +1,67 @@
+date: "2026-09-03"
+stories:
+  - title: "Google Ships Gemini 3.8 Flash and a Cyber-Focused Twin"
+    summary:
+      - "Sept 2 release: 1M-token context, 64K output, tuned for long-horizon coding and agentic workflows; $0.75/M input and $3.75/M output through Dec 31, both double on Jan 1."
+      - "Terminal-Bench 2.1 climbs to 90.8% (81.6% for 3.7 Flash) and HLE-Verified hits 54.9%; beats Opus 5 on three of Google's published benchmarks, though the SWE-Bench Pro gain is barely a point."
+      - "3.8 Flash Cyber ships alongside behind Google Fairwind limited access for governments and trusted partners; Chrome Security team says it produces 2.6× more correct patches than comparable commercial models."
+      - "HN launch thread splits: Google's DevRel frames higher token usage as 'verifies its work more often', developers counter that 3.8 Flash burned 120M output tokens on a benchmark suite where the median was 71M — 70% more spend at $3.75/M."
+    url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+    source: "blog.google"
+    tag: "models"
+    significance: 5
+
+  - title: "Anthropic Reverses 30-Day Retention, Ships Customer-Held Enterprise Safeguards"
+    summary:
+      - "Sept 1: Enterprise Frontier Safeguards keeps Claude activity data inside the customer's own cloud, with cross-session misuse detection running against those logs — zero data retention plus abuse detection, not one or the other."
+      - "Backs off the 30-day retention Anthropic bolted onto Fable 5 and Mythos 5 in June after enterprise pushback; interim ZDR restored on Fable 5.1 and Mythos 5.1 until EFS is generally available."
+      - "Co-developed with 100+ customers and a CISO coalition from Goldman Sachs, Morgan Stanley, Citi, BofA, and Wells Fargo; ships on Claude Code, Claude Enterprise, Amazon Bedrock, Google Agent Platform, and Microsoft Foundry."
+      - "Phased rollout through fall 2026 — the first frontier lab to pipe misuse detection through customer-controlled storage."
+    url: "https://www.anthropic.com/news/enterprise-frontier-safeguards"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Critical Langflow RCE Turned Into an OpenAI and AWS Key Harvester"
+    summary:
+      - "CVE-2026-0768 (CVSS 9.8): unauthenticated remote code execution in Langflow's custom-component code validator; every release up to 1.4.2 is exposed."
+      - "VulnCheck honeypots clocked ~50 exploit attempts on Friday, then 360+ by Wednesday; traffic mostly Russian, dropping post-exploitation scripts that dump environment variables."
+      - "Payloads specifically harvest OpenAI API keys, AWS secrets, and Langflow superuser tokens — 12th Langflow bug seen exploited in the wild in 2026."
+      - "Puts visual-agent stacks in the crosshairs just as Langflow (146k stars), Dify (136k), and Flowise (51k) sit at the top of GitHub's AI trending list."
+    url: "https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/"
+    source: "bleepingcomputer.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Adobe Wires 70+ Photoshop, Firefly, and Acrobat Tools Into Slack via MCP"
+    summary:
+      - "Sept 2 global launch: Adobe for Slack exposes 70+ tools spanning Firefly, Photoshop, Premiere, Express, Illustrator, Lightroom, Stock, and Acrobat as an MCP server that Slackbot routes to on demand."
+      - "Slackbot pulls context from channels, files, and Canvases before invoking a tool — summarize a brief in a thread, then have it emit a Firefly image or an Acrobat PDF from the summary."
+      - "Available to Slack Business+ and Enterprise+; guest access works, an Adobe account unlocks Creative Cloud assets and file editing."
+      - "First mainstream enterprise SaaS bundle to ship as an MCP app rather than a native Slack integration — a real proof point for the protocol six months after MCP crossed into the mainstream."
+    url: "https://techcrunch.com/2026/09/02/adobe-is-making-its-tools-available-in-slack/"
+    source: "techcrunch.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Mistral Confirms Free-Tier Vibe Chats Train Its Models by Default"
+    summary:
+      - "Help-center update posted Sept 2: free-tier Vibe conversations are opted in to training unless a user flips the switch in the admin panel; earlier docs implied opt-in only."
+      - "Vibe Enterprise, Mistral Studio, and API traffic remain opted out by default; Vibe and API toggles are independent — opting one out does not cover the other."
+      - "HN thread flags the default as a walk-back from the language shipped when Le Chat was rebranded to Vibe and Medium 3.5 became the default model."
+      - "Lands one day before Sept 3 DevDay-adjacent scrutiny of consumer AI defaults — same pattern as Anthropic's Aug 2025 consumer opt-in redesign."
+    url: "https://mistral.ai/news"
+    source: "mistral.ai"
+    tag: "industry"
+    significance: 3
+
+  - title: "OpenAI DevDay 2026 Adds Satellite Events in Eight Cities"
+    summary:
+      - "Main event Sept 29 at Fort Mason, San Francisco — 1,500 in-person seats, $650 invited-attendee registration, keynote livestreamed for free."
+      - "First-ever DevDay Exchanges run in parallel in Bengaluru, Tokyo, Seoul, Paris, Berlin, London, São Paulo, and Mexico City."
+      - "Applications closed July 10 with decisions issued late July; sessions cover technical deep dives, product previews, and Q&A with OpenAI teams."
+      - "Puts the DevDay keynote against Cursor, Cognition, and Vercel's own fall events — the last one produced the Realtime API, Structured Outputs, and prompt caching."
+    url: "https://openai.com/index/devday-2026/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
