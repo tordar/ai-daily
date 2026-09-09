@@ -1,0 +1,64 @@
+date: "2026-09-09"
+stories:
+  - title: "DeepMind's AlphaGenome Atlas Scores Every Single-Letter Human DNA Change"
+    summary:
+      - "Sept 8: precomputed AlphaGenome predictions for all ~9B possible single-nucleotide variants in the human genome, packaged as a ~1 PB dataset — roughly 30× the AlphaFold DB."
+      - "Introduces the AlphaGenome Variant Impact (AVI) score summarising each variant across regulatory, splicing, and expression tracks."
+      - "Live via a public website, the AlphaGenome API, and a first-party skill in Google Antigravity; free for non-commercial research."
+      - "The largest single-shot precomputed biology asset any frontier lab has shipped this year."
+    url: "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/"
+    source: "deepmind.google"
+    tag: "research"
+    significance: 5
+
+  - title: "OpenAI Claims a Navier–Stokes Proof — NYU and Anthropic Post the Euler One First"
+    summary:
+      - "OpenAI told reporters an unreleased model, running ~10,000 coordinated agents over 88 hours, produced a Lean-formalized proof of finite-time blowup for the forced 3D Navier–Stokes equations."
+      - "Run stats: ~2.7M messages, ~130B output tokens; the model described as 'significantly more capable than GPT-6 Astra.' No proof or model artefact published."
+      - "Same day, NYU's Tristan Buckmaster and Anthropic's Levent Alpöge posted a Claude-assisted, machine-checked proof of finite-time blowup for the 3D Euler equations — with the actual Lean files."
+      - "HN and math-Twitter latched onto the contrast: one claim in a press call, one verifiable artefact on arXiv."
+    url: "https://www.unite.ai/buckmaster-and-alpoge-post-ai-fluid-blowup-proofs-dispute-openai-contact/"
+    source: "unite.ai"
+    tag: "research"
+    significance: 5
+
+  - title: "Samsung Leads Mistral's Record €3B Round at €21B Valuation"
+    summary:
+      - "Series D closes at €3B on a €21B+ post-money — the largest equity round ever for a European tech company."
+      - "Led by Samsung Electronics with EQT/Scaleup Europe and PSG Equity; new investors include Advent, BlackRock, and the Luxembourg state fund."
+      - "Companion strategic partnership embeds Mistral Large into Samsung's semiconductor design and fab operations."
+      - "Positions Mistral as Europe's sovereign-AI standard-bearer just as US labs lock in multi-hundred-billion compute deals."
+    url: "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/"
+    source: "mistral.ai"
+    tag: "industry"
+    significance: 4
+
+  - title: "Salesforce Ships Its CRM as a Claude Cowork Plugin"
+    summary:
+      - "Beta plugin exposes 37 pre-built sales skills — pipeline queries, quote drafting, opportunity updates — inside Claude Cowork."
+      - "Live CRM read/write from chat; VentureBeat frames it as Salesforce conceding that reps may never open the app again."
+      - "Ships against Anthropic's broader push to make Cowork the default surface for vendor-authored skill packs."
+    url: "https://venturebeat.com/orchestration/salesforce-just-put-its-entire-crm-inside-claude-and-says-youll-never-need-its-app-again"
+    source: "venturebeat.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Cursor Opens Origin Beta With Hosted Repos and Vercel-Sandboxed Cloud Agents"
+    summary:
+      - "Origin gives Cursor a hosted git plane: synced GitHub mirrors, PR creation, and agent-driven repo actions from inside the IDE."
+      - "Cloud Agents now execute in Vercel Sandbox by default; first-party integrations for Depot and Buildkite land in the same drop."
+      - "Free while in beta; Cursor is positioning Origin as the plumbing for team-level agent workflows rather than a solo IDE feature."
+    url: "https://releasebot.io/updates/cursor"
+    source: "cursor.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "HeyGen Open-Sources 'hyperframes' — Write HTML, Render Video, Built for Agents"
+    summary:
+      - "New primitive from HeyGen: an HTML-superset DSL that a coding agent can emit to produce a rendered video, with layout, timing, and voiceover as tags."
+      - "+2.6K stars on day one, top of GitHub trending Sept 9; positioned as the video analogue of Anthropic's Skills format."
+      - "Ships with a Node runtime, a Claude Code and Codex CLI adapter, and a hosted render endpoint on HeyGen's own GPUs."
+    url: "https://github.com/heygen-com/hyperframes"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
