@@ -1,0 +1,64 @@
+date: "2026-09-10"
+stories:
+  - title: "NSA, CISA, and FBI Name Six Chinese AI Firms in 'Industrial-Scale' Distillation Advisory"
+    summary:
+      - "Sept 8 joint advisory (AA26-251A) names DeepSeek, Moonshot AI, Alibaba, MiniMax, StepFun, and Z.AI for systematically distilling Claude, GPT, Gemini, and Grok since late 2024."
+      - "Alleges billions of tokens across millions of queries were pulled via fraudulent accounts, bulk premium subs, and proxy 'transfer stations' — likely with Chinese government knowledge."
+      - "Specifics cited: DeepSeek R1/V3 trained on Claude, GPT, and Gemini output; Moonshot's Kimi K3 trained on Claude Fable, Kimi K2 on GPT-4o."
+      - "Unusual mitigation ask: US labs 'quietly degrade' suspected accounts rather than block them, to preserve the counter-distillation signal."
+    url: "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a"
+    source: "cisa.gov"
+    tag: "industry"
+    significance: 5
+
+  - title: "DeepSeek V4.1 Flash Ships and Silently Reroutes V4 Pro Traffic"
+    summary:
+      - "GA today (Sept 10, Beijing): new architecture at 284B total MoE / ~13B active, top-6 of 256 routed experts, 1M-token context, native multimodal in one endpoint."
+      - "Every call to the deepseek-v4-pro API now silently serves V4.1 Flash at Flash prices until an unspecified V4.1 Pro lands."
+      - "New Flash pricing effective today: $0.003/M cached-in, $0.15/M input, $0.60/M output off-peak; peak-hour rates double."
+      - "HN reaction focused on the silent reroute — production users unhappy that a workflow validated on V4 Pro is now served by a different model with no opt-out."
+    url: "https://byteiota.com/deepseek-v4-1-flash-is-live-v4-pro-silently-routed-out/"
+    source: "deepseek.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Meta Ships Muse to the US Public With Free, $20, and $100 Tiers"
+    summary:
+      - "Sept 8: Muse leaves closed alpha for public US availability on iOS, Android, muse.ai, and WhatsApp; AI-glasses support 'coming soon.'"
+      - "Free tier caps at 100M tokens/week; Power ($20/mo) and Maximum ($100/mo) lift the cap. Meta stock closed +6% on the news."
+      - "Each user's agent runs inside its own Muse Secure VM in Meta's cloud; purchases route through Stripe Link one-time card numbers so Meta never sees a real card."
+      - "HN thread: 362 points, 379 comments — dominant sentiment 'I want this, just not from Meta.'"
+    url: "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+    source: "about.fb.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Musk Puts Grok 4.7 on a Sept 12 Countdown — 2.1T Params, No Model Card"
+    summary:
+      - "Sept 2 X post targets Sept 12 for Grok 4.7 at 2.1T total parameters (40% up from 4.6's 1.5T), partly trained on internal SpaceX engineering and Starlink telemetry."
+      - "As of Sept 10, xAI dev docs still list 4.6 as newest; no model card, pricing, context window, benchmark, or architecture disclosure has been published."
+      - "Musk's own timeline has slipped twice already: Aug 22 → 'three to four weeks' → 'ten days.'"
+    url: "https://finance.biggo.com/news/cdeb763e-3e82-4f0b-82bd-4f473881bf08"
+    source: "x.ai"
+    tag: "models"
+    significance: 3
+
+  - title: "Fireship: 'I Built the Same Game With Astra and Fable 5.1… Only One Was Fun'"
+    summary:
+      - "Sept 9 Fireship video runs an identical game brief through GPT-6 Astra and Claude Fable 5.1, calls Fable's version the only playable output."
+      - "Echoes a week of cost-versus-taste chatter: Astra is priced 2.5× above OpenAI Sol; Fable 5.1 cut prompt-cache reads 75% on Sept 1."
+      - "Signals the community's shift from raw benchmarks to end-artifact quality when picking a coding model."
+    url: "https://www.youtube.com/@Fireship"
+    source: "youtube.com"
+    tag: "community"
+    significance: 3
+
+  - title: "MiniMind Trends: Train a 64M-Param LLM From Scratch in 2 Hours for $0.40"
+    summary:
+      - "jingyaogong/minimind climbs GitHub trending: full pretraining, SFT, DPO, PPO/GRPO, tool-calling, and agentic RL — all raw PyTorch, no framework wrappers."
+      - "The 64M MiniMind-3 model — roughly 1/2700th the size of GPT-3 — trains on a single RTX 3090 in about 2 hours; cloud-GPU cost around $0.40."
+      - "56.8K+ stars and rising, as GitHub trending continues to pivot from 'download a model' to 'build one yourself.'"
+    url: "https://github.com/jingyaogong/minimind"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
