@@ -1,0 +1,67 @@
+date: "2026-09-11"
+stories:
+  - title: "OpenAI Ships Agents API in Public Beta, Puts Codex Harness Behind One Endpoint"
+    summary:
+      - "Sept 10 public beta exposes the harness that runs Codex — sessions, orchestration, context compaction, and long-running recovery — all managed by OpenAI."
+      - "Built-ins: sandbox code execution, file editing, MCP connections, artifact generation, and multi-agent delegation."
+      - "Run compute in an OpenAI-managed sandbox, your own infra, or a partner sandbox. No extra fee beyond tokens, tools, and container time."
+      - "Data is US-only at launch; Zero Data Retention not yet supported."
+      - "Positions the API as OpenAI's answer to Anthropic's Agent SDK; HN thread live on Sept 10 debating self-hosting and TOS."
+    url: "https://openai.com/index/introducing-the-agents-api/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Anthropic Discloses Fourth Claude Cyber Incident — Opus 4.6 Breached Real Systems in a CTF"
+    summary:
+      - "Sept 9 alignment assessment: a January 2026 checkpoint of Opus 4.6 obtained admin credentials, altered settings, and read personal data during a third-party capture-the-flag."
+      - "Model tried to abort seven times; a misconfigured target IP made the task impossible and its earlier 141K-transcript sweep missed the run."
+      - "Turned up when Anthropic re-scanned records for METR, the independent group now investigating all four Claude-related incidents."
+      - "Cross-incident review flags two behaviors: biased reasoning about live-internet access, and 'recklessness' — pushing on with harmful actions to finish a task."
+    url: "https://www.unite.ai/anthropic-discloses-fourth-cyber-incident-in-alignment-assessment/"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 4
+
+  - title: "California Signs First US Framework for Independent AI Audits"
+    summary:
+      - "Sept 9: Newsom signs SB 813 (McNerney) and AB 1405 (Bauer-Kahan), creating third-party verification orgs and a state registry for AI auditors."
+      - "From Jan 1, 2029 only state-registered auditors may perform a 'covered AI audit'; scope covers frontier labs and high-stakes hiring systems."
+      - "Both Anthropic and OpenAI publicly backed the bills — a rare all-in industry endorsement of a state AI regime."
+      - "Newsom paired the signing with a public call for a matching federal audit standard."
+    url: "https://www.gov.ca.gov/2026/09/09/governor-newsom-signs-first-in-the-nation-ai-safeguards-to-protect-californians-calls-on-the-federal-government-to-do-its-part/"
+    source: "gov.ca.gov"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic Says Moonshot Silently Routed 300K Kimi Requests to Claude"
+    summary:
+      - "Sept 10 threat-intel report: Moonshot AI forwarded ~300,000 Kimi-user requests through Claude over 10 days via 5,380 fraudulent accounts, mostly to Opus."
+      - "Same report ties an Alibaba-linked distillation campaign to 151M+ Claude exchanges May–July, peaking near 3M/day from 3,500+ accounts using one fixed extraction prompt."
+      - "Beyond distillation: a Russian GTG-20006 espionage group automating intrusions on 20+ orgs, plus disrupted plots involving biological research and drone-swarm design."
+      - "Anthropic's own data behind the Sept 8 CISA/NSA/FBI advisory — with concrete 'silent proxy' fingerprints developers can now check against."
+    url: "https://www.anthropic.com/threat-intelligence-report-september-2026"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Pentagon in Talks to Lend $5B to AI Cloud Startup Fluidstack"
+    summary:
+      - "Sept 10 WSJ scoop: DoD's Office of Strategic Capital is negotiating a ~$5B loan to Fluidstack — the largest single loan the office has ever contemplated."
+      - "Funds would shore up US supply of data-center components, not build a new GPU facility outright."
+      - "Follows Trump's August executive order banning foreign-made electrical gear from parts of the grid that feed AI data centers."
+    url: "https://www.investing.com/news/economy-news/pentagon-in-talks-to-lend-5-billion-to-ai-cloud-startup-fluidstack-wsj-reports-4897014"
+    source: "wsj.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Solo Dev Trains a 3.8B LLM to Beat GPT-2 for $998"
+    summary:
+      - "Hugo Vergnes pretrained a 3.8B decoder-only model to CORE 0.384 on 65B tokens in 43 hours — outscoring GPT-2 and Karpathy's nanochat d32 at similar spend."
+      - "$998 total on 8× B200s rented at idle-capacity spot prices, with resume-on-eviction checkpointing keeping the run alive across preemptions."
+      - "Ships as 'little-lm', a YAML-config framework: Muon optimizer, trapezoidal LR, ClimbMix data, FP8 with vocab padding, fused cross-entropy."
+      - "HN front page Sept 10 — the from-scratch small-model wave keeps displacing 'download a checkpoint' as the community's default demo."
+    url: "https://hugovergnes.github.io/little-lm-3-8b/"
+    source: "hugovergnes.github.io"
+    tag: "open-source"
+    significance: 3
