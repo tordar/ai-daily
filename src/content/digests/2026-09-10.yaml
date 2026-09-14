@@ -41,7 +41,7 @@ stories:
     url: "https://finance.biggo.com/news/cdeb763e-3e82-4f0b-82bd-4f473881bf08"
     source: "x.ai"
     tag: "models"
-    significance: 3
+    significance: 1
 
   - title: "Fireship: 'I Built the Same Game With Astra and Fable 5.1… Only One Was Fun'"
     summary:
