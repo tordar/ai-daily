@@ -1,0 +1,67 @@
+date: "2026-09-16"
+stories:
+  - title: "Google Opens Claude Opus 5 to All Its Engineers Through Antigravity"
+    summary:
+      - "Sept 15 Business Insider scoop: Google reverses its Gemini-only internal rule and turns on Anthropic's Opus 5 inside Antigravity, its internal build of the Antigravity IDE."
+      - "Access is company-wide with per-user quotas; standalone Claude Code and OpenAI Codex still blocked — engineers must pick the Opus 5 model inside Antigravity."
+      - "Google's line: 'Gemini remains our primary and foundational model for internal development' — third-party models fill 'specialized use cases.'"
+      - "Reads as a public concession from a $40B Anthropic investor that Claude wins on coding today; Techmeme leading item, HN comments running on rival-lab optics."
+    url: "https://www.techmeme.com/260915/p5"
+    source: "businessinsider.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Cloudflare's Mixed-Crawler Default Block Goes Live"
+    summary:
+      - "Sept 15 flip: Cloudflare's default settings now block AI crawlers on any ad-supported page unless the operator declares a distinct search-only vs. training/agent bot."
+      - "Applies to all new customers, new sites on existing customers, and every existing free-tier account; Cloudflare fronts 20%+ of web domains."
+      - "Pay Per Crawl becomes Pay Per Use: publishers get paid when their content shows up in AI answers, not just when a bot fetches. Launch partners Ceramic.ai and You.com."
+      - "Agent builders scrambling — mixed-use bots that don't split identities lose access; expect ranking and citation shakeups over the next week."
+    url: "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/"
+    source: "cloudflare.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Shanghai AI Lab Quietly Ships Atria Dawn Preview — 744B Agentic MoE Under MIT"
+    summary:
+      - "Sept 11: Atria-Dawn-Preview appears on Hugging Face with no press release; Sept 14 a 143-author arXiv paper follows."
+      - "744B-parameter agentic MoE built on GLM-5.2, tuned for the full analyze → design → tool-use → code → run → verify loop."
+      - "Code and weights MIT-licensed — any GPU-rich team can deploy a frontier open agent with no licensing negotiation."
+      - "Evaluated on 16 benchmarks plus 769 real task records from 56 users; ~1/3 of completed tasks rated infeasible without the model."
+    url: "https://huggingface.co/internlm/Atria-Dawn-Preview"
+    source: "huggingface.co"
+    tag: "open-source"
+    significance: 4
+
+  - title: "One Attacker + AI Agents = 395 Orgs Popped Through PaperCut CVEs"
+    summary:
+      - "Sept 9 GreyNoise/Blackpoint Cyber report: single actor built exploits for CVE-2026-81578 and CVE-2026-82078 in PaperCut NG/MF, then let an agent swarm run the campaign."
+      - "440 compromised instances across 395 orgs in 48 countries; 11 orgs breached in 26 seconds; RCE on first victim under 4 hours from empty workspace."
+      - "Harness stack: OpenAI Codex driving loops, a DeepSeek model, and off-the-shelf offensive tools; credentials from 280, OS/domain secrets from 147, admin at 12."
+      - "Concrete data point for the 'lone actor = state-team capability' claim Anthropic and CISA have been making for two weeks."
+    url: "https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html"
+    source: "thehackernews.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Cornelis + Qualcomm Bet Networking, Not Silicon, Wins the Rack"
+    summary:
+      - "Sept 14: Intel spinoff Cornelis Networks raises $205M led by IAG Capital and launches Active Compute Fabric with Qualcomm."
+      - "Design does in-fabric compute so accelerators keep working while data moves — targets the GPU-idle-waiting-for-data waste that eats real-world inference throughput."
+      - "CN5000 400Gbps switch shipping now; CN6000 800Gbps sampling with customers, wider availability Q4 2026."
+      - "First credible non-Nvidia scale-up fabric with a top-tier accelerator partner attached."
+    url: "https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "David Sacks: If OpenAI and Anthropic Want to Slow Down, Just Do It"
+    summary:
+      - "Sept 14–15: White House AI/Crypto advisor David Sacks calls the 'pace the frontier' push a bid for regulatory capture, not a safety measure."
+      - "Argues the two frontier labs can unilaterally delay any model they think is unsafe; rules would only pin down competitors chasing them."
+      - "Rejects the antitrust waiver OpenAI's policy chief said the labs don't need — and points to product liability and market pressure as sufficient discipline."
+      - "HN discussion (id=49685991) mixed but skeptical of coordination optics; frames the Bloomberg 'weeks of safety talks' story as an incumbents-only club."
+    url: "https://news.ycombinator.com/item?id=49685991"
+    source: "hackernews"
+    tag: "industry"
+    significance: 3
