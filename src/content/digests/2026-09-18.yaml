@@ -1,0 +1,67 @@
+date: "2026-09-18"
+stories:
+  - title: "TypeSafe AI Ships Jev, a 'Decision-Only' Model From an Ex-OpenAI Founder"
+    summary:
+      - "Sept 15–17: TypeSafe AI (ChatGPT co-creator Diogo Almeida) opens early access to Jev — a model that skips text generation and returns typed decisions with calibrated probabilities in 70–500 ms."
+      - "Company benchmarks: 193x faster than Claude Sonnet 5 on classification, ~4,000x cheaper per call vs frontier LLMs; priced at $0.042 per million input tokens with free output."
+      - "$40M seed and stealth exit; positions Jev as a routing/scoring/screening call inside agent stacks rather than a chat model."
+      - "Sat #1 on Hacker News all day: ~1,800 points, 475 comments; most-upvoted critique argues '70 ms vs 329 s' isn't apples-to-apples against LLMs doing chain-of-thought."
+    url: "https://news.ycombinator.com/from?site=typesafe.ai"
+    source: "typesafe.ai"
+    tag: "models"
+    significance: 5
+
+  - title: "Anthropic Opens Life Sciences Program and Ships 30 Optimized Bio Models"
+    summary:
+      - "Sept 17: Life Sciences Verification Program (LSVP) unlocks Mythos, Opus, and Sonnet with relaxed bio safeguards for vetted teams — drug discovery, clinical development, manufacturing all in scope."
+      - "Two grant tiers ('Standard Use' and 'High-risk Use'); dozens of orgs already onboarded via early access, individual Pro/Max access to follow."
+      - "Alongside it: Claude optimized 30+ open-source biomolecular packages (co-folding, inverse folding, protein LMs) in <4 weeks — ~4x average speedup, low-memory mode predicts systems >10,000 tokens on a single GPU node."
+      - "Adaptyv Bio partnership: up to $1M in Claude credits and wet-lab validation for 5,000+ community protein designs."
+    url: "https://www.anthropic.com/news/life-sciences-verification-program"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 5
+
+  - title: "OpenAI Puts ChatGPT Inside Microsoft Word — Free on Every Plan"
+    summary:
+      - "Sept 17: ChatGPT for Word ships as a Microsoft Marketplace add-in; drafts from notes, revises selections, summarises, and adjusts headings from a sidebar without leaving the doc."
+      - "Same add-in framework as the existing Excel and PowerPoint integrations; available globally on Free, Plus, Pro, Business, and Enterprise."
+      - "Same day: ChatGPT Voice can now escalate to GPT-5.6 Sol or GPT-6 Astra for search and harder reasoning, with unified controls across plans."
+      - "Reads as a direct hit at Microsoft's own Copilot-for-Word tier, which still requires a Copilot licence on top of Microsoft 365."
+    url: "https://openai.com/index/chatgpt-in-microsoft-word/"
+    source: "openai.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "King Charles Convenes AI Chiefs at Dumfries House: 'Don't Lose Control'"
+    summary:
+      - "Sept 17: ~30 execs, policymakers, and ethicists gather at the King's Scottish estate — Jensen Huang, Demis Hassabis, Anthropic and OpenAI leadership, UK AI minister Kanishka Narayan, and Vatican officials among them."
+      - "Charles's opening remarks call AI's advance 'intriguing and deeply concerning in equal measure' and press labs to 'find a way' to preserve human oversight before it's too late."
+      - "Timing lines up with Suleyman's model-welfare essay and OpenAI's fresh incident log — the invitation list frames this as the venue Bletchley Park was meant to be, minus a communiqué."
+      - "TechCrunch and CNN lead with the 'loss of control' framing; no policy output announced, but a follow-up track through the UK AI Security Institute is on the table."
+    url: "https://www.cnn.com/2026/09/17/tech/king-charles-ai-summit-intl"
+    source: "cnn.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "alphaXiv OpenResearch Turns Coding Agents Into Research Agents, #1 on GitHub Trending"
+    summary:
+      - "Local-first CLI wraps Claude Code, Codex, OpenCode, or Cursor into a research loop: propose an idea, mutate the code, run the experiment, inspect results, decide the next branch."
+      - "Multiple agents explore in parallel with a git-native experiment tree; the same source snapshot runs locally, over SSH, or on Slurm, Kubernetes, Ray, HF Jobs, Modal, or Tinker."
+      - "GitHub Trending #1 today: ~940 stars in 24 h to 5.1k total; local-model connections through OpenCode/vLLM/Ollama, dashboard on 127.0.0.1:4791."
+      - "Fills the gap between 'coding copilot' and Deep Research: reproducible, self-hosted, no cloud dependency required."
+    url: "https://github.com/alphaXiv/OpenResearch"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "xAI Wraps Grok Bot Galaxy: 72 Hours of Live Company-Building With Agents"
+    summary:
+      - "Sept 15–17: three xAI staff (Palmer, Tan, Sadanani) livestreamed building a product from zero using Grok Bots as their 'employees' — engineering, sales, and marketing all handled by agents on camera."
+      - "Grok Bot daily users doubled to 120,000+ during the event; 70,000 livestream signups; the trio pivoted product direction multiple times before landing on a restaurant pop-up OS concept."
+      - "Frames as xAI's answer to Google's Antigravity and OpenAI's Codex demos — the case that a small human team plus agents can now ship a startup in a working week."
+      - "Public reaction on X trended positive on production value, skeptical on whether the finished artifact matches the pre-event pitch; full builder notes posted to GitHub."
+    url: "https://x.ai/galaxy"
+    source: "x.ai"
+    tag: "community"
+    significance: 3
