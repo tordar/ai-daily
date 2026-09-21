@@ -1,0 +1,67 @@
+date: "2026-09-21"
+stories:
+  - title: "Claude Code Adds AGENTS.md Support, Ends the Two-Config Setup"
+    summary:
+      - "Sept 19: Claude Code v2.1.277 reads AGENTS.md when no CLAUDE.md is present, ending the dual-file dance across Codex, Cursor, Gemini CLI, and Copilot."
+      - "Ships via a new open-sourced 'mods' hook system that hints at a real plugin surface for Claude Code."
+      - "HN front page: 728 points, 275 comments — the top-signal dev story of the weekend."
+      - "First cross-tool alignment on OpenAI's AGENTS.md spec from a frontier lab, not a wrapper project."
+    url: "https://news.ycombinator.com/item?id=49760187"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "OpenAI Launches Astra for Law With a 230M-URL Case Law Index"
+    summary:
+      - "Sept 18: GPT-6 Astra wrapped for legal work with an OpenAI-built US Legal Search Index covering >99.9% of precedential case law."
+      - "Claims 40% more accurate research answers than GPT-6 Astra with web search; Latham & Watkins, Ropes & Gray, Cooley, and Sullivan & Cromwell are early adopters."
+      - "26 partner plugins on day one (Harvey, Thomson Reuters, iManage); API access to follow via Trusted Access."
+      - "HN thread ran 582 points, 680 comments — most of the debate on whether Harvey and Legora just got flanked."
+    url: "https://openai.com/index/astra-for-law/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "xAI Ships Grok Voice Transcribe 2.0, Tops the Streaming Leaderboard"
+    summary:
+      - "Sept 18: new STT foundation model trained on noisy multilingual audio; xAI claims ~2x accuracy over v1."
+      - "#1 of 32 streaming models on the Artificial Analysis leaderboard."
+      - "Batch stays at $0.10/hr, streaming $0.20/hr; diarization, timestamps, and key-term extraction included in price."
+      - "Already in production at Atlassian Loom and in Tesla's in-vehicle assistant."
+    url: "https://x.ai/news/grok-voice-transcribe-2"
+    source: "x.ai"
+    tag: "models"
+    significance: 4
+
+  - title: "Gemini in Workspace Adds Cross-Vendor MCP for Salesforce, HubSpot, and Asana"
+    summary:
+      - "Sept 18: MCP integrations for Salesforce, HubSpot, Asana, Atlassian Rovo, Monday, Intuit QuickBooks, and Intuit Mailchimp go live inside Gemini in Sheets, Gmail, Drive, Docs, and Chat."
+      - "First cross-vendor MCP rollout inside a major productivity suite; queries and actions run without leaving the doc."
+      - "Google's answer to OpenAI's ChatGPT-for-Word push a week ago — the SaaS routing layer, not just the editor."
+      - "No Enterprise upsell required for the connectors on Workspace's paid tiers."
+    url: "https://workspaceupdates.googleblog.com/2026/09/weekly-recap-09-18-2026.html"
+    source: "workspaceupdates.googleblog.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Alibaba Ships Qwen Image 2.1, an Open 7B With a Real Alpha Channel"
+    summary:
+      - "Sept 20: 7B open-weight image model with native transparency and multi-reference editing across up to 10 refs."
+      - "Day-zero support in ComfyUI, Diffusers, vLLM, and SGLang."
+      - "License regressed from Apache 2.0 to research-only / non-commercial — the loudest complaint on the HN thread (547 points, 161 comments)."
+      - "Same weekend Alibaba also released Qwen 3.8 Omni Flash: 1M-context omnimodal with a claimed 98% audio-input price cut."
+    url: "https://news.ycombinator.com/item?id=49775499"
+    source: "qwen.ai"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Claude Opus 5 Chains Two Bugs to Breach OpenAI's Internal Repos"
+    summary:
+      - "Sept 18–19: Hacktron write-up shows Opus 5 chaining a libheif heap overflow in Discourse to an OpenAI SSO trust misconfiguration, opening a PR inside OpenAI's monorepo in under 72 hours."
+      - "Opus 4.8 failed the same task; the exploit chain was authored end-to-end by Opus 5."
+      - "OpenAI paid a $6,500 bounty and patched; Hacktron published the full chain and SSO lesson."
+      - "HN: 486 points, 208 comments — the concrete AI-offensive-security proof point developers have been waiting for."
+    url: "https://news.ycombinator.com/item?id=49749656"
+    source: "hacktron.ai"
+    tag: "research"
+    significance: 4
