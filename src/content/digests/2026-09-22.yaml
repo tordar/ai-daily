@@ -1,0 +1,68 @@
+date: "2026-09-22"
+stories:
+  - title: "xAI Ships Grok 4.7 With 2.1T Params and Multi-Hour Agent Training"
+    summary:
+      - "Sept 21: 2.1T-param base (up from 1.5T), 500K context, priced identically to 4.6 at $2/$6 per M tokens."
+      - "Trained on a longer RL run weighted toward multi-hour tasks; xAI calls it their 'agent stamina' model."
+      - "Benchmarks: 71.0% DeepSWE v1.1 (up from 65.2%), 46.3% CursorBench 4.0, 38.0% Terminal-Bench — still trails Fable 5.1 on the coding suites."
+      - "HackerBench v0.3 safety score: allows 3.3% of risky dual-use prompts, xAI's tightest guardrails yet."
+      - "HN thread: 490 points, 410 comments — debate is 'meaningful bump' vs 'still behind the frontier.'"
+    url: "https://news.ycombinator.com/item?id=49788838"
+    source: "x.ai"
+    tag: "models"
+    significance: 5
+
+  - title: "Amazon Blocks Meta's Muse Shopping Agent, Escalating the Agentic Web Fight"
+    summary:
+      - "Sept 21: Amazon started returning a Conditions-of-Use popup to any Muse-driven checkout after Meta refused a removal request."
+      - "Amazon says Muse hides its agent identity and retains customer credentials without disclosure."
+      - "Meta counters that Muse runs in a per-user VM and uses Stripe Link single-use cards — passwords stay in secure storage."
+      - "First public block of a frontier-lab shopping agent by a major retailer; sets the template for TOS-vs-agent fights."
+      - "HN + Bloomberg + TechCrunch all picked it up within hours; 140 pts, 148 comments on HN."
+    url: "https://techcrunch.com/2026/09/21/metas-ai-agent-has-been-blocked-from-using-amazon-com/"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Foremerge Adds a Coordination Layer Above Git for Parallel Coding Agents"
+    summary:
+      - "Open-source protocol where agents declare intent — symbol, api, schema, config, migration, contract — before touching code."
+      - "Catches semantic clashes Git misses, like two agents renaming the same symbol in different files."
+      - "0.4.0 ships a CLI, JSON API, MCP server, SQLite store, and deterministic conflict detector."
+      - "Landed the same week Linear's engineering blog argued CI is now the bottleneck for AI-coding-heavy teams."
+    url: "https://github.com/naw103/foremerge"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Linear: AI Coding Has Turned CI Into the Bottleneck"
+    summary:
+      - "Engineering write-up on how Cursor/Claude/Copilot volume broke Linear's CI economics: queue times up, feedback loops slower than the agents writing the code."
+      - "Their fix: per-PR test selection, cached graph builds, and a merge queue that admits by predicted risk, not FIFO."
+      - "129 pts, 125 comments on HN — the 'we all have this problem' thread of the day."
+      - "Reinforces the emerging thesis behind Foremerge and lossless-memory: the surrounding tooling, not the models, is the next bottleneck."
+    url: "https://linear.app/now/ci-bottleneck-reworked"
+    source: "linear.app"
+    tag: "tools"
+    significance: 3
+
+  - title: "AI-Generated Posters Don't Have to Be Horrible, and HN Can't Stop Talking About It"
+    summary:
+      - "John Hartnup's June post explodes on HN this weekend after making the point that ChatGPT will produce Bauhaus, Risograph, or cut-paper posters if you ask precisely."
+      - "The counter-argument in the comments: the skill floor is now taste and prompt discipline, not the model."
+      - "1,856 points and 942 comments — the #1 story across all of HN today, not just AI."
+      - "Serves as the counterexample the 'AI slop' discourse has been missing for six months."
+    url: "https://john.hartnup.uk/2026/06/07/ai-event-posters.html"
+    source: "john.hartnup.uk"
+    tag: "community"
+    significance: 4
+
+  - title: "Show HN: Lossless-Memory Skips Summaries, Keeps Every Turn Verbatim"
+    summary:
+      - "Personal AI memory layer that stores every conversation verbatim behind a vector index — no rolling summaries, no compression."
+      - "Pitched at audit trails, reproducibility, and debugging agent runs; storage cost is the main open question in the thread."
+      - "57 pts, 21 comments on HN in its first day; part of a small wave of 'context-window amnesia' tools this month."
+    url: "https://github.com/aru-labs/lossless-memory"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
