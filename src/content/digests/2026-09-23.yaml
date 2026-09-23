@@ -1,0 +1,69 @@
+date: "2026-09-23"
+stories:
+  - title: "Anthropic Ships Claude Opus 5.5 at Fable-Level Quality for 40% Less"
+    summary:
+      - "Sept 22: Opus 5.5 lands at $4/$20 per M tokens (20% below Opus 5) with cache reads down 60% to $0.20."
+      - "Anthropic's benchmark table has it topping Fable 5.1 on agentic coding, computer use, and multidisciplinary reasoning; SWE-bench Pro 89.9%, Terminal-Bench 4.0 66.4%."
+      - "Five-hour usage caps are gone for Pro, Max, Team, and seat-based Enterprise; rate-limit reset button ships alongside."
+      - "Sonnet 5.5 and Haiku 5.5 are 'within weeks' per Anthropic."
+      - "HN thread: 1,311 points, 861 comments — reaction splits between 'Fable at half the price' and reports of Max runs blowing their reasoning token budget."
+    url: "https://www.anthropic.com/claude-opus-5-5"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 5
+
+  - title: "OpenAI Adds GPT-6 Sol and GPT-6 Luna, Halving API Prices"
+    summary:
+      - "Sept 22: Sol is the balanced coding/agentic model at $2 in / $10 out per M tokens — half of GPT-5.6 Sol."
+      - "1.05M context, 128K max output, 922K single-input cap; DeepSWE 68.8%, OSWorld 2.0 64.4%, Artificial Analysis Intelligence Index 48."
+      - "Luna is the cheap, low-latency sibling; both rolling out to Plus/Pro/Business/Enterprise/Edu in ChatGPT and to Copilot Pro+/Max/Business/Enterprise."
+      - "Positioned below GPT-6 Astra on price — OpenAI's answer to Opus 5.5, dropped the same day."
+    url: "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available/"
+    source: "openai.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Pentagon Probe Pins Iran School Strike on Palantir Maven Overreliance"
+    summary:
+      - "Bloomberg-obtained internal review: CENTCOM analysts trusted Maven Smart System's day-one target list built on 2018 imagery of a working elementary school."
+      - "Two Tomahawks hit Shajarah Tayyebeh Elementary in Minab on Feb 28, killing 150+ including 123 children."
+      - "CENTCOM's civilian-harm mitigation team had been cut from 10 to 1 under Hegseth's 90% staff reduction; no CHM review of Minab happened."
+      - "Palantir's fix: revised target-refresh workflow, new civilian-movement OSINT feeds, dozens of Maven upgrades."
+      - "Top HN thread of the day on the AI-in-warfare accountability question; picked up by Bloomberg, Gizmodo, Slashdot within hours."
+    url: "https://www.bloomberg.com/graphics/2026-iran-school-attack/"
+    source: "bloomberg.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "jev-ultrafast Hits 17K Stars in a Week by Deleting the Text From Web Agents"
+    summary:
+      - "Browser Use's open-source web agent replaces every step-decision LLM call with one Jev typed-decision call — no generated text."
+      - "~17K stars in seven days; the token 'jev' now appears in 74 separate repo names in the same weekly feed."
+      - "Positions Jev as a function-call primitive: unstructured state in, typed probabilistic decisions out, at 40–200x LLM speed."
+      - "Sits alongside Fireship's Sept 21 Jev explainer as the moment TypeSafe's model crossed into mainstream developer awareness."
+    url: "https://github.com/browser-use/jev-ultrafast"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Kev Ports Jev's Decision-Only Architecture to Qwen3.5 for Local Runs"
+    summary:
+      - "Open-source Kev-4B / 9B / 0.8B: LoRA adapter (r=16) plus a pointer head on Qwen3-Base, no text generation at inference."
+      - "Kev-9B trails proprietary Jev by 3.5 points on the new-source dev set (0.822 vs 0.857); test set 0.852."
+      - "Ships trainable and runnable on a single GPU — the first credible self-hosted answer to TypeSafe's System One pitch."
+      - "Two days on HN; part of a fast-forming Jev-alike ecosystem the browser-agent crowd is already building on."
+    url: "https://github.com/jaredpalmer/kev"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "OpenAI Turns On Private Safety Processing for API Zero-Data-Retention Customers"
+    summary:
+      - "Sept 22: phased rollout begins for eligible API accounts — automated abuse detection runs without OpenAI staff ever seeing prompts or responses."
+      - "Customer data can stay on customer-controlled infra or sit in OpenAI storage under customer-held encryption keys."
+      - "Only a narrow safety signal reaches OpenAI; enterprise content is walled off from training and human review by default."
+      - "Direct contrast with Anthropic's Enterprise Frontier Safeguards from Sept 1 — the two labs are now competing on how little they retain."
+    url: "https://openai.com/index/offering-zero-data-retention-for-frontier-models/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
