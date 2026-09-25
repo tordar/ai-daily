@@ -1,0 +1,56 @@
+date: "2026-09-25"
+stories:
+  - title: "One Hacker, Three Open-Source AI Agents, 600K Stolen Cards — for $8K in Model Bills"
+    summary:
+      - "Sep 22 Gambit Security report: a lone Chinese-speaking actor pointed Strix (recon), Cairn (exploitation) and Hermes (orchestrator, 121 custom skills) at hundreds of online retailers since July."
+      - "Sep 10–15 alone: 105 attack projects, 27+ companies breached, 600K+ unexpired credit cards taken, skimmers dropped on 5 stores; average cost $25.46 per completed scan ($3.13–$79.31)."
+      - "Total model spend across the whole campaign estimated at $12K–$18K; victims include a Fortune 500 hospitality chain and a major US airline."
+      - "Gambit's Eyal Sela calls it 'one of the most severe abuses of AI for exploitation seen so far'; picked up by The Register, BleepingComputer, TechRadar and hitting HN front page."
+    url: "https://hackread.com/open-source-ai-agents-breach-credit-card-records/"
+    source: "hackread.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Google Open-Sources AX, a Kubernetes-Shaped Orchestrator for Billions of Agent Runs"
+    summary:
+      - "Sep 23: google/ax lands on GitHub — Apache-2 declarative runtime built to schedule autonomous agent workloads at cluster scale on top of Agent Substrate sandboxes."
+      - "Four primitives (Task, Workspace, Gateway, Model) with sub-second suspend/resume so idle agents stop burning cloud time waiting on model APIs or humans."
+      - "kubectl-shaped CLI, gRPC control plane; +2,305 stars in 24h and #1 on HN with 649 pts / 296 comments."
+      - "Split reception: infra crowd cheers the cost model, others push back that 'billions of agents' still means running your own K8s + container registry + ko."
+    url: "https://github.com/google/ax"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Anthropic's Project Swap: On a Real Trading Floor, Model Quality Beat Prompt Tuning"
+    summary:
+      - "Sep 25: 201 Anthropic employees across 6 offices handed a book to a Claude agent after a 5-min taste chat; agents ran 205 trading-floor rounds swapping on people's behalf."
+      - "Efficiency scaled with model: Haiku floors 0.75, Opus floors 0.88 (utilitarian ceiling 0.95); 'ruthless' vs 'prosocial' prompts moved the number by only 0.02."
+      - "From 5 minutes of chat, Claude's ranking matched the participant's on 61% of pairs — beating popularity (53%) and collaborative filtering (55%); preference-error, not haggling, drove 85% of the shortfall from optimum."
+      - "7.2/10 average satisfaction; participants said they'd hand an agent roughly a third of their yearly book budget, 46% said they'd pay for the service."
+    url: "https://www.anthropic.com/research/project-swap"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 4
+
+  - title: "DeepMind's New Chief Says Gemini 4 Is in Post-Training, Ship Date 'As Soon As Possible'"
+    summary:
+      - "Sep 23–24 (The Information AI Agenda Live): Koray Kavukcuoglu, elevated to SVP of Google DeepMind on Aug 12, confirms Gemini 4 has cleared pre-training."
+      - "Pre-training run started Jul 21; the pre→post transition in ~2 months is a notably compressed timeline for a Google flagship."
+      - "'Our intention is to roll out an early post-training version as soon as possible, because we've already seen promising results' — earlier than the previously flagged end-of-year window."
+      - "Lands the same week Opus 5.5 took the Artificial Analysis Intelligence Index top spot and GPT-6 Astra hit ChatGPT stable — the three-way frontier race compresses again."
+    url: "https://9to5google.com/2026/09/24/google-says-gemini-4-release-is-coming-as-soon-as-possible/"
+    source: "9to5google.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Google, OpenAI and Anthropic Tap Sriram Krishnan to Run a FINRA-Style Frontier AI Body"
+    summary:
+      - "Sep 24: the three labs are lining up a voluntary 'Frontier AI Standards Agency', targeted to launch late-2026 / early-2027, with no government oversight."
+      - "Pillars: shared technical evals, pre-release audits, third-party auditor qualifications, standardized incident reporting — modeled explicitly on securities self-regulator FINRA."
+      - "Approaching Sriram Krishnan — Trump White House senior AI adviser until June 2026 and public opponent of 'an FDA for AI' — for CEO; Arati Prabhakar, Condoleezza Rice, David Friedberg also floated for roles."
+      - "Comes 2 days after Amodei and Altman asked the UN Security Council for global standards; HN skepticism heavy on 'self-regulation without teeth' after last week's Gemini and Claude live-fire incidents."
+    url: "https://www.bankinfosecurity.com/google-openai-anthropic-plan-frontier-ai-standards-body-a-32926"
+    source: "bankinfosecurity.com"
+    tag: "industry"
+    significance: 3
