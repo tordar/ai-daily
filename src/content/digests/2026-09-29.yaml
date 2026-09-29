@@ -1,0 +1,67 @@
+date: "2026-09-29"
+stories:
+  - title: "Anthropic Ships Claude Sonnet 5.5, 30% Faster at Same $2/$10 Pricing"
+    summary:
+      - "Sep 28: Sonnet 5.5 keeps Sonnet 5's $2/$10 per-M-token pricing and 20-cent cache reads, runs 30%+ faster, and averages ~30% cheaper per task through fewer tool calls."
+      - "Live on Anthropic API, AWS Bedrock, Google Vertex, and Azure with zero-data-retention; Haiku 5.5 promised 'in coming weeks'."
+      - "Ships invisible text watermarking and a stronger UI-design pass; Simon Willison calls it 'almost as good as Opus 5.5 on coding'."
+      - "HN launch thread: 674 points, 447 comments — top AI story of the day, dominant coverage on TechCrunch, VentureBeat, and SiliconANGLE."
+    url: "https://www.anthropic.com/news/claude-sonnet-5-5"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 5
+
+  - title: "DHH Declares 'Pencils Down' on Hand-Written Code at Rails World"
+    summary:
+      - "Sep 27 keynote in Austin: DHH tells ~1,000 Rails World attendees that 37signals has banned hand-written code as standard operating procedure — agent-generated code is now the default, hand-coding an exception."
+      - "Claims 150K lines shipped in August 2026 vs. ~30K/year in his old typed workflow; HEY drops the web app for six native desktop and mobile clients built in parallel."
+      - "Fireship's Sep 28 'DHH has gone completely off the rails' explainer, dev.to, and the-decoder pick it up within 24h; Ruby on Rails X thread trends."
+      - "Fewer than 10 of the ~1,000 attendees say they still hand-code daily — mixed community reaction across HN and Rails Discord."
+    url: "https://the-decoder.com/ruby-on-rails-creator-dhh-says-hes-done-writing-code-by-hand/"
+    source: "the-decoder.com"
+    tag: "community"
+    significance: 5
+
+  - title: "NVIDIA Open Agent Safety Platform Puts a Watchdog on the DPU"
+    summary:
+      - "Sep 28 Jensen keynote: OpenShell (kernel-level runtime on Vera CPUs) plus Sentry (independent monitor on BlueField-4 DPUs) can quarantine a rogue agent in milliseconds, out of the CPU/GPU running the agent."
+      - "Anthropic, Arm, Microsoft, Oracle, and SpaceX headline 100+ launch partners; governed under a new Linux Foundation OSAIA project. OpenAI is notably absent from the list."
+      - "Lands the same weekend as OpenAI's Hugging Face DNS-escape post-mortem and Anthropic's Q3 misuse report — silicon-level enforcement is now the industry answer to rogue-agent risk."
+      - "HN: 107 points, 148 comments, split on whether hardware-enforced boundaries are real defense or NVIDIA moat-building."
+    url: "https://nvidianews.nvidia.com/news/open-agent-safety-platform"
+    source: "nvidianews.nvidia.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic S-1 Leak Shows $4.6B Revenue, $8B Loss, $2T IPO Target"
+    summary:
+      - "Sep 28: Reuters obtains Anthropic's confidential S-1 draft — 2025 revenue jumped 12x to $4.6B on an $8B operating loss; annualized run rate hit ~$65B by end-July 2026 (from $47B in May, $9B end-2025)."
+      - "Two customers still account for ~25% of revenue, and most top clients are not locked into long-term contracts — the filing flags concentration as a top risk."
+      - "$20.3B cash on hand as of Dec 31 against multi-year cloud commitments; company is targeting a ~$2T valuation on an October float, ahead of OpenAI."
+      - "CNBC, Reuters, and Yahoo Finance lead coverage; HN discussion focuses on the customer concentration and whether the loss trajectory closes before IPO."
+    url: "https://www.cnbc.com/2026/09/28/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-reuters.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "xAI Opens Team Bots Beta: Shared Grok Agents With Role, Plugins, Memory"
+    summary:
+      - "Sep 28: xAI ships Team Bots public beta on Teams and Enterprise — shared Grok bots scoped to a role or workflow with context (files, docs), plugins (Salesforce, Notion, GitHub), credentials, and persistent memory."
+      - "Built internally first as Data Bot so anyone at xAI could pull analyst-quality answers without warehouse access; now offered externally."
+      - "Ships with pre-built templates for sales, product management, marketing, and data analytics; each bot's memory persists across sessions and users."
+      - "Positions Team Bots as a shared team knowledge layer rather than per-user copilots — direct pitch at the ChatGPT Enterprise and Claude for Work customer base."
+    url: "https://x.ai/news/team-bots"
+    source: "x.ai"
+    tag: "tools"
+    significance: 3
+
+  - title: "Manus Ships 2.0 and Cue, Agents With Their Own Phone Number and Wallet"
+    summary:
+      - "Sep 28: Manus 2.0 introduces the Cascade agent harness, persistent Cloud Computers, event-triggered automations, and a Manus Studio builder — Manus claims Cascade is ~28% faster and ~32% cheaper than 1.5 on the same tasks."
+      - "Sister app Cue puts personal agents in a standalone client with their own email, phone number, wallet, and computer; an agent can send SMS, take calls and leave summaries, and make payments inside a user-set budget."
+      - "Cue is in early access on web, desktop, and Android; iOS awaiting App Store review; phone numbers available in select countries at launch."
+      - "Bloomberg leads coverage; Techmeme headline; X hype cycle around 'the first credible consumer agent with its own comms stack'."
+    url: "https://manus.im/blog/introducing-manus-2-0"
+    source: "manus.im"
+    tag: "tools"
+    significance: 3
