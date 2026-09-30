@@ -1,0 +1,56 @@
+date: "2026-09-30"
+stories:
+  - title: "OpenAI DevDay: 'dots' Always-On Agents and GPT-6.1 Sol at 1/5 Astra's Price"
+    summary:
+      - "Sep 29 keynote: dots are persistent in-ChatGPT agents on GPT-6 Astra — each with its own cloud computer, browser, and a 24/7 goal — OpenAI's answer to Meta Muse and xAI Grok Bot Teammates."
+      - "GPT-6.1 Sol nearly matches Astra on agentic coding and computer use at ~1/5 the input/output token price; sits on the $2/$10 per-M-token Sol tier."
+      - "ChatGPT Space is a new shared workspace where teams and their dots collaborate; Pages is a co-editable document surface for humans and agents together."
+      - "New Pro 500 tier bundles the highest usage cap with an 'Ultrafast' speed lane across ChatGPT and Codex; Altman cites 1.2B weekly ChatGPT users as the launch surface."
+    url: "https://openai.com/index/devday-2026-recap/"
+    source: "openai.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Codex Gets Plugin Extensions, Cloud Runs, and Voice Commands"
+    summary:
+      - "Codex plugin extensions ship as installable bundles that can be full native ChatGPT apps — editors, dashboards, whole workspaces sitting inside the coding agent."
+      - "Launch directory partners include Slack, Figma, Notion, GitHub, Gmail, Box, Cloudflare, and Vercel — one-click install, no manual MCP config."
+      - "Codex now runs in the cloud so tasks can be kicked off from any device including phones; the CLI accepts voice instructions."
+      - "Positioned by dealroom.co and Neowin as OpenAI's catch-up to Anthropic's Claude Code and Google's Gemini CLI on the skills/plugin front."
+    url: "https://www.neowin.net/news/openai-launches-codex-plugins-to-streamline-developer-workflows/"
+    source: "neowin.net"
+    tag: "tools"
+    significance: 4
+
+  - title: "VoiceStudio Tops GitHub Trending With Local ElevenLabs Clone in 646 Languages"
+    summary:
+      - "Fully-local, open-source ElevenLabs alternative: voice cloning, voice design, video dubbing, dictation, transcription, and audiobook generation across 646 languages."
+      - "+4,758 stars on Sep 30, 48.8K total, 5.5K forks — #1 by daily velocity on GitHub Trending; Electron desktop app, AGPL-3.0, k2-fsa OmniVoice engine by default."
+      - "Optional MCP integration and remote-worker support let agent frameworks pipe TTS/STT locally without sending audio to cloud APIs."
+      - "Rides broader 'local-first AI voice' momentum — project has roughly doubled its star count in the last month."
+    url: "https://github.com/debpalash/VoiceStudio"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Paperclip Retrends to 94K Stars as Agent-Fleet Management Goes Mainstream"
+    summary:
+      - "Open-source, self-hosted platform that treats AI agents like employees — org chart, roles, ticket queues, per-agent budgets, heartbeat scheduling, and full audit logs."
+      - "+2,458 stars on Sep 30, 94,728 total; launched Mar 2, 2026 by @dotta and hit 30K stars in three weeks. MIT-licensed, PostgreSQL-backed, Docker one-command install."
+      - "Renewed momentum tracks the DevDay 'dots' and Grok Bot Teammates cycle — enterprises are hunting for a vendor-neutral control plane above the model APIs."
+      - "Widely called the fastest-growing agent-orchestration project of 2026; free self-hosted stack stays fully separated from Paperclip's paid cloud."
+    url: "https://paperclip.ing"
+    source: "paperclip.ing"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Gemini 4 'Much Earlier' Than Year-End, DeepMind's Kavukcuoglu Confirms"
+    summary:
+      - "New DeepMind SVP Koray Kavukcuoglu tells The Information's AI Agenda Live that Gemini 4 is in post-training and Google wants a first version out 'as soon as possible'."
+      - "Reporting speculates an October window; would be Kavukcuoglu's first Gemini flagship since he took over from Hassabis in August 2026."
+      - "Lands as OpenAI's DevDay splashes dots and GPT-6.1 Sol — Google is now the last of the big-three frontier labs without a fall flagship on the board."
+      - "Rumored capabilities include a 1.5M-token input context and stronger agentic coding — treat as unproven speculation until launch."
+    url: "https://tbreak.com/gemini-4-nearly-ready-google-deepmind-chief/"
+    source: "tbreak.com"
+    tag: "models"
+    significance: 3
