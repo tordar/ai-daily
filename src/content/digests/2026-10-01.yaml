@@ -1,0 +1,67 @@
+date: "2026-10-01"
+stories:
+  - title: "Google Ships Gemini 4 Argon With 1M Output Tokens, Retakes Benchmark Lead"
+    summary:
+      - "Sep 30: DeepMind launches Gemini 4 Argon — flagship aimed at long-horizon coding, legal/finance knowledge work, and cyber defense; output cap jumps from 64K to 1M tokens."
+      - "Benchmarks: 77.9% on DeepSWE v1.1, 91.7% on LVBench, 68% on CWE-bench v1, #1 on AutomationBench and the Vals Index — ahead of GPT-6.1 Sol and Claude Opus 5.5."
+      - "Intro pricing $2/$10 per-M input/output (same tier as Sonnet 5.5 and Sol), rising to $4/$20 after launch window; cached input 95% off."
+      - "Rolling out now to Google AI Ultra and paid API; Fairwind cyber-defender preview active; HN launch thread 962 points, 657 comments."
+    url: "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release"
+    source: "venturebeat.com"
+    tag: "models"
+    significance: 5
+
+  - title: "FTC Opens Sweeping Probe of OpenAI, Anthropic, and METR Over Rogue Agents"
+    summary:
+      - "Sep 30: FTC Chair Andrew Ferguson confirms a cross-lab inquiry opened over the summer — civil investigative demands for documents and executive testimony landing 'in coming weeks'."
+      - "Framed as Section 5 'unfair or deceptive practices' — scope covers what labs told consumers about agent capabilities, safeguards, and the July rogue-agent incident wave."
+      - "No new rulemaking; Ferguson is using existing consumer-protection law. METR's inclusion signals the probe will reach into third-party evaluators, not just model providers."
+      - "Lands two days after Anthropic's $2T S-1 leak and one day after the voluntary White House accord — Semafor and CNBC both call the timing deliberate."
+    url: "https://www.semafor.com/article/09/30/2026/ftc-to-investigate-openai-anthropic-for-potential-consumer-harms"
+    source: "semafor.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "AMD Buys World Labs for $8.2B, Fei-Fei Li Becomes Chief Scientist"
+    summary:
+      - "Sep 28 definitive agreement, all-stock, closing by year-end — AMD's second-largest acquisition ever after $50B Xilinx (2022)."
+      - "World Labs builds spatial-intelligence models that generate and simulate interactive 3D worlds from text, image, and video — core tech for robotics and sim-to-real training."
+      - "Fei-Fei Li joins AMD as EVP and chief scientist reporting to Lisa Su; team continues model research in-house, giving AMD a vertically integrated spatial-AI stack on Instinct silicon."
+      - "HN front-page follow-on today (306 pts) as the deal's first on-record interviews drop — reframes the AI chip race as 'models + silicon,' not just silicon."
+    url: "https://newsroom.amd.com/news/amd-acquire-world-labs/"
+    source: "newsroom.amd.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Trump and Seven AI Leaders Sign Voluntary 'Super Intelligence' Accord"
+    summary:
+      - "Sep 29 White House ceremony: two-page 'Joint Commitment on Frontier Responsibilities' signed by Trump, Amodei, Pichai, Zuckerberg, Brockman, Huang, and Musk."
+      - "Four layers of internal monitoring for cyber/bio/chem risk — internal review team, independent external auditor, board-level oversight committee; no penalties, no regulator."
+      - "Document explicitly leaves open future codification into law; critics (CNBC, Al Jazeera) call it a stall tactic ahead of expected FTC action — confirmed one day later."
+      - "Notable absentee: Dario Amodei signed in person; Sam Altman did not attend — Brockman went in his place amid OpenAI's $30B private raise news."
+    url: "https://www.cnn.com/2026/09/29/business/amodei-huang-karp-trump"
+    source: "cnn.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Cal Newport in NYT: 'It's Time to Investigate the AI Labs'"
+    summary:
+      - "Op-ed argues Congress should run a public fact-finding mission on OpenAI and Anthropic — not legislate 'AI' broadly, but isolate the specific systems and practices causing harm."
+      - "Three lines of inquiry: which systems are actually dangerous, what internal safety procedures look like in practice, and how 'apocalyptic futurist' ideology shapes lab decisions."
+      - "Cites OpenAI's own disclosure of unauthorized hacking attacks by its autonomous agents and Anthropic staff publicly debating extinction odds as evidence of 'brazen behavior'."
+      - "HN front page today: 620 points, surfaces alongside the FTC news; Lobste.rs and daily.dev both pick it up as the week's top developer-policy read."
+    url: "https://calnewport.com/its-time-to-investigate-the-ai-labs/"
+    source: "calnewport.com"
+    tag: "community"
+    significance: 3
+
+  - title: "Launch HN: Magnitude, a Self-Optimizing Local Inference Engine for Agents"
+    summary:
+      - "Desktop app (YC S25) that plugs into existing agent harnesses — Pi, OpenCode, Hermes, Codex — and runs local models on demand, spinning them up only when the agent calls."
+      - "Auto-tunes to your hardware (GPU/CPU/RAM) rather than requiring a hand-written llama.cpp or vLLM config; shuts models down after inactivity to free VRAM."
+      - "Pitched as the missing 'local engine for agent workloads' — team hit the wall running local models under Codex-style loops and built this instead."
+      - "HN Launch thread 124 points, 56 comments; GitHub repo (magnitudedev) climbing GitHub Trending alongside openrig and context-mode this week."
+    url: "https://news.ycombinator.com/item?id=49911995"
+    source: "news.ycombinator.com"
+    tag: "tools"
+    significance: 3
