@@ -1,0 +1,56 @@
+date: "2026-10-02"
+stories:
+  - title: "Barclays Rolls Out Claude Code to Majority of Engineers by 2027"
+    summary:
+      - "Oct 1: Anthropic announces expanded Barclays deployment — Claude Code to 50% of the bank's developer population by end of 2026, majority of software engineers by 2027."
+      - "16,000+ UK retail employees already use an internal Claude assistant; markets division runs ~120,000 emails/day through Claude."
+      - "Framed as modernizing legacy systems and accelerating software development under strict financial-services governance; one of the most concretely quantified enterprise AI rollouts to date."
+      - "Lands four days after Anthropic's Sonnet 5.5 ship and three days after the FTC probe news — Anthropic leans into regulated-industry proof points."
+    url: "https://www.anthropic.com/news"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "NVIDIA RTX Spark 1-Petaflop AI PCs Begin Shipping This Month"
+    summary:
+      - "October launch window now active: eight OEMs (Dell, Lenovo, HP, ASUS, Acer, Gigabyte, Microsoft, MSI) start selling N1X-based desktops and laptops this month, no vendor-published pricing yet."
+      - "Flagship chip pairs a 20-core Grace CPU with a 6,144-core Blackwell RTX GPU and up to 128GB unified LPDDR5X — NVIDIA claims 1 PFLOP FP4 for local AI."
+      - "Laptop-tier N1X cuts to 18 CPU cores, 5,120 GPU cores, 32GB max — aimed at developers running local inference and agent workloads without cloud roundtrips."
+      - "First major Arm-on-Windows push with Microsoft as a launch partner; no independent benchmarks on the chip or full systems yet."
+    url: "https://www.windowscentral.com/hardware/nvidia/nvidia-confirms-rtx-spark-configurations-and-availability-first-devices-expected-to-begin-shipping-as-soon-as-next-month-with-two-n1x-configs-on-offer"
+    source: "windowscentral.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "OpenAI Expands Airbnb Deal to GPT-6 Astra and Frontier Models"
+    summary:
+      - "Fresh OpenAI customer post: Airbnb engineering and product teams get expanded access to GPT-6 Astra on top of existing GPT-5.6 Sol/Terra/Luna and Codex usage."
+      - "Workloads named: internal dev assistant and remote coding agents, search ranking, fraud prevention, host/traveler support, and claims processing."
+      - "Access distributed through both the OpenAI API and Amazon Bedrock — follows a broader post-DevDay cadence of named enterprise expansions (Albertsons retail-media ChatGPT ads also rolled this week)."
+      - "Positioned as leverage for Airbnb's push to collapse rentals, experiences, airport transfer, and vehicle leasing into one super-app."
+    url: "https://openai.com/index/airbnb-gpt-6-astra/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Skills Frameworks Dominate GitHub Trending After DevDay"
+    summary:
+      - "mattpocock/skills (35 markdown-defined engineering practices — grill-me, tdd, refactor-plan) climbs to 274K stars, +883 today; installs across Claude Code, Cursor, Codex, Windsurf, and any MCP tool."
+      - "obra/superpowers (Jesse Vincent's full-loop agentic workflow — brainstorm, plan, TDD, systematic debug, two-stage review) sits at 294K stars, +455 today."
+      - "DietrichGebert/ponytail — 'make your AI agent think like the laziest senior dev' — holds #1 daily, 150K stars, +1,194 today; author claims 54% code reduction."
+      - "Signal: with every major agent harness now shipping a skills loader, the ecosystem is pivoting from prompt libraries to shareable, versioned engineering workflows."
+    url: "https://github.com/mattpocock/skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "HeyGen Hyperframes: Claude Code Writes HTML, Renders It to Video"
+    summary:
+      - "Open-source TypeScript framework from HeyGen — scene is a plain HTML file with data-attributes for timing/transitions, CSS for layout, GSAP for motion, Three.js for 3D; CLI renders via Puppeteer + FFmpeg to pixel-perfect MP4."
+      - "No proprietary DSL, no new primitive to learn — the agent writes the same web it already knows and gets an MP4 instead of a browser tab."
+      - "~19–23K GitHub stars and climbing after a +627 day; built explicitly for Claude Code and Cursor to handle end-to-end video creation and batch/data-driven video workflows."
+      - "Lands as agent-to-video pipelines heat up: pairs cleanly with the ChatGPT Pages / Codex plugin surface shipped at DevDay last week."
+    url: "https://github.com/heygen-com/hyperframes"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
