@@ -1,0 +1,56 @@
+date: "2026-10-05"
+stories:
+  - title: "Open-Source Strata Runs 125B Qwen MoE on a Single Gaming GPU"
+    summary:
+      - "C++20/CUDA engine streams a Qwen3.8-Flash-Next checkpoint across GPU VRAM, host RAM and NVMe — one 12–24 GB NVIDIA card + 64 GB RAM is enough."
+      - "Benchmarks: 60–95 tok/s writes, ~70 tok/s on an RTX 3090 at 128K context (IQ2_XS); MTP speculative decode accepts 2.4–3.2 tokens/pass, bit-identical to greedy."
+      - "Adaptive expert cache keeps hot MoE experts on GPU and runs cold ones on CPU in parallel via AVX-512/AVX-2; serves OpenAI- and Anthropic-compatible APIs on localhost."
+      - "Hit the HN front page on Oct 4 — latest challenger to llama.cpp/vLLM for the 'frontier open-weight model on a single desktop' use case."
+    url: "https://github.com/Niko1221/Strata"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "DeepMind's SynthID Bio Watermarks AI-Designed Proteins Without Breaking Them"
+    summary:
+      - "Nature paper (Sep 30) from Google DeepMind: imperceptible, verifiable signatures baked into AI-generated protein sequences and AlphaFold 3 predicted 3D structures."
+      - "Watermarking is fine-tuned into a small part of AlphaFold 3's diffusion network — any predicted coordinates carry a detectable signature no matter who runs the model."
+      - "Wet-lab tests on VEGF-A, SARS-CoV-2 spike RBD and PD-L1: watermarked designs match unwatermarked on hit rate, binding affinity and sequence diversity — first functional watermarked AI protein binders."
+      - "Pitched at gene-synthesis screening providers and regulators to trace the origin of synthetic biology outputs under the new biosecurity regime."
+    url: "https://deepmind.google/blog/introducing-synthid-bio/"
+    source: "deepmind.google"
+    tag: "research"
+    significance: 4
+
+  - title: "Meta Readies $200/Month Hatch Agent and October 'Watermelon' Model"
+    summary:
+      - "The Information: Hatch — a paid, autonomous AI agent for Instagram/Meta's 2B+ daily users — launches in the coming weeks; top tier reportedly runs $199.99/month."
+      - "Hatch takes a goal and acts: initial connectors include DoorDash, Etsy, Reddit, Yelp and Microsoft Outlook; Meta positions it against OpenAI Dots and Google Gemini Agents."
+      - "A new model codenamed 'Watermelon' is slated to ship alongside Hatch in October; unclear whether it joins the Muse family or stands alone."
+      - "Signals Meta's shift from free Meta AI into direct consumer monetization — the biggest consumer-agent subscription push since OpenAI's $500 Pro 500 tier at DevDay."
+    url: "https://the-decoder.com/metas-paid-ai-agent-hatch-launches-soon-with-a-new-model-called-watermelon-due-in-october/"
+    source: "the-decoder.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Tavus Griffin-Lite Fools 48% of Video Callers in First Public Test"
+    summary:
+      - "Oct 1 research preview: first full-duplex video-to-video 'Human Interaction Model' — generated face, voice and body that sees, hears and reacts in real time on a live call."
+      - "In Tavus's own one-minute call study, 26 of 54 participants (48%) believed Griffin-Lite was a real person — up from 2.4% on the prior Phoenix-4.5 system."
+      - "NVIDIA eval (September): #1 on both generation (3.83/5 vs 2.80 next-best; human reference 3.92) and perception tracks."
+      - "Trusted-tester only for now, not customer-shippable — reframes 'conversational AI' as video-native, not voice-with-avatar."
+    url: "https://www.tavus.io/research"
+    source: "tavus.io"
+    tag: "research"
+    significance: 3
+
+  - title: "Cloudflare and AWS Both Ship Open Decision Models on Oct 1"
+    summary:
+      - "Cloudflare releases Clef (27B, Qwen3.8-27B base, 64K context, multimodal) and Clef-flash (9B, Qwen3.5-9B) under open weights on Workers AI, with an RL fine-tuning platform alongside."
+      - "AWS releases Strands Decider 2B same day — a Qwen3.5-2B derivative with its text-generation head removed; median ~115ms per decision on a single RTX 3090."
+      - "Both target 'bounded structured outputs' — picking from fixed answers with calibrated confidence — a workflow slot that currently goes to full-size LLMs at 10–100× the cost."
+      - "First real competition for closed decision models like Scale's Jev; Cloudflare claims Clef beats Jev on both accuracy and latency on edge GPUs."
+    url: "https://blog.cloudflare.com/clef-decision-models/"
+    source: "blog.cloudflare.com"
+    tag: "open-source"
+    significance: 3
