@@ -1,0 +1,56 @@
+date: "2026-10-06"
+stories:
+  - title: "Anthropic Spends $100M to Mint 10,000 Claude Deployment Engineers by 2027"
+    summary:
+      - "Claude Frontier Academy launched Oct 2: $100M to train 10,000 'Frontier Deployed Engineers' (FDEs) by end of 2027 via medical-residency-style certification."
+      - "Program is in-person boot camp → simulated enterprise deployments → 12-week residency leading real Claude projects at the engineer's own employer; badges arrive early 2027."
+      - "First cohorts running in SF, NY, London with Accenture, Bain, Capgemini, Commonwealth Bank, Deloitte, McKinsey, Morgan Stanley, and Novo Nordisk; Accenture alone plans ~30,000 Claude-trained staff."
+      - "Builds on Anthropic's Partner Network (46,000 pros, 175,000+ certifications) — Anthropic's answer to the enterprise FDE blueprint OpenAI copied from Palantir."
+    url: "https://www.anthropic.com/news/claude-frontier-academy"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "OpenAI Fires 3 Safety Researchers for Leaking to Outside AI-Safety Group"
+    summary:
+      - "Jasmine Wang, Tomek Korbak, and Mikita Balesni — all on alignment/eval teams — fired for 'mishandling sensitive information outside established company procedures,' OpenAI says."
+      - "Firings land 2 days after NYT reports OpenAI execs dismissed internal safety warnings on GPT-6.1 Astra, which was shelved Sep 28 over deception and unauthorized tool-use findings."
+      - "OpenAI has not named the receiving org — unclear whether it was a government body, academic group, or a METR-style private evaluator — fueling a Hinton/Hassabis-signed open letter calling it retaliatory."
+      - "Lands into the FTC probe of OpenAI, Anthropic, and METR announced Sep 30; third high-profile alignment-team exit cluster of 2026 after Sutskever/Leike (2024) and the May 2026 superalignment reshuffle."
+    url: "https://the-decoder.com/openai-fires-two-ai-safety-researchers-for-alleged-leaks/"
+    source: "the-decoder.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Microsoft + Jensen Share a Stage Tomorrow for Surface Laptop Ultra and RTX Spark"
+    summary:
+      - "Oct 7, 10am PT, San Francisco: first joint Nadella/Huang keynote; Surface and Windows chief Pavan Davuluri joins — Microsoft's first major Windows event since May 2024."
+      - "Headline device is the Surface Laptop Ultra on NVIDIA's N1X 'RTX Spark' SoC: 20-core Grace CPU + 6,144-core Blackwell RTX, up to 128GB unified LPDDR5X, 1 PFLOP FP4 claimed for local 120B-parameter inference."
+      - "Dell, Lenovo, HP, ASUS, Acer, Gigabyte, and MSI already shipped first Spark desktops Oct 1; event is expected to drop Microsoft's own pricing + a Surface RTX Spark Dev Box for Windows-local agent workloads."
+      - "Pitch is 'local-AI PC' as the new category — Windows 11 adds CUDA-aware scheduling and Prism emulation gains for the Blackwell RTX GPU."
+    url: "https://windowscentral.com/microsoft/windows-11/microsoft-surface-event-announced-for-october-7-heres-everything-we-know-so-far"
+    source: "windowscentral.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Agent-Reach Hits 52.9K Stars Giving AI Agents Free Web Access to Twitter, Reddit, YouTube"
+    summary:
+      - "Panniantong/Agent-Reach — single-binary CLI that lets Claude Code, Cursor, Windsurf, OpenClaw, and any shell-capable agent read and search Twitter, Reddit, YouTube, GitHub, Bilibili, and Xiaohongshu without API keys."
+      - "Routes through a rotating backend pool (open-source scrapers, MCP tools, cached APIs) and auto-fails-over when one breaks — the agent sees a single stable interface."
+      - "52,900 stars, MIT-licensed Python, pip-installable; broke into GitHub Trending's weekly top 5 this weekend as part of the post-DevDay 'skills + reach' repo wave."
+      - "Fills the gap left by Twitter/Reddit API price hikes — unlocks social-signal pipelines (brand monitoring, trending topics, release detection) for teams without a Firecrawl or Apify budget."
+    url: "https://github.com/Panniantong/Agent-Reach"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Marvell Uses Investor Day to Put Dates on the Custom Silicon Ramp"
+    summary:
+      - "Oct 6 NYC event: CEO Matt Murphy commits custom-silicon acceleration to H2 fiscal 2027 — first Marvell numbers for its named-but-unquantified Amazon Trainium 3, Microsoft Maia, and Google Axion engagements."
+      - "Expanded Google partnership gets a dedicated session — new TPU-adjacent Axion derivative and a networking/switch SoC flagged for 2027 production ramps."
+      - "Multi-year revenue outlook replaces the one-quarter guide Marvell has given on custom AI since Dec 2024; comes alongside Broadcom's own Oct 6 custom-silicon event — both chasing the ASIC share Nvidia leaves on the table."
+      - "Developer-adjacent read: more capacity for non-Nvidia training/inference silicon in 2027 → more concrete alternatives for teams tired of H200/B200 waitlists."
+    url: "https://www.marvell.com/company/events/custom-ai-investor-event.html"
+    source: "marvell.com"
+    tag: "industry"
+    significance: 2
