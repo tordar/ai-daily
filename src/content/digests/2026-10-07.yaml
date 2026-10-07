@@ -1,0 +1,56 @@
+date: "2026-10-07"
+stories:
+  - title: "Microsoft Unveils Surface Laptop Ultra With RTX Spark and 128GB for Local 120B-Parameter Inference"
+    summary:
+      - "Oct 7 keynote in SF: first joint Nadella/Jensen Huang stage, Microsoft's first major Windows showcase in two years."
+      - "Top config: 20 Grace CPU + 6,144 Blackwell RTX cores, 128GB unified LPDDR5X, 1 petaflop FP4 — pitched for on-device 120B-parameter agents."
+      - "15-inch 2,000-nit mini-LED, under 18mm, under 4.5 lb; a Surface RTX Spark Dev Box ships alongside for Windows-local agent workloads."
+      - "Pricing left to a later update; the pitch is a new 'local-AI PC' category with CUDA-aware Windows scheduling and improved Prism emulation for Blackwell RTX."
+    url: "https://www.windowscentral.com/microsoft/windows-11/what-to-expect-at-microsofts-special-windows-and-surface-event-on-october-7-surface-laptop-ultra-and-rtx-spark-revealed-new-agentic-os-capabilities-and-more"
+    source: "windowscentral.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Anthropic Splits Cyber Verification Program Into Three Tiers for Red Teams and Critical Infrastructure"
+    summary:
+      - "Oct 6: Defense Access (incident response, malware analysis, vulnerability validation), Red Team Access (authorized pentesting), and Specialized Access (flight, grid, telecom, banking, government networks)."
+      - "Replaces separate Project Glasswing and the original CVP; Specialized tier is reviewed in collaboration with the US government."
+      - "Glasswing partners — Booz Allen and Comcast among them — report 129,000+ verified software vulnerabilities uncovered April–July 2026."
+      - "All tiers get Claude Opus 5.5, Sonnet 5.5, Mythos 5.1 with the default cyber blocks relaxed; apply at portal.anthropic.com/programs/cvp."
+    url: "https://www.anthropic.com/news/cyber-verification-program"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic Opens Claude for Startups to Any Early-Stage Founder With a Free Year of Claude Team"
+    summary:
+      - "Oct 6 expansion: 12 free months of Claude Team with up to 5 premium seats plus $1,000 in API credits."
+      - "Marketplace access included — startups can both buy third-party Claude apps and publish their own plug-ins."
+      - "Eligibility widens: no VC backing required, but companies must be incorporated and under four years old."
+      - "Lands days after the $100M Claude Frontier Academy — Anthropic doubling down on bottom-of-the-funnel enterprise and founder acquisition."
+    url: "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits"
+    source: "techcrunch.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "GitHub Trending Fills Up With AI Reverse-Engineering Agents"
+    summary:
+      - "morluto/rea — 10.5k stars with +2,956 today — gives coding agents a toolchain for reversing app behavior down to native binaries."
+      - "Rides a widening pattern: The-Arabi/Reverse-engineering-agent (MCP server, 46 structured tools over Ghidra/GDB/Binwalk) and Dryxio/auto-re-agent (Ghidra + LLMs reconstructing C/C++ from binaries) both climbing."
+      - "Fallout from the DevDay 'skills + reach' wave: agents getting purpose-built security and binary-analysis plumbing rather than generic shell access."
+      - "Dual-use angle fuels the buzz — same tooling that defenders want is what Anthropic's new Red Team Access tier (story above) is explicitly scoping to vetted orgs."
+    url: "https://github.com/morluto/rea"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Tester-Army/e2e Jumps to 6.6K Stars Pitching Agent-Native End-to-End Testing"
+    summary:
+      - "6,588 stars with +1,725 today on GitHub Trending; billed as a 'next-generation e2e testing framework for web and mobile apps' built for agent-driven test authoring."
+      - "Part of a visible shift in post-DevDay dev-tool trending: agent harnesses and testing/eval glue, not more model wrappers."
+      - "Competes with Playwright-plus-LLM stacks and the Codex Code Review features OpenAI shipped Sep 29 — but as a single open framework instead of a vendor SDK."
+      - "Early adopters cite stable selectors across UI redesigns and natural-language test specs rewritten into deterministic traces as the main pull."
+    url: "https://github.com/tester-army/e2e"
+    source: "github.com"
+    tag: "open-source"
+    significance: 2

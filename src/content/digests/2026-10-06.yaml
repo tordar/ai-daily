@@ -31,7 +31,7 @@ stories:
     url: "https://windowscentral.com/microsoft/windows-11/microsoft-surface-event-announced-for-october-7-heres-everything-we-know-so-far"
     source: "windowscentral.com"
     tag: "tools"
-    significance: 3
+    significance: 1
 
   - title: "Agent-Reach Hits 52.9K Stars Giving AI Agents Free Web Access to Twitter, Reddit, YouTube"
     summary:
