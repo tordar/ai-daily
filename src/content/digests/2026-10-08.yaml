@@ -1,0 +1,67 @@
+date: "2026-10-08"
+stories:
+  - title: "Anthropic Ships Claude Haiku 5.5 With 75% Price Cut and Subagent Role"
+    summary:
+      - "Oct 7: $0.10/$0.50 per M tokens under 100k context, $0.50/$2.50 above — roughly 75% cheaper than Haiku 4.5."
+      - "Can be invoked as a subagent by Opus 5.5 or Sonnet 5.5 for high-volume routing, extraction, and classification."
+      - "Same drop lowers Sonnet 5.5 cache-read pricing to $0.10/M and adds a monthly API credit for Max/Team subscribers."
+      - "HN front page: ~692 points, 346 comments; frames the launch as a direct answer to GPT-6 Luna's economy tier."
+    url: "https://www.anthropic.com/news"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 5
+
+  - title: "ChatGPT Goes Visual as OpenAI Rolls Out GPT-6 Sol and Luna"
+    summary:
+      - "New 'Intelligent UI' renders charts, forms, tappable buttons, maps, and side-by-side comparisons inline in responses."
+      - "GPT-6 Sol lit up for paid tiers Oct 7; GPT-6 Luna reached Free and Go tiers Oct 8."
+      - "GPT-6 Instant is 44% faster on web-search answers vs GPT-5.6, per OpenAI's own benchmark post."
+      - "HN discussion: ~467 points, 294 comments; r/ChatGPT viral on the new inline components."
+    url: "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/"
+    source: "techcrunch.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Mistral Debuts Large 4 'Le Chonk' — 1.05T MoE With Open Weights Due Late October"
+    summary:
+      - "1.05T-parameter MoE with 49B active, 1M context, and a 1.6B multimodal vision encoder."
+      - "API and Mistral Studio only for now; open-weights release scheduled for ~Oct 27-31 under Apache-style terms."
+      - "Launch pricing $0.68/$2.09 per M tokens (half-off for the first month)."
+      - "HN front page: 1,895 points, 1,142 comments — the week's biggest r/LocalLLaMA thread."
+    url: "https://artificialanalysis.ai/articles/mistral-large-4-france-ai"
+    source: "artificialanalysis.ai"
+    tag: "models"
+    significance: 5
+
+  - title: "Named-Author 'Skill Packs' Dominate GitHub Trending for Coding Agents"
+    summary:
+      - "mattpocock/skills (280k stars, +1,403 today) ships practical skills — `/grill-me`, `/tdd`, `/diagnosing-bugs` — targeting agent failure modes."
+      - "addyosmani/agent-skills (103k stars, +677 today) is the Chrome DevRel counterpart, pitched as 'production-grade engineering skills.'"
+      - "ayghri/i-have-adhd (55k, +619) forces answers-up-top formatting; thedotmack/claude-mem (97.9k, +578) adds cross-session memory."
+      - "Trend extends to vendors: cloudflare/security-audit-skill cleared 26k stars with +576 today, the first big first-party skill drop."
+    url: "https://github.com/mattpocock/skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Meta and Microsoft Slash Internal Claude Spend Pre-IPO"
+    summary:
+      - "Microsoft's forecast Anthropic bill cut by more than a third from $1B+; per-employee monthly cap dropped from $100k to ~$10k."
+      - "Meta's Claude Code user count halved from ~60k to ~30k, despite spending >$105M on Claude Code in a recent 28-day window."
+      - "Memos frame it as cost control plus distillation risk ahead of Anthropic's rumored IPO window."
+      - "HN thread: ~305 points; r/ClaudeAI debating whether this slows Anthropic's enterprise curve or just rationalizes it."
+    url: "https://www.thestreet.com/technology/meta-microsoft-send-employees-memo-about-anthropic-claude"
+    source: "thestreet.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "DeepMind Drops EmbeddingGemma 2 — 740M Multimodal Embeddings Under 200MB"
+    summary:
+      - "740M-parameter model maps text, code, image, video, and audio into one 768-dim space under Apache 2.0."
+      - "~567MB RAM full, 191MB text-only on a Pixel 11 Pro; 8,192-token context with Matryoshka dims (768/512/256/128)."
+      - "Weights live on HuggingFace and Kaggle; Google positions it as the on-device retrieval backbone for Gemini Nano apps."
+      - "r/LocalLLaMA threads already benchmarking it against Nomic-Embed v3 and Qwen3-Embed on BEIR."
+    url: "https://www.unite.ai/deepmind-debuts-embeddinggemma-2-mapping-five-modalities-into-one-space/"
+    source: "unite.ai"
+    tag: "open-source"
+    significance: 3
