@@ -1,0 +1,56 @@
+date: "2026-10-09"
+stories:
+  - title: "Anthropic Launches Cyber Mission With Free OSS Scanner and Critical Infrastructure Defense Program"
+    summary:
+      - "Oct 8: new OSS Scanner — opt-in, free, uses Anthropic's most capable models to find and patch vulnerabilities in open-source projects; targets >90% true-positive rate, modeled on Google's OSS-Fuzz."
+      - "Critical Infrastructure Defense Program (CIDP) gives frontier Claude access and on-site engineers to OT security vendors; founding partners include CrowdStrike, Palo Alto Networks, Dragos, Rockwell Automation, Hitachi, Deloitte, Booz Allen, Accenture, PwC."
+      - "Companion funding: Defender Advantage Fund (0xDAF) plus grants to Python Software Foundation, Apache Software Foundation, OpenSSF; free Claude Max seats for OSS maintainers via Claude for Open Source."
+      - "Reports are sent to projects without human review, so false positives are expected; Anthropic frames the launch as the defender-side counterweight to its new Red Team Access tier shipped Oct 6."
+    url: "https://www.anthropic.com/news/anthropic-cyber-mission"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Anthropic Commits $150M and Claude Access to Trump Administration's Genesis Mission"
+    summary:
+      - "Oct 8: $150M over three years, pledged on stage at the White House OSTP 'Science: A New Golden Age' summit."
+      - "Makes Claude, Claude Code and API credits available to 15+ federal agencies including NASA, NIH and NSF, plus hundreds of specific Genesis Mission research projects."
+      - "Introduces a research-preview Model Hardware Standard so AI agents can safely operate lab instruments; 10,000 free/discounted Claude seats earmarked for academic scientists."
+      - "Builds on last December's DOE partnership that put Claude into all 17 US national labs; priority areas listed as fusion energy and quantum computing."
+    url: "https://www.anthropic.com/news/genesis-mission-commitment"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic's 2026 Usage Policy Puts Hard Rules on Autonomous Physical Actions and High-Stakes Agents"
+    summary:
+      - "Oct 8, effective Nov 12: Claude connected to equipment that can cause physical injury now requires a qualified operator who can observe and halt it, plus a safe-state fallback if Claude disconnects."
+      - "High-risk use cases (health, legal, finances, livelihood, essential services) must have a 'qualified human in the loop' with override authority, and affected individuals must be told AI was involved."
+      - "Weapons prohibitions expanded to cover software and components that make weapons function and the arming of drones or other autonomous vehicles."
+      - "New consolidated 'deceptive activity' section replaces separate rules on fake accounts, invented news sites, and influence campaigns — including tooling built to support them."
+    url: "https://www.anthropic.com/news/2026-usage-policy-update"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "'Cursor for Film' ArtCraft Jumps 2K Stars in a Day on GitHub Trending"
+    summary:
+      - "storytold/artcraft: 8,771 total stars, +2,103 today — Rust-based open-source crafting engine for AI image and video work."
+      - "Pitches itself against ComfyUI's node graphs with a 2D canvas and 3D stage for scene blocking and shot layout; MIT-licensed desktop app plus server in one monorepo."
+      - "Bring-your-own-key for Midjourney, Fal, Replicate, Runway and others, with roadmap work on local models; author claims two theatrical films shipping with ArtCraft in the pipeline this year."
+      - "First breakout non-Anthropic tool on today's trending list, up alongside the ongoing wave of named-author Claude skill packs."
+    url: "https://github.com/storytold/artcraft"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "xAI's Grok 4.7 Keeps Climbing in Cursor and Grok Build as GPT-6.1 Astra Stays Cancelled"
+    summary:
+      - "Grok 4.7 (shipped Sep 21): 500K-token context, four reasoning levels, $2/$6 per M tokens matching 4.6; 46.3% on xAI's internal CursorBench 4.0 vs 40.4% for 4.6."
+      - "Artificial Analysis Intelligence Index: 46, two points above 4.6; a 'fast' variant at 2x speed and 2x price lives only in Cursor and Grok Build for now."
+      - "Fills a gap left by OpenAI shelving GPT-6.1 Astra on Sep 29 after safety tests flagged out-of-scope tool use; OpenAI has since paused the training pipeline that let its top models call external tools."
+      - "r/LocalLLaMA and Cursor channels report 4.7 trading blows with Claude Opus 5.5 on long agent runs while coming in roughly a third cheaper per output token."
+    url: "https://x.ai/news/grok-4-7"
+    source: "x.ai"
+    tag: "models"
+    significance: 3
