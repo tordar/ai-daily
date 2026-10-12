@@ -1,0 +1,56 @@
+date: "2026-10-12"
+stories:
+  - title: "Reflection AI Unveils Beam, a 501B Open-Weight MoE Pitched as 'DeepSeek of the West'"
+    summary:
+      - "501B-parameter sparse MoE with 23B active per inference, trained on 23.8T tokens; aimed at coding, reasoning, and agentic workloads."
+      - "Reflection claims it matches Z.ai's GLM-5.2 on advanced reasoning benchmarks using 3-4x less inference compute — vendor numbers, not independently verified."
+      - "Apache 2.0 weights, technical report, model card, and dev tooling promised later this month; early access is waitlist only, no public API or price yet."
+      - "Nvidia-backed Reflection framing it as the US answer to Chinese open-weight leaders; Fireship covered it alongside Mistral Large 4 and Moonshot in his Oct 7 'open-weight race' video."
+    url: "https://techcrunch.com/2026/10/05/nvidia-backed-reflection-ai-releases-beam-open-weight-model"
+    source: "techcrunch.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Meta, Sierra, Walmart, Stripe and Shopify Launch Personal Agent Protocol"
+    summary:
+      - "Oct 7: open standard for authenticating personal AI agents to businesses, with read-only or write permissions and visibility into agent activity."
+      - "Agents can connect as a guest; customers decide the access level each company gets, and merchants see which agent is acting on their site."
+      - "Founding backers include Meta, Sierra, Walmart, Stripe, Shopify, Genesys, Instinct, and Rocket; Sierra plans to publish v0.1 of the spec later in October."
+      - "Third parallel standard this quarter: Walmart and Shopify also co-sign Google's Universal Commerce Protocol, while Stripe helped build the Agentic Commerce Protocol with OpenAI."
+    url: "https://www.channelinsider.com/ai/news-meta-walmart-shopify-stripe-ai-agent-standard/"
+    source: "channelinsider.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Pwn2Own Ireland Debuts AI Category — LiteLLM Falls Twice, Codex and Dynamo Breached"
+    summary:
+      - "Oct 6-8 contest in Cork paid $1,262,000 for 98 unique zero-days across 61 successful attempts by 29 teams."
+      - "AI infrastructure track hit for the first time: LiteLLM breached twice in one day, OpenAI Codex cloud agent fell to a single argument-injection bug, NVIDIA Dynamo and Chroma also compromised."
+      - "Taisic Yun (Xint) chained an input-validation flaw with code injection for a reverse shell on LiteLLM ($40k); HaeJung Yang (Out of Bounds) took Dynamo on day two for another $40k."
+      - "Ikotas Labs won Master of Pwn with $361k and 42.5 points; signals AI gateways and coding agents are now first-class attack surfaces alongside printers and phones."
+    url: "https://www.bleepingcomputer.com/news/security/hackers-earn-1262000-for-98-zero-days-at-pwn2own-ireland/"
+    source: "bleepingcomputer.com"
+    tag: "research"
+    significance: 4
+
+  - title: "'REA: Reverse Engineer Anything' Rockets Up GitHub Trending With 25K Stars in a Day"
+    summary:
+      - "morluto/rea: +25,599 stars today, now at ~117k total — a CLI and MCP server that lets coding agents reverse engineer software through Hopper Disassembler."
+      - "Ships 50+ MCP tools covering function dossiers, Evidence v2 reproducible records, and controlled process capture; installs via `npx skills add morluto/rea` or the `rea-agents` npm package."
+      - "Roadmap extends to packaged apps, JavaScript bundles, websites, firmware, mobile artifacts, and runtime-behavior diffs between versions."
+      - "Matthew Berman cosigned it this week — fits the broader 'skill packs' trend that owned GitHub trending in early October."
+    url: "https://github.com/morluto/rea"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "OpenAI Codex CLI 0.161 Makes GPT-6.1 Sol the Default Coding Model"
+    summary:
+      - "Oct 7 release carries the GPT-6.1 Sol default forward across the bundled and Amazon Bedrock catalogs; model ID is `gpt-6.1-sol`."
+      - "Adds `/mcp login` for signing into MCP servers from the terminal, plus microphone and speaker selection for voice conversations."
+      - "Amazon Bedrock path picks up multi-agent V2 and Ultra reasoning on compatible models; Daybreak stays opt-in."
+      - "Rollout is per-account — some ChatGPT-tied users still see 'model not supported' errors; downgrading Codex doesn't fix it."
+    url: "https://github.com/openai/codex/releases/tag/rust-v0.161.0"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
