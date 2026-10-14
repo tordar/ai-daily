@@ -1,0 +1,56 @@
+date: "2026-10-14"
+stories:
+  - title: "Torvalds Pushes Two LLM-Assisted Kernel Branches, Each Patch Tagged 'Assisted-by: LLM'"
+    summary:
+      - "Oct 11-12: `noref-filemap-read-with-llm` branch in Torvalds' tree holds an 8-patch page-cache rework co-authored with Claude Code; eight-thread hot-cache read benchmark jumps from ~10M to 30-33M reads/sec on his laptop."
+      - "Same weekend: an `assoc-array-fixes` tag lands — Torvalds says the reported fix was 'too obscure for me to follow,' so he had an LLM refactor the library and build a userspace harness that caught three more bugs dating to the original 2013 commit."
+      - "Commit message credits 'Claude Code … under my direction' and each patch carries an `Assisted-by: LLM` trailer; targets the Linux 7.4 merge window, not 7.3."
+      - "Lands days after Torvalds publicly rejected calls to label or ban LLM-assisted kernel patches; HN and Phoronix threads active through the weekend."
+    url: "https://www.phoronix.com/news/Linus-Torvalds-Claude-Code"
+    source: "phoronix.com"
+    tag: "community"
+    significance: 5
+
+  - title: "Meta Ships Muse Wonder, Its First Frontier-Class Model, at Opus 5.5 Prices"
+    summary:
+      - "Oct 12: Meta Model API opens to Muse Wonder at $4/$20 per M tokens (cached input $0.20/M), matching Opus 5.5 and GPT-6 Sol; 1M-token context, text/image/video/audio input."
+      - "Artificial Analysis Intelligence Index v4.3.2: Muse Wonder 52, Muse Wonder Full 56, Opus 5.5 58 — Full ties Sonnet 5.5 and trails Opus by two points on the independent index."
+      - "Meta's own numbers: Wonder Full 79.0 on DeepSWE 1.1 and 57.5 on SWE-Marathon (vs. ~74 and 46.3 for Opus 5.5), with a 59.0 self-reported AA figure Artificial Analysis itself publishes as 56."
+      - "Wonder Full is not sold through the API — only via $50 and $200/month Muse Code subscriptions; first frontier-tier release since Meta's Superintelligence Labs reorg."
+    url: "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder"
+    source: "techcrunch.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Z.ai Debuts GLM-Legal, a 320B MoE Legal Agent Built on GLM-5.3-Flash"
+    summary:
+      - "Oct 12: 320B-parameter MoE with 18B active per token and a 1M context window, fine-tuned on legal corpora and RL in legal environments."
+      - "Scores 19.2% on Harvey's LAB benchmark across 24 practice areas — +12.5 points over the GLM-5.3-Flash base; Z.ai also claims frontier-level LegalBench and PLawBench results without publishing numbers."
+      - "No public API yet: access gated behind a consultation form, and the model also ships inside Z.ai's AutoClaw desktop agent."
+      - "Second domain-specialist frontier model this quarter after Google's cyber-defense-first Gemini 4 Argon — the 'frontier for one job' pattern is a trend now, not an outlier."
+    url: "https://aiweekly.co/alerts/zai-debuts-glm-legal-a-320b-legal-agent-built-on-glm-53-flash-with-192-harvey"
+    source: "aiweekly.co"
+    tag: "models"
+    significance: 3
+
+  - title: "VoiceStudio Clears 60K Stars as a Local, Account-Free ElevenLabs Alternative"
+    summary:
+      - "debpalash/VoiceStudio: 64.1k stars (+1,748 today) — AGPL-3.0 desktop app for voice cloning, dubbing, dictation, transcription, voice design, and audiobook generation, all local, no account, no API key."
+      - "Clones from ~3 seconds of audio; recent v0.5.x releases add a 'Voice match' consistency mode so each line of a speaker clones from one shared reference instead of per-line snippets."
+      - "Project claims coverage across 646 languages; renamed from OmniVoice Studio in v0.5.0 and now hitting GitHub Trending for the second time in six weeks."
+      - "Fits the broader 'run frontier-tier media models on your laptop' trend alongside AirLLM's Kimi K3 demo and ArtCraft's open-source creative suite."
+    url: "https://github.com/debpalash/VoiceStudio"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "God's Eye View Hits 55K Stars as a Browser-Based 3D Globe for Live OSINT"
+    summary:
+      - "bilawalsidhu/gods-eye-view: 55.8k stars (+1,961 today) — Vite + CesiumJS web app that stacks live public feeds (aircraft, ships, satellites, earthquakes, traffic, cameras) on one interactive globe."
+      - "Keyless mode works offline with baseline imagery; optional provider keys unlock photorealistic 3D, Google Place search, live vessel feeds, NASA fire data, and AI voice control."
+      - "Formerly WorldView; author notes 'modeled view' labels for areas without live feeds — not a literal spy satellite, but close enough for a sci-fi UI that's lighting up HN and X."
+      - "Second-day #2 on GitHub Trending after morluto/rea; packaging warns against exposing it outside a trusted LAN since there's no auth."
+    url: "https://github.com/bilawalsidhu/gods-eye-view"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
