@@ -1,0 +1,56 @@
+date: "2026-10-15"
+stories:
+  - title: "Google Opens Gemini 4 Argon to Pro, Ultra, and Antigravity"
+    summary:
+      - "Oct 13 rollout: Argon lands in the Gemini app and AI Mode in Search for Pro and Ultra, and inside Antigravity's desktop app and CLI for Ultra and eligible Enterprise plans — AI Pro users get the model in the app but not in the IDE."
+      - "Gemini API opens at $2/$10 per M tokens (cached input 95% off) through Nov 30, then rises to $4/$20; model ID is `gemini-4-argon` in AI Studio and the paid API tier."
+      - "Google-reported benchmarks: 77.9% on DeepSWE v1.1 (vs. 74.2% Opus 5.5 and 74.1% GPT-6 Astra) but only 57.4% on Terminal-Bench 4.0, behind Opus 5.5's 66.4%."
+      - "Google also offered six months of free top-tier Antigravity access to 10,000 scientists and researchers, and brought the Antigravity coding surface into the Gemini macOS app."
+    url: "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-availability"
+    source: "blog.google"
+    tag: "models"
+    significance: 5
+
+  - title: "JetBrains Open-Sources Mellum 2.1, a 12B MoE Coding Model"
+    summary:
+      - "Oct 8: Apache-2.0 weights on Hugging Face; 12B total / ~2.5B active params in a mixture-of-experts, 131K context, trained purely with post-training RL on top of the Mellum 2 base."
+      - "SWE-bench Verified jumps from 2% (Mellum 2) to 47%, within three points of Qwen3.5-9B's 50%; LiveCodeBench v6 lands at 82% vs. Qwen's 75.4%."
+      - "JetBrains claims roughly 2x Qwen3.5-9B throughput on a single H200 under load — a vendor figure that hasn't been independently verified."
+      - "Positioned for self-hosted coding agents in IDEs; weights ship with a GGUF variant for Ollama/LM Studio."
+    url: "https://www.marktechpost.com/2026/10/08/jetbrains-releases-mellum2-1-a-12b-moe-open-model-for-coding-agents/"
+    source: "marktechpost.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "HeyGen Open-Sources HyperFrames: HTML In, MP4 Out, Built for Agents"
+    summary:
+      - "heygen-com/hyperframes: 63.9k stars (+1,089 today) — Apache-2.0 framework that renders HTML/CSS/media and seekable animations to deterministic MP4 via headless Chrome + FFmpeg."
+      - "Ships 21 agent skills with `/hyperframes` as the router so Claude Code and other coding agents can author, preview, and render video from a single prompt."
+      - "Adapters for GSAP, Lottie, Three.js, Anime.js, CSS, and WAAPI; Node 22+ CLI covers preview, lint, and AWS Lambda rendering."
+      - "Pitched as a Remotion alternative; HeyGen says it's the same engine powering its own production videos, with tldraw and TanStack among listed adopters."
+    url: "https://github.com/heygen-com/hyperframes"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Stably's Orca Hits 92K Stars as a Desktop Fleet Manager for Coding Agents"
+    summary:
+      - "stablyai/orca: 92.7k stars (+919 today) — MIT desktop app for macOS/Windows/Linux that fans one prompt out to parallel Claude Code, Codex, OpenCode, and Pi agents, each in its own git worktree."
+      - "iOS/Android companion sends follow-ups and fires notifications when an agent finishes; a GPU-accelerated terminal keeps split panes and scrollback across restarts."
+      - "Design Mode lets you click any element in an embedded Chromium browser to feed its HTML, CSS, and a screenshot straight into an agent prompt."
+      - "SSH worktrees run agents on remote machines; GitHub and Linear integrations open worktrees directly from PRs, issues, and tasks."
+    url: "https://github.com/stablyai/orca"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Anthropic Stands Up an Official Marketplace for Claude Code Plugins"
+    summary:
+      - "anthropics/claude-plugins-official: 38.1k stars — curated directory users install from with `/plugin install {name}@claude-plugins-official`, split into first-party `/plugins` and vetted third-party `/external_plugins`."
+      - "Standardizes a plugin layout — `.claude-plugin/plugin.json`, optional `.mcp.json`, plus `commands/ agents/ skills/` subfolders — and locks plugin slug names at publish time so installs don't break on rename."
+      - "Puts Anthropic on the same marketplace footing as Cursor, which shipped its own plugin spec and marketplace repo two days ago; community indexes still carry an order of magnitude more plugins."
+      - "Repo stats show 199 open PRs and 1.1k issues, with Apache-2.0 licensing and skill-bundle support for repos that only ship SKILL.md files."
+    url: "https://github.com/anthropics/claude-plugins-official"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
