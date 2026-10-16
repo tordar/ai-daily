@@ -1,0 +1,56 @@
+date: "2026-10-16"
+stories:
+  - title: "Anthropic Hands METR Employee-Like Access as First Embedded Nonprofit"
+    summary:
+      - "Oct 15: Six METR staff get Anthropic hardware, office space, and the same internal risk-assessment tools Anthropic's own safety teams use — Anthropic cannot veto their published findings outside a short list of predefined redaction categories (customer data, legal privilege, model architecture)."
+      - "Caps a three-tier evaluator ladder: tier 1 is narrowly scoped, tier 2 lets evaluators publish freely with limited info, tier 3 is METR's embedded-employee setup."
+      - "Extends the embedded-evaluator program Anthropic launched Sep 18 with Accenture's Faculty unit; SecureBio is now reviewing the CBRN chapter of the August 2026 Risk Report, with Hugging Face in early talks."
+      - "Dario Amodei pitched the model in a Sep 12 essay comparing it to onsite bank examiners; Anthropic says it hopes every frontier AI lab adopts a similar arrangement."
+    url: "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic Opens Singapore Office with 1,500 GovTech Engineers on Claude Code"
+    summary:
+      - "Oct 14: Anthropic's fifth APAC office opens alongside an MOU with Singapore's MDDI covering model evaluation, incident response, and SME adoption; GovTech Singapore has 1,500+ engineers using Claude Code to modernize government systems."
+      - "DBS runs Claude in software development, GIC is rolling it out to investment teams, Grab's BriX sales assistant saves 40,000 hours/quarter, and Sea's Shopee uses Claude for both customer support and coding."
+      - "Singapore ranks second of 121 countries in Claude.ai usage per capita, at ~6x what population alone would predict."
+      - "Launch week paired a Builder Summit (300+ developers) with a 700+ ambassador meetup; in-region inference ships on Amazon Bedrock for regulated workloads."
+    url: "https://www.anthropic.com/news/singapore-office-opening"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "cathrynlavery/diagram-design Pitches Itself as Mermaid's Replacement for Coding Agents"
+    summary:
+      - "cathrynlavery/diagram-design: 56.1k stars (+10.2k this week) — MIT skill that gives coding agents 44 editorial-grade diagram types output as a single self-contained HTML+SVG file, no runtime deps."
+      - "Explicit Mermaid replacement for agent output: flat styling, no shadows, renders standalone in any browser or markdown viewer."
+      - "Installs via the open Agent Skills spec into Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi."
+      - "Diagram catalog grew from 29 types in August to 44 now; weekly #3 trending AI/dev repo behind morluto/rea and mattpocock/skills."
+    url: "https://github.com/cathrynlavery/diagram-design"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "text-to-cad Hands Coding Agents a Full Mechanical CAD Stack"
+    summary:
+      - "earthtojake/text-to-cad: 20.8k stars (+2.2k this week) — MIT plugin that lets Claude Code, Codex, Cursor, Gemini, and Grok generate parametric 3D models and spit them out as STEP, GLB, STL, or 3MF."
+      - "Ships DFM checks, drawing generation, and routed connectors into 3D-print, sheet-metal, and CNC fabrication services from the agent prompt."
+      - "Python 3.11+ and Node 20+ under the hood; weekly trending alongside Cursor's own plugin spec and twostraws/SwiftUI-Agent-Skill."
+      - "Marks the agent-skills ecosystem spreading past text/code work into real engineering domains with physical output."
+    url: "https://github.com/earthtojake/text-to-cad"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "mksglu/context-mode Sandboxes Tool Output and Promises 98% Context Savings"
+    summary:
+      - "mksglu/context-mode: 29.9k stars (+4.0k this week) — Elastic License 2.0 MCP server that sandboxes agent tool output and persists per-session memory in SQLite."
+      - "Author-reported 98% reduction in context used by tool calls, with hook-based routing across 17 agent platforms and sandbox execution in 12 languages."
+      - "Direct response to the context-pollution problem that drives up token bills on long Claude Code and Codex sessions; third separate 'cut your tokens' repo on this week's trending list after caveman and billion-context."
+      - "License is ELv2, not OSI-approved — commercial use allowed, but hosting it as a service for third parties is forbidden."
+    url: "https://github.com/mksglu/context-mode"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
