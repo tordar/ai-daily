@@ -1,0 +1,56 @@
+date: "2026-10-19"
+stories:
+  - title: "Claude Mythos 5 Designs Quantum Circuits That Beat the Best Published on 7 of 8 Tasks"
+    summary:
+      - "Oct 16: Anthropic's STEM Fellows program ran Claude Mythos 5 in a closed loop with a programmatic evaluator — the model writes each circuit as Python, the evaluator scores it on qubits + gates, no human in the loop."
+      - "One point-addition design uses 12% more qubits but 17x fewer gates than the smallest previous construction; a DQI decoder's gate count falls ~12x vs. Google's prior design."
+      - "Covers chemistry, optimization, quantum simulation, number theory, and numerical computing; eighth task yielded a new reversible architecture for prime-field modular inversion."
+      - "arXiv 2610.22367 (46 pages, submitted Oct 15) with Harvard's Susanne Yelin and Mikhail Lukin + QuEra; results are preprint, none independently reproduced yet."
+    url: "https://www.anthropic.com/research/designing-efficient-quantum-circuits"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 4
+
+  - title: "DeepSeek Drops V4.1-Flash-1017, a Date-Stamped Refresh That Tops Its Own Flagship"
+    summary:
+      - "Oct 17: DeepSeek posts V4.1-Flash-1017 to Hugging Face under MIT — 552B total MoE with ~8B active on prefill and ~16B on decode, 1M-token context, 890 bytes/token KV cache."
+      - "Self-reported wins: Terminal-Bench 2.1 90.6 Pass@1, Codeforces rating 3471, DeepSWE v1.1 74.2 — nudging past Opus 5.5 (74.0) and GPT-6 Sol (73.0) on the agentic coding bench."
+      - "Weak spots stand out too: Terminal-Bench 3.0 only 30.0, ProgramBench 20.3 vs. Opus 5.5's 37.0 — a specialized refresh, not an across-the-board jump."
+      - "HN discussion thread for the refresh hit 664 points; benchmarks are DeepSeek's own and not yet independently verified."
+    url: "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+    source: "huggingface.co"
+    tag: "models"
+    significance: 4
+
+  - title: "DeepSeek Ships Hosted Search + Fetch APIs at $0.75 per 1,000 Requests"
+    summary:
+      - "Oct 16: Two new endpoints — Search runs web lookups during inference, Fetch returns the content of a specified URL — both billed per successful request, not per token, from the same balance as model usage."
+      - "Calls from Claude Code and Codex pay $0 on Search for the first two weeks; DeepSeek hasn't announced when billing starts for those agents."
+      - "Pitched as the first flat-rate agent search/fetch pricing from a frontier-capable provider — undercuts the $5-20/1K-request range of hosted browsing in agent SDKs."
+      - "HN front page Oct 18: 556 points, 261 comments — thread centered on whether flat-rate per-request pricing survives contact with high-volume agent workloads."
+    url: "https://api-docs.deepseek.com/guides/search_fetch_api"
+    source: "api-docs.deepseek.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "obra/superpowers Hits ~265K Stars as the De Facto Methodology Layer for Claude Code"
+    summary:
+      - "obra/superpowers: ~265k stars — MIT skills framework from Jesse Vincent (obra) that layers a full dev methodology on top of Claude Code via composable SKILL.md files."
+      - "Core loop is subagent-driven development: dispatch a fresh specialized subagent per task to isolate context, with built-in skills for brainstorming, planning, TDD, systematic debugging, worktrees, and finishing branches."
+      - "Installs via `/plugin install obra/superpowers-marketplace` in Claude Code; also packages for Codex, Cursor, Gemini CLI, GitHub Copilot CLI, and OpenCode."
+      - "Companion `obra/superpowers-skills` repo is community-editable so teams can PR their own skills into the marketplace."
+    url: "https://github.com/obra/superpowers"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Anthropic Quietly Pitches Its Own Frontier AI Safety Bill to Capitol Hill"
+    summary:
+      - "Oct 16: Politico reports Anthropic representatives have circulated a draft bill to lawmakers on frontier model safety and security — company confirmed the outreach, declined to publish the text."
+      - "Lands with the Thune-led Senate framework stalled: Anthropic wants mandatory public risk disclosures and considers the Thune bill too lenient; Cantwell opposes the enforcement model."
+      - "House has its own 269-page discussion draft (the Great American AI Act of 2026 from Reps. Obernolte and Trahan) that already applies to any lab above $500M revenue training a frontier model."
+      - "Puts Anthropic in the unusual position of a frontier lab publicly asking for stricter rules than Washington is currently offering."
+    url: "https://www.politico.com/newsletters/digital-future-daily/2026/10/16/anthropic-ai-safety-bill-draft"
+    source: "politico.com"
+    tag: "industry"
+    significance: 3
