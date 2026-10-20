@@ -1,0 +1,67 @@
+date: "2026-10-20"
+stories:
+  - title: "Anthropic Pledges 5% of Shares to a New Public Benefit Fund"
+    summary:
+      - "Oct 18: Anthropic announces the Public Benefit Fund — a wholly-owned LLC (not a 501(c)(3)) seeded with 5% of company shares, subject to stockholder approval."
+      - "Board can add another 2% for every 50% jump in Anthropic's valuation above a set baseline — the stake grows with the company."
+      - "Stacked with the co-founders' 80% equity pledge and the employee equity match, ~20% of Anthropic's shares are now earmarked for public good (plus milestone adds)."
+      - "Hard rule: none of the Fund's equity can be used for lobbying or political giving, in the US or abroad. Governance and valuation milestones to come."
+    url: "https://www.anthropic.com/news/public-benefit-fund"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Meta Opens Muse Spark Open, an 816B MoE With Vision, Audio, and Video Input"
+    summary:
+      - "Oct 15: Meta pushes Muse Spark Open to Hugging Face — 816B total params, ~42B active per token, 1M context, text/image/audio/video in, text out."
+      - "Weights in BF16 and NVFP4; also mirrored to SageMaker AI, Google Cloud Model Garden, and Microsoft Foundry."
+      - "License is the proprietary 'Muse Model License' with limited commercial terms — open-weight, not open source."
+      - "Artificial Analysis scores it 39 at xhigh setting (ninth among 150B+ open-weight models); closed Muse Spark 1.3 still scores 48."
+    url: "https://ai.meta.com/blog/muse-spark-open-weights/"
+    source: "ai.meta.com"
+    tag: "models"
+    significance: 4
+
+  - title: "Mistral's Timestral Tops Public Time-Series Benchmarks With CPU-Fast Open Weights"
+    summary:
+      - "Oct 15: Mistral ships Timestral — four time-series foundation models from 5M to 209M params, probabilistic multivariate forecasts across 21 quantiles."
+      - "209M model self-reports #1 on GIFT-Eval, TIME, and fev-bench — beating prior SOTA with roughly two-thirds the parameters."
+      - "Weights under Modified MIT on Hugging Face, inference code Apache 2.0; 5M answers in ~10 ms, 209M in ~140 ms on an 8-thread CPU."
+      - "HN front page Oct 19: 565 points, 105 comments."
+    url: "https://mistral.ai/news/timestral/"
+    source: "mistral.ai"
+    tag: "models"
+    significance: 4
+
+  - title: "xAI Ships Grok Voice 3.0 at $0.08/min, Deprecates v2.0"
+    summary:
+      - "Oct 14: xAI replaces its real-time speech-to-speech model with grok-voice-3.0 — grok-voice-latest now routes to the new model."
+      - "Self-reported sub-second latency and 86.9 on Artificial Analysis's Speech-to-Speech Index; no independent eval posted yet."
+      - "Pricing holds flat at $0.08 per minute; grok-voice-2.0 deprecated the same day."
+      - "xAI claims the model already backs Tesla, SpaceX, and Starlink customer-support voice agents (single-source, unverified)."
+    url: "https://x.ai/news/grok-voice-3"
+    source: "x.ai"
+    tag: "models"
+    significance: 3
+
+  - title: "AI Agents Breach ~100 Companies in Five Days for About $8,000"
+    summary:
+      - "Forbes reports a Chinese-speaking operator wiring DeepSeek, Kimi, and an older Claude together to run end-to-end intrusion workflows against as many as 100 orgs in five days last month."
+      - "Total compute spend pegged at ~$8,000 — the '100' figure is an upper bound from the researcher, not confirmed victim count."
+      - "Lands alongside Gambit Security's September report that open-source AI agents hit 27 online shops and stole over 600K card records in six days."
+      - "TeamT5 separately ties the Slime22 group to misuse of Anthropic's Claude coding tools — the 'agent as attacker' pattern is now its own threat category."
+    url: "https://www.forbes.com/sites/thomasbrewster/2026/10/ai-agents-attack-100-companies/"
+    source: "forbes.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "ai-job-search Returns to GitHub Trending #1 With +3.8K Stars in a Day"
+    summary:
+      - "MadsLorentzen/ai-job-search — a Claude Code framework that evaluates postings, tailors CVs, writes cover letters, and preps interviews — tops GitHub Trending today with 3,856 stars gained."
+      - "Repo first went viral in July 2026 (+5K stars in 24h, #1 on Trending); currently sits above 40K stars after another surge this week."
+      - "Local, fork-and-fill: eleven slash commands self-profile the user, scrape job portals, score postings, then run a drafter-reviewer loop into a LaTeX CV + cover letter."
+      - "Pulls ahead of anomalyco/opencode (1.3K) and stablyai/orca (1.6K) on today's trending page — second wind on an otherwise six-month-old project."
+    url: "https://github.com/MadsLorentzen/ai-job-search"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
