@@ -1,0 +1,67 @@
+date: "2026-10-21"
+stories:
+  - title: "Sphinx Is a Git Hook That Quizzes You on Your AI's Code Before It Pushes"
+    summary:
+      - "Oct 16 release / Show HN Oct 18: `sphinx-understand` on npm, MIT license — a pre-push hook that pauses on protected branches and asks a scenario question about the diff before letting the push through."
+      - "A separate reviewer model reads the committed change through read-only git tools and never sees the chat that produced the code; answers never reach the coding agent, and sensitive files like `.env` are skipped."
+      - "Works with Claude Code, Codex, Cursor, OpenCode, Pi, or plain git; wrong answers get an explanation and a follow-up question on the same concept until you pass."
+      - "Billed as a comprehension check, not a security gate — `sphinx yolo` skips the quiz and logs every skip. Tagline: 'outsource your thinking, not your understanding.'"
+    url: "https://github.com/parthh01/sphinx"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "OpenAI Opens GPT-Rosalind to US University Labs With Free 30-Seat Plan"
+    summary:
+      - "Oct 15: new Rosalind Academic Plan gives eligible US university labs up to 30 ChatGPT Business Standard seats free for 12 months, with GPT-Rosalind access gated behind a separate trusted-access review."
+      - "First general route into Rosalind — the life-sciences model was previously limited to large companies and vetted government partners."
+      - "API access is explicitly excluded; labs cannot script Rosalind into their own pipelines through this program. PI applies, manages up to 30 approved members."
+      - "Research data shared through the plan is excluded from model training by default; approval requires institutional verification, lab-leadership background review, and a designated safety contact."
+    url: "https://openai.com/index/introducing-the-rosalind-academic-plan/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Germany Signs Industrial AI Partnership With NVIDIA at Berlin Invest Summit"
+    summary:
+      - "Jensen Huang met Chancellor Friedrich Merz on Monday Oct 19 at the 'Invest in Germany' conference in Berlin to seal a bilateral cooperation on industrial and 'physical' AI."
+      - "German federal funding covers compute and model training; NVIDIA contributes engineering resources around the SOOFI initiative — amount undisclosed, framed as 'hundreds of millions' of euros in pre-event reporting."
+      - "~12 industrial anchors in the pact, including Siemens, Audi, and open-weights lab Black Forest Labs."
+      - "Builds on the earlier €1B Deutsche Telekom-NVIDIA Industrial AI Cloud; distinct line of funding from that project."
+    url: "https://www.thestar.com.my/tech/tech-news/2026/10/16/germany-to-unveil-nvidia-ai-agreement-next-week-government-sources-say"
+    source: "thestar.com.my"
+    tag: "industry"
+    significance: 3
+
+  - title: "Anthropic Says New Distillation Defenses Cut Transcript Harvest 90-99%"
+    summary:
+      - "Oct 12: Anthropic reports its expanded anti-distillation measures reduce the volume of reasoning transcripts harvested by distillers by roughly 90 to 99% versus the February baseline — reasoning traces are the single most valuable training signal for cloning Claude."
+      - "Claims it has turned away 'trillions of tokens' of paying distiller traffic and 'meaningful revenue' to enforce the restrictions; concedes 'we have not fully achieved' the Feb goal of blocking distillers without affecting legitimate customers."
+      - "Illustrative experiment: a pretrained model trained on full Claude Opus 4.8 reasoning transcripts hit 80.4% on SWE-bench Verified; the same model trained only on summarized transcripts hit 71.8%."
+      - "Context: Anthropic's February disclosure named DeepSeek, Moonshot, and MiniMax — 16M+ exchanges harvested via ~24,000 fraudulent accounts in violation of ToS and regional access rules."
+    url: "https://www.anthropic.com/news/distillation-defenses"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 3
+
+  - title: "Mistral Opens Large 4 Preview; 1T-Param Open-Weights Due End of October"
+    summary:
+      - "Oct 6 announce: Mistral Large 4 goes to public preview on Mistral Studio — 1.05T total params, 49B active, 1.6B-param vision encoder, natively multimodal; context 1M tokens per the launch post."
+      - "Downloadable weights promised 'end of month' with Oct 27 the most-cited target date — reportedly under a custom license rather than Apache 2.0 that covered Large 3."
+      - "Benchmarks so far are vendor-reported and preliminary; independent eval has not landed. Mistral's own numbers put it alongside GLM-5.2 and Reflection's Beam on coding and agentic tasks."
+      - "The weight release will land in the same window as DeepSeek V4.1-Flash-1017 and Reflection AI's Beam — the Oct open-weights wave Fireship covered on his Oct 7 'open-weight race' recap."
+    url: "https://mistral.ai/news/mistral-large-4"
+    source: "mistral.ai"
+    tag: "models"
+    significance: 3
+
+  - title: "Altman Confirms OpenAI Humanoid Robot, Targets 'Cool Demo in 2027'"
+    summary:
+      - "On the Sources podcast and in a Fortune sit-down this month, Sam Altman said OpenAI 'will definitely do a humanoid' and that he expects a 'cool demo in 2027' — not a shipping product."
+      - "27 open robotics roles on OpenAI's careers page covering motion control, state estimation, actuator control, whole-robot behavior, and ML infra for physical systems."
+      - "Design rationale: humanoid form because 'the world is very much designed for people'; Altman says the software 'brain' matters more than the body."
+      - "No product, price, release date, or partner disclosed — a CEO target, not a roadmap. Lands as Figure, 1X, and Tesla's Optimus push their own 2026-27 pilots."
+    url: "https://aiweekly.co/alerts/altman-confirms-openai-will-build-humanoid-demo-in-2027"
+    source: "aiweekly.co"
+    tag: "industry"
+    significance: 2
