@@ -1,0 +1,78 @@
+date: "2026-10-22"
+stories:
+  - title: "Anthropic Launches Claude Duet, a Proactive Agent in Research Preview"
+    summary:
+      - "Oct 21: standalone Claude agent that watches connected apps, pushes a morning brief, and nudges every few hours. Built on Opus 5.5."
+      - "Research preview for US Pro and Max subscribers via waitlist; dedicated iOS and Android apps plus claude.ai web."
+      - "Requires explicit human approval for actions like sending messages, payments, signing, or deletion; securities trading and fund transfers are hard-blocked."
+      - "Internal name was 'Claude Loop'; positioned against Meta Muse and OpenAI Dots. Shares the same usage quota as standard Claude."
+    url: "https://www.macrumors.com/2026/10/21/anthropic-claude-duet/"
+    source: "macrumors.com"
+    tag: "tools"
+    significance: 5
+
+  - title: "Anthropic Drafts Bill Letting Commerce Halt Models Over $1B or 50-Death Risk"
+    summary:
+      - "Politico scoop Oct 16: Anthropic quietly circulated draft federal legislation after the Thune-Cruz-Klobuchar effort stalled, confirmed on-record by a spokesperson."
+      - "Trigger: 'foreseeable, imminent' risk of over $1B in damages or more than 50 deaths or serious injuries."
+      - "Scoped to three scenarios — bioweapon abuse, AI-enabled cyberattack, or a model evading its developer's controls."
+      - "Only the Commerce Department would have standing; it must petition the DC District Court, and no other agency gets suspension power. Bill has not yet been introduced."
+    url: "https://www.thestar.com.my/tech/tech-news/2026/10/17/anthropic-quietly-pitches-its-own-ai-safety-bill-to-lawmakers-politico-reports"
+    source: "thestar.com.my"
+    tag: "industry"
+    significance: 4
+
+  - title: "Orca Runs Claude Code, Codex, Grok, and Cursor Side-By-Side in Git Worktrees"
+    summary:
+      - "stablyai/orca at 101.7k stars, MIT — self-styled 'AI orchestrator for 100x builders.'"
+      - "Runs Claude Code, Codex, OpenCode, Pi, Grok, and Cursor in parallel across per-agent git worktrees."
+      - "Mobile companion app, embedded Chromium Design Mode, SSH worktrees, GitHub and Linear integration."
+      - "Free with BYO agent subscriptions; from Stably AI (YC W22). One of this week's clearest coding-agent breakouts."
+    url: "https://github.com/stablyai/orca"
+    source: "github.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Rea Turns Agents Loose on Binaries and APKs for Reverse Engineering"
+    summary:
+      - "morluto/rea now at 359.8k stars after a roughly 60k weekly jump — MCP server plus CLI for agentic reverse engineering."
+      - "Covers native binaries via Hopper, Ghidra, and IDA, plus Electron apps, .NET, APKs, websites, firmware, and packet captures."
+      - "`npx rea-agents setup` wires it into Claude Code, Codex, or Cursor as installable skills."
+      - "MIT license. One of the week's loudest GitHub trending breakouts and a notable shift in what coding agents are being pointed at."
+    url: "https://github.com/morluto/rea"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Hyperframes Lets Coding Agents Render Deterministic Video From HTML"
+    summary:
+      - "heygen-com/hyperframes at 69.4k stars, Apache 2.0 — 'Write HTML. Render video. Built for agents.'"
+      - "Turns HTML, CSS, animations, and media into deterministic MP4 via headless Chrome plus FFmpeg."
+      - "Runs as a local CLI, as an agent skill inside Claude Code or Codex, or as the rendering core for hosted tools."
+      - "HeyGen's open-sourced bet that agents will author video the same way they already author code and slides."
+    url: "https://github.com/heygen-com/hyperframes"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Scientific Agent Skills Pack Ships 177 Skills and 100+ Research Databases"
+    summary:
+      - "K-Dense-AI/scientific-agent-skills at 53.7k stars, MIT — pitched as 'turn any AI agent into an AI Scientist.'"
+      - "Covers biology, chemistry, medicine, physics, engineering, earth science, data, and sci-comm."
+      - "Follows the open Agent Skills standard that works across Cursor, Claude Code, and Codex."
+      - "Python-first (3.13+, uv, pytest). Another sign that domain skill packs are becoming the layer agents compete on."
+    url: "https://github.com/K-Dense-AI/scientific-agent-skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Cursor Opens Its Official Plugin Spec and First-Party Marketplace"
+    summary:
+      - "cursor/plugins at 13.5k stars: official plugin specification plus Cursor's own and third-party plugins."
+      - "`.cursor-plugin/plugin.json` manifest with a published JSON schema; 642 commits and growing."
+      - "Lands alongside anthropics/claude-plugins-official hitting 43.7k stars this week — coding-agent plugin ecosystems are the fight of October."
+      - "Marks Cursor moving from monolithic IDE to extensible agent platform with a formal install flow."
+    url: "https://github.com/cursor/plugins"
+    source: "github.com"
+    tag: "frameworks"
+    significance: 3
