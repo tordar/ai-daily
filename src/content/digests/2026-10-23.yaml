@@ -1,0 +1,67 @@
+date: "2026-10-23"
+stories:
+  - title: "Anthropic Donates Agent Skills Standard to the Agentic AI Foundation"
+    summary:
+      - "Oct 22: Anthropic hands the Agent Skills standard — spec, name, logo, GitHub org, and agentskills.io — to the Linux Foundation's Agentic AI Foundation (AAIF), the same neutral home it set up for MCP."
+      - "1 million skills published and nearly 280 million installed to date; more than 70 agent platforms integrated, including ChatGPT, Cursor, GitHub Copilot, and VS Code."
+      - "Engineers from Anthropic, Google, OpenAI, and others will co-maintain as individuals; David Soria Parra and Mahesh Murag are the Lead Maintainers."
+      - "Roadmap: versioned releases, a formal proposal process, and security guidance for authors and installers of skills."
+    url: "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+    source: "anthropic.com"
+    tag: "frameworks"
+    significance: 5
+
+  - title: "Cloudflare's security-audit-skill Rockets Past 40K Stars on GitHub Trending"
+    summary:
+      - "cloudflare/security-audit-skill: 40.0k stars, +2,979 today — up roughly 14k in two weeks since its Oct 8 cameo at 26k."
+      - "Six-phase audit: recon, coverage-led hunting with isolated sub-agents, validation by a fresh verifier that tries to disprove each lead, structured findings.json, independent re-verification, report."
+      - "Ships attack-class prompt packs for memory safety, LLM apps, cloud config, and supply chain; needs an OS-sandbox or leads stay as needs_validation."
+      - "MIT. Seeded Cloudflare's internal vulnerability discovery harness; installs via `npx skills add cloudflare/security-audit-skill`."
+    url: "https://github.com/cloudflare/security-audit-skill"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Graphify Turns Codebases Into Queryable Knowledge Graphs Across 40 Languages"
+    summary:
+      - "Graphify-Labs/graphify at 133.2k stars (+1,408 today) — tree-sitter AST parsing locally, no embeddings, no vector index."
+      - "Edges tagged EXTRACTED or INFERRED; outputs graph.html, GRAPH_REPORT.md, and graph.json for queries, shortest paths, and concept explanations."
+      - "0.497 recall@10 on LOCOMO with zero LLM credits for the graph build; semantic pass over docs, PDFs, and video is optional."
+      - "Ships as an Agent Skill for Claude Code, Cursor, Codex, Gemini CLI, Copilot CLI, and ~20 other harnesses; Apache-2.0 and MIT."
+    url: "https://github.com/Graphify-Labs/graphify"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "CLI-Anything Hits 56K Stars Wrapping GIMP, Blender, and LibreOffice for Agents"
+    summary:
+      - "HKUDS/CLI-Anything at 56.3k stars (+3,275 this week) — pitched as 'making ALL software agent-native' via auto-generated CLIs on top of desktop apps."
+      - "Covers GIMP, Blender, LibreOffice, and Audacity today; CLIs expose JSON output, a REPL, and discoverable --help interfaces."
+      - "7-phase generator (analyze, design, implement, plan tests, write tests, document, publish) builds new harnesses from any codebase."
+      - "Companion CLI-Hub registry for installing community CLIs; Apache-2.0 and ships as a Claude Code / Cursor / Codex / Copilot plugin."
+    url: "https://github.com/HKUDS/CLI-Anything"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Anthropic Open-Sources 11 Role-Specific Plugin Packs for Claude Cowork"
+    summary:
+      - "anthropics/knowledge-work-plugins at 31.8k stars (+303 today) — bundles skills, connectors, slash commands, and sub-agents for whole job functions."
+      - "11 role packs: productivity, sales, customer-support, product-management, marketing, legal, finance, data, enterprise-search, bio-research, plus a plugin-management meta-pack."
+      - "Everything is Markdown + JSON, no code or infra; MCP wiring to Slack, Notion, Jira, HubSpot, Snowflake, Databricks, PubMed, Benchling, and more."
+      - "Installs in Claude Code via `claude plugin install sales@knowledge-work-plugins`; Apache-2.0."
+    url: "https://github.com/anthropics/knowledge-work-plugins"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Harvey Open-Sources an Autonomous Sales Agent That Rides Your Claude or ChatGPT Subscription"
+    summary:
+      - "ethanplusai/harvey: 2.2k stars (+1,300 this week), MIT — autonomous cold-email + prospect-research loop powered by Claude Code or Codex."
+      - "No API bill — uses your Claude Pro/Max or ChatGPT subscription; prospect data comes from free OpenStreetMap by default."
+      - "Rule-based decision loop every ~15 min: prioritizes replies, writes campaigns, prospects; every outbound email waits for approval unless you flip autopilot."
+      - "Latest tag in a wider pattern of agentic apps piggybacking consumer AI plans to dodge metered inference costs."
+    url: "https://github.com/ethanplusai/harvey"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
