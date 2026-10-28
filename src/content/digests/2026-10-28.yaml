@@ -1,0 +1,56 @@
+date: "2026-10-28"
+stories:
+  - title: "Anthropic Reports Early Drug-Discovery Wins Across Six Partners, Acquires Mithril Medicine"
+    summary:
+      - "Oct 27 life-sciences update: Claude is in deployment at BigHat, Bristol Myers Squibb, Divergence Labs, Enveda, Generate Biomedicines, and The Column Group's new company Pleiades."
+      - "Generate Biomedicines: Claude-designed CAR T receptors ~70% shorter than the standard, with ~10x more receptor expression and better tumor-cell killing in lab tests."
+      - "Enveda: Claude caught all 11 issues human reviewers found in 1,061 pages of manufacturing docs plus 7 more, cutting review time 89% and turning a 3-month regulatory draft into 4 hours."
+      - "Anthropic also quietly acquired Mithril Medicine, a one-person rare-disease startup whose muscular-dystrophy candidate went from idea to promising mouse results in under 18 months and could enter human trials by late 2028."
+    url: "https://www.anthropic.com/research/early-progress-drug-development"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 5
+
+  - title: "Anthropic Matches OpenAI with 40% Government Discount on Claude in Expanded GSA Deal"
+    summary:
+      - "Oct 27: new General Services Administration agreement cuts Claude Enterprise, Claude for Government, and Claude API prices 40% for all US federal agencies, with no minimum spend."
+      - "Anthropic estimates roughly $1B in government savings; discount extends to state, local, tribal, and territorial governments and remains available through cloud resellers."
+      - "Direct answer to OpenAI's September OneGov deal, which already dropped ChatGPT's platform fee to $0 and cut token usage 50% through December 2028."
+      - "Lands the day after Anthropic's S-1 filing: the government book is now a visible IPO-pitch surface — and both labs are racing to lock in federal workloads before pricing resets."
+    url: "https://www.anthropic.com/news/expanding-partnership-gsa"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Nutlope's 'Hallmark' Anti-Slop Design Skill Hits 39K Stars on GitHub"
+    summary:
+      - "Trending #2 on GitHub today with +2,830 stars in 24 hours, now at 39.4k total and 2.1k forks."
+      - "A design skill for Claude Code, Codex, Cursor, and OpenCode that 'refuses to look AI-generated': 50 named 'materials' themes, a `sloplint` linter that renders pages at multiple widths and flags AI tells, plus `redesign` and `audit` subcommands."
+      - "Three-tier gating — Floor (never ships), Reflex (needs a reason), Finish (craft) — and a fresh-context reviewer pass before any PR."
+      - "Built by Hassan El Mghari at Together AI; installable via `npx skills add nutlope/hallmark` or as a Claude Code plugin."
+    url: "https://github.com/Nutlope/hallmark"
+    source: "github.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "GitHub Trending Fills With Agentic Design Skills for Claude Code and Cursor"
+    summary:
+      - "elayadesign/ai-design-skills tops the daily board with +1,395 stars (9.9k total), shipping markdown SKILL.md files that drop into `.claude/skills/` to run across Claude Code, Cursor, Codex, Windsurf, and Cline."
+      - "pbakaus/impeccable adds +1,449 to 90.9k stars — a 'design vocabulary' spec explicitly aimed at catching slop before it ships."
+      - "obra/superpowers (306.7k stars, +617 today) continues to climb: an agentic skills framework enforcing TDD, worktrees, and review gates across Claude Code, Codex, Cursor, and the Gemini CLI."
+      - "Four of the day's top ten trending repos are now 'skills' projects — a sign the agent-skill ecosystem Anthropic donated to the Agentic AI Foundation last week is being filled in by independent authors fast."
+    url: "https://github.com/trending"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Mistral's 1T-Parameter Large 4 Open Weights Expected Friday Oct 31"
+    summary:
+      - "Public preview launched Oct 6 inside Mistral Studio and the API; HuggingFace placeholder page now lists an Oct 31 open-weights drop."
+      - "1.05T total parameters, ~49B active per token, multimodal — Mistral's bid to close the gap with GLM-5.3 and DeepSeek V4 in the open-weight tier."
+      - "License shifts from Apache 2.0 (Large 3) to a custom permissive license; terms still unposted."
+      - "If it ships on schedule it will be the largest fully open MoE from a European lab and lands two weeks before Moonshot's promised K3.1 open-weight release on Nov 4."
+    url: "https://mistral.ai/news/mistral-large-4"
+    source: "mistral.ai"
+    tag: "models"
+    significance: 3
