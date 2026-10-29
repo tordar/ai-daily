@@ -1,0 +1,67 @@
+date: "2026-10-29"
+stories:
+  - title: "Anthropic's AI for Science Expands to 20 Foundations, Institutes, and Research Projects"
+    summary:
+      - "Oct 28: Anthropic brings AI for Science from a researcher-grant program to 20 named partners, among them the Simons Foundation, Alfred P. Sloan Foundation, Schmidt Sciences, NSF, Wellcome Sanger Institute, EMBL, the Francis Crick Institute, and the Allen Institute."
+      - "Includes the Model Hardware Standard (MHS), a research-preview spec co-developed with HHMI Janelia so Claude agents can safely drive real lab instruments; Allen Institute is building agent teams to analyze its open datasets."
+      - "Research initiatives covered: FlyWire (Princeton connectomics), LEAP (Columbia climate), AstroPath (JHU cancer imaging), gnomAD (Broad; 800K+ genomes), and the Tau Ceti open Lean math library."
+      - "Lands the day after Anthropic's drug-discovery and GSA announcements — a third pillar in a week-long push to position Claude as default science infrastructure ahead of the November IPO."
+    url: "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 5
+
+  - title: "JetBrains ThinkRail Trends #1 on GitHub With a Worktree-Per-Agent IDE"
+    summary:
+      - "JetBrains InnovationHub's open-source agentic IDE lands at the top of GitHub Trending today with +1,068 stars (5.3K total, 273 forks) and 604 commits on main."
+      - "Each chat runs in its own git worktree and branch, so multiple agents can edit the repo in parallel without touching your working checkout."
+      - "Apache-2.0; built on the open-source pi coding agent rather than JetBrains' own Junie, with a SPEC.md spec graph, MCP server + Agent Skills support, and either a desktop app or a browser UI from the `thinkrail` CLI."
+      - "No in-product billing — model usage runs through JetBrains AI or your own provider keys."
+    url: "https://github.com/JetBrains/thinkrail"
+    source: "github.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Stanford Daily: Anthropic Trained Claude on Pirated Books by Its Own Faculty"
+    summary:
+      - "Oct 27 Stanford Daily reports a large share of Stanford professors' trade books turned up in the LibGen trove Anthropic admitted using to train Claude."
+      - "HN front page at 437–465 points and 251–263 comments; thread focus is less on the $1.5B settlement than on how many academic authors land under the $3,000-per-book payout."
+      - "The July 20 class action was certified around 7M+ pirated books, with Judge Alsup separating training (fair use) from Anthropic's 'central library' (not fair use)."
+      - "Lands as Anthropic's S-1 week brings the IPO narrative into contact with the training-data record for the first time at scale."
+    url: "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/"
+    source: "stanforddaily.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "IEEE Spectrum: Inside Wikipedia's WikiProject AI Cleanup"
+    summary:
+      - "Nov 2026 print feature interviewing founder Ilyas Lebleu on the volunteer group running sweeps for LLM-generated articles across Wikipedia."
+      - "HN front page at 437–449 points and ~200 comments — the editor community discussing fabricated sources, pattern-matched giveaways, and the project's public LLM-tell guide (later reused by the 'Humanizer' Claude Code plugin)."
+      - "Context: Wikipedia adopted WP:LLM in March 2026 to prohibit LLM-generated or rewritten article content, with carve-outs for copyediting and machine translation."
+      - "Project framing is 'verify, don't ban' — AI output stays if it clears the same sourcing bar as any other edit."
+    url: "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup"
+    source: "spectrum.ieee.org"
+    tag: "community"
+    significance: 3
+
+  - title: "Cloudflare's Security-Audit Skill Tops GitHub's Weekly Trending at +16K Stars"
+    summary:
+      - "cloudflare/security-audit-skill is #1 on GitHub Trending this week with +16,002 stars (51.9k total), the biggest weekly velocity of any agent-skills repo."
+      - "A six-phase coding-agent skill — reconnaissance, mapping, discovery, exploitation attempts, verification, reporting — that spawns independent reviewer agents to re-check each finding before writing a `findings.json`."
+      - "MIT-licensed; one-line install for Claude Code, Codex, Cursor, Windsurf, or Cline: `npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit`."
+      - "Signals the agentic skills ecosystem is moving past design cleanup into security — the second wave after last week's Hallmark/impeccable/design-skills surge."
+    url: "https://github.com/cloudflare/security-audit-skill"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Liquid AI Ships LFM3: 'Every Modality for Specialized Intelligence'"
+    summary:
+      - "Oct 28 drop from MIT-spin-out Liquid AI: a new foundation-model family positioned as domain-specialized rather than one-model-for-everything, covering text, vision, audio, and time-series in a single architecture."
+      - "First HN surface at 122 points / 50 comments — small ripple but the first LFM3 release after a year of LFM2.5 vision-language variants (the 3B shipped Aug 12)."
+      - "Pitched for edge and specialized enterprise workloads; Liquid Foundation Models' core claim is state-space-plus-attention efficiency at parameter counts well below standard transformer peers."
+      - "Open-weight variants and benchmarks on the Liquid blog; no API pricing announced in the launch post."
+    url: "https://www.liquid.ai/blog/lfm3"
+    source: "liquid.ai"
+    tag: "models"
+    significance: 3
