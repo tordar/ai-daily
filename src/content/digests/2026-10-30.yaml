@@ -1,0 +1,68 @@
+date: "2026-10-30"
+stories:
+  - title: "DeepMind Ships Genie 4, Its First Real-Time World Model With Native Audio"
+    summary:
+      - "Oct 27: experimental research preview that generates interactive 3D scenes you can steer in real time with text prompts or keyboard controls."
+      - "First Genie model to produce audio natively — ambient sound, music, and character dialogue render alongside the scene instead of being post-added."
+      - "Scene continuity roughly doubles over Genie 3 to about two minutes; a smaller Gemini model observes the frame-by-frame output and guides the simulation."
+      - "Rolling out as a trusted-tester preview on Google AI Ultra's Project Genie, with Gemini API and AI Studio EAP next; all output carries SynthID watermarks."
+      - "DeepMind flags object persistence, long-horizon coherence, and complex physics as known weak spots — the lab is framing it as agent/robot training infra, not a consumer product."
+    url: "https://deepmind.google/discover/blog/genie-4/"
+    source: "deepmind.google"
+    tag: "models"
+    significance: 5
+
+  - title: "HKUDS DeepTutor Hits #1 on GitHub Trending With a Multi-Agent Study Companion"
+    summary:
+      - "+1,930 stars today lifts the HKU Data Intelligence Lab's open tutoring app past 50K stars, Apache-2.0, with a Next.js workspace and a CLI."
+      - "Dual-loop multi-agent architecture pairs a TutorBot with RAG over your own study materials; persistent memory tracks what you've learned across sessions."
+      - "Supports 30+ model providers (OpenAI, Anthropic, DeepSeek, Gemini, Ollama) with Docker self-host; UI runs on port 3782, no vendor lock-in."
+      - "Growth curve stayed sharp after hitting 10K in 39 days — the first non-coding agentic skill app to top the daily trending board this month."
+    url: "https://github.com/HKUDS/DeepTutor"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "ChatGPT Gets Native iCloud Mail and Calendar Plugins Across Every Plan"
+    summary:
+      - "Oct 27: standalone Mail and Calendar plugins for Apple accounts land on Free, Plus, Pro, Business, and Enterprise — web, desktop, and iOS."
+      - "Mail can search inbox, draft, and send; Calendar can read, schedule, and update events; both can look up iCloud Contacts (no standalone Contacts/Reminders plugin yet)."
+      - "Setup needs an app-specific password per plugin; Mail is limited to @icloud.com / @me.com / @mac.com — other accounts in iOS Mail (Gmail, Outlook) stay invisible."
+      - "Lands ~14 months after the Gmail / Google Calendar connectors and feeds into OpenAI's Dots proactive agent for the same accounts."
+    url: "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+    source: "openai.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Gemini 4 Carbon Appears on LMArena as Google Opens an Early-Access Preview"
+    summary:
+      - "TestingCatalog reports Carbon is now in a public LMArena rotation with Project Carbon EAP for select Gemini API partners starting this week."
+      - "Internal Googlers testing the checkpoint describe coding quality in the Claude Opus 5.5 ballpark on long agentic tasks — impressions, not published benchmarks."
+      - "Logan Kilpatrick's prior remark that Argon stays the near-term GA model lines up with this: Carbon is still a research checkpoint, naming (Carbon vs Argon-successor) is unresolved."
+      - "No pricing, context-window, or model-card page yet; Google has declined to comment on the leaks."
+    url: "https://www.testingcatalog.com/gemini-4-carbon-early-test-results"
+    source: "testingcatalog.com"
+    tag: "models"
+    significance: 3
+
+  - title: "obra/superpowers Crosses 300K Stars and Keeps #2 on GitHub Trending"
+    summary:
+      - "+1,034 stars today puts Jesse Vincent's agentic skills framework over 300K total — one of the fastest-growing MIT-licensed repos of the year."
+      - "Composable skills + a strict TDD-and-review methodology; subagents re-check each task before shipping, with /plugin install superpowers@superpowers-marketplace as the two-line Claude Code setup."
+      - "Now installs cleanly into Codex CLI, Cursor, Gemini CLI, GitHub Copilot CLI, and Antigravity — the same marketplace install, not forks."
+      - "Main critique in community threads this week: the mandatory process adds friction on trivial one-liners, where the plan+review loop is more overhead than the fix is worth."
+    url: "https://github.com/obra/superpowers"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Block's Dessa Voice Model: Full-Duplex Speech AI Trained Without a Word of Text"
+    summary:
+      - "Research preview from Block (Jack Dorsey) that takes audio in and emits audio out — no STT, no LLM, no TTS layer between the two."
+      - "Full-duplex: can listen and speak at once, interrupts, laughs, and responds to emotional cues; demos cycle on block.xyz/dessa with a public waitlist."
+      - "Trained from scratch on human conversation on a single GB200 NVL72 rack; Block claims inference runs faster than real time on a MacBook Pro M4 Max (unverified)."
+      - "Community reaction split — the demos read as uncannily natural to some reviewers and 'scary' to others; early-access is researcher-only, no weights or API yet."
+    url: "https://block.xyz/dessa"
+    source: "block.xyz"
+    tag: "research"
+    significance: 3
