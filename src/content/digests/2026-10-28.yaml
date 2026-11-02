@@ -53,4 +53,4 @@ stories:
     url: "https://mistral.ai/news/mistral-large-4"
     source: "mistral.ai"
     tag: "models"
-    significance: 3
+    significance: 1

@@ -1,0 +1,67 @@
+date: "2026-11-02"
+stories:
+  - title: "Google Launches Gemini 4 Carbon as Its Cybersecurity Frontier — Then Gates It"
+    summary:
+      - "Oct 28: new frontier model built on Gemini 4 Argon, aimed at finding vulnerabilities, running exploits, and shipping patches."
+      - "Google claim: #1 at 59 on Artificial Analysis Intelligence Index v5.0, 88.2% on SEC-bench Pro, 54.8% ExploitGym, 71.0% CWE-bench — all without safety guardrails on."
+      - "Introductory pricing matches Argon ($2 / $10 per MTok); jumps to $4 / $20 after the intro window."
+      - "Access routed through the Fairwind cyber-defender program with no GA date — HN thread focused less on benchmarks than on 'why announce a model nobody can call'."
+    url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    source: "blog.google"
+    tag: "models"
+    significance: 5
+
+  - title: "Mistral Opens Large 4 'Le Chonk' Weights Two Days Early"
+    summary:
+      - "Oct 29 open-weights drop on Hugging Face: 1.05T total / 49B active MoE in FP8, plus a 4-bit NVFP4 checkpoint tuned for Blackwell GPUs."
+      - "Terminal-Bench 4.0 self-reported at ~41% (up from 28.3% in the Oct 6 preview) with roughly 30% fewer output tokens; Mistral puts GLM-5.3 at 40% and DeepSeek V4.1 Flash at 31% on the same chart."
+      - "Ships under the new Mistral Ecosystem Open-Weight License — permissive but not Apache; license text still being parsed on HN."
+      - "HN launch thread near 1,700 points — largest fully open MoE from a European lab and the first ~frontier open weights since GLM-5.3."
+    url: "https://mistral.ai/news/mistral-large-4-oss/"
+    source: "mistral.ai"
+    tag: "open-source"
+    significance: 5
+
+  - title: "Alibaba's Qwen Powers Apple Intelligence in China Starting December"
+    summary:
+      - "Oct 31 Apple + Alibaba partnership: Qwen becomes the model behind Siri, Writing Tools, Visual Intelligence, and photo cleanup for mainland-China iPhones."
+      - "Developer-beta preview opens Nov 4; public rollout bundled into iOS 27.3 in December, only on Apple Intelligence–capable devices with a China Apple ID and location."
+      - "The WWDC 'advanced Siri' upgrade is NOT part of the China release — Apple hasn't scheduled it there."
+      - "Comes after China's cyberspace regulator approved seven on-device generative-AI services for smartphones in July, Apple Intelligence among them; Baidu is reportedly building a parallel Chinese stack."
+    url: "https://finance.biggo.com/news/d37ab43e-dccf-44bf-b680-3b3fb8de6145"
+    source: "biggo.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "DeepSeek Open-Sources dsh-superagent, a Proactive Rival to Claude Code"
+    summary:
+      - "Oct 31 MIT drop: a research prototype coding agent that listens to GitHub events and Feishu chat threads and opens PRs on its own, packaged as a bundle for DeepSeek Harness."
+      - "Positioned by Bloomberg as a direct swing at Claude Code; DeepSeek says the open build was itself largely written by coding agents and is behind the internal version."
+      - "No benchmarks published, no hosted tier, no pricing — one commit, v0.1.0, TypeScript bundle."
+      - "Repo at deepseek-ai/dsh-superagent-prototype climbed from a few hundred to 3.7K–5.4K stars inside 24 hours, depending on which aggregator you believe."
+    url: "https://github.com/deepseek-ai/dsh-superagent-prototype"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Trojanized Claude Code Extension Planted SSH Backdoors on Up to 5,000 Cursor Users"
+    summary:
+      - "Oct 29 supply-chain attack: a tampered v2.1.313 build of Anthropic's official Claude Code extension sat in Cursor's marketplace for ~11 hours under the legitimate anthropic.claude-code ID."
+      - "66-line loader stitched in front of real code appended an attacker SSH key to ~/.ssh/authorized_keys and opened a reverse SSH tunnel — runs the moment the extension loads, no Claude interaction needed."
+      - "Anthropic says its own systems were NOT compromised; official VS Code, standalone npm, and the Claude Code CLI are clean. Open VSX briefly served the bad build; fix landed in 2.1.314."
+      - "HN thread ~993 pts — top comment: 'this is an agent-and-auto-updater problem, not a human one.' How attackers published under Anthropic's identity remains unexplained."
+    url: "https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/"
+    source: "helpnetsecurity.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "thedotmack/claude-mem Tops GitHub Trending at 109K Stars With Persistent Agent Memory"
+    summary:
+      - "+1,526 stars today lifts Alex Newman's persistent-memory plugin for Claude Code to 109,724 total — #1 on the daily trending board."
+      - "Captures each session, AI-compresses the trace, and reinjects relevant context into the next run; works across Claude Code, Codex, and Gemini CLI with SQLite + flat files in $HOME."
+      - "Install is three lines: `/plugin marketplace add thedotmack/claude-mem`, `/plugin install claude-mem`, restart — v13.11.0 is latest."
+      - "Beats out DeepSeek's dsh-superagent and JetBrains ThinkRail on today's board; memory is now the agent-skills ecosystem's clear second wave after design and security skills."
+    url: "https://github.com/thedotmack/claude-mem"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
