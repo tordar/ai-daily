@@ -1,0 +1,78 @@
+date: "2026-11-03"
+stories:
+  - title: "OpenAI, Google, Microsoft, Anthropic Align Behind One AI-Training Opt-Out Token"
+    summary:
+      - "Oct 30 joint commitment to honor `__usage_ai-training`, a robots.txt policy token specified in an IETF Internet-Draft by Anthropic's Kevin Kelley."
+      - "Sites opt out with `User-Agent: __usage_ai-training` + `Disallow: /` (and optional `Allow:` exceptions); the token governs training only — crawlers may still fetch the page."
+      - "Rollout gap: Anthropic says it has started implementing, OpenAI will honor it 'in the coming months,' Microsoft targets Feb 1, 2027, Google targets 2027."
+      - "Explicitly does not scrub anything already in existing datasets or trained models — it's a forward-looking preference signal, not a takedown."
+    url: "https://aiweekly.co/alerts/openai-google-microsoft-anthropic-back-one-ai-opt-out-token"
+    source: "aiweekly.co"
+    tag: "industry"
+    significance: 4
+
+  - title: "'AI Isn't Replacing SREs, It's Deskilling Them' Lights Up Hacker News"
+    summary:
+      - "SigNoz essay revives Lisanne Bainbridge's 1983 'Ironies of Automation' paper for the LLM era — the real risk is skill erosion, not job loss."
+      - "Thesis: engineers stop reading raw logs and stop hypothesizing during incidents because AI summarizes them, so core on-call muscle quietly atrophies."
+      - "HN thread hit 665 points and 482 comments on Nov 2 — the day's most-discussed AI piece outside the Mistral and Claude Code stories."
+      - "Proposed canary: track how many incidents a team resolves unassisted; a falling number alongside rising top-line KPIs is the early warning."
+    url: "https://signoz.io/blog/ai-isnt-replacing-sres-its-deskilling-them/"
+    source: "signoz.io"
+    tag: "community"
+    significance: 4
+
+  - title: "Cisco Hands a 27-Year-Old 'Unlimited AI Tokens' to Rewrite 98% of Its Legacy Code"
+    summary:
+      - "Fortune (Oct 30): Jeetu Patel put Padmanabhan Krishnamurthy — EzDubs co-founder, acquired by Cisco — on a 24-month plan to replace 98% of the codebase."
+      - "'I've given him unlimited tokens because he's going to refactor code' — Patel. Krishnamurthy pitched a two-person team and a four-week proof window."
+      - "Context: Cisco's ~32,000-engineer org is reshuffling around AI-first builds; the exec reportedly found Krishnamurthy five levels down the chart."
+      - "HN thread: 311 points, 382 comments — the comment-to-point ratio is the real signal, with devs split on whether 'unlimited tokens' solves anything."
+    url: "https://fortune.com/2026/10/30/cisco-jeetu-patel-unlimited-ai-tokens-27-year-old-engineer-legacy-code-rewrite/"
+    source: "fortune.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "YC-Backed Olam Labs Drops 50 Agents Into Minecraft and Mindustry"
+    summary:
+      - "Oct 29 writeup: 50 GPT-6.1 Sol agents, three hours of survival Minecraft, ~5,900 inter-agent messages — 22 die the first night."
+      - "Agents converged on messaging the first name in the directory; 'Ada' became de facto leader with no vote, imposed food rationing and lit-shelter orders."
+      - "Companion Mindustry series: GPT-6.1 Sol beat Claude Opus 5.5 6–1; Olam open-sources the Minecraft harness and its Multi-Agent Harbor framework."
+      - "Two HN threads totaled ~566 points — 'AI agent swarms fail to build civilization, drown in bureaucracy' was Nov 2's dev meme."
+    url: "https://runtimewire.com/article/olam-labs-ai-agent-swarms-minecraft-mindustry"
+    source: "runtimewire.com"
+    tag: "research"
+    significance: 3
+
+  - title: "OpenAI Checkout Page Reveals ChatGPT + Codex Will Share One Usage Limit in December"
+    summary:
+      - "Notice spotted by Tibor Blaho on the ChatGPT web checkout: 'Starting in December, plan usage will have a shared limit across all of ChatGPT and Codex.'"
+      - "Codex head Thibault Sottiaux tied the change to the ongoing ChatGPT–Work consolidation; standard Instant chats stay separately metered."
+      - "OpenAI hasn't published tier-by-tier mechanics — the big unknown is whether the shared pool is bigger, smaller, or roughly today's sum."
+      - "HN thread 216 points, 162 comments; Pro users on Work and Codex already share an agentic pool, so this extends the pattern across the whole product."
+    url: "https://windowsreport.com/openai-chatgpt-codex-shared-usage-limits-december"
+    source: "windowsreport.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Vercel Labs Open-Sources agent-desktop, a Computer-Use CLI That Skips Screenshots"
+    summary:
+      - "Oct 30 drop of v1.0.2 under Apache-2.0 — native binaries for x64 and ARM64, headless by default, installable with `npm i -g @vercel/agent-desktop`."
+      - "Reads the OS's structured accessibility tree instead of taking screenshots: no pixel matching, no vision model required in the core observe-act-verify loop."
+      - "+2,275 stars on Nov 3's GitHub trending AI board — top new repo of the day, ahead of ollama/nanochat follow-ons and Donchitos/Claude-Code-Game-Studios."
+      - "Positioned as 'computer use for any agent' — model-agnostic layer under Claude, GPT, or local LLMs rather than another Anthropic-only harness."
+    url: "https://github.com/vercel-labs/agent-desktop"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Anthropic's Own Claude Usage Now Costs More Than Its Payroll, S-1 Reveals"
+    summary:
+      - "Buried in the Oct 26 S-1: internal Claude usage, valued at retail API prices, exceeds total employee compensation for the first half of 2026."
+      - "Filing also disclosed H1 revenue of $16.3B (vs $1.2B a year earlier) and a six-month net loss near $80B driven by compute spend."
+      - "HN picks it up Nov 2 — 297 points, 240+ comments on what it means when an AI lab burns more on eating its own cooking than on the cooks."
+      - "Priced-above-$2T IPO still targeted for the week of Nov 16, per WSJ; a separate thread titled 'The SEC Should Block Anthropic's IPO' hit 240 points the same day."
+    url: "https://news.ycombinator.com/item?id=anthropic-internal-ai-exceeds-pay"
+    source: "news.ycombinator.com"
+    tag: "community"
+    significance: 3
