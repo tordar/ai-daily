@@ -1,0 +1,78 @@
+date: "2026-11-04"
+stories:
+  - title: "Users Say OpenAI Silently Flipped Their Codex Training Opt-Out Back On"
+    summary:
+      - "HN thread 'OpenAI seems to be silently re-enabling model training on Codex chats' (id 50352757) climbs to ~437 points and 136 comments on Nov 3."
+      - "Posters show history entries confirming they opted out — some twice — yet the 'Improve the model for everyone' toggle came back on without notice."
+      - "Codex is governed by a separate 'Include environments' switch under Codex Settings; flipping the ChatGPT toggle or the Privacy Portal control does not change it."
+      - "OpenAI has not posted an explanation; commenters are pointing people at the Advanced Account Security option that reportedly blocks silent re-enablement."
+    url: "https://news.ycombinator.com/item?id=50352757"
+    source: "news.ycombinator.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Hidden 'Claude Mythos 5.5' String Surfaces on Anthropic's Site, Then Vanishes"
+    summary:
+      - "Nov 1: scaling01 spots H1 text and logo alt reading 'Claude Mythos 5.5 — Our most capable model class for cybersecurity and biology research' on anthropic.com/mythos."
+      - "String disappears within hours; the live page reverts to Mythos 5.1 — the current GA Mythos release from Sep 1."
+      - "Access would almost certainly stay gated: Mythos 5.1 is restricted to vetted cybersecurity and life-sciences researchers via Anthropic's trusted-access program."
+      - "Timing is awkward — Anthropic's S-1 (Nasdaq ticker ANT) is live and a listing is reportedly targeted for the week of Nov 16."
+    url: "https://decrypt.co/382390/claude-mythos-fable-5-5-gpt-6-2-astra-leaks"
+    source: "decrypt.co"
+    tag: "models"
+    significance: 4
+
+  - title: "OpenAI and Anthropic Spin Up Election War Rooms for the Nov 3 Midterms"
+    summary:
+      - "OpenAI's Election Operations Center goes live this week with hundreds of employees watching for misuse of ChatGPT and Sora through vote-counting."
+      - "Anthropic re-activates Claude.ai voting banners pointing US users to TurboVote via a Democracy Works partnership, plus fresh classifiers for election-abuse detection."
+      - "OpenAI opens free model access for cyber defense to voting-system vendors registered with the US Election Assistance Commission and state election authorities."
+      - "Context: both labs have poured nine-figure sums into midterm super-PACs backing their preferred AI-regulation posture."
+    url: "https://techpolicy.press/how-openai-google-and-anthropic-plan-to-handle-the-2026-us-midterms"
+    source: "techpolicy.press"
+    tag: "industry"
+    significance: 3
+
+  - title: "p-e-w/heretic Automates LLM 'Abliteration' and Jumps Onto GitHub Trending"
+    summary:
+      - "+701 stars today lifts the Python tool to ~39K total; Trendshift log shows it first topped trending back in February and it keeps resurfacing."
+      - "`pip install heretic-llm` runs directional-ablation with an Optuna sweep that co-minimizes refusals and KL divergence from the original model."
+      - "Example on google/gemma-3-12b-it: refusals drop from 97/100 to 3/100 at a KL of 0.16; the author reports ~45 min on an RTX 3090 for Llama-3.1-8B."
+      - "Community has published 1,000+ Heretic-processed checkpoints on Hugging Face; supports most dense models and several MoE architectures, not yet SSMs."
+    url: "https://github.com/p-e-w/heretic"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Anthropic Ships Beta 'Message Threads' API for Long-Running Agents"
+    summary:
+      - "Nov 2 update to the Claude Developer Platform: a thread id keeps the conversation on Anthropic's servers so subsequent requests send only the new user message."
+      - "Pitch is lower time-to-first-token on multi-turn agents; threads live in encrypted memory, expire 5 min after last use, and are deleted within an hour."
+      - "Enable with request header `anthropic-beta: message-threads-2026-08-12`; feature is NOT ZDR-eligible, and a 404 on continuation means the client must resend the full history."
+      - "Docs insist your app stay the source of truth — the SDK helper's local mirror only lives as long as the helper object does."
+    url: "https://platform.claude.com/docs/en/build-with-claude/message-threads"
+    source: "platform.claude.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "OpenAI Promotes GPT-Rosalind to Enterprise GA for Biology Research"
+    summary:
+      - "Oct 30 help-center update: GPT-Rosalind leaves Research Preview and goes global for Enterprise and Business customers through a trusted-access program."
+      - "Reaches teams via the model picker in ChatGPT Enterprise and Codex plus the API; admins toggle it on through groups and custom roles — off by default."
+      - "Rollout starts with a two-week admin preview; model is gated to 'legitimate biology research use cases' that pass safety and compliance review."
+      - "Life Sciences Research plugin in Codex wires it into scientific tools and databases; frames use cases as target discovery, genomics interpretation, and experiment planning."
+    url: "https://help.openai.com/en/articles/20001193-introducing-gpt-rosalind-for-life-sciences-research"
+    source: "openai.com"
+    tag: "models"
+    significance: 3
+
+  - title: "Fireship Asks 'Did the AI Bubble Just Pop?' and the Clip Is Still Climbing"
+    summary:
+      - "Oct 28 upload from Jeff Delaney's channel (~4.7M subscribers) frames the current correction narrative in the 100-second format."
+      - "Threads the SoftBank Nvidia exit, the 'circular AI financing' critique, and valuation markdowns into the usual Fireship beat-drop pacing."
+      - "Hyperagent sponsors — a notable tell on which agent-platforms are willing to spend to reach the dev audience right now."
+      - "Still the top AI post on Fireship's channel heading into Nov 4; a bellwether for mainstream-dev sentiment as Anthropic's IPO roadshow begins."
+    url: "https://www.youtube.com/watch?v=nEaJMdM1djM"
+    source: "youtube.com"
+    tag: "community"
+    significance: 3
