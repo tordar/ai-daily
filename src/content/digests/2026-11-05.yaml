@@ -1,0 +1,67 @@
+date: "2026-11-05"
+stories:
+  - title: "NVIDIA Open-Sources Auto Ontology to Stop Agents Writing the Wrong SQL"
+    summary:
+      - "Nov 1 release of a Python framework that builds a certified semantic graph over enterprise databases so agent-generated SQL carries approved definitions, relationships, and lineage."
+      - "Apache-2.0; connectors for Snowflake, Databricks, Postgres, DuckDB; ships a FastAPI backend, Next.js UI, pgvector catalog, and an MCP server exposing 9 read-only tools."
+      - "Vendor benchmark claims a ~90% reduction in ontology build time; accuracy scores are not published — the separate `ontology-sql-eval` repo ships only the harness."
+      - "Tops today's GitHub trending with +2,050 stars, ahead of claude-mem, worktrunk, and vercel-labs/agent-desktop."
+    url: "https://www.marktechpost.com/2026/11/01/nvidia-auto-ontology-open-source-semantic-layer-ai-agents/"
+    source: "marktechpost.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Anthropic Expands AI for Science to 20 Foundations and Institutions"
+    summary:
+      - "Oct 28 update broadens the Claude-credits program from individual researchers to funders (NSF, Sloan, Simons), institutions (HHMI Janelia, Allen Institute, Sanger, EMBL), and six research projects."
+      - "Partners redistribute credits internally or into existing grant pipelines; gnomAD and the Column Group are among the new additions."
+      - "Follows Anthropic's $150M three-year commitment to the federal Genesis Mission announced Oct 8."
+      - "Lands the same week as the Oct 27 drug-discovery progress report with BigHat, BMS, Divergence Labs, Enveda, Generate Biomedicines, and the Column Group."
+    url: "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Anthropic Posts First Claude-in-the-Lab Numbers From Six Drug-Discovery Partners"
+    summary:
+      - "Oct 27 early-progress report: Claude paired with BigHat–Anthropic teams to improve two antibody fragments — one targeting cancer cells, one extending a drug's half-life."
+      - "Covers active collaborations with Bristol Myers Squibb, Divergence Labs, Enveda, Generate Biomedicines, and The Column Group — all preclinical."
+      - "Anthropic quietly acquired Mithril Medicine, a one-person biotech working on two rare pediatric muscular dystrophies, for its in-house program."
+      - "Caveat baked into the post: real impact requires much deeper integration into partner development pipelines — this is a progress note, not a shipped drug."
+    url: "https://www.anthropic.com/research/early-progress-drug-development"
+    source: "anthropic.com"
+    tag: "research"
+    significance: 3
+
+  - title: "Anthropic IPO Roadshow Window Opens Nov 10 as Price Range Still Blank"
+    summary:
+      - "SEC's 15-day rule after the Oct 26 S-1 means the earliest permitted roadshow start is Nov 10; press reports point to a Nov 9–mid-Nov kickoff and a target listing the week of Nov 16."
+      - "Public S-1 cover still reads 'between $ and $' — the price range lands in an S-1/A filed before the roadshow begins."
+      - "Target valuation: around $2T; secondary-market bids on Forge and Hiive sit near $1.05T with asks at $1.15T, versus the May private round at $965B."
+      - "Deal is expected to raise ~$60B, led by Goldman Sachs and Morgan Stanley; ticker ANT on the Nasdaq Global Select Market."
+    url: "https://www.itiger.com/news/1130016239"
+    source: "itiger.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Kimi K3 Runs on One CPU in 176 KB of C, Streaming 1.5 TB From NVMe"
+    summary:
+      - "FareedKhan-dev/kimi-k3-in-c inferences the 2.78T-parameter Moonshot MoE on a single AVX2 CPU with a measured 8.24 GB peak RAM — no GPU, no BLAS, no framework."
+      - "Only 16 of 896 experts activate per token; the other 93% of the 1.56 TB checkpoint (1.447 TB) is read from NVMe per token and never enters memory."
+      - "Pure C99, Apache-2.0, ~176 KB of source; Linux x86-64 only, and reported throughput is about 32 seconds per token — a proof of concept, not a server."
+      - "Still crawling up GitHub trending three months after the Aug 1 release — a reminder that extreme MoE sparsity makes trillion-param inference a storage problem, not a compute one."
+    url: "https://github.com/FareedKhan-dev/kimi-k3-in-c"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "worktrunk: a Rust CLI That Treats Each Agent as Its Own Git Worktree"
+    summary:
+      - "max-sixty (PRQL, Xarray) ships a worktree manager pitched for running Claude Code, Codex, and Gemini CLI in parallel without stepping on each other."
+      - "`wt switch -c -x claude feat -- 'Add auth'` creates a branch + worktree and launches the agent in it; `wt list`/`wt remove` do the janitorial work."
+      - "Hooks on create/merge, LLM-generated commit messages, per-worktree dev-server port allocation, and CI status per branch."
+      - "+531 stars today on GitHub trending (now ~4.1K total); installs from Homebrew, Cargo, conda-forge, and winget."
+    url: "https://github.com/max-sixty/worktrunk"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
