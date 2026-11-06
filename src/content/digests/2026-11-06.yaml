@@ -1,0 +1,56 @@
+date: "2026-11-06"
+stories:
+  - title: "OpenAI Ships GPT-6 Cyber for Daybreak Red, Rated Critical and Pointed at Zero-Days"
+    summary:
+      - "Nov 5 launch: a GPT-6 Astra variant trained to answer offensive security requests Astra would refuse, kept behind the application-only Daybreak Red tier."
+      - "Rated Critical under OpenAI's Preparedness Framework; access via API and Codex, rolling out to all Daybreak Red customers over the coming weeks."
+      - "Early campaign on Firefox turned up 81 previously unknown vulnerabilities; outperforms Astra on cyber tasks even when Astra does not refuse."
+      - "Paired with a $1B initiative subsidising access for teams defending critical infrastructure (electrical grid, water utilities); extra identity checks and misalignment monitoring layered on top."
+    url: "https://cyberscoop.com/openai-gpt-6-cyber-security-model"
+    source: "cyberscoop.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Postman Desktop Caught Silently Installing Codex and Claude Code Plugins"
+    summary:
+      - "GitHub issue #14370: opening Postman desktop 12.33.4 writes Codex and Claude Code plugin entries without a prompt; log trigger reads `auto-existing-upgrade`."
+      - "Startup hook instructs the agent to load Postman's API-engineer skill on any non-trivial API work — not only when the user names Postman — and the installer approves the hook itself."
+      - "Touches `~/.codex/config.toml`, `~/.claude/settings.json`, `~/.claude/plugins/installed_plugins.json`, and drops a Postman binary in `~/.local/bin` on macOS."
+      - "Front-paged on Hacker News Nov 3; no maintainer reply on the issue, which is now asking for explicit opt-in and the hook self-approval to be removed."
+    url: "https://github.com/postmanlabs/postman-app-support/issues/14370"
+    source: "github.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Claude Code Skill Packs Take Over GitHub Trending"
+    summary:
+      - "Weekly trending is a skills blowout: Nutlope/hallmark (+6,994), anthropics/skills (+3,072), multica-ai/andrej-karpathy-skills (+3,713), jakubkrehel/skills, Leonxlnx/taste-skill, obra/superpowers (+5,131)."
+      - "Daily board stacks garrytan/gstack (23-role Claude Code toolkit, +612), mattpocock/skills (+2,071), scenario-labs/skills (+667), google/skills (+211), ConardLi/garden-skills (+175) on the same page."
+      - "mattpocock/skills now ships 27 skills (20 engineering, 7 productivity) and lists install via `claude plugin install mattpocock-skills@claude-plugins-official`; total stars near 316K."
+      - "All distribute as Anthropic-spec Agent Skills, usable from Claude Code, Codex, Cursor, and other agents via the same marketplace format."
+    url: "https://github.com/trending?since=weekly"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Hallmark: a Design Skill That Refuses to Look AI-Generated"
+    summary:
+      - "Together AI's Hassan El Mghari (Nutlope) ships a Claude Code / Cursor / Codex skill that picks theme, structure, and craft per screen instead of defaulting to Shadcn-grey slop."
+      - "20 built-in themes, 4 layout verbs, and a key-cycle hotkey to flip through looks during review."
+      - "+6,994 stars this week lifts the repo to #2 on weekly GitHub trending (all languages)."
+      - "Install drops a SKILL.md Claude Code reads on every UI task; MIT, no runtime dependency."
+    url: "https://github.com/Nutlope/hallmark"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Gemini 4 Argon API Prices Double on Nov 30"
+    summary:
+      - "Google's intro rate of $2 / $10 per million input / output tokens ends Nov 30; standard rate becomes $4 / $20."
+      - "Model id `gemini-4-argon`, 1,048,576-token combined context, GA to paid Gemini API, AI Studio, and the Gemini platform since Oct 13."
+      - "Also reachable via AI Ultra through Antigravity, plus the Gemini app and AI Mode in Search for Pro/Ultra; no free-tier access, and Vertex AI release notes still don't list it."
+      - "At the new rate, Argon is 2x GPT-6.1 Sol's $2 / $10 and ~40% of GPT-6 Astra's $10 / $50 — the cheap-frontier window closes in 24 days."
+    url: "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/"
+    source: "blog.google"
+    tag: "models"
+    significance: 3
