@@ -1,0 +1,67 @@
+date: "2026-11-09"
+stories:
+  - title: "Meta Buys Conductor and OpenAI Buys Pierre as Multi-Agent Coding Hits M&A"
+    summary:
+      - "Same-day deals Nov 4: Meta Superintelligence Labs acquires Conductor, which runs Claude Code, Codex, Cursor, and OpenCode in parallel on isolated copies of a repo and merges their output."
+      - "OpenAI acquires Pierre Computer; its Trees and Diffs libraries already power the Codex interface, and Pierre's Code Storage folds into Codex."
+      - "Conductor was a $22M Series A; co-founders Charlie Holtz and Jackson de Campos join Meta, and Conductor Cloud shuts Nov 20."
+      - "Signals the multi-agent coding stack has reached consolidation phase — worktrunk (+2,313 stars) and claude-mem (+6,443) are riding the same wave on GitHub trending."
+    url: "https://www.infoworld.com/article/4245065/meta-acquires-conductor-as-ai-coding-shifts-toward-multi-agent-development.html"
+    source: "infoworld.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Google Ships Gemini Omni 1.2 Flash GA With a 30% Price Cut"
+    summary:
+      - "GA rollout across Google Cloud, Gemini for Business, Google Vids, and the Gemini API; clips up to 15 seconds at 720p or 1080p."
+      - "New rates: $0.07 per second at 720p and $0.104 per second at 1080p — roughly 30% below the preview tier."
+      - "Shipped alongside Nano Banana 2 Lite availability, giving Google GA parity on the video and image stack."
+      - "Lands days after OpenAI's Nov 4 Images 2.6 (Flare + Sunburst) rollout — the frontier image/video race is now a price-and-availability fight."
+    url: "https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-lite-and-gemini-omni-flash-available"
+    source: "cloud.google.com"
+    tag: "models"
+    significance: 4
+
+  - title: "OpenAI Pulls Cursor's API Access on Nov 12 Over SpaceX Takeover"
+    summary:
+      - "Change-of-control clause triggered by SpaceX's Aug 14 acquisition of Cursor; the hard cutoff is three days out."
+      - "Cursor says OpenAI is ~5% of model traffic and users will route to Grok, Claude, and Gemini after Wednesday."
+      - "Latest flashpoint in the Musk–Altman API spat; xAI already blocks ChatGPT fine-tuning on Grok responses."
+      - "r/cursor and r/ChatGPT threads tracking fallback workflows and testing which models hold up on existing Cursor prompts."
+    url: "https://www.channelinsider.com/ai/news-openai-cursor-model-access-spacex-acquisition/"
+    source: "channelinsider.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "NVIDIA Auto-Ontology Lands on GitHub With 9K Stars in a Week"
+    summary:
+      - "Python framework for graph-based reasoning layers over LLMs — deterministic query generation and auditable chains instead of free-form chain-of-thought."
+      - "Effectively a from-zero debut: +9,327 stars this week, 10,576 total; tops GitHub weekly trending for AI/ML."
+      - "Targets agent pipelines that need explainable reasoning for compliance and debugging."
+      - "MIT-licensed, no CUDA lock-in — runs on CPU for ontology construction and offloads only heavy inference to GPU."
+    url: "https://github.com/NVIDIA/auto-ontology"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Meta Ships Astryx, an Agent-Ready Open Source Design System"
+    summary:
+      - "New TypeScript design system from Meta billed as 'customizable, agent-ready' — tokens, verbs, and component specs built to be consumed by Claude Code, Codex, and Cursor."
+      - "+875 stars on day-one daily trending (Nov 9)."
+      - "Direct counter-move to last week's Nutlope/Hallmark skill, which hit weekly #2 by rejecting Shadcn-grey slop."
+      - "Signals that design systems are shifting from manual component libraries to agent-first primitives."
+    url: "https://github.com/meta/astryx"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Perplexity Teammates Launches as Persistent Agents for Long-Running Work"
+    summary:
+      - "Nov 5 rollout: agents that keep context across weeks of work, plug into Slack, and run async in the background."
+      - "Gated to the new Max tier at $200/mo; free during launch promo."
+      - "Positioned against ChatGPT Agent and Claude project-scoped work — Perplexity's bet on persistent, named agents."
+      - "HN thread active through Nov 6; developers split on whether 'teammate' framing beats 'assistant' for retention."
+    url: "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work"
+    source: "perplexity.ai"
+    tag: "tools"
+    significance: 3
