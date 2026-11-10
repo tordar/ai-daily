@@ -1,0 +1,67 @@
+date: "2026-11-10"
+stories:
+  - title: "Anthropic Ships Claude Fable 5.2 With Orchestrator Mode and 1,000-Agent Demos"
+    summary:
+      - "Nov 9 launch: Fable 5.2 and Mythos 5.2 share weights; standard pricing holds at $8/M input and $40/M output, with a 2.5x fast mode at $16/$80."
+      - "Big jumps vs Opus 5.5 — FrontierSWE v2 69.9% vs 62.3%, Terminal-Bench-Science 74.6% vs 58.7%, Remote Labor Index 41.3% vs 21.3%."
+      - "Anthropic says over 90% of changes merged into its core codebase are now written by Claude; one engineer used Fable 5.2 to coordinate 1,000+ subagents for eight days to boot a prototype OS on a laptop."
+      - "New Orchestrator mode delegates subtasks to smaller models; Mythos 5.2 gated to Cyber and Life Sciences verification programs."
+    url: "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 5
+
+  - title: "anthropics/skills Pulls 1,000+ Stars in a Day on Fable 5.2 Launch Wave"
+    summary:
+      - "Public Agent Skills repo tops GitHub daily trending with +1,038 stars today, riding the Fable 5.2 announcement."
+      - "Marketplace manifest now bundles plugins including document-skills, example-skills, claude-api, academy-guide, and discernment-nudge."
+      - "Also on trending: anthropics/claude-quickstarts at +551 stars, a sign the launch is pulling developers into the broader stack."
+      - "Skills format has become the de facto agent packaging standard — GitHub Copilot now reads compatible packages too."
+    url: "https://github.com/anthropics/skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Vercel's Agent-Browser Lands on Trending After Full Rust Rewrite"
+    summary:
+      - "Rust CLI for AI browser automation on GitHub daily trending at +916 stars today; v0.20 dropped the Node daemon for a pure Rust Chrome DevTools client."
+      - "Third-party benchmarks peg it at 5.7x fewer tokens than Playwright MCP — 1,364 tokens vs 7,779 on a six-step test."
+      - "Installs via `cargo install agent-browser` or npm; Apache-2.0 licensed."
+      - "Positions Vercel against Playwright MCP as the agent-native browser, with compact accessibility-tree snapshots replacing raw HTML."
+    url: "https://github.com/vercel-labs/agent-browser"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Meta's Astryx Keeps Climbing With 3,278 Stars in a Day"
+    summary:
+      - "Astryx — Meta's TypeScript, agent-ready open-source design system — notches +3,278 stars today, extending a week of momentum."
+      - "Day-one trending push on Nov 9 (+875) has turned into a sustained climb, now at roughly 4x that rate."
+      - "CLI and MCP server let Claude Code, Codex, and Cursor scaffold and document UIs directly from design tokens."
+      - "Signals the shift from Shadcn-style component grabs to design systems built for agents to consume as primitives."
+    url: "https://github.com/facebook/astryx"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "OpenMausBot Trends at 1,587 Stars as Local Grok Bot Clone"
+    summary:
+      - "Free, local-first desktop app that treats AI agents as persistent chat contacts, modeled on xAI's $200 Grok Bot."
+      - "+1,587 stars today on GitHub trending — top-ranked AI repo on the daily list."
+      - "Runs Claude, Codex, and Grok CLIs already on the user's machine; each bot gets its own cloud Linux desktop, isolated local VM, or host machine."
+      - "Bring-your-own API key means no proxy fees — the headline tradeoff against the hosted Grok Bot plan."
+    url: "https://github.com/milind-soni/OpenMausBot"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "OpenAI's Cursor Cutoff Hits Wednesday; Users Steered to Grok, Claude, Gemini"
+    summary:
+      - "Nov 12 hard cutoff for OpenAI model access in Cursor, triggered by the SpaceX acquisition's change-of-control clause."
+      - "Cursor says OpenAI is ~5% of model traffic; Tab, Auto routing, cloud/background agents, and the Cursor CLI/API lose GPT access."
+      - "Personal OpenAI API keys reportedly still work in local Chat and Agent features — the only official escape hatch."
+      - "Anthropic countered with higher Claude limits inside Cursor to absorb the switchers."
+    url: "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 3
