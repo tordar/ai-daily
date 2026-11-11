@@ -1,0 +1,68 @@
+date: "2026-11-11"
+stories:
+  - title: "Meta Ships Muse Ember as a $0.10 Input-Token Agent Workhorse"
+    summary:
+      - "Smallest, cheapest Muse model lands in the Meta Model API and Muse Code with ID `muse-ember-1.0`."
+      - "Pricing: $0.10/M input ($0.004 cached) and $0.50/M output; 1M context window, up to 512K output."
+      - "Meta's charts put it ahead of or tied with Claude Haiku 5.5 and GPT-6 Luna on 9 of 10 published benchmarks."
+      - "Positioned as the execution model for high-volume agent subtasks, with Muse Wonder as the planner."
+      - "Artificial Analysis lists it at 36 on its intelligence index with the lowest cost-per-task in the set."
+    url: "https://research.meta.ai/blog/muse-ember"
+    source: "meta.ai"
+    tag: "models"
+    significance: 5
+
+  - title: "mattpocock/skills Tops GitHub Trending After Weeks of Climb"
+    summary:
+      - "+1,225 stars today on the daily list, carrying Matt Pocock's personal `.agents` directory past the top of GitHub Trending."
+      - "Packs `/grill-me`, `/tdd`, `/diagnosing-bugs`, and `/improve-codebase-architecture` plus a shared `GLOSSARY.md` to fight agent misalignment and verbosity."
+      - "Works with Claude Code, Codex, GitHub Copilot, and Gemini CLI via `npx skills@latest add mattpocock/skills`."
+      - "Frames skills as the fix for four agent failure modes: misalignment, verbosity, broken code, and design decay."
+    url: "https://github.com/mattpocock/skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "addyosmani/agent-skills Packages a Full Spec-to-Ship Lifecycle"
+    summary:
+      - "+465 stars today; 115k total. 25 skills, 9 slash commands, 4 agent personas across spec → plan → build → verify → review → ship."
+      - "Slash commands cover `/spec`, `/plan`, `/build`, `/test`, `/constraints`, `/review`, `/webperf`, `/code-simplify`, `/ship`."
+      - "Each skill ends with evidence gates (passing tests, runtime data) and anti-rationalization tables listing excuses with counter-arguments."
+      - "Plain Markdown skills run on Claude Code, Cursor, Codex, Gemini CLI, and GitHub Copilot."
+    url: "https://github.com/addyosmani/agent-skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "ha-mcp Turns Home Assistant Into a First-Class Claude Tool"
+    summary:
+      - "+790 stars today; 6.8k total. MCP server from the homeassistant-ai org exposes ~87 tools for building and debugging a smart home, not just toggling devices."
+      - "Covers automations, scripts, dashboards, helpers, areas, backups, traces, history, and logs — reaches past the official MCP's Assist-only entities."
+      - "v9.0.0 (Oct 28) added an administrator account step to the setup flow."
+      - "MIT-licensed; works with Claude, ChatGPT, and other MCP clients."
+    url: "https://github.com/homeassistant-ai/ha-mcp"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "billion-context Promises Month-Long Sessions on Any Small-Window Model"
+    summary:
+      - "+375 stars today; 6.5k total. Plugin sits between the agent and the model API, folding consumed conversation into rolling summaries so a single session can span billions of tokens."
+      - "Supports Claude Code, Codex, OpenCode, and pi out of the box."
+      - "Pitched for month-long sessions on models with tight native context windows."
+      - "Open source under MIT."
+    url: "https://github.com/ranxianglei/billion-context"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "Anthropic Kicks Off IPO Roadshow Targeting a Nov 16 Nasdaq Debut"
+    summary:
+      - "Nov 10 announcement: proposed IPO roadshow is live; Class A shares will list on Nasdaq Global Select Market under ticker `ANT`."
+      - "Target listing window is the week of Nov 16, with the latest S-1/A amended Nov 2 to add Q3 numbers."
+      - "Price range and share count still blank — to be set after roadshow meetings."
+      - "Reuters reports some investors doubt the window holds given US Thanksgiving on Nov 26."
+    url: "https://www.anthropic.com/news/launches-roadshow-for-proposed-initial-public-offering"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 3
