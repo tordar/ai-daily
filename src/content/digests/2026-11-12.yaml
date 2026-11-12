@@ -1,0 +1,58 @@
+date: "2026-11-12"
+stories:
+  - title: "Meta's Muse Models Land on Google Cloud; Pichai Welcomes Zuckerberg to Model Garden"
+    summary:
+      - "Three Muse models — Ember, Spark 1.3, and Wonder — enter public preview on Vertex AI Model Garden and the Gemini Enterprise Agent Platform."
+      - "Pichai reply on X: `Congrats and welcome to the model garden, excited to serve our Google Cloud customers!`"
+      - "Managed APIs ship with VPC Service Controls, SOC 2 and ISO 27001 compliance, and unified Google Cloud billing."
+      - "Rollout extends Meta's cross-cloud push already live on AWS SageMaker, Microsoft Foundry, Oracle, and Hugging Face."
+      - "Google serving a direct frontier-lab rival through its own API is the new signal — not a merger, not a co-dev deal."
+    url: "https://cryptobriefing.com/meta-muse-models-google-cloud/"
+    source: "cryptobriefing.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "shadcn/improve Crosses 11k Stars With Audit-Plan-Execute Split"
+    summary:
+      - "Agent skill from shadcn hits 11.1k stars with just 23 commits on main; +361 stars today keeps it on GitHub Trending."
+      - "Strong model audits the codebase and writes plain-markdown plans; `/improve execute <plan>` dispatches a cheaper executor in a git worktree and reviews its diff."
+      - "Nine parallel subagent categories: correctness, security, perf, test coverage, tech debt, deps/migrations, DX, docs, direction."
+      - "Commands include `/improve quick`, `/improve deep`, `/improve branch`, `/improve next`, `/improve reconcile`, and `--issues` to publish plans as GitHub issues."
+      - "Install with `npx skills add shadcn/improve`; MIT, read-only on source code by design."
+    url: "https://github.com/shadcn/improve"
+    source: "github.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "anthropics/skills Pulls Another +1,032 Stars as Fable 5.2 Wave Holds"
+    summary:
+      - "Public Agent Skills repo returns to the top of GitHub daily trending at 193.3k total stars."
+      - "anthropics/claude-quickstarts rides the same wave, +430 stars to 20.7k."
+      - "Marketplace manifest bundles document-skills, example-skills, claude-api, academy-guide, and discernment-nudge."
+      - "Sustained climb signals Skills format sticking as the default agent packaging standard across Claude, Codex, Copilot, and Gemini CLI."
+    url: "https://github.com/anthropics/skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "free-claude-code Hits 68.8k Stars Routing Claude Code to Free Provider Tiers"
+    summary:
+      - "+636 stars today pushes Alishahryar1's local proxy to 68.8k total, 1,248 commits on main."
+      - "Forwards Claude Code (and Codex, OpenCode) traffic to 61 providers — NVIDIA NIM, OpenRouter, Groq — claiming 1.3B+ free tokens per month."
+      - "Python 3.14 + FastAPI, AGPL-3.0; explicitly `not affiliated with or endorsed by Anthropic`."
+      - "`fcc-claude` launcher is the user-facing escape hatch from paid API keys, with per-provider limits still in force."
+    url: "https://github.com/Alishahryar1/free-claude-code"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "experientiallabs/experiential Ships a Zero-Markup BYOK Model Gateway"
+    summary:
+      - "+589 stars today; 16.6k total. OpenAI-compatible router for hosted, BYOK, and local models under Apache-2.0."
+      - "`exp capture` scrapes traces from Codex and Claude Code desktop apps (macOS, experimental); `exp build` turns those traces into a custom router."
+      - "`exp optimize model` fine-tunes an open-source model using Tinker; `exp code` runs a coding + cowork agent on Pi."
+      - "Positions against proprietary gateways with explicit zero-markup pricing and traffic-informed routing."
+    url: "https://github.com/experientiallabs/experiential"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
