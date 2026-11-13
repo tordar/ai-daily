@@ -1,0 +1,70 @@
+date: "2026-11-13"
+stories:
+  - title: "DeepMind Ships Gemini Robotics 2.5 — Apollo 2 Hits 96% at Mercedes"
+    summary:
+      - "Nov 10 launch: most capable Gemini vision-language-action model to date, paired with a Gemini Robotics ER planner."
+      - "Apptronik Apollo 2 humanoids hit 96% on auto-parts kitting on live Mercedes-Benz lines in Kecskemét, Hungary and Sindelfingen, Germany."
+      - "30–100% higher success vs prior baselines across 200 manipulation tasks; harder multi-step jobs still land 40–75%."
+      - "Open-sourced ASIMOV-Jailbreak safety benchmark — DeepMind reports 99.5% resistance for Gemini 4 Argon vs 82% for Gemini Robotics ER 2."
+      - "Rolling out to robotics partners only; no public API or pricing disclosed."
+    url: "https://deepmind.google/discover/blog/gemini-robotics-2-5/"
+    source: "deepmind.google"
+    tag: "models"
+    significance: 5
+
+  - title: "Anthropic Prices IPO at $70–$78, Lines Up $26B Anchor from Nvidia, Google, AMD"
+    summary:
+      - "Roadshow terms (Nov 10): 825M Class A shares on Nasdaq Global Select under ticker `ANT`; implied raise $57.8B–$64.4B, up to $74B with the greenshoe."
+      - "Implied valuation up to ~$1.4T, trimmed from earlier $2T talk as the AI stock selloff cools expectations."
+      - "$26B concurrent private placement to AMD, Broadcom, Google, Micron, Microsoft, Nvidia, and TSMC at the IPO price."
+      - "Pricing expected Nov 18; trading debut targeted for Nov 19 per CNBC/Bloomberg reporting."
+      - "Supersedes the Nov 11 roadshow write-up — final price range and anchor list weren't public at that time."
+    url: "https://www.anthropic.com/news/launches-roadshow-for-proposed-initial-public-offering"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Chrome's Modern Web Guidance Hits #1 on GitHub Trending"
+    summary:
+      - "`GoogleChrome/modern-web-guidance-src` tops daily trending with +739 stars; source repo at 3.5k, 1,592 commits on main, Apache-2.0."
+      - "128 web platform features and 100+ expert-vetted use cases packaged as agent skills to keep coding agents off legacy patterns."
+      - "Google's internal benchmark: 37-point gain in modern best-practice adherence when a generic agent loads the pack."
+      - "Installs via `/plugin marketplace add GoogleChrome/modern-web-guidance` in Claude Code, `gh skill install` on the GitHub CLI, or `npx modern-web-guidance@latest install`."
+      - "Co-maintained by the Chrome DevRel and Microsoft Edge teams — first real cross-vendor browser-platform skill set for agents."
+    url: "https://github.com/GoogleChrome/modern-web-guidance-src"
+    source: "github.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "CopilotKit's OpenBot Lands on Trending as Self-Hosted Grok Bot Alternative"
+    summary:
+      - "+298 stars today to 11.8k on GitHub daily trending; MIT-licensed, v0.0.7 shipped since the Nov 1 launch."
+      - "Each AI coworker provisioned with its own browser, files, and tools; every tool call logged through policy-gated execution."
+      - "AG-UI bridge lets agents built on LangGraph, Mastra, CrewAI, and Pydantic AI plug in without rewriting."
+      - "Framed as an `alpha template` — not a hosted service — explicitly pitched against xAI's Grok Bot and OpenAI's Dots."
+    url: "https://github.com/CopilotKit/OpenBot"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Meta's Astryx Compounds From 22k to 27k Stars in Four Days"
+    summary:
+      - "+1,830 stars today pushes Meta's agent-ready React design system to 26.8k total, sustaining the Nov 9 launch spike into a week-long climb."
+      - "ossinsight now ranks it global #2,059 among active GitHub repos; TypeScript, MIT."
+      - "CLI + MCP server scaffold UI from design tokens for Claude Code, Codex, and Cursor without hand-written component grabs."
+      - "Head-to-head posts this week keep placing it directly against shadcn/ui and MUI — the comparison set has shifted from component libraries to agent-native systems."
+    url: "https://github.com/facebook/astryx"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "addyosmani/agent-skills Keeps Climbing — +816 Stars to 116.8k"
+    summary:
+      - "Daily-trending return at +816 stars; spec→plan→build→verify→review→ship toolkit now sits at 116.8k total."
+      - "25 skills, 9 slash commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/ship`), 4 agent personas."
+      - "Evidence gates (passing tests, runtime data) and anti-rationalization tables designed to stop agents from faking green CI."
+      - "Portable Markdown — runs under Claude Code, Cursor, Codex, Gemini CLI, and GitHub Copilot."
+    url: "https://github.com/addyosmani/agent-skills"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
