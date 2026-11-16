@@ -1,0 +1,83 @@
+date: "2026-11-16"
+stories:
+  - title: "Google Ships Gemini 4 Hydrogen — $1.50 Input, 2.5x Faster Than 3.8 Flash"
+    summary:
+      - "Nov 12 launch: workhorse tier beneath Gemini 4 Carbon and Argon, pitched at everyday agentic coding."
+      - "Pricing $1.50 / $7.50 per million input/output tokens with a 1M-token context window."
+      - "57% on Terminal-Bench 4.1 vs 18.2% for Gemini 3.8 Flash; 51 on Artificial Analysis Intelligence Index at default thinking, 54 at xhigh."
+      - "Google claims 81% fewer agentic overreach cases and 5x fewer fabricated claims vs 3.8 Flash."
+      - "Rolling out across Gemini API, AI Studio, Gemini for business, the Gemini app, and Search."
+    url: "https://www.marktechpost.com/2026/11/13/google-gemini-4-hydrogen/"
+    source: "marktechpost.com"
+    tag: "models"
+    significance: 5
+
+  - title: "WSJ: Nvidia Allegedly Engineered GPU Scarcity by Funding Its Own Buyers"
+    summary:
+      - "TechPowerUp write-up of the WSJ report tops Hacker News at 1,051 points, 624 comments."
+      - "Nvidia reportedly in talks to provide billions in guarantees to startups that then buy its chips and build data centers."
+      - "Company filings confirm customer financing and credit support, but critics argue the scarcity framing isn't proven."
+      - "Lands days before Nvidia's first post-Jensen earnings and Anthropic's IPO week — compounds the circular-financing debate."
+    url: "https://news.ycombinator.com/item?id=50493251"
+    source: "news.ycombinator.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "llama.cpp and ggml Hit v1.0.0 — Semver Arrives for Local AI After 3.5 Years"
+    summary:
+      - "ggml-org shipped both libraries on Nov 13 with a hard switch to semantic versioning for the local inference stack."
+      - "35 deprecated functions removed from the public C API; NextN API folded into llama.h, llama_set_warmup gone."
+      - "ggml 1.0.0 drops legacy DIAG_MASK ops, adds configurable YaRN truncation and FP8 KV-cache support."
+      - "Distributed via 8 channels — Debian, Homebrew, conda-forge, Winget, Docker, and more."
+      - "Discussed on HN at 243 points, 78 comments."
+    url: "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0"
+    source: "github.com"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Thinking Machines Opens Inkling 2 Small Weights — 594B MoE, Apache 2.0"
+    summary:
+      - "Nov 12 drop on Hugging Face under Apache 2.0, one week after the hosted-only Tinker debut."
+      - "594B parameters with 17B active at inference, 1M-token context, image input."
+      - "Scores 31 on the Artificial Analysis Intelligence Index; model card reports 30.6."
+      - "Safety evals cover sycophancy, CBRN, cyber, and loss-of-control risks; lab concludes no material uplift beyond the open-weight ecosystem."
+      - "Positioned as the strongest US open-weight model for FrontierCode; still trails on Terminal-Bench."
+    url: "https://alphasignal.ai/news/thinking-machines-opens-inkling-2-small-s-594b-weights-to-developers"
+    source: "alphasignal.ai"
+    tag: "open-source"
+    significance: 4
+
+  - title: "Cloudflare Open-Sources Kitesurf, Its Agent Browser Engine"
+    summary:
+      - "Changelog dated Nov 12, blog post Nov 13; Apache 2.0 on GitHub."
+      - "Rust engine compiled to WebAssembly — Blitz for HTML/DOM/layout, Stylo for CSS, Boa as JS fallback."
+      - "Parses HTML, runs page JavaScript, and renders screenshots on Workers with no browser container — Cloudflare cites 3–7x lower memory/CPU vs Chromium for agent workloads."
+      - "Self-hosting still requires a Workers Paid plan to use Dynamic Workers for per-page isolation."
+      - "Cloudflare flags it as experimental with incomplete Chrome compatibility."
+    url: "https://developers.cloudflare.com/changelog/post/2026-11-12-kitesurf-open-source/"
+    source: "cloudflare.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Anthropic Opens Private Beta for Self-Hosted Claude Managed Agents"
+    summary:
+      - "Nov 12 beta: the entire orchestration stack — harness, sandboxes, sessions, credentials — runs in the customer's cloud or on-prem."
+      - "Customers operate the Managed Agents server, its database, and workers that execute shell and file tools."
+      - "Model calls can route to Anthropic, Amazon Bedrock, Google Agent Platform, Microsoft Foundry, or an internal gateway."
+      - "Credentials stay in the customer's secrets manager; a proxy outside the sandbox attaches them to MCP and API calls."
+      - "Access gated through Anthropic account teams — no self-serve enrollment, no GA date announced."
+    url: "https://www.helpnetsecurity.com/2026/11/12/anthropic-self-hosted-claude-managed-agents/"
+    source: "helpnetsecurity.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "OpenAI Disbands Standalone Robotics Team as General Models Take Over"
+    summary:
+      - "Fortune exclusive, Nov 13: researchers fold into the main research org under CRO Mark Chen; applied and hardware staff move into Applied under Greg Brockman."
+      - "Second time OpenAI has broken up a robotics group — the first wound down in 2020 citing limited data."
+      - "Standalone team was formed in 2024 alongside the Figure AI partnership."
+      - "OpenAI still developing an in-house humanoid; Altman targets a first public demo in 2027."
+    url: "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+    source: "fortune.com"
+    tag: "industry"
+    significance: 3
