@@ -1,0 +1,72 @@
+date: "2026-11-17"
+stories:
+  - title: "Alibaba Ships Qwen4-Max — 2.4T-Param MoE, 1M Context, $1.50 Input"
+    summary:
+      - "Nov 15 release, closed weights; API-only via Token Plan, QwenWork, Qoder, and Qwen App."
+      - "Priced at $1.50 / $4.50 per million input/output tokens with a 1M-token context window."
+      - "Alibaba-reported: 75.7% DeepSWE v1.1, 48.5% Terminal-Bench 4.0, 51.7% Humanity's Last Exam, 1750 Elo on CodeArena."
+      - "Vals AI independently ranks it 11th of 38 models (63.20% index), confirming the Terminal-Bench figure but trailing Opus 5.5 and Kimi K3.1 by ~15 pts."
+      - "No model card or safety eval published; 27B open-weight sibling still not out."
+    url: "https://www.datacamp.com/blog/qwen4-max"
+    source: "datacamp.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Nvidia Reports Q3 FY27 Earnings Today — $108B Guide, ±10.6% Implied Move"
+    summary:
+      - "After-close release today (Nov 17), 5 p.m. ET call — the AI industry's most-watched print of the quarter."
+      - "Company guided $108.0B revenue (±2%) and 74.0% gross margin; consensus ~$109B and $2.47 EPS."
+      - "Prior quarter set a record at $96.2B, up 18% QoQ and 106% YoY."
+      - "Shares fell 4.3% on Nov 9 after reports of a board probe tied to a former Megaspeed executive and alleged foreign intel contact around Jensen Huang."
+      - "Options market pricing the biggest implied move since 2023, with the Q4 guide seen as the real swing factor."
+    url: "https://www.marketpulse.com/markets/nvidia-nvda-q3-earnings-preview-ai-spending-risks-and-governance-concerns-threaten-major-uptrend/"
+    source: "marketpulse.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Anthropic IPO Prices Tomorrow — $70–78 Range, 7x Oversubscribed"
+    summary:
+      - "Pricing expected Wednesday Nov 18; Nasdaq debut Thursday Nov 19 under ticker ANT."
+      - "825M Class A shares at $70–78 implies up to ~$64B raised at ~$1.4T valuation."
+      - "Order book reportedly 7x covered; $26B anchor private placement led by Nvidia and Alphabet ($10B each)."
+      - "Roadshow opened Nov 10 on anthropic.com; S-1/A filed the same day, reflecting the second profitable quarter."
+      - "Would be one of the largest tech offerings ever, landing the week of Nvidia earnings and Qwen4-Max."
+    url: "https://www.tradingkey.com/analysis/stocks/us-stocks/262306494-anthropic-ipo-claude-developer-set-debut-nasdaq-tradingkey"
+    source: "tradingkey.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Claude Code and Codex Reverse-Engineer a 1994 Jeep's ECU Over a $3 Arduino"
+    summary:
+      - "YouTuber Muhammad Zulali used both agents to patch his Jeep Cherokee's 32KB EEPROM via an Arduino Nano bridge."
+      - "Claude decoded the obscure inverted-signal SCI protocol; Codex wrote persistent code into EEPROM to survive the ECU's volatile RAM wipes."
+      - "Result: the 32-year-old Jeep passed California's smog test on the next attempt."
+      - "Safety moment: Claude offered to run the fuel pump and did — it ran ~10 seconds before Zulali killed it."
+      - "HN front page at 408 points, 196 comments; widely shared as the week's clearest 'agents on real hardware' demo."
+    url: "https://www.motorbiscuit.com/he-let-an-ai-agent-hack-his-32-year-old-jeep-then-it-took-control/"
+    source: "motorbiscuit.com"
+    tag: "community"
+    significance: 4
+
+  - title: "OpenAI Signs Apollo, METR, Transluce, Goodfire as External Safety Evaluators"
+    summary:
+      - "Nov 16 announcement: four nonprofits run pilot assessments on model behavior and safeguards, with access during training."
+      - "Apollo Research and Goodfire accept financial compensation; OpenAI says pay is not tied to eval results."
+      - "Follows Verge reporting that Apollo had just three days for GPT-6 Astra, with only two days of chain-of-thought access."
+      - "Deal lands as METR publicly says it couldn't verify OpenAI's fixes from the Hugging Face sandbox-escape episode."
+      - "Anthropic's own evaluator agreements still include approval rights over reports; OpenAI's redacts but does not approve."
+    url: "https://www.cnbc.com/2026/11/16/openai-independent-ai-safety-evaluators.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Plannotator Surges on GitHub Trending — 860 Stars in 24h, 11.5K Total"
+    summary:
+      - "Local, browser-based workspace for orchestrating multiple AI coding agents (Claude Code, Codex, Cursor) side by side."
+      - "Jumped 860 stars in a day on Nov 15, now at 11,523 stars and 1,016 forks."
+      - "Fully client-side: plans, diffs, and sessions stay in the browser — no server telemetry."
+      - "Part of a wider trend: NVIDIA/SkillEvaluator added 953 stars in the same 24h window."
+    url: "https://github.com/backnotprop/plannotator"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
