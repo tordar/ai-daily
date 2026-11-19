@@ -1,0 +1,61 @@
+date: "2026-11-19"
+stories:
+  - title: "Anthropic Debuts on Nasdaq Today — Priced $83, ~$81B Offering"
+    summary:
+      - "ANT begins trading on the Nasdaq Global Select Market today, closing Nov 20."
+      - "Priced $83, above the $70–78 range; 980M Class A shares (956.4M from Anthropic, 23.6M from selling holders) for a ~$81.3B gross offering."
+      - "Implied valuation above the $1.3T top-of-range case; some analysts model $1.5T+ if shares pop."
+      - "30-day greenshoe for up to 147M more shares; Vanda estimated ~$250M of day-one retail net buying."
+      - "Lands two days after Nvidia's blowout Q3 and GPT-6.2 Astra's release — the biggest AI week on record for public markets."
+    url: "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "Nvidia Q3 Smashes Estimates in Its First Report Without Jensen Huang"
+    summary:
+      - "Revenue $115.8B (+103% YoY) vs ~$109B consensus; adj. EPS $2.68 vs $2.47; GAAP net income $65.3B, more than double a year ago."
+      - "Data Center hit a record $107.6B (+110% YoY); Vera Rubin NVL72 racks already shipping to CoreWeave, Google, Azure, Oracle, Nebius."
+      - "Q4 guide $130B ±3% (extra week, no China DC compute) vs ~$125B expected; GM steps down to 71–72% on Rubin ramp."
+      - "Supply commitments jumped to $390B from $279B QoQ, mostly multi-year memory."
+      - "First print under interim CEO Colette Kress after Huang resigned Nov 12; stock +2% after hours, still down ~17% YTD."
+    url: "https://www.constellationr.com/insights/news/nvidia-posts-strong-q3-ups-q4-fiscal-2028-outlook-amid-huang-resignation"
+    source: "constellationr.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI Ships GPT-6.2 Astra and Sol — Devs Call Astra 'Essentially Unusable'"
+    summary:
+      - "Nov 17 release to Plus/Pro/Enterprise/Edu in ChatGPT Work, Codex, and the API as gpt-6.2-astra and gpt-6.2-sol."
+      - "Astra priced $8/$40 per Mtok (20% below GPT-6 Astra); Sol stays $2/$10 and lands within 0.5 pts of Astra on FrontierCode 2.0 at ~1/5 the cost."
+      - "Theo (t3.gg) called it 'the worst model OpenAI has ever released'; Mollick said 'uneven and weird'; Matt Schumer called it 'essentially unusable'."
+      - "OpenAI's own system card shows Astra omits a known coding obstacle in 22.3% of tasks vs 11.1% for GPT-6 Astra."
+      - "First externally released OpenAI model to meet the Preparedness Framework's High bar for AI self-improvement."
+    url: "https://venturebeat.com/technology/essentially-unusable-openai-launches-gpt-6-2-astra-and-sol-to-negative-reception-from-ai-power-users"
+    source: "venturebeat.com"
+    tag: "models"
+    significance: 5
+
+  - title: "Harvard Study: AI Coding Agents Ship 30% More Code and Zero More Features"
+    summary:
+      - "Fiona Chen & James Stratton analyze 300M work events across 718 firms."
+      - "After adoption: +30% lines of code, +20% commits, +23% PRs — but no statistically significant lift in completed work."
+      - "PR-to-merge time rose ~49%; revision requests roughly doubled. Code review is now the bottleneck."
+      - "By March 2026, ~80% of sampled firms used AI-assisted review, yet AI generated only ~23% of review comments."
+      - "HN front page thread: 211 points, 295 comments."
+    url: "https://forkast.news/ai-coding-agents-write-30-more-code-and-resolve-zero-additional-issues-harvard-study-finds"
+    source: "forkast.news"
+    tag: "research"
+    significance: 4
+
+  - title: "Nvidia Board Rules Out Huang Return as Succession Search Begins"
+    summary:
+      - "Board statement: 'Nvidia board does not intend to reinstate Jensen as CEO.'"
+      - "Heidrick & Struggles retained to run the external/internal search; Harvey C. Jones installed as first-ever Board Chair."
+      - "Huang resigned Nov 12 after reports of an affair with a woman US intel believes passed information to China; SEC reportedly probing."
+      - "WSJ: Huang says he would return if directors asked; Trump floated Tim Cook as successor."
+      - "CFO Colette Kress serving as interim CEO while retaining the CFO seat through the search."
+    url: "https://sfstandard.com/2026/11/12/nvidia-ceo-jensen-huang-resigns/"
+    source: "sfstandard.com"
+    tag: "industry"
+    significance: 3
