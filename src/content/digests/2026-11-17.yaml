@@ -22,7 +22,7 @@ stories:
     url: "https://www.marketpulse.com/markets/nvidia-nvda-q3-earnings-preview-ai-spending-risks-and-governance-concerns-threaten-major-uptrend/"
     source: "marketpulse.com"
     tag: "industry"
-    significance: 4
+    significance: 1
 
   - title: "Anthropic IPO Prices Tomorrow — $70–78 Range, 7x Oversubscribed"
     summary:
@@ -34,7 +34,7 @@ stories:
     url: "https://www.tradingkey.com/analysis/stocks/us-stocks/262306494-anthropic-ipo-claude-developer-set-debut-nasdaq-tradingkey"
     source: "tradingkey.com"
     tag: "industry"
-    significance: 4
+    significance: 1
 
   - title: "Claude Code and Codex Reverse-Engineer a 1994 Jeep's ECU Over a $3 Arduino"
     summary:
