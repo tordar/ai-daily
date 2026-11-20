@@ -1,0 +1,71 @@
+date: "2026-11-20"
+stories:
+  - title: "Google Ships Gemini 4 Neon — $3 Input, Between Hydrogen and Carbon"
+    summary:
+      - "Nov 18 launch via Gemini API, AI Studio, and the Gemini app; priced $3 / $15 per Mtok with a 1M-token context window."
+      - "Sits between Gemini 4 Hydrogen ($1.50) and the still-unshipped Gemini 4 Carbon as Google's default coding/reasoning tier."
+      - "Google-reported: 70.5% Terminal-Bench Science, 84.0% RiemannBench, 71.3% HLE-Diamond."
+      - "Opus 5.5 still edges it on pure Terminal-Bench coding; Neon leads on science and reasoning."
+      - "HN launch thread: 1,017 points, 761 comments."
+    url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    source: "blog.google"
+    tag: "models"
+    significance: 5
+
+  - title: "Microsoft Ignite Drops Seven MAI Models, Led by MAI Code 2"
+    summary:
+      - "Nov 17–18 event: MAI Code 2, MAI Code 2 Flash, MAI Cyber 2 Flash, MAI Image 2.7, MAI Realtime 1, Dragon Copilot Transcribe, Decision 1.1."
+      - "MAI Code 2 claimed at 98% of GPT-6.1 Sol quality for 40% of the price; MAI Cyber 2 Flash scores 92.3% on CyberGym-E2E vs 91.5% for GPT-6 Astra."
+      - "MAI Realtime 1 is Microsoft's first speech-to-speech model at $0.01 per minute."
+      - "Rolling out in GitHub Copilot, Foundry preview, and Dragon Copilot clinical workflows."
+      - "HN keynote thread: 594 points, 376 comments."
+    url: "https://microsoft.ai/news/microsoft-ignite-2026/"
+    source: "microsoft.ai"
+    tag: "models"
+    significance: 5
+
+  - title: "Anthropic Closes +17% at $97.17 on Day One, ~$1.76T Fully Diluted"
+    summary:
+      - "ANT opened $111.50 (+34%), hit $115.10 intraday, then gave back most of the pop to close $97.17."
+      - "Fully diluted valuation ~$1.76T; non-diluted market cap ~$1.27T."
+      - "After-hours slipped to $92.60 (-4.7%) as the Nasdaq fell 2.2% on the session."
+      - "Largest IPO on record at ~$81.3B raised; 30-day greenshoe for up to 147M more shares still open."
+      - "HN first-day threads: 923 and 986 points, 1,824 and 1,913 comments."
+    url: "https://fortune.com/2026/11/19/anthropic-ipo-first-day-trading-nasdaq-record-valuation/"
+    source: "fortune.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "OpenAI and Broadcom Unveil Jalapeño, OpenAI's First Custom Inference Chip"
+    summary:
+      - "Nov 19 announcement: reticle-sized inference ASIC co-designed with Broadcom in roughly nine months."
+      - "OpenAI says it used its own models to speed the RTL and verification loops during design."
+      - "First deployments late 2026, scaling through 2027 with Microsoft as a launch customer."
+      - "Decouples OpenAI's inference roadmap from Nvidia supply after a week of circular-financing debate."
+      - "HN thread: 220 points, 168 comments."
+    url: "https://openai.com/index/advancing-chip-design-with-our-models/"
+    source: "openai.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "Claude Code Skills Ecosystem Takes Over GitHub Trending"
+    summary:
+      - "obra/superpowers added 2,028 stars in 24h (322K total) — agentic skills framework with a software-dev methodology."
+      - "elementalsouls/Claude-BugHunter added 1,349 stars (12.9K total) — Claude Code skill bundle for bug hunting."
+      - "mvanhorn/last30days-skill added 954 stars (70.9K total) — researches a topic across Reddit, X, YouTube, HN, Polymarket, web."
+      - "Three of the top eight trending repos today are Claude Code skills bundles — a real ecosystem signal, not a single viral repo."
+    url: "https://github.com/trending"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "DeepSeek Raises ~$15.8B Second Round Backed by Tencent, CATL, Chinese Telcos"
+    summary:
+      - "Nov 20 Digitimes report: CNY105.5B second-round close, roughly US$15.8B."
+      - "New backers include Tencent, CATL, and the three major Chinese state telcos."
+      - "Raise lands while DeepSeek tightens free-tier usage limits citing compute shortages."
+      - "Signals Beijing-aligned capital stepping in as US export controls continue to squeeze PRC lab access to Nvidia Rubin."
+    url: "https://www.digitimes.com/news/a20261120VL207/deepseek-computing-power-financing-funding.html"
+    source: "digitimes.com"
+    tag: "industry"
+    significance: 3
