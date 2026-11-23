@@ -1,0 +1,59 @@
+date: "2026-11-23"
+stories:
+  - title: "Anthropic Mathematician and Claude Claim a Full Proof of the Riemann Hypothesis"
+    summary:
+      - "Levent Alpöge posted a four-page note Nov 20 saying he and Claude proved the Riemann hypothesis, including the generalized version."
+      - "Lean formalization reportedly accepted by the Lean and Mathlib communities; a human-readable write-up has not yet been published."
+      - "Follow-up to Anthropic's August result that lifted the critical-line bound from 41.6% to 67.2% — then just a partial result, not a proof."
+      - "Semafor (Nov 22) says two independent groups verified; Crypto Briefing says independent verification still pending."
+      - "Brian Conrey: 'the biggest thing I think that's ever happened in mathematics.' Clay Mathematics Institute still lists the problem as unsolved."
+    url: "https://www.semafor.com/article/11/22/2026/claude-helps-topple-riemann-problem"
+    source: "semafor.com"
+    tag: "research"
+    significance: 5
+
+  - title: "AI and Lean 4 Deliver a Proof of Finite-Time Blowup for Unforced Navier–Stokes"
+    summary:
+      - "Terence Tao posted Nov 20 that Alpöge, Buckmaster, and Coiculescu, with heavy Claude use, proved finite-time blowup for unforced 3D incompressible Navier–Stokes."
+      - "Companion unforced Euler singularity result formalized in Lean 4 alongside the Navier–Stokes claim."
+      - "Tao calls it 'a remarkable achievement'; independent verification of the unforced Navier–Stokes Lean proof is still in progress."
+      - "Follows the September 2026 OpenAI/Anthropic authorship dispute over a forced-Navier–Stokes result by the same Alpöge/Buckmaster team."
+      - "If it holds up, the result settles half of the Clay Millennium Prize question — the hard part, the Alpöge group argues."
+    url: "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/"
+    source: "terrytao.wordpress.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Google Opens Genie 4 World Model to AI Ultra Subscribers With Live Editing"
+    summary:
+      - "Rollout began Nov 18 in Project Genie, Google's browser-based world-building prototype; AI Pro users can join a waitlist."
+      - "Adds native audio and lets users edit a world mid-session by typing prompts; a Gemini-based creation agent helps build scenes."
+      - "Community gallery launches for sharing and remixing worlds; API access not yet available, Gemini API preview planned for early partners."
+      - "First consumer-tier access to a frontier world model since DeepMind's Oct 27 research-preview announcement."
+    url: "https://thenextweb.com/news/google-genie-4-project-genie-ai-ultra-world-model"
+    source: "thenextweb.com"
+    tag: "models"
+    significance: 3
+
+  - title: "Microsoft's Agent Framework PyPI Package Shipped a Credential Stealer"
+    summary:
+      - "agent-framework 1.26.1 and 1.26.2, published Nov 17 under Microsoft's official PyPI account, ran a credential stealer at Python startup."
+      - "Second release restored Microsoft's real initializer and hid the hook in af_runtime_diag.pth to dodge basic inspection."
+      - "Target: Azure and CI/CD secrets; package worked as normal while exfiltrating in the background."
+      - "PyPI pulled both within under an hour, but any credential touched during the exposure window should be rotated."
+      - "How the attacker got publish access to the official Microsoft account is still not disclosed."
+    url: "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials"
+    source: "bleepingcomputer.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "Gemini Tasks Goes Free in Six Countries, Advanced Features Stay US-Only"
+    summary:
+      - "Google announced Nov 17 that the Spark-rebranded Tasks agent is free in the US, Japan, South Korea, Canada, Australia, and India."
+      - "Advanced automations — email forwarding to gemini@google.com, RCS, phone calls, Google Pay purchases — remain US-only."
+      - "Previously gated to Google AI Ultra subscribers; this is Google's biggest consumer-agent giveaway to date."
+      - "Lands two days before Genie 4 opens to Ultra users and three days after Gemini 4 Neon's launch."
+    url: "https://www.techrepublic.com/article/news-google-gemini-tasks-free-six-countries/"
+    source: "techrepublic.com"
+    tag: "tools"
+    significance: 2
