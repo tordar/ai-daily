@@ -1,0 +1,71 @@
+date: "2026-11-25"
+stories:
+  - title: "Anthropic Stock Falls Below Its $83 IPO Price Four Days After Debut"
+    summary:
+      - "ANT closed down 6.5% on Nov 24 after a 13% intraday slide, hitting a low of $75.61 before recovering to about $82.81."
+      - "Just four trading days after a Nov 19 open at $111.50, erasing most of the record $81.3B IPO's first-day pop."
+      - "Reports blame a broader AI/tech selloff and an Axios piece on Anthropic and OpenAI staff fearing new models are 'too powerful to release.'"
+      - "Canaccord Genuity initiated coverage with a $135 target; MSCI adds ANT to global indexes after Nov 30."
+      - "HN front page: 359 points, 704 comments — the top AI discussion of the day."
+    url: "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html"
+    source: "cnbc.com"
+    tag: "industry"
+    significance: 5
+
+  - title: "OpenAI Preprint Claims the Matrix Multiplication Exponent Is Exactly 9/4"
+    summary:
+      - "Nov 24 paper in the openai/math repo extends the Oct 2 upper bound (ω ≤ 9/4) with a matching lower bound over every field."
+      - "If it holds up, ω = 2.25 settles one of the central open problems in theoretical computer science."
+      - "Lower bound cited: at least ⌈n^9/4 / 2⌉ nonscalar multiplications or divisions for n-by-n matrices."
+      - "Upper bound has independent write-ups; the lower bound has only a partial Lean check and no peer review."
+      - "No immediate impact on GPU matmul — the hidden constants are astronomical. HN: 173 points, 50 comments."
+    url: "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf"
+    source: "github.com/openai/math"
+    tag: "research"
+    significance: 5
+
+  - title: "OpenAI Says GPT-6 Models Show 'Intrinsic' Protein-Design Capability"
+    summary:
+      - "New OpenAI research claims general GPT-6 models design functional proteins without a specialist biology model."
+      - "Follows the April GPT-Rosalind life-sciences family and the Nov 6 BioBasicsBench (66.7% for GPT-6 Astra vs 43.8% for GPT-5.6 Sol)."
+      - "Framed as evidence that frontier-scale pretraining is picking up domain capabilities previously thought to need bespoke stacks."
+      - "HN front page: 185 points, 56 comments, with heavy skepticism about the wet-lab validation bar."
+    url: "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+    source: "openai.com"
+    tag: "research"
+    significance: 4
+
+  - title: "Ask HN: Anthropic Is Accusing My Company of Distilling Claude"
+    summary:
+      - "Small-shop founder says Anthropic flagged their accounts for suspected distillation and is demanding they prove a negative."
+      - "Follows Feb's accusations against DeepSeek/Moonshot/MiniMax (16M exchanges, 24K fake accounts) and a reported May–June Alibaba case (151M exchanges)."
+      - "Thread turns into a debate over how any legitimate heavy API user — eval harnesses, synthetic data pipelines, agent loops — can clear this bar."
+      - "HN: 230 points, 167 comments, now one of the week's most-discussed Claude threads."
+    url: "https://news.ycombinator.com/item?id=50630809"
+    source: "news.ycombinator.com"
+    tag: "community"
+    significance: 3
+
+  - title: "Versine Launches MCP Server That Lets ChatGPT and Claude Send Money"
+    summary:
+      - "YC Fall 2026 batch; Launch HN on Nov 24 for an MCP server exposing balance, contacts, pay, and request-money as tool calls."
+      - "Every transfer requires passkey approval; auto-approve allowed under user-set limits for trusted contacts."
+      - "Bulk transfers to up to 100 people from one prompt; recipients without an account cash out to a US bank in ~2 min."
+      - "Weekly cap $2,500 at launch; $100 bonus to send to friends. Lands the same week as Coinbase's crypto Payments MCP."
+      - "HN: 73 points, 57 comments."
+    url: "https://news.ycombinator.com/item?id=50634426"
+    source: "news.ycombinator.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "OpenAI Says It Proved VP ≠ VNP Before Anthropic's Riemann Claim"
+    summary:
+      - "Nov 23 preprint in openai/math dated the result 'before' Anthropic's Nov 20 Riemann and Navier–Stokes announcements."
+      - "Continues the OpenAI vs Anthropic math-priority race that began with the September Navier–Stokes authorship dispute."
+      - "VP ≠ VNP is the algebraic sibling of P ≠ NP; proof is unreviewed and no Lean formalization is attached."
+      - "HN reaction is split between 'frontier labs are speedrunning open problems' and 'this is PR cosplay as research.'"
+      - "HN: 86 points, 90 comments."
+    url: "https://github.com/openai/math/tree/main/preprints/VP-and-VNP-are-different-November-23-2026"
+    source: "github.com/openai/math"
+    tag: "research"
+    significance: 3
