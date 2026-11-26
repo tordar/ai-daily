@@ -1,0 +1,68 @@
+date: "2026-11-26"
+stories:
+  - title: "'LLM Agents Work for Their Parent Companies, Not for You' Tops HN"
+    summary:
+      - "Michael Harley essay resurfaces on HN and lands at #1 the day before Thanksgiving."
+      - "Thesis: a hosted agent is always its vendor's agent first — routing, upsell, and allowed actions tilt toward the lab, not the user."
+      - "Centers the principal–agent problem for consumer AI as agents gain more autonomy over purchases, email, and code."
+      - "HN front page: 1,008 points, 410 comments — the top developer thread of the day."
+    url: "https://news.ycombinator.com/item?id=50627340"
+    source: "news.ycombinator.com"
+    tag: "community"
+    significance: 5
+
+  - title: "Anthropic Rewrote the Messages API in Rust With a Fleet of Claude Agents"
+    summary:
+      - "Nov 25 engineering post: full Python→Rust rewrite of the Messages API, after an earlier partial port only cut CPU 8–10% thanks to cross-language overhead."
+      - "Results: ~70% less CPU and >80% less memory per request; median time-to-first-token down ~20%."
+      - "API traffic grew ~1,800× from early 2024 to fall 2026, forcing the rewrite."
+      - "Verification bottleneck solved with shadowed live traffic — a coordinating Claude agent dispatched workers that chased each remaining output diff; input match rose from 24% in April to 99.6% by August."
+    url: "https://www.anthropic.com/research/migrating-api-to-rust"
+    source: "anthropic.com"
+    tag: "tools"
+    significance: 4
+
+  - title: "Anthropic Posts a 76K-Line Lean Verification of Its Riemann Hypothesis Proof"
+    summary:
+      - "grh-lean repo ships two Lean 4 formalizations of the Nov 20 Riemann / Generalized Riemann claims: grh/ at ~300K lines and grh-compact/ at ~76K."
+      - "Based on Levent Alpöge's argument developed with Claude; copyright is Anthropic, PBC."
+      - "Passes machine checks on Mathlib with only the standard axioms propext, Classical.choice, and Quot.sound."
+      - "README concedes 'no mathematician has read it through.' Build takes 1–2 hours on 12 cores / 24 GB."
+      - "HN front page: 348 points, 176 comments; 494 GitHub stars in under 48 hours."
+    url: "https://github.com/lsernau/grh-lean"
+    source: "github.com"
+    tag: "research"
+    significance: 4
+
+  - title: "NYT Tells Its Photographers Not to Install the New Photoshop Update"
+    summary:
+      - "The Verge: New York Times photo desk warned staff not to update Photoshop over generative-AI features bundled into the latest release."
+      - "Concern is editorial integrity — the new tools can alter unaltered news photos in ways that are hard to audit after the fact."
+      - "Reignites the newsroom debate over which Adobe features (generative fill, remove tool) cross the line for photojournalism."
+      - "HN front page: 264 points, 228 comments."
+    url: "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features"
+    source: "theverge.com"
+    tag: "industry"
+    significance: 3
+
+  - title: "OpenAI Preprint Claims the Polynomial Hirsch Conjecture Is False"
+    summary:
+      - "Nov 24 PDF in openai/math: 'Superpolynomial graph diameter of simple polytopes' — a negative answer to the polynomial Hirsch conjecture (open since 1992)."
+      - "If it holds up, it kills the hope that pivoting methods for linear programming can have a diameter bound polynomial in the number of facets."
+      - "Lands in the same openai/math folder as this week's matrix-multiplication (ω = 9/4) and VP ≠ VNP preprints."
+      - "HN: 136 points, 37 comments; math Twitter still waiting on a Lean check."
+    url: "https://github.com/openai/math/tree/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026"
+    source: "github.com/openai/math"
+    tag: "research"
+    significance: 3
+
+  - title: "Claude Code Skill Bundles Dominate GitHub Trending"
+    summary:
+      - "Top of GitHub Trending today is a wave of 'skill' repos that drop into Claude Code: mvanhorn/last30days-skill (+945 stars/day), obra/superpowers, elementalsouls/Claude-BugHunter, cathrynlavery/diagram-design."
+      - "Pattern: packaged subagents + prompts + eval harnesses teammates can install in one command, pointed at a specific job (bug-hunt, research, diagrams)."
+      - "last30days-skill spans Reddit, X, YouTube, and HN as source types — the first popular 'cross-community monitor' skill."
+      - "Signals a shift from one-off prompt sharing to reusable, versioned agent tooling."
+    url: "https://github.com/mvanhorn/last30days-skill"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
