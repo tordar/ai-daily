@@ -1,0 +1,67 @@
+date: "2026-11-27"
+stories:
+  - title: "HN's 'No AI-Edited Comments' Thread Hits 4,100 Points"
+    summary:
+      - "A pinned reminder from dang that Hacker News is for human-to-human conversation sits at the top of the front page this weekend."
+      - "Covers both fully generated comments and 'polished with AI' edits — flagged ones get removed and accounts can be banned."
+      - "dang: 'LLMs are amazing and we rely on them heavily; we just don't use them on text we post to HN.'"
+      - "HN: 4,188 points, 1,651 comments — the largest meta thread on the site in months."
+    url: "https://news.ycombinator.com/newsguidelines.html"
+    source: "news.ycombinator.com"
+    tag: "community"
+    significance: 4
+
+  - title: "Anthropic Launches Enterprise Frontier Safeguards for Eligible Orgs"
+    summary:
+      - "Nov 23 release notes: EFS exits private rollout and goes live as a beta for eligible enterprise customers."
+      - "Grants Zero Data Retention while keeping safety monitoring — 'Sealed Safety Data' is encrypted and written to a bucket in the customer's own cloud (S3, Azure Blob, or GCS)."
+      - "Two new webhooks (external_storage.failed / recovered) surface storage failures, after the external_key webhook pair shipped Nov 16."
+      - "Anthropic doesn't charge for EFS itself; customers still pay for their own storage."
+    url: "https://www.anthropic.com/news/enterprise-frontier-safeguards"
+    source: "anthropic.com"
+    tag: "industry"
+    significance: 4
+
+  - title: "HKUDS 'CLI-Anything' Breaks Into GitHub Trending"
+    summary:
+      - "Framework from HKU's Data Science Lab auto-generates a command-line harness from any app's source code so an agent can drive it."
+      - "+746 stars/day puts it in the top 10 on GitHub Trending; cumulative stars over 54K."
+      - "Ships as a Claude Code plugin (/plugin marketplace add HKUDS/CLI-Anything); Novita joined as a hosting partner this week."
+      - "Pairs with CLI-Hub, a search/install/launch registry for community-authored CLIs."
+    url: "https://github.com/HKUDS/CLI-Anything"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Mario Zechner's 'Pi' Reignites the Minimal-Harness Debate"
+    summary:
+      - "Open-source TypeScript coding agent built around a sub-1,000-token system prompt and four default tools (read, write, edit, bash)."
+      - "No MCP, no agents.md, no skills bolted on — author says the harness itself should be small enough to fork and own."
+      - "Reviewers call it 'one of the more token-efficient harnesses' on the market; comparisons to Claude Code and Codex running hot on HN."
+      - "Monorepo of six packages: multi-provider LLM client, agent runtime, coding CLI, and terminal UI library."
+    url: "https://github.com/earendil-works/pi"
+    source: "github.com"
+    tag: "tools"
+    significance: 3
+
+  - title: "MiniMind Trends on GitHub: Train a 64M LLM in ~2 Hours on One 3090"
+    summary:
+      - "+702 stars/day for jingyaogong/minimind, a from-scratch LLM tutorial covering pretrain → SFT → DPO → RLHF."
+      - "Flagship 'minimind-3' is a 64M dense model; one SFT epoch runs in ~2 hours on a single NVIDIA 3090 (~$0.40 of GPU rental)."
+      - "Also ships a 198M-A64M MoE variant and pointers for distillation and continued pretraining."
+      - "Positioned as a 'read-every-line' teaching project — the counter-trend to this week's 2T-param frontier launches."
+    url: "https://github.com/jingyaogong/minimind"
+    source: "github.com"
+    tag: "open-source"
+    significance: 3
+
+  - title: "Anthropic Sets Claude Opus 4.5 Retirement for January 22"
+    summary:
+      - "Nov 23 deprecation notice: claude-opus-4-5 and the dated claude-opus-4-5-20251101 both retire from the Claude API on Jan 22, 2027 — 56 days' notice."
+      - "Migration target is Opus 5.5; Opus 4.8 Fast Mode is now the Max-plan default inside Claude Code."
+      - "Fast mode on Opus 4.6 is also being removed ~30 days after Opus 4.8's launch."
+      - "Follows a cadence of roughly one Opus generation per quarter since 4.5 shipped a year ago."
+    url: "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+    source: "anthropic.com"
+    tag: "models"
+    significance: 2
